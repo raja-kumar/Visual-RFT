@@ -69,6 +69,9 @@ conda activate Visual-RFT
 bash setup.sh
 ```
 
+## Inference
+We have uploaded the model trained on 200+ samples from the LISA dataset. You can use it to evaluate the inference performance of **Reasoning Grounding**. More details refer to `demo`
+
 ## Training
 ### Datasets
 To train on our various visual perception tasks, first visit <a href="https://huggingface.co/collections/laolao77/virft-datasets-67bc271b6f2833eccc0651df">Huggingface Datasets</a> to download the datasets. We have uploaded different datasets for different tasks.
