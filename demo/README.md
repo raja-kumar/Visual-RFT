@@ -1,5 +1,5 @@
 ## Inference on LISA Dataset
-We've uploaded the model trained with 239 samples from the LISA dataset. You can use the following code for inference to test the model's **reasoning grounding** capability.
+We've uploaded the model trained with 239 samples from the LISA dataset（https://huggingface.co/Zery/Qwen2-VL-7B_visual_rft_lisa_IoU_reward）. You can use the following code for inference to test the model's **reasoning grounding** capability.
 ```python
 import torch
 from transformers import Qwen2VLForConditionalGeneration, AutoProcessor
