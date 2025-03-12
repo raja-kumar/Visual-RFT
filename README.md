@@ -37,6 +37,7 @@
 </a>
 
 ## 📢 News
+- 🚀 [03/12/2025] We release the code to build the <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/dataset">dataset</a> on your own data.
 - 🚀 [03/04/2025] We release our <a href="https://arxiv.org/abs/2503.01785">Paper</a>.
 - 🚀 [03/04/2025] We upload our training datasets to <a href="https://huggingface.co/collections/laolao77/virft-datasets-67bc271b6f2833eccc0651df">Huggingface</a>.
 - 🚀 [03/04/2025] We release **ViRFT** repository and our training code.
@@ -81,6 +82,8 @@ To train on our various visual perception tasks, first visit <a href="https://hu
 | laolao77/ViRFT_CLS_car196_4shot   |  Classification| Few-shot   | It includes the 196 categories from the Stanford Cars dataset, with 4 images per category. |
 | laolao77/ViRFT_CLS_pets37_4shot  |  Classification| Few-shot    | It includes the 37 categories from the Pets37 dataset, with 4 images per category. |
 | LISA dataset | Grounding | - | Reasoning Grounding|
+> 🔔 If your want to build a dataset on your own data, you can refere to `dataset/build_dataset.ipynb`. Just provide a `json` file with `image`, `promble` and 'solution'.
+
 ### GRPO
 After downloading the dataset, you can start training using the following example bash script. Our bash scripts are in ```/src/scripts```
 > 🔔 There's no need for prolonged training. For a dataset with only a few hundred samples, 200 steps should be sufficient.
