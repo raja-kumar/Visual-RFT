@@ -70,7 +70,7 @@ bash setup.sh
 ```
 
 ## Inference
-We have uploaded the model trained with 239 samples from the LISA dataset. You can use the following code snippet to perform inference tests:
+We've uploaded the model trained with 239 samples from the LISA dataset. You can use the following code for inference to test the model's **reasoning grounding** capability.
 ```python
 import torch
 from transformers import Qwen2VLForConditionalGeneration, AutoProcessor
