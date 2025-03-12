@@ -70,7 +70,7 @@ bash setup.sh
 ```
 
 ## Inference
-We have uploaded the model trained on 200+ samples from the LISA dataset. You can use it to evaluate the inference performance of **Reasoning Grounding**. More details refer to `demo`
+We have uploaded the model trained on 200+ samples from the LISA dataset (<a href="https://huggingface.co/Zery/Qwen2-VL-7B_visual_rft_lisa_IoU_reward">🤗Huggingface</a>). You can use it to evaluate the inference performance of **Reasoning Grounding**. More details refer to `demo`.
 
 ## Training
 ### Datasets
