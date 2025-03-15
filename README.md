@@ -130,6 +130,10 @@ It is important to note that if you encounter an OOM (Out of Memory) issue durin
 ```
 --deepspeed ./local_scripts/zero3.json
 ```
+Moreover, setting `--gradient_checkpointing` to `true` can save memory, allowing for a higher `--num_generations` limit, which leads to better training performance. However, it will slow down the training process.
+```
+--gradient_checkpointing True
+```
 ### SFT
 We use <a href="https://github.com/hiyouga/LLaMA-Factory">LLaMa-Factory</a> for supervised fine-tuning (SFT) of the model. You can convert the downloaded dataset into the corresponding Qwen SFT format for training.
 
