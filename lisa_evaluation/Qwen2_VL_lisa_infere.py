@@ -150,4 +150,3 @@ if __name__ == "__main__":
         tasks = [args.task]
 
     results = evaluate_model(tasks)
-    # logging.info(f"Final results: {results}")

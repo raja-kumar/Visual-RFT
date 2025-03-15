@@ -1,6 +1,10 @@
 ## ViRFT for reasoning grounding
 
-Download `lisa_test.json` and `lisa_val.json` at [here](https://huggingface.co/datasets/Zery/BS-Objaverse).
+## training
+1. Download [LISA dataset](https://github.com/dvlab-research/LISA)
+2. use `gen_box_ann.py` to generate box from mask.
+3. use `gen_sft.py` to generate SFT/Visual-RFT training annotations.
+4. use `src/scripts/2B_lisa_grounding.sh` to train the model, with annotation path changed to step.3 generated annotations.
 
 After training model, replace model path in `Qwen2_VL_lisa_infere.py` with your own ckpt.
 
