@@ -17,6 +17,10 @@ model = Qwen2VLForConditionalGeneration.from_pretrained(
 processor = AutoProcessor.from_pretrained("/path/to/your/checkpoint-498")
 ```
 
+to compute gIoU, follow the process bellow.
+1. Use `box2mask.py` to extract mask from [SAM](https://github.com/facebookresearch/segment-anything)
+2. Use `mask_iou` to comput mask IoU.
+
 ```shell
 cd lisa_evaluation
 bash Qwen2_VL_lisa_infere.sh
