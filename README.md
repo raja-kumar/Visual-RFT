@@ -208,7 +208,7 @@ model_base = "./share_models/Qwen2-VL-2B-Instruct/"  # original Qwen2-VL
 ```
 Inference and result computation are performed simultaneously. After the program finishes running, the number of correctly classified items will be displayed in the command line, and the accuracy is obtained by dividing it by the length of the validation set. (Flower102: 2463, Pets37: 3669, stanford cars: 8041, fgvc-aircraft: 3333)
 
-> 🔔 Sometimes, due to environment issues, the model may produce incorrect inferences when `use_cache = None`. You might consider explicitly setting `use_cache = None`.
+> 🔔 Sometimes, due to environment issues, the model may produce incorrect inferences when `use_cache = None`. You might consider explicitly setting `use_cache = True`.
 > `generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True)`
 
 ### Evaluation Results
