@@ -125,6 +125,7 @@ torchrun --nproc_per_node="8" \
     --save_only_model true \
     --num_generations 8 '
 ```
+**OOM Tips**
 
 It is important to note that if you encounter an OOM (Out of Memory) issue during training, you can resolve it by configuring `zero3.json`. For the 7B model, if the issue persists after enabling `zero3.json`, you can try lowering the `num_generations` to 4.
 ```
@@ -134,6 +135,10 @@ Moreover, setting `--gradient_checkpointing` to `true` can save memory, allowing
 ```
 --gradient_checkpointing True
 ```
+To further save GPU memory, you can use the `zero3_offload.json` configuration.
+
+If you're still encountering OOM issues, you can also reduce the resolution of the images in the training dataset!
+
 ### SFT
 We use <a href="https://github.com/hiyouga/LLaMA-Factory">LLaMa-Factory</a> for supervised fine-tuning (SFT) of the model. You can convert the downloaded dataset into the corresponding Qwen SFT format for training.
 
