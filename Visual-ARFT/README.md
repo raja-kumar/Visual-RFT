@@ -56,7 +56,6 @@ Models (LVLMs). With Visual-ARFT, open-source LVLMs gain the ability to browse w
   <img src="assets/tesear.png" alt="Logo" >
 </a>
 
-
 ## Framework
 **Visual-ARFT** adopts RFT strategy, using the GRPO algorithm to update model weights. Based on the task-solving workflow of multimodal agents, we design a rule-based verifiable rewards for both multi-step tool use and final answer generation in LVLMs. With a simple and efficient reward design, the model is encouraged to autonomously explore how to utilize tools and reason through tasks. Our training process relies on only a small number of samples—ranging from a few dozen to at most 1.2k examples—to effectively equip the model with multimodal agentic capabilities. Visual-ARFT conducts RFT on **two challenging task settings**:
 
