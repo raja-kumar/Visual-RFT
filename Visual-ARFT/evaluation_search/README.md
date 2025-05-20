@@ -9,6 +9,9 @@ You can download our model: 🤗<a href="https://huggingface.co/laolao77/Visual-
 
 You can download other four multihopQA benchmark from 🤗<a href="https://huggingface.co/datasets/RUC-NLPIR/FlashRAG_datasets">Dataset</a></h3>.
 
+## Web Search API
+We use SerperAPI for web search. You can start by registering an account to receive 2,500 free queries, and then add your API key to the `.env` file.
+
 ## Inference on MAT-Search
 
 Firstly, `cd MAT-Search-Benchmark`. In this folder, there are `evaluation_mat_search_ngpu_7b_df.py` and `evaluation_mat_search_ngpu_7b_visual_arft.py`. The first Python file is used to evaluate the results of direct inference, while the second Python file is used to evaluate the results of the **Visual-ARFT-Search** model.
