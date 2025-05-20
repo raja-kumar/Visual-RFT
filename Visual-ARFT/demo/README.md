@@ -7,3 +7,5 @@ You can download our model: 🤗<a href="https://huggingface.co/laolao77/Visual-
 
 ## Inference
 Replace model's and benchmark's path in our demo. Run `coding_demo.ipynb` or `search_demo.ipynb` step by step.
+
+> 🔔  If you want to try **Visual-ARFT-Search**, typing your SerperAPI in '.env' to support the web search function. (Registration includes 2,500 free usage credits.)
