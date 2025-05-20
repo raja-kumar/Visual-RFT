@@ -37,10 +37,11 @@
 </a>
 
 ## 📢 News
+- 🚀 [05/20/2025] We release **Visual-ARFT** repository: A RFT framework dedicated to enhancing the **multimodal agentic capabilities of LVLMs**.
 - 🚀 [03/12/2025] We release the code to build the <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/dataset">dataset</a> on your own data.
 - 🚀 [03/04/2025] We release our <a href="https://arxiv.org/abs/2503.01785">Paper</a>.
 - 🚀 [03/04/2025] We upload our training datasets to <a href="https://huggingface.co/collections/laolao77/virft-datasets-67bc271b6f2833eccc0651df">Huggingface</a>.
-- 🚀 [03/04/2025] We release **ViRFT** repository and our training code.
+- 🚀 [03/04/2025] We release **Visual-RFT** repository and our training code.
 
 ## 💡 Highlights
 - 🔥 **Visual Reinforcement Fine-tuning (Visual-RFT)**: We introduce Visual Reinforcement Fine-tuning (**Visual-RFT**), which extends reinforcement learning with verified rewards on visual perception tasks that are effective with limited data for fine-tuning.
