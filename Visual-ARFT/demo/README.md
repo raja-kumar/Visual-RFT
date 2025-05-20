@@ -6,4 +6,4 @@ You can download MAT Benchmakr on 🤗<a href="https://huggingface.co/datasets/l
 You can download our model: 🤗<a href="https://huggingface.co/laolao77/Visual-ARFT-Search">Visual-ARFT-Search</a></h3> and 🤗<a href="https://huggingface.co/laolao77/Visual-ARFT-Coding">Visual-ARFT-Coding</a></h3>
 
 ## Inference
-Run 
+Replace model's and benchmark's path in our demo. Run `coding_demo.ipynb` or `search_demo.ipynb` step by step.
