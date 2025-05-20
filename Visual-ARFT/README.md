@@ -38,9 +38,9 @@ Models (LVLMs). With Visual-ARFT, open-source LVLMs gain the ability to browse w
     </a> -->
 <br>
 
-<a href="">
+<!--  <a href="">
   <img src="assets/radar.png" alt="Logo" >
-</a>
+</a>  -->
 
 ## 📢 News
 - 🚀 [05/20/2025] We release our model, datasets, and MAT benchmark on huggingface 🤗<a href="https://huggingface.co/collections/laolao77/visual-arft-682c601d0e35ac6470adfe9f">Huggingface Collection</a>.
