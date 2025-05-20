@@ -11,7 +11,7 @@ You can download our model: 🤗<a href="https://huggingface.co/laolao77/Visual-
 
 To run `evaluation_mat_coding_visual_arft.py`, you need to replace the paths to the model and dataset:
 
--  Line 175: Replace **model_name** with the actual model path (Visual-ARFT-Coding).
+-  Line 175: Replace **model_name** with the actual model path (**Visual-ARFT-Coding**).
 -  Line 184: Replace **json_path** with the actual dataset path (MAT-Coding.json).
 -  Line 201: Replace **input_image_path** with the actual image path.
 -  Line 342: Set the results save path.
@@ -20,12 +20,12 @@ To run `evaluation_mat_coding_visual_arft.py`, you need to replace the paths to 
 
 To run `evaluation_mat_coding_ngpu_7b_df.py`, you need to replace the paths to the model and dataset:
 
--  Line 20: Replace **model_name** with the actual model path (Visual-ARFT-Coding).
+-  Line 20: Replace **model_name** with the actual model path (**Original Qwen2.5-VL without Visual-ARFT**).
 -  Line 30: Replace **json_path** with the actual dataset path (MAT-Coding.json).
 -  Line 42: Replace **input_image_path** with the actual image path.
 -  Line 103: Set the results save path.
 
-> ⏳ The inference time for **Visual-ARFT-Coding-7B** is approximately 1.5 hours, while the **3B model** takes around 50 minutes.
+> ⏳ The inference time for **Visual-ARFT-Coding-7B** is approximately 1.5 hours, while the **3B model** takes around 50 minutes. The inference time for **Original Qwen2.5-VL without Visual-ARFT** is much faster.
 
 
 ## Evaluation
