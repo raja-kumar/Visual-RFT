@@ -7,7 +7,7 @@ You can download MAT Benchmakr on 🤗<a href="https://huggingface.co/datasets/l
 
 You can download our model: 🤗<a href="https://huggingface.co/laolao77/Visual-ARFT-Coding">Visual-ARFT-Coding</a></h3>
 
-## Evaluation on MAT-Coding
+## Inference on MAT-Coding
 
 To run `evaluation_mat_coding_visual_arft.py`, you need to replace the paths to the model and dataset:
 
@@ -24,6 +24,14 @@ To run `evaluation_mat_coding_ngpu_7b_df.py`, you need to replace the paths to t
 -  Line 30: Replace **json_path** with the actual dataset path (MAT-Coding.json).
 -  Line 42: Replace **input_image_path** with the actual image path.
 -  Line 103: Set the results save path.
+
+> ⏳ The inference time for **Visual-ARFT-Coding-7B** is approximately 1.5 hours, while the **3B model** takes around 50 minutes.
+
+
+## Evaluation
+After obtaining the inference results, run the `evaluation.ipynb` step by step. The `.ipynb` file will provide the final evaluation scores.
+
+We have saved the inference results of the `Visual-ARFT-Coding-7B` model in the `evaluation_results` folder. You can directly use the results inside to test the evaluation scores.
 
 
 
