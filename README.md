@@ -96,6 +96,13 @@ To train on our various visual perception tasks, first visit <a href="https://hu
 | LISA dataset | Grounding | - | Reasoning Grounding|
 > 🔔 If your want to build a dataset on your own data, you can refere to `dataset/build_dataset.ipynb`. Just provide a `json` file with `image`, `promble` and 'solution'.
 
+**Datasets Formats**
+🔦 We support both **HuggingFace Dataset** format and **JSON** file format as input datasets for training.
+
+Refer to <a href="https://github.com/Liuziyu77/Visual-RFT/blob/main/src/virft/src/open_r1/grpo.py">grpo.py</a> for **HuggingFace Dataset** format example.
+
+Refer to <a href="https://github.com/Liuziyu77/Visual-RFT/blob/main/Visual-ARFT/src/visual_arft/src/open_r1/grpo_agent_search.py">grpo.py</a> for **JSON** format example.
+
 ### GRPO
 After downloading the dataset, you can start training using the following example bash script. Our bash scripts are in ```/src/scripts```
 > 🔔 There's no need for prolonged training. For a dataset with only a few hundred samples, 200 steps should be sufficient.
@@ -133,19 +140,19 @@ torchrun --nproc_per_node="8" \
     --save_only_model true \
     --num_generations 8 '
 ```
-**OOM Tips**
 
-It is important to note that if you encounter an OOM (Out of Memory) issue during training, you can resolve it by configuring `zero3.json`. For the 7B model, if the issue persists after enabling `zero3.json`, you can try lowering the `num_generations` to 4.
-```
---deepspeed ./local_scripts/zero3.json
-```
-Moreover, setting `--gradient_checkpointing` to `true` can save memory, allowing for a higher `--num_generations` limit, which leads to better training performance. However, it will slow down the training process.
-```
---gradient_checkpointing True
-```
-To further save GPU memory, you can use the `zero3_offload.json` configuration.
+### OOM Tips 
+⏰ Running into OOM (Out-Of-Memory) issues during training is quite common, especially when using GPUs with limited memory. 
 
-If you're still encountering OOM issues, you can also reduce the resolution of the images in the training dataset!
+🔦 But no worries — here are some helpful **OOM tips** for you:
+
+1. **About distributed training:** You can alleviate memory pressure by specifying the `--deepspeed` argument, e.g. `--deepspeed /src/visual_arft/local_scripts/zero3.json`.  If memory is still insufficient, you can further reduce the load by using: `--deepspeed /src/visual_arft/local_scripts/zero3_offload.json`.
+
+2. **About the number of generations per group in GRPO:** You can reduce GPU memory usage by lowering the `--num_generation parameter`. In the example script, the default value is `--num_generation 8`, but you can try setting it to 4 to save memory. Keep in mind, though, that a smaller `--num_generation` may lead to worse performance.
+  
+3. **About gradient_checkpointing:** Moreover, setting `--gradient_checkpointing` to `true` can save memory, allowing for a higher `--num_generations` limit, which leads to better training performance. However, it will slow down the training process.
+
+4. **About Image resolution:** If you're still encountering OOM issues, you can also reduce the resolution of the images in the training dataset!
 
 ### SFT
 We use <a href="https://github.com/hiyouga/LLaMA-Factory">LLaMa-Factory</a> for supervised fine-tuning (SFT) of the model. You can convert the downloaded dataset into the corresponding Qwen SFT format for training.
