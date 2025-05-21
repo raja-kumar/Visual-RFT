@@ -36,6 +36,10 @@
   <img src="assets/radar.png" alt="Logo" >
 </a>
 
+## 🔥🔥🔥 Visual-ARFT: Visual Agentic Reinforcement Fine-Tuning
+
+
+
 ## 📢 News
 - 🚀 [05/20/2025] We release **Visual-ARFT** repository <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT">Repo-URL</a>: A RFT framework dedicated to enhancing the **multimodal agentic capabilities of LVLMs**.
 - 🚀 [03/12/2025] We release the code to build the <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/dataset">dataset</a> on your own data.
