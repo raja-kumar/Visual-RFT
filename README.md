@@ -42,6 +42,7 @@ This work highlights the effectiveness of Visual Agentic Reinforcement Fine-Tuni
 
 
 ## 📢 News
+- 🚀 [05/21/2025] We support both **HuggingFace Dataset** format and **JSON** file format as input datasets for training.
 - 🚀 [05/21/2025] We updata the trainer of **Visual-RFT** to support both Qwen2-VL and Qwen2.5-VL. And we support multi-image inputs with `grpo_trainer_mp.py`.
 - 🚀 [05/20/2025] We release **Visual-ARFT** repository <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT">Repo-URL</a>: A RFT framework dedicated to enhancing the **multimodal agentic capabilities of LVLMs**. (Support Qwen2-VL and Qwen2.5-VL)
 - 🚀 [03/12/2025] We release the code of **Visual-RFT** to build the <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/dataset">dataset</a> on your own data.
