@@ -37,7 +37,8 @@
 </a>
 
 ## 🔥🔥🔥 Visual-ARFT: Visual Agentic Reinforcement Fine-Tuning
-
+This work highlights the effectiveness of Visual Agentic Reinforcement Fine-Tuning (Visual-ARFT) for enabling flexible and adaptive reasoning abilities for Large Vision-Language Models (LVLMs). With Visual-ARFT, open-source LVLMs gain the ability to browse websites for real-time information updates and write code to manipulate and analyze input images through cropping, rotation, and other image processing techniques. We also present a Multi-modal Agentic Tool Bench (MAT) with two settings (MAT-Search and MAT-Coding) designed to evaluate LVLMs’ agentic search and coding abilities. 📖<a href="https://arxiv.org/abs/2505.14246">Paper</a> |
+  🤗<a href="https://huggingface.co/datasets/laolao77/MAT">Datasets</a> | 🤗<a href="https://huggingface.co/collections/laolao77/visual-arft-682c601d0e35ac6470adfe9f">Models</a>
 
 
 ## 📢 News
