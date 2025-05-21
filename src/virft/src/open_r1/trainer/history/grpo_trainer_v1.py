@@ -207,19 +207,38 @@ class Qwen2VLGRPOTrainer(Trainer):
         if peft_config is not None:
             model = get_peft_model(model, peft_config)
 
-        # Reference model
-        if is_deepspeed_zero3_enabled():
-            if "Qwen2-VL" in model_id:
-                self.ref_model = Qwen2VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
-            elif "Qwen2.5-VL" in model_id:
-                self.ref_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
-            elif "Aria" in model_id:
-                self.ref_model = AriaForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+        # # Reference model
+        # if is_deepspeed_zero3_enabled():
+        #     if "Qwen2-VL" in model_id:
+        #         self.ref_model = Qwen2VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+        #     elif "Qwen2.5-VL" in model_id:
+        #         self.ref_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+        #     elif "Aria" in model_id:
+        #         self.ref_model = AriaForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+        #     else:
+        #         self.ref_model = AutoModelForCausalLM.from_pretrained(model_id, **model_init_kwargs)
+        # elif peft_config is None:
+        #     # If PEFT configuration is not provided, create a reference model based on the initial model.
+        #     self.ref_model = create_reference_model(model)
+        # else:
+        #     # If PEFT is used, the reference model is not needed since the adapter can be disabled
+        #     # to revert to the initial model.
+        #     self.ref_model = None
+
+        # Reference model lzy modified
+        if peft_config is None:
+            if is_deepspeed_zero3_enabled():
+                if "Qwen2-VL" in model_id:
+                    self.ref_model = Qwen2VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+                elif "Qwen2.5-VL" in model_id:
+                    self.ref_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+                elif "Aria" in model_id:
+                    self.ref_model = AriaForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+                else:
+                    self.ref_model = AutoModelForCausalLM.from_pretrained(model_id, **model_init_kwargs)
             else:
-                self.ref_model = AutoModelForCausalLM.from_pretrained(model_id, **model_init_kwargs)
-        elif peft_config is None:
-            # If PEFT configuration is not provided, create a reference model based on the initial model.
-            self.ref_model = create_reference_model(model)
+                # If PEFT configuration is not provided, create a reference model based on the initial model.
+                self.ref_model = create_reference_model(model)
         else:
             # If PEFT is used, the reference model is not needed since the adapter can be disabled
             # to revert to the initial model.
@@ -355,6 +374,8 @@ class Qwen2VLGRPOTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         if return_outputs:
             raise ValueError("The GRPOTrainer does not support returning outputs")
+    
+        
 
         prompts = [x["prompt"] for x in inputs]
         prompts_text = [maybe_apply_chat_template(example, self.processing_class)["prompt"] for example in inputs]
@@ -380,6 +401,7 @@ class Qwen2VLGRPOTrainer(Trainer):
 
         # Generate completions
         with unwrap_model_for_generation(model, self.accelerator) as unwrapped_model:
+            prompt_inputs['pixel_values'] = prompt_inputs['pixel_values'][None]
             prompt_completion_ids = unwrapped_model.generate(**prompt_inputs, generation_config=self.generation_config)
 
             prompt_length = prompt_ids.size(1)
@@ -397,7 +419,7 @@ class Qwen2VLGRPOTrainer(Trainer):
 
         # Concatenate prompt_mask with completion_mask for logit computation
         attention_mask = torch.cat([prompt_mask, completion_mask], dim=1)  # (B*G, P+C)
-        pixel_values = prompt_inputs["pixel_values"].repeat(self.num_generations, 1)
+        pixel_values = prompt_inputs["pixel_values"].repeat_interleave(self.num_generations, dim=0).view(-1, pixel_values.shape[-1])
         image_grid_thw = prompt_inputs["image_grid_thw"].repeat_interleave(self.num_generations, dim=0)
 
         per_token_logps = self._get_per_token_logps(model, prompt_completion_ids, attention_mask, pixel_values, image_grid_thw)

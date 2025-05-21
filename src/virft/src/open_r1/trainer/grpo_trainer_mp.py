@@ -47,7 +47,8 @@ from trl.trainer.grpo_config import GRPOConfig
 from trl.trainer.utils import generate_model_card, get_comet_experiment_url
 
 import copy
-
+import random
+from PIL import Image
 
 if is_peft_available():
     from peft import PeftConfig, get_peft_model
@@ -60,7 +61,7 @@ if is_wandb_available():
 RewardFunc = Union[str, PreTrainedModel, Callable[[list, list], list[float]]]
 
 
-class Qwen2VLGRPOTrainer(Trainer):
+class Qwen2VLGRPOTrainer_MP(Trainer):
     """
     Trainer for the Group Relative Policy Optimization (GRPO) method. This algorithm was initially proposed in the
     paper [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://huggingface.co/papers/2402.03300).
@@ -351,6 +352,31 @@ class Qwen2VLGRPOTrainer(Trainer):
     # Since we preprocess the data in `compute_loss`, we need to override this method to skip this step.
     def _prepare_inputs(self, inputs: dict[str, Union[torch.Tensor, Any]]) -> dict[str, Union[torch.Tensor, Any]]:
         return inputs
+    
+    def convert_example_multi_images(example):
+        import pdb
+        pdb.set_trace()
+        messages = example['conversations']
+        for mes in messages:
+            if mes['content'][0]['type'] == 'image':
+                # mes['content'][0]['image_url'] = mes['content'][0]['image_url']['url']
+                # smaller image
+                base64_str = mes['content'][0]['image_url']['url']
+                if base64_str.startswith("data:image"):
+                    base64_data = base64_str.split(",", 1)[1]
+                else:
+                    base64_data = base64_str
+                image_data = base64.b64decode(base64_data)
+                image = Image.open(BytesIO(image_data))
+                image = image.resize((image.size[0] // 2, image.size[1] // 2))
+                del mes['content'][0]['image_url']
+                mes['content'][0]['type'] = 'image' 
+                mes['content'][0]['image'] = image
+            else:
+                if 'image_url' in mes['content'][0].keys():
+                    del mes['content'][0]['image_url'] # strange to have 'image_url == None
+        example["messages"] = messages[:-1] # anwer not used.
+        return example
 
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         if return_outputs:
@@ -359,6 +385,7 @@ class Qwen2VLGRPOTrainer(Trainer):
         prompts = [x["prompt"] for x in inputs]
         prompts_text = [maybe_apply_chat_template(example, self.processing_class)["prompt"] for example in inputs]
         images = [x["image"] for x in inputs]
+        images = [[Image.open(image) for image in images[0]]]
         prompt_inputs = self.processing_class(
             text=prompts_text,
             images=images,
@@ -419,6 +446,11 @@ class Qwen2VLGRPOTrainer(Trainer):
         completions = self.processing_class.batch_decode(completion_ids, skip_special_tokens=True)
         if is_conversational(inputs[0]):
             completions = [[{"role": "assistant", "content": completion}] for completion in completions]
+
+        # insert a ground truth into completions
+        gt = inputs[0]['gt']
+        random_index = random.randint(0, 7)
+        completions[random_index][0]['content'] = gt
 
         # Compute the rewards
         prompts = [prompt for prompt in prompts for _ in range(self.num_generations)]
