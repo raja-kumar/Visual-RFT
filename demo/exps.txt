@@ -1,0 +1,44 @@
+### Pokemon
+
+with thinking
+
+<think> The image shows various Pokémon. The Pokémon that can perform Thunderbolt is Pikachu. </think>
+<answer>(450,150),(999,999)</answer>
+
+without thinking
+
+<answer>(450,450),(650,850)</answer>
+
+
+### /home/raja/Visual-RFT/demo/275616162_91d7ca1ed6_o.jpg (example where thinking helps)
+
+with thinking
+
+<think> The tool in the picture is a drill, which is commonly used for creating holes in walls or ceilings during remodeling or repair projects. </think>
+<answer>(624,796),(814,996)</answer>
+
+without thinking
+
+<answer>(624,798),(824,998)</answer>
+
+## /home/raja/Visual-RFT/demo/302806585_b4aa483f69_o.jpg
+
+with <think>
+
+<think> The instruction is to output the bounding box of the damaged part of the silk stockings. The damaged part is a hole in the stocking. </think>
+<answer>(150,150),(300,450)</answer>
+
+without <think>
+
+<answer>(180,180),(360,540)</answer>
+
+## /home/raja/Visual-RFT/demo/276438292_33033cd241_o.jpg
+
+with think
+
+<think> The food with high protein in the image is the bacon. </think>
+<answer>(125,125),(874,874)</answer>
+
+without think
+
+<answer>(100,100),(999,999)</answer>
