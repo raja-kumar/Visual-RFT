@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 torch.manual_seed(1234)
 
-from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
+from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor, Qwen2_5_VLForConditionalGeneration
 from qwen_vl_utils import process_vision_info
 
 # 定义颜色的ANSI代码
@@ -36,6 +36,8 @@ import itertools
 import multiprocessing as mp
 from argparse import ArgumentParser
 from multiprocessing import Pool
+
+# from utils import get_cat_name_from_json
 
 def plot_images(image_paths):
     num_images = len(image_paths)
@@ -59,21 +61,44 @@ def plot_images(image_paths):
 
 
 # model path and model base
-model_path = "/app/Visual-RFT/src/virft/ckpts/Qwen2-VL-2B-Instruct_GRPO_flowers_4_shot/checkpoint-200"  # after RL
-model_base = "Qwen/Qwen2-VL-2B-Instruct"  # original Qwen2-VL
+# model_path = "/app/ckpts/Qwen2-VL-2B-Instruct_GRPO_flowers_4_shot/checkpoint-306"  # after RL
+# model_path = "Qwen/Qwen2-VL-2B-Instruct"
+# model_base = "Qwen/Qwen2-VL-2B-Instruct"  # original Qwen2-VL
 
+## Qwen2.5
+
+# model_path = "Qwen/Qwen2.5-VL-3B-Instruct"  
+model_path = "/app/saved_models/LLaMA-Factory/saves/flowers_4_shot/qwen2_vl-2b/full/sft/checkpoint-306/"  # after SFT
+model_base = "Qwen/Qwen2.5-VL-3B-Instruct"  
+
+# categories_json = "../data/oxford_flowers/idx_2_class.json"  # categories json file
 
 def run(rank, world_size):
-    model = Qwen2VLForConditionalGeneration.from_pretrained(
-        model_path,
-        torch_dtype=torch.bfloat16,
-        attn_implementation="flash_attention_2",
-        device_map="cpu",
-    )
+
+    if "Qwen2.5" in model_base:
+
+        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+            model_path,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map="cpu",
+        )
+    
+    else:
+        model = Qwen2VLForConditionalGeneration.from_pretrained(
+            model_path,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map="cpu",
+        )
+
     processor = AutoProcessor.from_pretrained(model_base) 
 
     model = model.to(torch.device(rank))
     model = model.eval()
+
+    use_cat_list = True
+    zero_shot = False
 
     ### get categories name
     with open('./val_data/oxford_flowers.txt', 'r') as file:
@@ -81,19 +106,13 @@ def run(rank, world_size):
     categories = []
     for line in lines:
         categories.append(line.strip())
-    print(len(categories))
-    print(categories)   ### 对应 0-101
+    # print(len(categories))
+    # print(categories)   ### 对应 0-101
 
     ### get validation data
     pth_file_path = './val_data/oxford_flowers.pth'
     predictions = torch.load(pth_file_path)
-    
-    # val_set = []
-    # for item in predictions:
-    #     for k,v in item.items():
-    #         val_set.append({k:int(v['label'])})
-    # print(len(val_set))
-    # print(val_set[0])
+
 
     val_set = []
     for item in predictions:
@@ -103,9 +122,9 @@ def run(rank, world_size):
             val_set.append({k:int(v['label'])})
     
     print(len(val_set))
-    print(val_set[0])
+    # print(val_set[0])
 
-    # val_set = val_set[:20]  # for test
+    val_set = val_set[:5]  # for test
 
     rank = rank
     world_size = world_size
@@ -125,14 +144,27 @@ def run(rank, world_size):
             image_label = v
         image_cate = categories[image_label]   
         # plot_images([image_path])
-    
-        question = (
-        "This is an image containing a plant. Please identify the species of the plant based on the image.\n"
-        "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
-        "The output answer format should be as follows:\n"
-        "<think> ... </think> <answer>species name</answer>\n"
-        "Please strictly follow the format."
-        )
+
+        if use_cat_list:
+            question = (
+            "This is an image containing a plant. Please identify the species of the plant based on the image.\n"
+            f"the species of the plant belongs to below category list {categories}.\n"
+            "answer strictly from the category list.\n"
+            "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
+            "The output answer format should be as follows:\n"
+            "<think> ... </think> <answer>species name</answer>\n"
+            "Please strictly follow the format."
+            )
+        else:
+            question = (
+            "This is an image containing a plant. Please identify the species of the plant based on the image.\n"
+            "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
+            "The output answer format should be as follows:\n"
+            "<think> ... </think> <answer>species name</answer>\n"
+            "Please strictly follow the format."
+            )
+
+        # print(RED + question + RESET)
     
         image_path = image_path
         query = "<image>\n"+question
@@ -185,7 +217,7 @@ def run(rank, world_size):
                 right_count += 1
                 # logger.info('Local Right Number: ' + str(right_count))
             else:
-                print('no')
+                # print('no')
                 error_count+=1
         except Exception as e:
             error_count+=1
