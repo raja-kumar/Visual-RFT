@@ -61,16 +61,23 @@ def plot_images(image_paths):
 
 
 # model path and model base
-# model_path = "/app/ckpts/Qwen2-VL-2B-Instruct_GRPO_flowers_4_shot/checkpoint-306"  # after RL
+# model_path = "/app/saves/flowers_4_shot/qwen2_vl-2b/full/sft/checkpoint-306/"  # after RL
+model_path = "/app/saved_models/vrft/ckpts/Qwen2-VL-2B-Instruct_GRPO_flowers_base/checkpoint-1308/"
 # model_path = "Qwen/Qwen2-VL-2B-Instruct"
-# model_base = "Qwen/Qwen2-VL-2B-Instruct"  # original Qwen2-VL
+# model_path = "/app/saves/flowers_base/qwen2_vl-2b/full/sft/checkpoint-1308/"  # after SFT
+model_base = "Qwen/Qwen2-VL-2B-Instruct"  # original Qwen2-VL
 
 ## Qwen2.5
 
 # model_path = "Qwen/Qwen2.5-VL-3B-Instruct"  
-model_path = "/app/saved_models/LLaMA-Factory/saves/flowers_4_shot/qwen2_vl-2b/full/sft/checkpoint-306/"  # after SFT
-model_base = "Qwen/Qwen2.5-VL-3B-Instruct"  
+# model_path = "/app/saves/flowers_4_shot/qwen2_5_vl_3b/full/sft/checkpoint-306/"  # after SFT
+# model_base = "Qwen/Qwen2.5-VL-3B-Instruct"  
 
+## config
+use_cat_list = False
+zero_shot = True
+eval_type = "rft"  # "sft" or "baseline" or rft
+zero_shot_json_path = "/data2/raja/oxford_flowers/zero_shot/subsample_base_val.json"
 # categories_json = "../data/oxford_flowers/idx_2_class.json"  # categories json file
 
 def run(rank, world_size):
@@ -97,9 +104,6 @@ def run(rank, world_size):
     model = model.to(torch.device(rank))
     model = model.eval()
 
-    use_cat_list = True
-    zero_shot = False
-
     ### get categories name
     with open('./val_data/oxford_flowers.txt', 'r') as file:
         lines = file.readlines()
@@ -109,22 +113,34 @@ def run(rank, world_size):
     # print(len(categories))
     # print(categories)   ### 对应 0-101
 
-    ### get validation data
-    pth_file_path = './val_data/oxford_flowers.pth'
-    predictions = torch.load(pth_file_path)
-
-
     val_set = []
-    for item in predictions:
-        for k,v in item.items():
-            k = k.replace("/mnt/petrelfs/liuziyu/LLM_Memory/SimplyRetrieve/CLIP-Cls/data/oxford_flowers/jpg/", 
-                            "../data/oxford_flowers/jpg/")
-            val_set.append({k:int(v['label'])})
+
+    if zero_shot:
+        with open(zero_shot_json_path, 'r') as f:
+            predictions = json.load(f)
+        
+        for item in predictions:
+            image_path = item['image_path']
+            image_label = item['solution']
+            image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
+            image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/oxford_flowers/jpg/", 
+                            "/data2/raja/oxford_flowers/jpg/")
+            val_set.append({image_path: image_label})
+    else:
+        ### get validation data
+        pth_file_path = './val_data/oxford_flowers.pth'
+        predictions = torch.load(pth_file_path)
+
+        for item in predictions:
+            for k,v in item.items():
+                k = k.replace("/mnt/petrelfs/liuziyu/LLM_Memory/SimplyRetrieve/CLIP-Cls/data/oxford_flowers/jpg/", 
+                                "/data2/raja/oxford_flowers/jpg/")
+                val_set.append({k:int(v['label'])})
     
     print(len(val_set))
     # print(val_set[0])
 
-    val_set = val_set[:5]  # for test
+    # val_set = val_set[:5]  # for test
 
     rank = rank
     world_size = world_size
@@ -141,8 +157,10 @@ def run(rank, world_size):
         ### 获取图片信息
         for k,v in image.items():
             image_path = k
-            image_label = v
-        image_cate = categories[image_label]   
+            image_cate = v
+        
+        if (not zero_shot):
+            image_cate = categories[image_cate]   
         # plot_images([image_path])
 
         if use_cat_list:
@@ -204,23 +222,49 @@ def run(rank, world_size):
         )
         response = response[0]
         # print("\033[92m" + response + "\033[0m")
-    
+
         try:
-            match = re.search(r"<answer>(.*?)</answer>", response)
-            answer_content = match.group(1)
-            # print(image_cate, answer_content)
-            image_cate = image_cate.replace(' ','').replace('_','').lower()
-            answer_content = answer_content.replace(' ','').replace('_','').lower()
-            # judgement
-            if image_cate in answer_content or answer_content in image_cate:
-                # print('yes')
-                right_count += 1
-                # logger.info('Local Right Number: ' + str(right_count))
+            if eval_type == "sft":
+                # For SFT, search in complete response without parsing
+                image_cate = image_cate.replace(' ','').replace('_','').lower()
+                response_lower = response.replace(' ','').replace('_','').lower()
+                # judgement
+                # print("response_lower: ", response_lower)
+                # print("image_cate: ", image_cate)
+                if image_cate in response_lower:
+                    right_count += 1
+                else:
+                    error_count += 1
             else:
-                # print('no')
-                error_count+=1
+                # For other cases, keep the original parsing logic
+                match = re.search(r"<answer>(.*?)</answer>", response)
+                answer_content = match.group(1)
+                image_cate = image_cate.replace(' ','').replace('_','').lower()
+                answer_content = answer_content.replace(' ','').replace('_','').lower()
+                # judgement
+                if image_cate in answer_content or answer_content in image_cate:
+                    right_count += 1
+                else:
+                    error_count += 1
         except Exception as e:
-            error_count+=1
+            error_count += 1
+        
+        # try:
+        #     match = re.search(r"<answer>(.*?)</answer>", response)
+        #     answer_content = match.group(1)
+        #     # print(image_cate, answer_content)
+        #     image_cate = image_cate.replace(' ','').replace('_','').lower()
+        #     answer_content = answer_content.replace(' ','').replace('_','').lower()
+        #     # judgement
+        #     if image_cate in answer_content or answer_content in image_cate or image_cate in response:
+        #         # print('yes')
+        #         right_count += 1
+        #         # logger.info('Local Right Number: ' + str(right_count))
+        #     else:
+        #         # print('no')
+        #         error_count+=1
+        # except Exception as e:
+        #     error_count+=1
             
     return [error_count, right_count]
 
