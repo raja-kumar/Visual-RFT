@@ -82,7 +82,9 @@ def accuracy_reward(completions, solution, **kwargs):
                 student_answer = student_answer.replace(' ','').replace('_','').lower()
 
                 # Compare the extracted answers
-                if ground_truth in student_answer or student_answer in ground_truth:
+                # if ground_truth in student_answer or student_answer in ground_truth:
+                if ground_truth in student_answer:
+                    # print(f"using the correct reward")
                     reward = 1.0
             except Exception:
                 pass  # Keep reward as 0.0 if both methods fail
