@@ -1,6 +1,6 @@
 #### steps to generate the MCQ dataset
 
-## generate the json file for virft dataset
+## generate the json file for base novel setting to match the virft format
 python test_dataset.py
 
 ## using the above generated json file, generate the top5 by using llm. for this run,
