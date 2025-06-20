@@ -188,6 +188,7 @@ class OxfordPets(DatasetBase):
         else:
             selected = labels[m:]  # take the second half
         print(f"Selected {len(selected)} classes: {selected}")
+        
         relabeler = {y: y_new for y_new, y in enumerate(selected)}
         
         output = []
@@ -216,4 +217,4 @@ Please strictly follow the format. """,
             output.append(dataset_new)
             json_output.append(dataset_json)
         
-        return json_output
+        return json_output, selected

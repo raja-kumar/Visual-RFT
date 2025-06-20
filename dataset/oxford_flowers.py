@@ -58,7 +58,12 @@ class OxfordFlowers(DatasetBase):
         # train, val, test = OxfordPets.subsample_classes(train, val, test, subsample=subsample)
 
         subsample = cfg.SUBSAMPLE_CLASSES
-        train, val, test = OxfordPets.subsample_classes(train, val, test, subsample=subsample)
+        subsample_data, categories = OxfordPets.subsample_classes(train, val, test, subsample=subsample)
+        train, val, test = subsample_data
+
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_categories.json"), "w") as f:
+            for cat in categories:
+                f.write(f"{cat}\n")
 
         if (cfg.SUBSAMPLE_CLASSES == "base" or cfg.SUBSAMPLE_CLASSES == "all"):
             processed_path_train = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_train.json")
