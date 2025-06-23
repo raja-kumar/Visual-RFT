@@ -1,13 +1,14 @@
 cd /app/Visual-RFT/src/virft/
 
 export DEBUG_MODE="true"
-export LOG_PATH="./logs/debug_log_qwen2_5_7B_GRPO_flowers_base_mcq.txt"
+export LOG_PATH="./logs/debug_log_2_5_7b_GRPO_flowers_base_updated_reward.txt"
 
-export DATA_PATH=/data2/raja/oxford_flowers/zero_shot_mcq/subsample_base_train_dataset
+export DATA_PATH=/data2/raja/oxford_flowers/zero_shot/subsample_base_train_dataset/
 # export CKPT_PATH="Qwen/Qwen2-VL-2B-Instruct"
 export CKPT_PATH="Qwen/Qwen2.5-VL-7B-Instruct"
-export SAVE_PATH=/app/saved_models/vrft/ckpts/Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_mcq
-export RUN_NAME=Qwen2_5-VL-7B_GRPO_flowers_base_mcq
+# export CKPT_PATH=/app/saved_models/vrft/ckpts/Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_updated_reward/checkpoint-291
+export SAVE_PATH=/app/saved_models/vrft/ckpts/Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_updated_reward
+export RUN_NAME=Qwen2_5-VL-7B_GRPO_flowers_base_updated_reward
 
 # --master_addr="127.0.0.1" \
 # --master_port="12345" \
@@ -28,7 +29,7 @@ torchrun --nproc_per_node="3" \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
     --max_pixels 401408 \
-    --num_train_epochs 2 \
+    --num_train_epochs 3 \
     --run_name  ${RUN_NAME}\
     --save_steps 50 \
     --save_only_model true \

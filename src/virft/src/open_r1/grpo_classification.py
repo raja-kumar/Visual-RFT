@@ -187,15 +187,15 @@ def mcq_reward(completions, solution, **kwargs):
                 f.write(f"sol: {sol}\n")
     return rewards
 
-# reward_funcs_registry = {
-#     "accuracy": accuracy_reward,
-#     "format": format_reward,
-# }
-
 reward_funcs_registry = {
+    "accuracy": accuracy_reward,
     "format": format_reward,
-    "mcq": mcq_reward,
 }
+
+# reward_funcs_registry = {
+#     "format": format_reward,
+#     "mcq": mcq_reward,
+# }
 
 SYSTEM_PROMPT = (
     "A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant "
@@ -208,8 +208,8 @@ SYSTEM_PROMPT = (
 def main(script_args, training_args, model_args):
     # Get reward functions
     # import pdb; pdb.set_trace()
-    # script_args.reward_funcs = ['accuracy','format']
-    script_args.reward_funcs = ['mcq','format']
+    script_args.reward_funcs = ['accuracy','format']
+    # script_args.reward_funcs = ['mcq','format']
     reward_funcs = [reward_funcs_registry[func] for func in script_args.reward_funcs]
     # import pdb; pdb.set_trace()
 
