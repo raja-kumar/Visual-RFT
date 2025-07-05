@@ -12,7 +12,7 @@ import json
 @DATASET_REGISTRY.register()
 class OxfordPets(DatasetBase):
 
-    dataset_dir = "oxford_pets"
+    dataset_dir = "oxford-iiit-pet"
 
     def __init__(self, cfg):
         # root = os.path.abspath(os.path.expanduser(DATA_FOLDER))
@@ -23,8 +23,10 @@ class OxfordPets(DatasetBase):
         self.split_path = os.path.join(self.dataset_dir, "split_zhou_OxfordPets.json")
         self.split_fewshot_dir = os.path.join(self.dataset_dir, "split_fewshot")
         self.zero_shot_dir = os.path.join(self.dataset_dir, "zero_shot")
+        self.few_shot_dir = os.path.join(self.dataset_dir, "fewshot")
         mkdir_if_missing(self.zero_shot_dir)
         mkdir_if_missing(self.split_fewshot_dir)
+        mkdir_if_missing(self.few_shot_dir)
 
         if os.path.exists(self.split_path):
             train, val, test = self.read_split(self.split_path, self.image_dir)
@@ -52,12 +54,25 @@ class OxfordPets(DatasetBase):
                 with open(preprocessed, "wb") as file:
                     pickle.dump(data, file, protocol=pickle.HIGHEST_PROTOCOL)
 
-        subsample = cfg.SUBSAMPLE_CLASSES
-        train, val, test = self.subsample_classes(train, val, test, subsample=subsample)
+        # subsample = cfg.SUBSAMPLE_CLASSES
+        # train, val, test = self.subsample_classes(train, val, test, subsample=subsample)
 
+        subsample = cfg.SUBSAMPLE_CLASSES
+        subsample_data, categories = self.subsample_classes(train, val, test, subsample=subsample)
+        train, val, test = subsample_data
+
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_classes.txt"), "w") as f:
+            for cat in categories:
+                f.write(f"{cat}\n")
+        
         if (cfg.SUBSAMPLE_CLASSES == "base" or cfg.SUBSAMPLE_CLASSES == "all"):
-            processed_path_train = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_train.json")
-            processed_path_val = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_val.json")
+
+            if (num_shots >= 1):
+                processed_path_train = os.path.join(self.few_shot_dir, f"{num_shots}_shots_{subsample}_train.json")
+                processed_path_val = os.path.join(self.few_shot_dir, f"{num_shots}_shots_{subsample}_val.json")
+            else:
+                processed_path_train = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_train.json")
+                processed_path_val = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_val.json")
 
             with open(processed_path_train, "w") as f:
                 json.dump(train, f, indent=4)
@@ -71,7 +86,7 @@ class OxfordPets(DatasetBase):
                 json.dump(test, f, indent=4)
 
 
-        super().__init__(train_x=train, val=val, test=test)
+        # super().__init__(train_x=train, val=val, test=test)
 
     def read_data(self, split_file):
         filepath = os.path.join(self.anno_dir, split_file)
@@ -174,6 +189,7 @@ class OxfordPets(DatasetBase):
         
         dataset = args[0]
         labels = set()
+        categories = set()
         for item in dataset:
             labels.add(item.label)
         labels = list(labels)
@@ -201,7 +217,7 @@ class OxfordPets(DatasetBase):
                     continue
                 data_json = {
                     "image_path": item.impath,
-                    "problem": """ This is an image containing a plant. Please identify the species of the plant based on the image.
+                    "problem": """ This is an image containing a pet. Please identify the species of the pet based on the image.
 Output the thinking process in <think> </think> and final answer in <answer> </answer> tags.The output answer format should be as follows:
 <think> ... </think> <answer>species name</answer>
 Please strictly follow the format. """,
@@ -214,7 +230,8 @@ Please strictly follow the format. """,
                     classname=item.classname
                 )
                 dataset_new.append(item_new)
+                categories.add(item.classname)
             output.append(dataset_new)
             json_output.append(dataset_json)
         
-        return json_output, selected
+        return json_output, categories
