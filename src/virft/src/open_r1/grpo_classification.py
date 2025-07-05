@@ -28,7 +28,7 @@ from open_r1.trainer import Qwen2VLGRPOTrainer, Qwen2VLGRPOVLLMTrainer
 from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config
 
 import json
-from rewards import format_reward, mcq_reward, accuracy_reward
+from rewards import format_reward, mcq_reward, accuracy_reward, format_reward_v2
 
 @dataclass
 class GRPOScriptArguments(ScriptArguments):
@@ -57,6 +57,7 @@ reward_funcs_registry = {
     "accuracy": accuracy_reward,
     "format": format_reward,
     "mcq": mcq_reward,
+    "format_v2": format_reward_v2
 }
 
 
