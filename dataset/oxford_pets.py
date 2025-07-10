@@ -81,9 +81,9 @@ class OxfordPets(DatasetBase):
                 json.dump(val, f, indent=4)
         
         elif (cfg.SUBSAMPLE_CLASSES == "new"):
-            processed_path_test = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_test.json")
-            with open(processed_path_test, "w") as f:
-                json.dump(test, f, indent=4)
+            processed_path_val = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_val.json")
+            with open(processed_path_val, "w") as f:
+                json.dump(val, f, indent=4)
 
 
         # super().__init__(train_x=train, val=val, test=test)
