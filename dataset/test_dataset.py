@@ -5,7 +5,7 @@ from oxford_pets import OxfordPets
 if __name__ == "__main__":
     seed = 42
     num_shots = 0
-    phase = 'train'
+    phase = 'test'
     dataset_args = Namespace(
             SEED=seed,
             NUM_SHOTS=num_shots,
