@@ -1,6 +1,7 @@
 from argparse import Namespace
 from oxford_flowers import OxfordFlowers
 from oxford_pets import OxfordPets
+from stanford_cars import StanfordCars
 
 if __name__ == "__main__":
     seed = 42
@@ -14,7 +15,8 @@ if __name__ == "__main__":
     
     print (dataset_args)
     # dataset = OxfordFlowers(cfg=dataset_args)
-    dataset = OxfordPets(cfg=dataset_args)
+    # dataset = OxfordPets(cfg=dataset_args)
+    dataset = StanfordCars(cfg=dataset_args)
 
     # print(f"Number of training samples: {len(dataset.train_x)}")
     # print(f"Number of validation samples: {len(dataset.val)}")

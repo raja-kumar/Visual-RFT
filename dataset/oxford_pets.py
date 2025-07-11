@@ -8,6 +8,7 @@ from dassl.data.datasets import DATASET_REGISTRY, Datum, DatasetBase
 from dassl.utils import read_json, write_json, mkdir_if_missing
 import json
 # from flags import DATA_FOLDER
+from prompt import prompts
 
 @DATASET_REGISTRY.register()
 class OxfordPets(DatasetBase):
@@ -173,7 +174,7 @@ class OxfordPets(DatasetBase):
         return train, val, test
     
     @staticmethod
-    def subsample_classes(*args, subsample="all"):
+    def subsample_classes(*args, dataset_name, subsample="all"):
         """Divide classes into two groups. The first group
         represents base classes while the second group represents
         new classes.
@@ -183,6 +184,8 @@ class OxfordPets(DatasetBase):
             subsample (str): what classes to subsample.
         """
         assert subsample in ["all", "base", "new"]
+
+        prompt = prompts[dataset_name]
 
         if subsample == "all":
             return args
@@ -217,10 +220,7 @@ class OxfordPets(DatasetBase):
                     continue
                 data_json = {
                     "image_path": item.impath,
-                    "problem": """ This is an image containing a pet. Please identify the species of the pet based on the image.
-Output the thinking process in <think> </think> and final answer in <answer> </answer> tags.The output answer format should be as follows:
-<think> ... </think> <answer>species name</answer>
-Please strictly follow the format. """,
+                    "problem": prompt,
                     "solution": f"<answer>{item.classname}</answer>"
                 }
                 dataset_json.append(data_json)

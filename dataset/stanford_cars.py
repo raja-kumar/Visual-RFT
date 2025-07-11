@@ -1,6 +1,7 @@
 import os
 import pickle
 from scipy.io import loadmat
+import json
 
 from dassl.data.datasets import DATASET_REGISTRY, Datum, DatasetBase
 from dassl.utils import mkdir_if_missing
@@ -15,11 +16,16 @@ class StanfordCars(DatasetBase):
     dataset_dir = "stanford_cars"
 
     def __init__(self, cfg):
-        root = os.path.abspath(os.path.expanduser(DATA_FOLDER))
+        # root = os.path.abspath(os.path.expanduser(DATA_FOLDER))
+        root = "/app/shared_data"
         self.dataset_dir = os.path.join(root, self.dataset_dir)
         self.split_path = os.path.join(self.dataset_dir, "split_zhou_StanfordCars.json")
         self.split_fewshot_dir = os.path.join(self.dataset_dir, "split_fewshot")
+        self.zero_shot_dir = os.path.join(self.dataset_dir, "zero_shot")
+        self.few_shot_dir = os.path.join(self.dataset_dir, "fewshot")
+        mkdir_if_missing(self.zero_shot_dir)
         mkdir_if_missing(self.split_fewshot_dir)
+        mkdir_if_missing(self.few_shot_dir)
 
         if os.path.exists(self.split_path):
             train, val, test = OxfordPets.read_split(self.split_path, self.dataset_dir)
@@ -51,9 +57,34 @@ class StanfordCars(DatasetBase):
                     pickle.dump(data, file, protocol=pickle.HIGHEST_PROTOCOL)
 
         subsample = cfg.SUBSAMPLE_CLASSES
-        train, val, test = OxfordPets.subsample_classes(train, val, test, subsample=subsample)
+        subsample_data, categories = OxfordPets.subsample_classes(train, val, test, self.dataset_dir, subsample=subsample)
+        train, val, test = subsample_data
 
-        super().__init__(train_x=train, val=val, test=test)
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_categories.txt"), "w") as f:
+            for cat in categories:
+                f.write(f"{cat}\n")
+        
+        if (cfg.SUBSAMPLE_CLASSES == "base" or cfg.SUBSAMPLE_CLASSES == "all"):
+
+            if (num_shots >= 1):
+                processed_path_train = os.path.join(self.few_shot_dir, f"{num_shots}_shots_{subsample}_train.json")
+                processed_path_val = os.path.join(self.few_shot_dir, f"{num_shots}_shots_{subsample}_val.json")
+            else:
+                processed_path_train = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_train.json")
+                processed_path_val = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_val.json")
+
+            with open(processed_path_train, "w") as f:
+                json.dump(train, f, indent=4)
+            
+            with open(processed_path_val, "w") as f:
+                json.dump(val, f, indent=4)
+        
+        elif (cfg.SUBSAMPLE_CLASSES == "new"):
+            processed_path_test = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_test.json")
+            with open(processed_path_test, "w") as f:
+                json.dump(test, f, indent=4)
+
+        # super().__init__(train_x=train, val=val, test=test)
 
     def read_data(self, image_dir, anno_file, meta_file):
         anno_file = loadmat(anno_file)["annotations"][0]

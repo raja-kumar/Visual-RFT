@@ -15,7 +15,7 @@ from oxford_pets import OxfordPets
 @DATASET_REGISTRY.register()
 class OxfordFlowers(DatasetBase):
 
-    dataset_dir = "/home/raja/OVOD/git_files/VLM-COT/data/oxford_flowers"
+    dataset_dir = "oxford_flowers"
 
     def __init__(self, cfg):
         # root = os.path.abspath(os.path.expanduser(DATA_FOLDER))
