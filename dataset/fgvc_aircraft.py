@@ -1,30 +1,24 @@
 import os
 import pickle
-import random
-from scipy.io import loadmat
-from collections import defaultdict
-
-from dassl.data.datasets import DATASET_REGISTRY, Datum, DatasetBase
-from dassl.utils import read_json, mkdir_if_missing
 import json
 
+from dassl.data.datasets import DATASET_REGISTRY, Datum, DatasetBase
+from dassl.utils import mkdir_if_missing
+
 from oxford_pets import OxfordPets
+
 # from flags import DATA_FOLDER
 
 
 @DATASET_REGISTRY.register()
-class OxfordFlowers(DatasetBase):
+class FGVCAircraft(DatasetBase):
 
-    dataset_dir = "oxford_flowers"
+    dataset_folder = "fgvc_aircraft"
 
     def __init__(self, cfg):
-        # root = os.path.abspath(os.path.expanduser(DATA_FOLDER))
-        root = "/home/raja/OVOD/git_files/VLM-COT/data"
-        self.dataset_dir = os.path.join(root, self.dataset_dir)
-        self.image_dir = os.path.join(self.dataset_dir, "jpg")
-        self.label_file = os.path.join(self.dataset_dir, "imagelabels.mat")
-        self.lab2cname_file = os.path.join(self.dataset_dir, "cat_to_name.json")
-        self.split_path = os.path.join(self.dataset_dir, "split_zhou_OxfordFlowers.json")
+        root = "/home/raja/OVOD/git_files/VLM-COT/data/fgvc_aircraft"
+        self.dataset_dir = os.path.join(root, self.dataset_folder)
+        self.image_dir = os.path.join(self.dataset_dir, "images")
         self.split_fewshot_dir = os.path.join(self.dataset_dir, "split_fewshot")
         self.zero_shot_dir = os.path.join(self.dataset_dir, "zero_shot")
         self.few_shot_dir = os.path.join(self.dataset_dir, "fewshot")
@@ -32,11 +26,17 @@ class OxfordFlowers(DatasetBase):
         mkdir_if_missing(self.split_fewshot_dir)
         mkdir_if_missing(self.few_shot_dir)
 
-        if os.path.exists(self.split_path):
-            train, val, test = OxfordPets.read_split(self.split_path, self.image_dir)
-        else:
-            train, val, test = self.read_data()
-            OxfordPets.save_split(train, val, test, self.split_path, self.image_dir)
+
+        classnames = []
+        with open(os.path.join(self.dataset_dir, "variants.txt"), "r") as f:
+            lines = f.readlines()
+            for line in lines:
+                classnames.append(line.strip())
+        cname2lab = {c: i for i, c in enumerate(classnames)}
+
+        train = self.read_data(cname2lab, "images_variant_train.txt")
+        val = self.read_data(cname2lab, "images_variant_val.txt")
+        test = self.read_data(cname2lab, "images_variant_test.txt")
 
         num_shots = cfg.NUM_SHOTS
         if num_shots >= 1:
@@ -56,17 +56,21 @@ class OxfordFlowers(DatasetBase):
                 with open(preprocessed, "wb") as file:
                     pickle.dump(data, file, protocol=pickle.HIGHEST_PROTOCOL)
 
-        # subsample = cfg.SUBSAMPLE_CLASSES
-        # train, val, test = OxfordPets.subsample_classes(train, val, test, subsample=subsample)
-
         subsample = cfg.SUBSAMPLE_CLASSES
-        subsample_data, categories = OxfordPets.subsample_classes(train, val, test, subsample=subsample)
+        subsample_data, category_data = OxfordPets.subsample_classes(train, val, test, dataset_name=self.dataset_folder, subsample=subsample)
         train, val, test = subsample_data
+        categories, idx_to_class, class_to_idx = category_data
 
         with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_categories.txt"), "w") as f:
             for cat in categories:
                 f.write(f"{cat}\n")
-
+        
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_idx_to_class.json"), "w") as f:
+            json.dump(idx_to_class, f, indent=4)
+        
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_class_to_idx.json"), "w") as f:
+            json.dump(class_to_idx, f, indent=4)
+        
         if (cfg.SUBSAMPLE_CLASSES == "base" or cfg.SUBSAMPLE_CLASSES == "all"):
 
             if (num_shots >= 1):
@@ -86,39 +90,26 @@ class OxfordFlowers(DatasetBase):
             processed_path_test = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_test.json")
             with open(processed_path_test, "w") as f:
                 json.dump(test, f, indent=4)
+            
+            processed_path_val = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_val.json")
+            with open(processed_path_val, "w") as f:
+                json.dump(val, f, indent=4)
 
         # super().__init__(train_x=train, val=val, test=test)
 
-    def read_data(self):
-        tracker = defaultdict(list)
-        label_file = loadmat(self.label_file)["labels"][0]
-        for i, label in enumerate(label_file):
-            imname = f"image_{str(i + 1).zfill(5)}.jpg"
-            impath = os.path.join(self.image_dir, imname)
-            label = int(label)
-            tracker[label].append(impath)
+    def read_data(self, cname2lab, split_file):
+        filepath = os.path.join(self.dataset_dir, split_file)
+        items = []
 
-        print("Splitting data into 50% train, 20% val, and 30% test")
-
-        def _collate(ims, y, c):
-            items = []
-            for im in ims:
-                item = Datum(impath=im, label=y - 1, classname=c)  # convert to 0-based label
+        with open(filepath, "r") as f:
+            lines = f.readlines()
+            for line in lines:
+                line = line.strip().split(" ")
+                imname = line[0] + ".jpg"
+                classname = " ".join(line[1:])
+                impath = os.path.join(self.image_dir, imname)
+                label = cname2lab[classname]
+                item = Datum(impath=impath, label=label, classname=classname)
                 items.append(item)
-            return items
 
-        lab2cname = read_json(self.lab2cname_file)
-        train, val, test = [], [], []
-        for label, impaths in tracker.items():
-            random.shuffle(impaths)
-            n_total = len(impaths)
-            n_train = round(n_total * 0.5)
-            n_val = round(n_total * 0.2)
-            n_test = n_total - n_train - n_val
-            assert n_train > 0 and n_val > 0 and n_test > 0
-            cname = lab2cname[str(label)]
-            train.extend(_collate(impaths[:n_train], label, cname))
-            val.extend(_collate(impaths[n_train : n_train + n_val], label, cname))
-            test.extend(_collate(impaths[n_train + n_val :], label, cname))
-
-        return train, val, test
+        return items
