@@ -12,7 +12,7 @@ def json_to_dataset(json_file_path):
     random.seed(42)  # Set a seed for reproducibility
     random.shuffle(data)  # Shuffle the data
 
-    image_paths = [item['image_path'].replace("/home/raja/OVOD/git_files/VLM-COT/data/", "/data2/datasets/") for item in data]
+    image_paths = [item['image_path'].replace("/home/raja/OVOD/git_files/VLM-COT/data/", "/data/raja/") for item in data]
     problems = [item['problem'] for item in data]
     solutions = [item['solution'] for item in data]
 
@@ -44,7 +44,10 @@ if __name__ == "__main__":
     # json_file_path = "/home/raja/OVOD/git_files/VLM-COT/data/oxford_flowers/fewshot/1_shots_base_and_hard_train_mcq.json"
     # output_path = "/home/raja/OVOD/git_files/VLM-COT/data/oxford_flowers/fewshot/1_shots_base_and_hard_train_mcq_dataset"
 
-    json_file_path = "/data2/datasets/oxford-iiit-pet/zero_shot/subsample_base_train_hard_mcq.json"
+    # json_file_path = "/data2/datasets/oxford-iiit-pet/zero_shot/subsample_base_train_hard_mcq.json"
+    # json_file_path = "/data/raja/fgvc_aircraft/fgvc_aircraft/zero_shot/subsample_base_train_mcq.json"
+    # json_file_path = "/data/raja/stanford_cars/zero_shot/subsample_base_train_mcq.json"
+    json_file_path = "/data/raja/CUB_200_2011/zero_shot/subsample_base_train_mcq.json"
     output_path = json_file_path.replace('.json', '_dataset')
     print("output_path:", output_path)
 

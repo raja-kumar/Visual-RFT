@@ -1,25 +1,31 @@
 import os
 import pickle
+import json
 
 from dassl.data.datasets import DATASET_REGISTRY, Datum, DatasetBase
 from dassl.utils import mkdir_if_missing
 
-from .oxford_pets import OxfordPets
+from oxford_pets import OxfordPets
 
-from flags import DATA_FOLDER
+# from flags import DATA_FOLDER
 
 
 @DATASET_REGISTRY.register()
 class FGVCAircraft(DatasetBase):
 
-    dataset_dir = "fgvc_aircraft"
+    dataset_folder = "fgvc_aircraft"
 
     def __init__(self, cfg):
-        root = os.path.abspath(os.path.expanduser(DATA_FOLDER))
-        self.dataset_dir = os.path.join(root, self.dataset_dir)
+        root = "/home/raja/OVOD/git_files/VLM-COT/data/fgvc_aircraft"
+        self.dataset_dir = os.path.join(root, self.dataset_folder)
         self.image_dir = os.path.join(self.dataset_dir, "images")
         self.split_fewshot_dir = os.path.join(self.dataset_dir, "split_fewshot")
+        self.zero_shot_dir = os.path.join(self.dataset_dir, "zero_shot")
+        self.few_shot_dir = os.path.join(self.dataset_dir, "fewshot")
+        mkdir_if_missing(self.zero_shot_dir)
         mkdir_if_missing(self.split_fewshot_dir)
+        mkdir_if_missing(self.few_shot_dir)
+
 
         classnames = []
         with open(os.path.join(self.dataset_dir, "variants.txt"), "r") as f:
@@ -51,9 +57,45 @@ class FGVCAircraft(DatasetBase):
                     pickle.dump(data, file, protocol=pickle.HIGHEST_PROTOCOL)
 
         subsample = cfg.SUBSAMPLE_CLASSES
-        train, val, test = OxfordPets.subsample_classes(train, val, test, subsample=subsample)
+        subsample_data, category_data = OxfordPets.subsample_classes(train, val, test, dataset_name=self.dataset_folder, subsample=subsample)
+        train, val, test = subsample_data
+        categories, idx_to_class, class_to_idx = category_data
 
-        super().__init__(train_x=train, val=val, test=test)
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_categories.txt"), "w") as f:
+            for cat in categories:
+                f.write(f"{cat}\n")
+        
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_idx_to_class.json"), "w") as f:
+            json.dump(idx_to_class, f, indent=4)
+        
+        with open(os.path.join(self.zero_shot_dir, f"{cfg.SUBSAMPLE_CLASSES}_class_to_idx.json"), "w") as f:
+            json.dump(class_to_idx, f, indent=4)
+        
+        if (cfg.SUBSAMPLE_CLASSES == "base" or cfg.SUBSAMPLE_CLASSES == "all"):
+
+            if (num_shots >= 1):
+                processed_path_train = os.path.join(self.few_shot_dir, f"{num_shots}_shots_{subsample}_train.json")
+                processed_path_val = os.path.join(self.few_shot_dir, f"{num_shots}_shots_{subsample}_val.json")
+            else:
+                processed_path_train = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_train.json")
+                processed_path_val = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_val.json")
+
+            with open(processed_path_train, "w") as f:
+                json.dump(train, f, indent=4)
+            
+            with open(processed_path_val, "w") as f:
+                json.dump(val, f, indent=4)
+        
+        elif (cfg.SUBSAMPLE_CLASSES == "new"):
+            processed_path_test = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_test.json")
+            with open(processed_path_test, "w") as f:
+                json.dump(test, f, indent=4)
+            
+            processed_path_val = os.path.join(self.zero_shot_dir, f"subsample_{subsample}_val.json")
+            with open(processed_path_val, "w") as f:
+                json.dump(val, f, indent=4)
+
+        # super().__init__(train_x=train, val=val, test=test)
 
     def read_data(self, cname2lab, split_file):
         filepath = os.path.join(self.dataset_dir, split_file)

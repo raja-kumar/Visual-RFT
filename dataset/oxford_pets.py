@@ -193,6 +193,8 @@ class OxfordPets(DatasetBase):
         dataset = args[0]
         labels = set()
         categories = set()
+        idx_to_class = {}
+        class_to_idx = {}
         for item in dataset:
             labels.add(item.label)
         labels = list(labels)
@@ -231,7 +233,9 @@ class OxfordPets(DatasetBase):
                 )
                 dataset_new.append(item_new)
                 categories.add(item.classname)
+                idx_to_class[str(item.label+1)] = item.classname
+                class_to_idx[item.classname] = str(item.label+1)
             output.append(dataset_new)
             json_output.append(dataset_json)
         
-        return json_output, categories
+        return json_output, [categories, idx_to_class, class_to_idx]
