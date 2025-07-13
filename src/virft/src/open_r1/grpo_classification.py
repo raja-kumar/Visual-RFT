@@ -29,6 +29,7 @@ from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser
 
 import json
 from rewards import format_reward, mcq_reward, accuracy_reward, format_reward_v2
+from dataset import prepare_datasets
 
 @dataclass
 class GRPOScriptArguments(ScriptArguments):
@@ -52,6 +53,18 @@ class GRPOScriptArguments(ScriptArguments):
         default=3136,
         metadata={"help": "Minimum number of pixels for the image"},
     )
+    hard_dataset_name: Optional[str] = field(
+        default=None,
+        metadata={"help": "Path to the hard dataset."},
+    )
+    use_hard_examples: bool = field(
+        default=False,
+        metadata={"help": "Whether to include hard examples in the training dataset."},
+    )
+    normal_to_hard_ratio: int = field(
+        default=2,
+        metadata={"help": "The ratio of normal to hard examples in the combined dataset."},
+    )
 
 reward_funcs_registry = {
     "accuracy": accuracy_reward,
@@ -74,45 +87,50 @@ def main(script_args, training_args, model_args):
     reward_funcs = [reward_funcs_registry[func] for func in script_args.reward_funcs]
     # import pdb; pdb.set_trace()
 
-    # Load the dataset
-    # dataset = load_dataset(script_args.dataset_name, name=script_args.dataset_config)
-    ### lzy modified
-    dataset = DatasetDict.load_from_disk(script_args.dataset_name)
+    # # Load the dataset
+    # dataset = DatasetDict.load_from_disk(script_args.dataset_name)
 
 
-    # Format into conversation
-    def make_conversation(example):
-        return {
-            "prompt": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": example["problem"]},
-            ],
-        }
+    # # Format into conversation
+    # def make_conversation(example):
+    #     return {
+    #         "prompt": [
+    #             {"role": "system", "content": SYSTEM_PROMPT},
+    #             {"role": "user", "content": example["problem"]},
+    #         ],
+    #     }
 
-    def make_conversation_image(example):
-        return {
-            "prompt": [
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "image"},
-                        {"type": "text", "text": example["problem"]},
-                    ],
-                },
-            ],
-        }
+    # def make_conversation_image(example):
+    #     return {
+    #         "prompt": [
+    #             {
+    #                 "role": "user",
+    #                 "content": [
+    #                     {"type": "image"},
+    #                     {"type": "text", "text": example["problem"]},
+    #                 ],
+    #             },
+    #         ],
+    #     }
 
-    print("dataset: ", dataset)
+    # print("dataset: ", dataset)
 
-    if "image" in dataset[script_args.dataset_train_split].features:
-        print("has image in dataset")
-        dataset = dataset.map(make_conversation_image)  # Utilize multiprocessing for faster mapping
-        # dataset = dataset.remove_columns(["original_question", "original_answer"])
+    # if "image" in dataset[script_args.dataset_train_split].features:
+    #     print("has image in dataset")
+    #     dataset = dataset.map(make_conversation_image)  # Utilize multiprocessing for faster mapping
+    #     # dataset = dataset.remove_columns(["original_question", "original_answer"])
 
-    else:
-        print("no image in dataset")
-        dataset = dataset.map(make_conversation)
-        dataset = dataset.remove_columns("messages")
+    # else:
+    #     print("no image in dataset")
+    #     dataset = dataset.map(make_conversation)
+    #     dataset = dataset.remove_columns("messages")
+
+    # Prepare the dataset
+    train_dataset = prepare_datasets(
+        script_args,
+        use_hard_examples=script_args.use_hard_examples,
+        normal_to_hard_ratio=script_args.normal_to_hard_ratio
+    )
 
     
     trainer_cls = Qwen2VLGRPOTrainer if not training_args.use_vllm else Qwen2VLGRPOVLLMTrainer
@@ -124,8 +142,8 @@ def main(script_args, training_args, model_args):
         model=model_args.model_name_or_path,
         reward_funcs=reward_funcs,
         args=training_args,
-        train_dataset=dataset[script_args.dataset_train_split],
-        eval_dataset=dataset[script_args.dataset_test_split] if training_args.eval_strategy != "no" else None,
+        train_dataset=train_dataset,
+        eval_dataset=DatasetDict.load_from_disk(script_args.dataset_name)[script_args.dataset_test_split] if training_args.eval_strategy != "no" else None,
         peft_config=get_peft_config(model_args),
         attn_implementation=model_args.attn_implementation,
         max_pixels=script_args.max_pixels,
@@ -137,6 +155,7 @@ def main(script_args, training_args, model_args):
 
     # Save and push to hub
     trainer.save_model(training_args.output_dir)
+    
     if training_args.push_to_hub:
         trainer.push_to_hub(dataset_name=script_args.dataset_name)
 

@@ -7,6 +7,7 @@ export DATA_PATH=/data2/raja/oxford_flowers/fewshot/1_shots_base_train_mcq_datas
 export CKPT_PATH="Qwen/Qwen2.5-VL-7B-Instruct"
 export SAVE_PATH=/app/saved_models/vrft/ckpts/Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_1_shot_mcq
 export RUN_NAME=Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_1_shot_mcq
+export CHECKPOINT_PATH=/app/saved_models/vrft/ckpts/Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_1_shot_mcq/checkpoint-100/
 
 # --master_addr="127.0.0.1" \
 # --master_port="12345" \
@@ -35,3 +36,4 @@ torchrun --nproc_per_node="3" \
     --deepspeed local_scripts/zero3_offload.json \
     --reward_funcs "format" "mcq" \
     --max_completion_length 1024 \
+    --resume_from_checkpoint ${CHECKPOINT_PATH} \
