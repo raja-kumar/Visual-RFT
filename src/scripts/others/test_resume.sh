@@ -1,13 +1,15 @@
 cd /app/Visual-RFT/src/virft/
 
 export DEBUG_MODE="true"
-export LOG_PATH="./logs/debug_log_qwen2_5_7B_GRPO_cars_base_mcq.txt"
+export LOG_PATH="./logs/debug_log_qwen2_5_7B_test_resume.txt"
 
-export DATA_PATH=/data2/raja/stanford_cars/zero_shot/subsample_base_train_mcq_dataset
+export DATA_PATH=/data2/raja/oxford_flowers/zero_shot_mcq/subsample_base_train_sample_dataset
 # export CKPT_PATH="Qwen/Qwen2-VL-2B-Instruct"
-export CKPT_PATH="Qwen/Qwen2.5-VL-7B-Instruct"
-export SAVE_PATH=/app/saved_models/vrft/stanford_cars/Qwen2_5-VL-7B-Instruct_GRPO_cars_base_mcq
-export RUN_NAME=Qwen2_5-VL-7B_GRPO_cars_base_mcq
+# export CKPT_PATH="Qwen/Qwen2.5-VL-7B-Instruct"
+export CKPT_PATH="/app/saved_models/vrft/test/Qwen2_5-VL-7B-Instruct_GRPO_test_resume/checkpoint-2/"
+export RESUME_CKPT="/app/saved_models/vrft/test/Qwen2_5-VL-7B-Instruct_GRPO_test_resume/checkpoint-2/"
+export SAVE_PATH=/app/saved_models/vrft/test/Qwen2_5-VL-7B-Instruct_GRPO_test_resume
+export RUN_NAME=Qwen2_5-VL-7B_GRPO_test_resume
 
 # --master_addr="127.0.0.1" \
 # --master_port="12345" \
@@ -28,10 +30,11 @@ torchrun --nproc_per_node="3" \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
     --max_pixels 401408 \
-    --num_train_epochs 1 \
+    --num_train_epochs 2 \
     --run_name  ${RUN_NAME}\
     --save_steps 100 \
     --num_generations 4 \
     --deepspeed local_scripts/zero3_offload.json \
     --reward_funcs "format" "mcq" \
     --max_completion_length 1024 \
+    --resume_from_checkpoint ${RESUME_CKPT} \

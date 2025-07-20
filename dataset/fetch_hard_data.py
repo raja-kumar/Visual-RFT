@@ -1,9 +1,13 @@
 import json
 
 # File paths
-file1_path = "/data3/raja/datasets/oxford-iiit-pet/zero_shot/subsample_base_train_mcq.json"  # original training data
-file2_path = "/home/raja/git_files/LLaMA-Factory/evaluation/classification/output/oxford_pet/rft_mcq/Qwen2_5-VL-7B-Instruct_GRPO_pets_base_mcq_checkpoint-400_subsample_base_train_mcq.json"  # output on training data using trained model
-output_path = "/data3/raja/datasets/oxford-iiit-pet/zero_shot/subsample_base_train_hard_mcq.json"
+data_folder = "fgvc_aircraft"
+file_name = "Qwen2_5-VL-7B-Instruct_GRPO_aircraft_base_mcq_checkpoint-400_subsample_base_train_mcq.json"
+data_root = "/data2/raja/"
+
+file1_path = f"{data_root}/{data_folder}/zero_shot/subsample_base_train_mcq.json"  # original training data
+file2_path = f"/home/raja/gdrive/LLaMA-Factory/evaluation/classification/output/{data_folder}/rft_mcq/{file_name}"  # output on training data using trained model
+output_path = f"{data_root}/{data_folder}/zero_shot/subsample_base_train_hard_mcq.json"
 
 # Load the JSON files
 with open(file1_path, "r") as file1:

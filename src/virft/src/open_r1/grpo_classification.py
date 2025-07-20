@@ -87,44 +87,6 @@ def main(script_args, training_args, model_args):
     reward_funcs = [reward_funcs_registry[func] for func in script_args.reward_funcs]
     # import pdb; pdb.set_trace()
 
-    # # Load the dataset
-    # dataset = DatasetDict.load_from_disk(script_args.dataset_name)
-
-
-    # # Format into conversation
-    # def make_conversation(example):
-    #     return {
-    #         "prompt": [
-    #             {"role": "system", "content": SYSTEM_PROMPT},
-    #             {"role": "user", "content": example["problem"]},
-    #         ],
-    #     }
-
-    # def make_conversation_image(example):
-    #     return {
-    #         "prompt": [
-    #             {
-    #                 "role": "user",
-    #                 "content": [
-    #                     {"type": "image"},
-    #                     {"type": "text", "text": example["problem"]},
-    #                 ],
-    #             },
-    #         ],
-    #     }
-
-    # print("dataset: ", dataset)
-
-    # if "image" in dataset[script_args.dataset_train_split].features:
-    #     print("has image in dataset")
-    #     dataset = dataset.map(make_conversation_image)  # Utilize multiprocessing for faster mapping
-    #     # dataset = dataset.remove_columns(["original_question", "original_answer"])
-
-    # else:
-    #     print("no image in dataset")
-    #     dataset = dataset.map(make_conversation)
-    #     dataset = dataset.remove_columns("messages")
-
     # Prepare the dataset
     train_dataset = prepare_datasets(
         script_args,
@@ -151,7 +113,12 @@ def main(script_args, training_args, model_args):
     )
 
     # Train and push the model to the Hub
-    trainer.train()
+    if training_args.resume_from_checkpoint:
+        print(f"Resuming training from checkpoint: {training_args.resume_from_checkpoint}")
+        trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+    else:
+        print("Starting training from scratch.")
+        trainer.train()
 
     # Save and push to hub
     trainer.save_model(training_args.output_dir)

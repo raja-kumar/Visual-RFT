@@ -74,12 +74,19 @@ def prepare_datasets(script_args, use_hard_examples=False, normal_to_hard_ratio=
 
     print(f"DEBUG: Hard dataset size: {len(hard_dataset[script_args.dataset_train_split])}")
 
+    
+
     # Repeat hard dataset to match the size of the normal dataset
     normal_size = len(dataset[script_args.dataset_train_split])
     hard_size = len(hard_dataset[script_args.dataset_train_split])
+
+    if (hard_size > 100):
+        print("DEBUG: Hard dataset is large, using only the first 100 examples.")
+        hard_dataset = hard_dataset[script_args.dataset_train_split].select(range(100))
+        hard_size = len(hard_dataset)
     repeat_factor = (normal_size + hard_size - 1) // hard_size  # Calculate repeat factor
     repeated_hard_dataset = concatenate_datasets(
-        [hard_dataset[script_args.dataset_train_split]] * repeat_factor
+        [hard_dataset] * repeat_factor
     )
 
     # Truncate repeated hard dataset to match the exact size
@@ -95,4 +102,11 @@ def prepare_datasets(script_args, use_hard_examples=False, normal_to_hard_ratio=
     )
 
     print(f"DEBUG: Combined dataset size: {len(combined_dataset)}")
+
+    if len(combined_dataset) > 2400:
+        print("DEBUG: Combined dataset is larger than 2400, truncating to 2400 examples.")
+        combined_dataset = combined_dataset.select(range(2400))
+    
+    print(f"DEBUG: Final Combined dataset size: {len(combined_dataset)}")
+    
     return combined_dataset
