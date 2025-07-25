@@ -80,13 +80,14 @@ def prepare_datasets(script_args, use_hard_examples=False, normal_to_hard_ratio=
     normal_size = len(dataset[script_args.dataset_train_split])
     hard_size = len(hard_dataset[script_args.dataset_train_split])
 
-    if (hard_size > 100):
-        print("DEBUG: Hard dataset is large, using only the first 100 examples.")
-        hard_dataset = hard_dataset[script_args.dataset_train_split].select(range(100))
-        hard_size = len(hard_dataset)
+    # if (hard_size > 100):
+    #     print("DEBUG: Hard dataset is large, using only the first 100 examples.")
+    #     hard_dataset = hard_dataset[script_args.dataset_train_split].select(range(100))
+    #     hard_size = len(hard_dataset)
+    
     repeat_factor = (normal_size + hard_size - 1) // hard_size  # Calculate repeat factor
     repeated_hard_dataset = concatenate_datasets(
-        [hard_dataset] * repeat_factor
+        [hard_dataset[script_args.dataset_train_split]] * repeat_factor
     )
 
     # Truncate repeated hard dataset to match the exact size

@@ -61,7 +61,7 @@ class GRPOScriptArguments(ScriptArguments):
         default=False,
         metadata={"help": "Whether to include hard examples in the training dataset."},
     )
-    normal_to_hard_ratio: int = field(
+    normal_to_hard_ratio: float = field(
         default=2,
         metadata={"help": "The ratio of normal to hard examples in the combined dataset."},
     )
