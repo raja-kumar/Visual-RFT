@@ -98,6 +98,12 @@ output_file_path = os.path.join(output_path, output_file)
 print(GREEN + "output path" + output_file_path + RESET)
 output_data = {}
 
+split_name = split.split("_")[0] 
+category_file = f"{DATA_ROOT}/{dataset}/zero_shot/{split_name}_categories.txt"
+
+with open(category_file, 'r') as f:
+    categories = f.read().splitlines()
+
 def run(rank, world_size):
 
     local_output_data = {}
@@ -148,7 +154,7 @@ def run(rank, world_size):
         - Load the categories correctly. Add categories list to the question if use_cat_list is True. 
     '''
 
-    categories = []
+    # categories = ["king protea", "great masterwort", "ruby-lipped cattleya", "lenten rose", "fritillary", "mexican aster", "peruvian lily", "poinsettia", "siam tulip", "yellow iris", "spear thistle", "bolero deep blue", "buttercup", "pincushion flower", "garden phlox", "colt's foot", "corn poppy", "pink primrose", "alpine sea holly", "wallflower", "globe-flower", "carnation", "oxeye daisy", "common dandelion", "sword lily", "moon orchid", "sweet william", "hard-leaved pocket orchid", "sweet pea", "bird of paradise", "giant white arum lily", "petunia", "stemless gentian", "tiger lily", "grape hyacinth", "daffodil", "red ginger", "marigold", "fire lily", "barbeton daisy", "english marigold", "purple coneflower", "globe thistle", "guernsey lily", "monkshood", "love in the mist", "artichoke", "snapdragon", "plumed celosia", "balloon flower", "canterbury bells"]
     
     if (temperature == 0.0):
         generation_args = {
@@ -275,6 +281,7 @@ def run(rank, world_size):
                 curr_pred.add(answer_content.strip().lower())
             except Exception as e:
                 print(RED + "Error in processing response: " + RESET)
+                print(RED + "Response: " + response + RESET)
         
         ## add the groundtruth to the output data
         local_output_data[image_id] = {
