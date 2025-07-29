@@ -1,0 +1,4887 @@
+{
+    "Gray_Kingbird_0037_70050": {
+        "groundtruth": "Gray Kingbird",
+        "predictions": [
+            "flycatcher family (more specifically, likely a type like eastern kingbird or grey flycatcher)",
+            "eastern kingbird",
+            "western kingbird"
+        ]
+    },
+    "Heermann_Gull_0141_45391": {
+        "groundtruth": "Heermann Gull",
+        "predictions": [
+            "seagull",
+            "herring gull (larus argentatus)",
+            "heermann's gull",
+            "leucophaeus scoresbii"
+        ]
+    },
+    "Frigatebird_0001_43101": {
+        "groundtruth": "Frigatebird",
+        "predictions": [
+            "frigatebird",
+            "great frigatebird"
+        ]
+    },
+    "Gadwall_0034_31212": {
+        "groundtruth": "Gadwall",
+        "predictions": [
+            "mallard",
+            "dabbling duck (genus: anas)",
+            "the answer cannot be provided conclusively without more details about the duck's features.",
+            "without clearer identifying features, the most accurate response is that this bird could belong to the dabbling duck family, but the specific species cannot be determined confidently.",
+            "gadwall"
+        ]
+    },
+    "Black_Billed_Cuckoo_0086_26188": {
+        "groundtruth": "Black billed Cuckoo",
+        "predictions": [
+            "empidonax traillii (gray flycatcher)",
+            "european stonechat",
+            "black phoebe",
+            "great crested flycatcher",
+            "due to the limitations of the image, an accurate species identification cannot be made. more detailed observations are required for proper identification."
+        ]
+    },
+    "Olive_Sided_Flycatcher_0061_30540": {
+        "groundtruth": "Olive sided Flycatcher",
+        "predictions": [
+            "common flycatcher (empidonax alnorum)",
+            "mountain flycatcher",
+            "pacific flycatcher",
+            "tyrant flycatcher",
+            "eastern wood pewee (contopus virens)"
+        ]
+    },
+    "Olive_Sided_Flycatcher_0067_30749": {
+        "groundtruth": "Olive sided Flycatcher",
+        "predictions": [
+            "the bird looks like a western wood-pewee (contopus sordidulus).",
+            "phoebe",
+            "sparrow",
+            "western kingbird",
+            "sedge wren"
+        ]
+    },
+    "Gray_Catbird_0090_21464": {
+        "groundtruth": "Gray Catbird",
+        "predictions": [
+            "gray catbird"
+        ]
+    },
+    "Bronzed_Cowbird_0089_796220": {
+        "groundtruth": "Bronzed Cowbird",
+        "predictions": [
+            "common grackle (quiscalus quiscula)",
+            "species name: common raven",
+            "rook",
+            "carrion crow (corvus corone)",
+            "caracara"
+        ]
+    },
+    "Hooded_Oriole_0054_90849": {
+        "groundtruth": "Hooded Oriole",
+        "predictions": [
+            "bullock's oriole",
+            "oriole (likely part of the icterus genus)",
+            "scott's oriole",
+            "oriole"
+        ]
+    },
+    "Yellow_Headed_Blackbird_0040_7514": {
+        "groundtruth": "Yellow headed Blackbird",
+        "predictions": [
+            "yellow-headed blackbird"
+        ]
+    },
+    "European_Goldfinch_0054_33169": {
+        "groundtruth": "European Goldfinch",
+        "predictions": [
+            "eurasian goldfinch",
+            "euroamerican goldfinch",
+            "european goldfinch"
+        ]
+    },
+    "Orchard_Oriole_0061_91941": {
+        "groundtruth": "Orchard Oriole",
+        "predictions": [
+            "dickcissel (spiza americana)",
+            "african redstart",
+            "oriolus or icterus spurius",
+            "darker-eyed junco (possible)",
+            "based on the visual description alone, without additional context, i cannot definitively identify the species. further information may be required for accurate identification."
+        ]
+    },
+    "Green_Jay_0051_65662": {
+        "groundtruth": "Green Jay",
+        "predictions": [
+            "green jay (cyanocorax yncas)",
+            "green jay"
+        ]
+    },
+    "Purple_Finch_0134_27526": {
+        "groundtruth": "Purple Finch",
+        "predictions": [
+            "species: house finch (carpodacus mexicanus)",
+            "purple finch",
+            "house finch"
+        ]
+    },
+    "Eastern_Towhee_0021_22152": {
+        "groundtruth": "Eastern Towhee",
+        "predictions": [
+            "spruce towhee",
+            "pipilo erythrophthalmus",
+            "eastern towhee"
+        ]
+    },
+    "Pacific_Loon_0015_75443": {
+        "groundtruth": "Pacific Loon",
+        "predictions": [
+            "red-throated diver (gavia stellata)",
+            "red-throated loon",
+            "red-throated loon (gavia stellata)",
+            "red-throated diver"
+        ]
+    },
+    "Pied_Kingfisher_0051_71429": {
+        "groundtruth": "Pied Kingfisher",
+        "predictions": [
+            "kingfisher",
+            "pied kingfisher (ceryle rudis)",
+            "pied kingfisher"
+        ]
+    },
+    "Red_Faced_Cormorant_0050_796276": {
+        "groundtruth": "Red faced Cormorant",
+        "predictions": [
+            "brandt's cormorant",
+            "red-faced cormorant",
+            "black oystercatcher"
+        ]
+    },
+    "Ovenbird_0011_92451": {
+        "groundtruth": "Ovenbird",
+        "predictions": [
+            "ovenbird"
+        ]
+    },
+    "California_Gull_0019_41377": {
+        "groundtruth": "California Gull",
+        "predictions": [
+            "herring gull",
+            "ring-billed gull",
+            "species name: common gull (larus canus)",
+            "gull"
+        ]
+    },
+    "Red_Winged_Blackbird_0028_4709": {
+        "groundtruth": "Red winged Blackbird",
+        "predictions": [
+            "red-winged blackbird"
+        ]
+    },
+    "Bobolink_0014_11055": {
+        "groundtruth": "Bobolink",
+        "predictions": [
+            "bobolink"
+        ]
+    },
+    "Belted_Kingfisher_0005_70389": {
+        "groundtruth": "Belted Kingfisher",
+        "predictions": [
+            "ringed kingfisher",
+            "belted kingfisher"
+        ]
+    },
+    "Ruby_Throated_Hummingbird_0111_58141": {
+        "groundtruth": "Ruby throated Hummingbird",
+        "predictions": [
+            "ruby-throated hummingbird",
+            "ruby-throated hummingbird (archilochus colubris)",
+            "hummingbird"
+        ]
+    },
+    "Eared_Grebe_0004_34277": {
+        "groundtruth": "Eared Grebe",
+        "predictions": [
+            "eared grebe",
+            "species name: black-necked grebe (podiceps nigricollis)",
+            "black-necked grebe"
+        ]
+    },
+    "Great_Crested_Flycatcher_0038_29533": {
+        "groundtruth": "Great Crested Flycatcher",
+        "predictions": [
+            "eastern kingbird",
+            "alder flycatcher",
+            "western flycatcher",
+            "eastern phoebe",
+            "flycatcher"
+        ]
+    },
+    "Mockingbird_0059_82126": {
+        "groundtruth": "Mockingbird",
+        "predictions": [
+            "mockingbird",
+            "northern mockingbird",
+            "the bird appears to be a northern mockingbird (mimus polyglottos).",
+            "northern mockingbird (mimus polyglottos)"
+        ]
+    },
+    "Least_Flycatcher_0036_30213": {
+        "groundtruth": "Least Flycatcher",
+        "predictions": [
+            "empidonax flycatcher",
+            "sub-order: passeri; family: tyrannidae; species: possibly empidonax alnorum (warbler-like flycatcher) but more detailed observation needed for certain identification.",
+            "western wood-pewee (contopus sordidulus)",
+            "eastern phoebe",
+            "western kinglet"
+        ]
+    },
+    "Western_Gull_0080_53445": {
+        "groundtruth": "Western Gull",
+        "predictions": [
+            "herring gull",
+            "western gull (larus occidentalis)",
+            "western gull",
+            "species name: western gull (larus occidentalis)"
+        ]
+    },
+    "Eared_Grebe_0067_34416": {
+        "groundtruth": "Eared Grebe",
+        "predictions": [
+            "eared grebe",
+            "horned grebe",
+            "black-necked grebe"
+        ]
+    },
+    "Slaty_Backed_Gull_0068_53206": {
+        "groundtruth": "Slaty backed Gull",
+        "predictions": [
+            "black-backed gull",
+            "herring gull (larus argentatus)",
+            "yellow-legged gull",
+            "great black-backed gull"
+        ]
+    },
+    "Pied_Billed_Grebe_0033_35379": {
+        "groundtruth": "Pied billed Grebe",
+        "predictions": [
+            "pied-billed grebe"
+        ]
+    },
+    "Laysan_Albatross_0006_702": {
+        "groundtruth": "Laysan Albatross",
+        "predictions": [
+            "laysan albatross"
+        ]
+    },
+    "Sooty_Albatross_0057_796354": {
+        "groundtruth": "Sooty Albatross",
+        "predictions": [
+            "common shearwater",
+            "based on these observations, the bird is likely a petrel (family procellariidae).",
+            "northern royal albatross",
+            "the species cannot be precisely identified from this image alone; however, given its characteristics, it resembles a shearwater or a petrel, possibly a manx shearwater or a sooty shearwater due to their size, shape, and habitat preferences.",
+            "sooty shearwater"
+        ]
+    },
+    "Hooded_Merganser_0036_796771": {
+        "groundtruth": "Hooded Merganser",
+        "predictions": [
+            "species: hooded merganser (lophodytes cucullatus)",
+            "hooded merganser (lophodytes cucullatus)",
+            "hooded merganser"
+        ]
+    },
+    "Frigatebird_0112_43394": {
+        "groundtruth": "Frigatebird",
+        "predictions": [
+            "frigatebird",
+            "arctic tern"
+        ]
+    },
+    "Least_Auklet_0042_1874": {
+        "groundtruth": "Least Auklet",
+        "predictions": [
+            "while the image provides clues suggesting the bird may be an auklet (genus aethia), a definitive identification cannot be made without further information or a clearer view of the entire bird, including any unique features such as the tail shape or size, facial markings beyond what\u2019s visible here, and geographic location where this photo was taken. if these were observable, they would likely help pinpoint the exact species among auklets like eider or razorbill.",
+            "marbled murrelet",
+            "puffin (fratercula arctica)",
+            "br\u00fcnnich's guillemot (uria lomvia)",
+            "little auk (alle alle)"
+        ]
+    },
+    "Ivory_Gull_0005_49021": {
+        "groundtruth": "Ivory Gull",
+        "predictions": [
+            "snowy gull",
+            "snowy owl (bubo scandiacus), juvenile",
+            "snowy owl",
+            "ivory gull"
+        ]
+    },
+    "Yellow_Billed_Cuckoo_0036_26682": {
+        "groundtruth": "Yellow billed Cuckoo",
+        "predictions": [
+            "nightingale (luscinia)",
+            "european nightingale",
+            "sylvia communis",
+            "yellow-throated warbler",
+            "without more detailed information, it's challenging to determine the exact species definitively just from this image."
+        ]
+    },
+    "White_Breasted_Nuthatch_0065_85829": {
+        "groundtruth": "White breasted Nuthatch",
+        "predictions": [
+            "sitta carolinensis",
+            "white-breasted nuthatch"
+        ]
+    },
+    "Pelagic_Cormorant_0054_23812": {
+        "groundtruth": "Pelagic Cormorant",
+        "predictions": [
+            "cormorant",
+            "double-crested cormorant"
+        ]
+    },
+    "Northern_Fulmar_0004_43755": {
+        "groundtruth": "Northern Fulmar",
+        "predictions": [
+            "fulmar",
+            "species name: fulmar (fulmarus glacialis)",
+            "northern fulmar"
+        ]
+    },
+    "Spotted_Catbird_0023_796793": {
+        "groundtruth": "Spotted Catbird",
+        "predictions": [
+            "spotted catbird",
+            "spotted catbird, ailuroedus melanotis",
+            "alliroedus melanotis",
+            "spotted catbird, allurodes melanotis"
+        ]
+    },
+    "Rose_Breasted_Grosbeak_0017_39161": {
+        "groundtruth": "Rose breasted Grosbeak",
+        "predictions": [
+            "rose-breasted grosbeak",
+            "red-winged grosbeak"
+        ]
+    },
+    "Horned_Lark_0015_74855": {
+        "groundtruth": "Horned Lark",
+        "predictions": [
+            "horned lark (eremophila alpestris)",
+            "horned lark"
+        ]
+    },
+    "Mangrove_Cuckoo_0046_794616": {
+        "groundtruth": "Mangrove Cuckoo",
+        "predictions": [
+            "cuckoo (coccyzidae)",
+            "yellow-billed cuckoo (coccyzus americanus)",
+            "white-crowned cuckoo-shrike",
+            "cuckoo (cuculus)",
+            "cuckoo"
+        ]
+    },
+    "Lazuli_Bunting_0082_15047": {
+        "groundtruth": "Lazuli Bunting",
+        "predictions": [
+            "lazuli bunting",
+            "bird species: blue grosbeak",
+            "indigo bunting"
+        ]
+    },
+    "Yellow_Billed_Cuckoo_0097_26713": {
+        "groundtruth": "Yellow billed Cuckoo",
+        "predictions": [
+            "common cuckoo",
+            "yellow-billed cuckoo",
+            "cuckoo"
+        ]
+    },
+    "European_Goldfinch_0003_33066": {
+        "groundtruth": "European Goldfinch",
+        "predictions": [
+            "european goldfinch (carduelis carduelis)",
+            "eurasian goldfinch",
+            "european goldfinch"
+        ]
+    },
+    "Laysan_Albatross_0005_565": {
+        "groundtruth": "Laysan Albatross",
+        "predictions": [
+            "laysan albatross",
+            "black-footed albatross"
+        ]
+    },
+    "Brewer_Blackbird_0074_2277": {
+        "groundtruth": "Brewer Blackbird",
+        "predictions": [
+            "grackle",
+            "brown-headed cowbird",
+            "common grackle",
+            "american crow"
+        ]
+    },
+    "Sooty_Albatross_0016_1075": {
+        "groundtruth": "Sooty Albatross",
+        "predictions": [
+            "laysan albatross",
+            "waved albatross",
+            "northern royal albatross or southern royal albatross",
+            "the species identification cannot be determined with certainty from this image alone due to insufficient detail."
+        ]
+    },
+    "Gray_Catbird_0006_20867": {
+        "groundtruth": "Gray Catbird",
+        "predictions": [
+            "gray catbird (dumetella carolinensis)",
+            "gray catbird"
+        ]
+    },
+    "European_Goldfinch_0068_33359": {
+        "groundtruth": "European Goldfinch",
+        "predictions": [
+            "goldfinch",
+            "european goldfinch"
+        ]
+    },
+    "Ringed_Kingfisher_0071_72958": {
+        "groundtruth": "Ringed Kingfisher",
+        "predictions": [
+            "belted kingfisher"
+        ]
+    },
+    "Pigeon_Guillemot_0077_39885": {
+        "groundtruth": "Pigeon Guillemot",
+        "predictions": [
+            "common murre",
+            "merganser",
+            "cepphus grylle (lindherr) or common scoter",
+            "common scoter (melanitta nigra)",
+            "common merganser"
+        ]
+    },
+    "Pomarine_Jaeger_0001_795772": {
+        "groundtruth": "Pomarine Jaeger",
+        "predictions": [
+            "arcy skua",
+            "northern petrel",
+            "great skua (stercorarius parasiticus)",
+            "stercorarius parasiticus"
+        ]
+    },
+    "Red_Faced_Cormorant_0007_796280": {
+        "groundtruth": "Red faced Cormorant",
+        "predictions": [
+            "brandt's cormorant",
+            "oystercatcher",
+            "dalmatian cormorant",
+            "phalacrocorax carbo (eurasian shag)"
+        ]
+    },
+    "Red_Winged_Blackbird_0040_4522": {
+        "groundtruth": "Red winged Blackbird",
+        "predictions": [
+            "red-winged blackbird"
+        ]
+    },
+    "White_Breasted_Nuthatch_0142_86805": {
+        "groundtruth": "White breasted Nuthatch",
+        "predictions": [
+            "sitta carolinensis",
+            "white-breasted nuthatch"
+        ]
+    },
+    "Red_Faced_Cormorant_0065_796293": {
+        "groundtruth": "Red faced Cormorant",
+        "predictions": [
+            "cormorant (family phalacrocoracidae)",
+            "cormorant",
+            "european shag",
+            "double-crested cormorant"
+        ]
+    },
+    "Anna_Hummingbird_0038_57036": {
+        "groundtruth": "Anna Hummingbird",
+        "predictions": [
+            "ruby-throated hummingbird",
+            "anna's hummingbird (female)",
+            "anna's hummingbird",
+            "the bird is likely a hummingbird (family: trochilidae). more detailed features would help narrow down the specific species within this family."
+        ]
+    },
+    "Black_Billed_Cuckoo_0053_795321": {
+        "groundtruth": "Black billed Cuckoo",
+        "predictions": [
+            "common cuckoo",
+            "coccyzus erythropthalmus",
+            "black-billed cuckoo (coccyzus erythropthalmus)",
+            "bird: black-billed cuckoo (coccyzus erythropthalmus)"
+        ]
+    },
+    "Northern_Flicker_0091_28799": {
+        "groundtruth": "Northern Flicker",
+        "predictions": [
+            "northern flicker (colaptes auratus)",
+            "northern flicker"
+        ]
+    },
+    "Red_Legged_Kittiwake_0072_795438": {
+        "groundtruth": "Red legged Kittiwake",
+        "predictions": [
+            "herring gull",
+            "glaucous-winged gull (larus glaucescens)",
+            "western gull",
+            "glaucous-winged gull",
+            "kittiwake"
+        ]
+    },
+    "Slaty_Backed_Gull_0058_796024": {
+        "groundtruth": "Slaty backed Gull",
+        "predictions": [
+            "species name: gull",
+            "herring gull",
+            "herring gull (larus argentatus)",
+            "polar gull"
+        ]
+    },
+    "Pigeon_Guillemot_0034_40074": {
+        "groundtruth": "Pigeon Guillemot",
+        "predictions": [
+            "black guillemot",
+            "pigeon guillemot",
+            "common murre (uria aalge)"
+        ]
+    },
+    "Northern_Flicker_0106_28441": {
+        "groundtruth": "Northern Flicker",
+        "predictions": [
+            "northern flicker"
+        ]
+    },
+    "Yellow_Breasted_Chat_0062_21673": {
+        "groundtruth": "Yellow breasted Chat",
+        "predictions": [
+            "vireo species",
+            "yellow-breasted chat (icteria virens)",
+            "warbler"
+        ]
+    },
+    "Scissor_Tailed_Flycatcher_0089_41810": {
+        "groundtruth": "Scissor tailed Flycatcher",
+        "predictions": [
+            "scissor-tailed flycatcher",
+            "scissortail flycatcher",
+            "fork-tailed flycatcher"
+        ]
+    },
+    "Western_Grebe_0075_36435": {
+        "groundtruth": "Western Grebe",
+        "predictions": [
+            "western grebe (aechmophorus occidentalis)",
+            "western grebe",
+            "clarks grebe (aechmophorus clarkii)"
+        ]
+    },
+    "Least_Flycatcher_0093_30435": {
+        "groundtruth": "Least Flycatcher",
+        "predictions": [
+            "a possible species is spotted flycatcher (muscicapa striata), although further confirmation may require additional information.",
+            "eastern phoebe",
+            "acadian flycatcher (empidonax virescens)"
+        ]
+    },
+    "Rusty_Blackbird_0036_6550": {
+        "groundtruth": "Rusty Blackbird",
+        "predictions": [
+            "brown-headed grackle (quiscalus lugubris)",
+            "red-winged blackbird",
+            "grackle",
+            "the species of the bird in the image is likely a red-winged blackbird (agelaius phoeniceus). this identification is based on the distinctive reddish-brown shoulder patch that is visible under natural lighting conditions, although this particular bird does not appear to display such patches clearly in this image.",
+            "rusty blackbird"
+        ]
+    },
+    "Crested_Auklet_0067_785249": {
+        "groundtruth": "Crested Auklet",
+        "predictions": [
+            "rhinoceros auklet",
+            "puffin",
+            "atlantic puffin",
+            "horned puffin"
+        ]
+    },
+    "Clark_Nutcracker_0075_85715": {
+        "groundtruth": "Clark Nutcracker",
+        "predictions": [
+            "canada jay (perisoreus canadensis)",
+            "gray jay (perisoreus canadensis)",
+            "critical judgment needed for species identification",
+            "canada jay",
+            "grey jay (perisoreus canadensis)"
+        ]
+    },
+    "Brewer_Blackbird_0132_2293": {
+        "groundtruth": "Brewer Blackbird",
+        "predictions": [
+            "red-winged blackbird",
+            "species name: cowbird genus"
+        ]
+    },
+    "Yellow_Bellied_Flycatcher_0023_795478": {
+        "groundtruth": "Yellow bellied Flycatcher",
+        "predictions": [
+            "brown flycatcher",
+            "yellow-rumped flycatcher",
+            "tyrannulet",
+            "based on the provided image and analysis, this bird most closely resembles a yellow-bellied flycatcher (empidonax flaviventris). this identification comes from its olive-green upperparts, brownish tail, and yellow belly.",
+            "flycatcher species - likely pygmy flycatcher or a similar small, greenish-brown flycatcher with a crested crown."
+        ]
+    },
+    "Yellow_Bellied_Flycatcher_0003_795487": {
+        "groundtruth": "Yellow bellied Flycatcher",
+        "predictions": [
+            "western wood pewee",
+            "willow flycatcher (empidonax traillii)",
+            "the image shows a likely member of the flycatcher family, possibly from the empidonax genus or myiarchus genus, but lacks sufficient detail to identify the exact species.",
+            "acadian flycatcher",
+            "least flycatcher (empidonax minimus)"
+        ]
+    },
+    "Ring_Billed_Gull_0018_51505": {
+        "groundtruth": "Ring billed Gull",
+        "predictions": [
+            "ring-billed gull (larus delawarensis)",
+            "seagull",
+            "herring gull",
+            "ring-billed gull"
+        ]
+    },
+    "California_Gull_0121_41196": {
+        "groundtruth": "California Gull",
+        "predictions": [
+            "glaucous-winged gull",
+            "herring gull",
+            "western gull"
+        ]
+    },
+    "White_Breasted_Kingfisher_0049_73420": {
+        "groundtruth": "White breasted Kingfisher",
+        "predictions": [
+            "white-throated kingfisher (halcyon smyrnensis)",
+            "white-throated kingfisher"
+        ]
+    },
+    "American_Goldfinch_0135_32107": {
+        "groundtruth": "American Goldfinch",
+        "predictions": [
+            "songbird family (likely american goldfinch)",
+            "american goldfinch"
+        ]
+    },
+    "Horned_Lark_0097_74496": {
+        "groundtruth": "Horned Lark",
+        "predictions": [
+            "horned lark"
+        ]
+    },
+    "Pine_Grosbeak_0100_38988": {
+        "groundtruth": "Pine Grosbeak",
+        "predictions": [
+            "pine grosbeak"
+        ]
+    },
+    "Anna_Hummingbird_0121_56436": {
+        "groundtruth": "Anna Hummingbird",
+        "predictions": [
+            "selasphorus loddigesii",
+            "anna's hummingbird",
+            "hummingbird",
+            "sanderling or anna's hummingbird"
+        ]
+    },
+    "Western_Grebe_0058_36403": {
+        "groundtruth": "Western Grebe",
+        "predictions": [
+            "western grebe",
+            "clark's grebe"
+        ]
+    },
+    "Eastern_Towhee_0097_22580": {
+        "groundtruth": "Eastern Towhee",
+        "predictions": [
+            "spotted towhee",
+            "towhee",
+            "eastern towhee"
+        ]
+    },
+    "Ovenbird_0128_93366": {
+        "groundtruth": "Ovenbird",
+        "predictions": [
+            "yellow-throated warbler",
+            "black-throated yellow warbler",
+            "blackpoll warbler"
+        ]
+    },
+    "Pomarine_Jaeger_0003_795778": {
+        "groundtruth": "Pomarine Jaeger",
+        "predictions": [
+            "petrel",
+            "the bird appears to be a petrel.",
+            "pomarine jaeger",
+            "based solely on the image provided and general characteristics visible, this bird could potentially be a petrel (family procellariidae), possibly a great shearwater (puffinus gravis) or a similar species within the genus puffinus. further identification would require more specific details.",
+            "northern fulmar (fulmarus glacialis)"
+        ]
+    },
+    "Blue_Grosbeak_0101_36719": {
+        "groundtruth": "Blue Grosbeak",
+        "predictions": [
+            "indigo bunting",
+            "the given information and the image do not provide sufficient data to determine the specific species of this bird accurately. further details would be required for precise identification.",
+            "species name: blue grosbeak",
+            "grosbeak",
+            "based solely on the visible characteristics in the image, i am unable to confidently identify the bird's species beyond possibly the genus \"pheucticetus\" due to its overall shape and feather pattern resembling grosbeaks. more definitive identification requires additional information not provided here."
+        ]
+    },
+    "Brandt_Cormorant_0080_23002": {
+        "groundtruth": "Brandt Cormorant",
+        "predictions": [
+            "cormorant",
+            "cormorant genus (phalacrocorax)",
+            "black-necked cormorant"
+        ]
+    },
+    "Pine_Grosbeak_0025_38443": {
+        "groundtruth": "Pine Grosbeak",
+        "predictions": [
+            "pine grosbeak"
+        ]
+    },
+    "Glaucous_Winged_Gull_0081_45223": {
+        "groundtruth": "Glaucous winged Gull",
+        "predictions": [
+            "seagull",
+            "glaucous-winged gull",
+            "herring gull",
+            "mew gull"
+        ]
+    },
+    "Western_Meadowlark_0048_78354": {
+        "groundtruth": "Western Meadowlark",
+        "predictions": [
+            "western meadowlark",
+            "eastern meadowlark (sturnella magna)"
+        ]
+    },
+    "Mallard_0014_76166": {
+        "groundtruth": "Mallard",
+        "predictions": [
+            "mallard (anas platyrhynchos)",
+            "mallard",
+            "mallard duck"
+        ]
+    },
+    "White_Breasted_Kingfisher_0062_73425": {
+        "groundtruth": "White breasted Kingfisher",
+        "predictions": [
+            "kingfisher",
+            "white-throated kingfisher"
+        ]
+    },
+    "Pacific_Loon_0039_75517": {
+        "groundtruth": "Pacific Loon",
+        "predictions": [
+            "species name: guillemot",
+            "common loon (gavia immer)",
+            "common murre",
+            "common loon"
+        ]
+    },
+    "Florida_Jay_0104_64885": {
+        "groundtruth": "Florida Jay",
+        "predictions": [
+            "florida scrub-jay",
+            "aphelocoma coerulescens"
+        ]
+    },
+    "Olive_Sided_Flycatcher_0001_30669": {
+        "groundtruth": "Olive sided Flycatcher",
+        "predictions": [
+            "due to the lack of distinct features for precise identification, it is not possible to definitively determine the species. the possibilities include several flycatchers or similar birds, but a closer examination would be needed for confirmation.",
+            "western wood-pewee (contopus sordidulus)",
+            "western flycatcher",
+            "western kingbird"
+        ]
+    },
+    "Cardinal_0019_17368": {
+        "groundtruth": "Cardinal",
+        "predictions": [
+            "species name: northern cardinal (cardinalis cardinalis)",
+            "northern cardinal"
+        ]
+    },
+    "Gray_Kingbird_0016_70288": {
+        "groundtruth": "Gray Kingbird",
+        "predictions": [
+            "mockingbird",
+            "northern mockingbird",
+            "mimicry mockingbird or eastern kingbird",
+            "northern mockingbird (mimus polyglottos)"
+        ]
+    },
+    "Red_Faced_Cormorant_0045_796324": {
+        "groundtruth": "Red faced Cormorant",
+        "predictions": [
+            "red-faced cormorant",
+            "red-necked grebe",
+            "black-necked grebe (aechmophorus occidentalis)"
+        ]
+    },
+    "Red_Breasted_Merganser_0016_79476": {
+        "groundtruth": "Red breasted Merganser",
+        "predictions": [
+            "red-breasted merganser"
+        ]
+    },
+    "Horned_Lark_0138_74083": {
+        "groundtruth": "Horned Lark",
+        "predictions": [
+            "lark family (e.g., horned lark)",
+            "horned lark",
+            "cape lark (eremalauda albicauda)"
+        ]
+    },
+    "Gray_Kingbird_0008_70282": {
+        "groundtruth": "Gray Kingbird",
+        "predictions": [
+            "gray kingbird (tyrannus dominicensis)",
+            "eastern kingbird",
+            "western kingbird"
+        ]
+    },
+    "Acadian_Flycatcher_0040_795629": {
+        "groundtruth": "Acadian Flycatcher",
+        "predictions": [
+            "a cadian flycatcher",
+            "acadian flycatcher"
+        ]
+    },
+    "Mangrove_Cuckoo_0041_26370": {
+        "groundtruth": "Mangrove Cuckoo",
+        "predictions": [
+            "species name: cuckoo (cuculus) family",
+            "coccyzus minor",
+            "the bird in the image resembles a cuckoo (cuculus sp.), but identifying exactly which species requires more precise details about its behavior or additional images from different angles.",
+            "cuculus species (likely a black-billed cuckoo)",
+            "cuckoo"
+        ]
+    },
+    "American_Crow_0039_25061": {
+        "groundtruth": "American Crow",
+        "predictions": [
+            "raven (corvus corax)",
+            "crow",
+            "american crow",
+            "american crow (corvus brachyrhynchos)",
+            "common raven (corvus corax)"
+        ]
+    },
+    "European_Goldfinch_0025_794647": {
+        "groundtruth": "European Goldfinch",
+        "predictions": [
+            "european goldfinch (carduelis carduelis)",
+            "european goldfinch"
+        ]
+    },
+    "Blue_Jay_0024_63167": {
+        "groundtruth": "Blue Jay",
+        "predictions": [
+            "blue jay (cyanocitta cristata)",
+            "blue jay"
+        ]
+    },
+    "Purple_Finch_0014_27322": {
+        "groundtruth": "Purple Finch",
+        "predictions": [
+            "purple finch",
+            "purple finch (haemorhous purpureus)"
+        ]
+    },
+    "Rusty_Blackbird_0087_6727": {
+        "groundtruth": "Rusty Blackbird",
+        "predictions": [
+            "species name",
+            "brown-headed cowbird",
+            "grackle",
+            "brown-headed cowbird (molothrus ater)",
+            "rusty blackbird"
+        ]
+    },
+    "Bronzed_Cowbird_0008_796250": {
+        "groundtruth": "Bronzed Cowbird",
+        "predictions": [
+            "carrion crow",
+            "crow",
+            "common raven",
+            "crow or raven",
+            "it looks like it could be a common raven (corvus corax), but more information would be needed for a definitive identification."
+        ]
+    },
+    "Ring_Billed_Gull_0117_51363": {
+        "groundtruth": "Ring billed Gull",
+        "predictions": [
+            "seagull",
+            "herring gull",
+            "species name: ring-billed gull (larus delawarensis)",
+            "common gull (larus canus)",
+            "ring-billed gull"
+        ]
+    },
+    "Green_Violetear_0027_60841": {
+        "groundtruth": "Green Violetear",
+        "predictions": [
+            "the bird appears to be a hummingbird. more specifically, it looks like a green violet-ear (eupherus lucidus) or similar species due to its coloration and plumage. however, for accurate identification, one would need more detailed visual information such as a closer view of head coloration including the throat region, size relative to typical bird proportions, and specific behaviors that only an expert can determine confidently without more context.",
+            "hummingbird (campylopterus or similar)",
+            "hummingbird"
+        ]
+    },
+    "Groove_Billed_Ani_0018_1613": {
+        "groundtruth": "Groove billed Ani",
+        "predictions": [
+            "greater antillean ground cuckoo",
+            "greater ani (cathartes aura)",
+            "coucal",
+            "agami cuckoo (guira guira)",
+            "great-tailed grackle"
+        ]
+    },
+    "Rufous_Hummingbird_0006_59621": {
+        "groundtruth": "Rufous Hummingbird",
+        "predictions": [
+            "hummingbird (selasphorus rufus)",
+            "hummingbird (calliope hummingbird)",
+            "hummingbird",
+            "rufous hummingbird"
+        ]
+    },
+    "Indigo_Bunting_0005_13832": {
+        "groundtruth": "Indigo Bunting",
+        "predictions": [
+            "splendid tanager (tangara seledon)",
+            "sorry i cannot provide the exact species for this photo since there isn't enough information presented.",
+            "indigo bunting"
+        ]
+    },
+    "Indigo_Bunting_0084_11848": {
+        "groundtruth": "Indigo Bunting",
+        "predictions": [
+            "indigo bunting",
+            "possible species: indigo bunting (passerina cyanea)"
+        ]
+    },
+    "Florida_Jay_0075_65093": {
+        "groundtruth": "Florida Jay",
+        "predictions": [
+            "american scrub-jay",
+            "western scrub-jay",
+            "western scrub jay",
+            "the bird in the image is likely a western scrub jay (aphelocoma californica).",
+            "blue jay (cyanocitta cristata)"
+        ]
+    },
+    "Tropical_Kingbird_0102_69654": {
+        "groundtruth": "Tropical Kingbird",
+        "predictions": [
+            "yellow-throated kingbird",
+            "western kingbird",
+            "western kingbird (tyrannus verticalis)"
+        ]
+    },
+    "Rhinoceros_Auklet_0050_797534": {
+        "groundtruth": "Rhinoceros Auklet",
+        "predictions": [
+            "common murre",
+            "crested auklet (aethia cristatella)",
+            "pribilof murrelet",
+            "brown pelican",
+            "species name: common puffin (fratercula arctica)"
+        ]
+    },
+    "Painted_Bunting_0025_16722": {
+        "groundtruth": "Painted Bunting",
+        "predictions": [
+            "painted bunting"
+        ]
+    },
+    "Long_Tailed_Jaeger_0050_797085": {
+        "groundtruth": "Long tailed Jaeger",
+        "predictions": [
+            "arctic tern (sterna paradisaea)",
+            "parasitic jaeger",
+            "stercorarius longicaudus (polar skua)",
+            "snowy shearwater",
+            "arctic tern"
+        ]
+    },
+    "Tropical_Kingbird_0023_69998": {
+        "groundtruth": "Tropical Kingbird",
+        "predictions": [
+            "western kingbird",
+            "cassin's kingbird",
+            "kingbird"
+        ]
+    },
+    "Red_Breasted_Merganser_0022_79274": {
+        "groundtruth": "Red breasted Merganser",
+        "predictions": [
+            "red-breasted merganser",
+            "merganser"
+        ]
+    },
+    "Red_Winged_Blackbird_0096_5019": {
+        "groundtruth": "Red winged Blackbird",
+        "predictions": [
+            "red-winged blackbird"
+        ]
+    },
+    "Pied_Kingfisher_0073_72508": {
+        "groundtruth": "Pied Kingfisher",
+        "predictions": [
+            "pied kingfisher (ceryle rudis)",
+            "pied kingfisher"
+        ]
+    },
+    "Fish_Crow_0044_25964": {
+        "groundtruth": "Fish Crow",
+        "predictions": [
+            "grackle",
+            "carrion crow",
+            "crow",
+            "species name: grackle"
+        ]
+    },
+    "Green_Jay_0044_66228": {
+        "groundtruth": "Green Jay",
+        "predictions": [
+            "green jay (cyanocorax yncas)",
+            "green jay"
+        ]
+    },
+    "Brewer_Blackbird_0045_2303": {
+        "groundtruth": "Brewer Blackbird",
+        "predictions": [
+            "blackbird",
+            "american crow (corvus brachyrhynchos)",
+            "common grackle",
+            "american crow"
+        ]
+    },
+    "Long_Tailed_Jaeger_0041_60891": {
+        "groundtruth": "Long tailed Jaeger",
+        "predictions": [
+            "broad-winged hawk",
+            "great skua",
+            "sooty jaeger",
+            "northern harrier",
+            "sooty gull"
+        ]
+    },
+    "Spotted_Catbird_0007_19424": {
+        "groundtruth": "Spotted Catbird",
+        "predictions": [
+            "green-backed barbet",
+            "species name: barbet (possibly)<answer>\n\nnote: identifying a specific bird species can often require more detailed information such as vocalizations, habitat, behavior, and additional physical characteristics that might not be captured by a single photograph. however, based on the visible features provided in this image, a barbet seems to be a likely match given its vibrant colors and speckled plumage.",
+            "spot-winged barbet",
+            "brown-throated woodpecker",
+            "aulacorhynchus prasinus"
+        ]
+    },
+    "Pomarine_Jaeger_0060_795756": {
+        "groundtruth": "Pomarine Jaeger",
+        "predictions": [
+            "petrel",
+            "stercorarius longicaudus (northern shearwater)",
+            "northern fulmar",
+            "gull"
+        ]
+    },
+    "Painted_Bunting_0055_15208": {
+        "groundtruth": "Painted Bunting",
+        "predictions": [
+            "the given information does not allow us to determine the precise species of the bird with certainty. possible candidates include tanager or finch families due to general features observed; further visual or behavioral information would help pinpoint the correct species.",
+            "without additional information, the identification of the bird's species cannot be accurately determined from the image alone. it may be a finch, but further observations would be necessary for confirmation.",
+            "green-tailed tanager",
+            "green tanager (tangara viridigaster)",
+            "summer tanager"
+        ]
+    },
+    "Red_Winged_Blackbird_0061_4196": {
+        "groundtruth": "Red winged Blackbird",
+        "predictions": [
+            "red-winged blackbird"
+        ]
+    },
+    "Belted_Kingfisher_0084_70399": {
+        "groundtruth": "Belted Kingfisher",
+        "predictions": [
+            "belted kingfisher"
+        ]
+    },
+    "Pied_Billed_Grebe_0100_35310": {
+        "groundtruth": "Pied billed Grebe",
+        "predictions": [
+            "pied-billed grebe"
+        ]
+    },
+    "Clark_Nutcracker_0105_85097": {
+        "groundtruth": "Clark Nutcracker",
+        "predictions": [
+            "clark's nutcracker",
+            "sparrow"
+        ]
+    },
+    "Herring_Gull_0014_47814": {
+        "groundtruth": "Herring Gull",
+        "predictions": [
+            "seagull",
+            "seagull/gull",
+            "herring gull"
+        ]
+    },
+    "Rufous_Hummingbird_0022_58725": {
+        "groundtruth": "Rufous Hummingbird",
+        "predictions": [
+            "ruby-throated hummingbird",
+            "anna's hummingbird",
+            "hummingbird"
+        ]
+    },
+    "Pied_Billed_Grebe_0063_35529": {
+        "groundtruth": "Pied billed Grebe",
+        "predictions": [
+            "pied-billed grebe",
+            "pied-billed grebe (possibly)",
+            "the bird in the image is likely a grebe.",
+            "species name: grebe (possibly a pied-billed grebe)"
+        ]
+    },
+    "Laysan_Albatross_0073_927": {
+        "groundtruth": "Laysan Albatross",
+        "predictions": [
+            "wandering albatross",
+            "northern royal albatross",
+            "laysan albatross",
+            "the species of the bird is likely a black-browed albatross (thalassarche melanophrys). however, further confirmation would require more specific details such as geographic location or additional visual features not present in this image."
+        ]
+    },
+    "Blue_Grosbeak_0099_36828": {
+        "groundtruth": "Blue Grosbeak",
+        "predictions": [
+            "indigo bunting"
+        ]
+    },
+    "Evening_Grosbeak_0104_37661": {
+        "groundtruth": "Evening Grosbeak",
+        "predictions": [
+            "cassin's finch",
+            "evening grosbeak"
+        ]
+    },
+    "Pigeon_Guillemot_0055_40171": {
+        "groundtruth": "Pigeon Guillemot",
+        "predictions": [
+            "based on the visible characteristics, the bird is likely a guillemot.",
+            "black guillemot",
+            "pigeon guillemot"
+        ]
+    },
+    "American_Goldfinch_0086_31887": {
+        "groundtruth": "American Goldfinch",
+        "predictions": [
+            "american goldfinch"
+        ]
+    },
+    "Rufous_Hummingbird_0120_59900": {
+        "groundtruth": "Rufous Hummingbird",
+        "predictions": [
+            "a anna's hummingbird",
+            "allen's hummingbird",
+            "hummingbird",
+            "rufous hummingbird"
+        ]
+    },
+    "Mallard_0069_76926": {
+        "groundtruth": "Mallard",
+        "predictions": [
+            "species name: anas platyrhynchos",
+            "mallard",
+            "mallard duck"
+        ]
+    },
+    "Great_Crested_Flycatcher_0082_29445": {
+        "groundtruth": "Great Crested Flycatcher",
+        "predictions": [
+            "species: eastern kingbird (tyrannus tyrannus)",
+            "great crested flycatcher",
+            "olive-sided flycatcher"
+        ]
+    },
+    "Clark_Nutcracker_0130_85304": {
+        "groundtruth": "Clark Nutcracker",
+        "predictions": [
+            "clark's nutcracker",
+            "clauder nutcracker (nucifraga columbiana)"
+        ]
+    },
+    "Rhinoceros_Auklet_0009_797539": {
+        "groundtruth": "Rhinoceros Auklet",
+        "predictions": [
+            "horned puffin",
+            "western cormorant",
+            "eider duck",
+            "rhinoceros auklet",
+            "cape sheathbill or northern fulmar"
+        ]
+    },
+    "Belted_Kingfisher_0020_70922": {
+        "groundtruth": "Belted Kingfisher",
+        "predictions": [
+            "belted kingfisher",
+            "kingfisher"
+        ]
+    },
+    "Blue_Jay_0054_61656": {
+        "groundtruth": "Blue Jay",
+        "predictions": [
+            "blue jay",
+            "blue jay (cyanocitta cristata)",
+            "cyanocitta cristata"
+        ]
+    },
+    "Hooded_Merganser_0059_79016": {
+        "groundtruth": "Hooded Merganser",
+        "predictions": [
+            "hooded merganser"
+        ]
+    },
+    "Clark_Nutcracker_0013_84791": {
+        "groundtruth": "Clark Nutcracker",
+        "predictions": [
+            "gray jay",
+            "clark's nutcracker",
+            "the bird could potentially be identified as a gray jay due to its color and pattern features.",
+            "claud's nutcracker"
+        ]
+    },
+    "Bobolink_0001_9261": {
+        "groundtruth": "Bobolink",
+        "predictions": [
+            "the bird appears to be a bobolink (dolichonyx oryzivorus).",
+            "bobolink"
+        ]
+    },
+    "Baltimore_Oriole_0045_88178": {
+        "groundtruth": "Baltimore Oriole",
+        "predictions": [
+            "baltimore oriole",
+            "american oriole"
+        ]
+    },
+    "Acadian_Flycatcher_0045_795587": {
+        "groundtruth": "Acadian Flycatcher",
+        "predictions": [
+            "leucippus flycatcher (myiarchus leucippus)",
+            "new world flycatcher",
+            "elderly flycatcher (empidonax flavescens)",
+            "empidonax virescens (blue-headed vireo)",
+            "eastern wood-pewee"
+        ]
+    },
+    "Red_Breasted_Merganser_0044_79321": {
+        "groundtruth": "Red breasted Merganser",
+        "predictions": [
+            "red-breasted merganser (mergus serrator)",
+            "red-breasted merganser"
+        ]
+    },
+    "Boat_Tailed_Grackle_0085_33384": {
+        "groundtruth": "Boat tailed Grackle",
+        "predictions": [
+            "black-billed magpie (pica pica)",
+            "carrion crow (corvus corone)",
+            "great-tailed grackle (quiscalus mexicanus)",
+            "crow"
+        ]
+    },
+    "Lazuli_Bunting_0086_14992": {
+        "groundtruth": "Lazuli Bunting",
+        "predictions": [
+            "cerulean warbler",
+            "indigo bunting",
+            "lazuli bunting"
+        ]
+    },
+    "Eastern_Towhee_0042_22155": {
+        "groundtruth": "Eastern Towhee",
+        "predictions": [
+            "townsend's towhee",
+            "eastern towhee",
+            "towhee"
+        ]
+    },
+    "Rose_Breasted_Grosbeak_0068_39094": {
+        "groundtruth": "Rose breasted Grosbeak",
+        "predictions": [
+            "rose-breasted grosbeak"
+        ]
+    },
+    "Pigeon_Guillemot_0073_40209": {
+        "groundtruth": "Pigeon Guillemot",
+        "predictions": [
+            "common murre (uria aalge)",
+            "black guillemot",
+            "seagull (herring gull)",
+            "loon",
+            "pigeon guillemot"
+        ]
+    },
+    "Brandt_Cormorant_0038_23110": {
+        "groundtruth": "Brandt Cormorant",
+        "predictions": [
+            "sooty shearwater",
+            "cormorant"
+        ]
+    },
+    "Northern_Flicker_0008_28591": {
+        "groundtruth": "Northern Flicker",
+        "predictions": [
+            "northern flicker"
+        ]
+    },
+    "Brown_Pelican_0011_94683": {
+        "groundtruth": "Brown Pelican",
+        "predictions": [
+            "brown pelican",
+            "pelican",
+            "brown pelican (pelecanus occidentalis)"
+        ]
+    },
+    "Green_Violetear_0108_795711": {
+        "groundtruth": "Green Violetear",
+        "predictions": [
+            "hummingbird",
+            "green violet-ear"
+        ]
+    },
+    "Sooty_Albatross_0025_796361": {
+        "groundtruth": "Sooty Albatross",
+        "predictions": [
+            "the bird in the image may be a shearwater (puffinus gravis) or another species within the procellariidae family. however, more specific identification would require additional details such as geographical location and further physical traits not visible in this image.",
+            "shearwater",
+            "based on the provided information and typical characteristics seen in the image, the bird could belong to the family hydrobatidae, commonly known as shearwaters or petrels, but the exact species cannot be determined with certainty from this photo alone. more detailed observations would be required for accurate identification.",
+            "fulmar",
+            "sooty tern"
+        ]
+    },
+    "Evening_Grosbeak_0051_37954": {
+        "groundtruth": "Evening Grosbeak",
+        "predictions": [
+            "evening grosbeak"
+        ]
+    },
+    "Florida_Jay_0054_65046": {
+        "groundtruth": "Florida Jay",
+        "predictions": [
+            "aphelocoma californica",
+            "species name: scrub jay (gymnorhinus cyanocephalus)",
+            "western scrub-jay",
+            "california scrub-jay (aphelocoma californica)"
+        ]
+    },
+    "Pacific_Loon_0023_75476": {
+        "groundtruth": "Pacific Loon",
+        "predictions": [
+            "common loon (gavia immer)",
+            "suspected species: red-throated loon/great northern diver",
+            "loon",
+            "common loon"
+        ]
+    },
+    "Gadwall_0030_31855": {
+        "groundtruth": "Gadwall",
+        "predictions": [
+            "gadwall",
+            "gadwall (mareca strepera)",
+            "male gadwall duck"
+        ]
+    },
+    "Baltimore_Oriole_0106_89680": {
+        "groundtruth": "Baltimore Oriole",
+        "predictions": [
+            "baltimore oriole",
+            "golden oriole (oriolus oriolus)",
+            "bullock's oriole"
+        ]
+    },
+    "Hooded_Oriole_0060_90879": {
+        "groundtruth": "Hooded Oriole",
+        "predictions": [
+            "orange oriole (icterus auratus)",
+            "baltimore oriole",
+            "bullock's oriole"
+        ]
+    },
+    "Dark_Eyed_Junco_0048_66981": {
+        "groundtruth": "Dark eyed Junco",
+        "predictions": [
+            "dark-eyed junco"
+        ]
+    },
+    "Brown_Pelican_0007_94078": {
+        "groundtruth": "Brown Pelican",
+        "predictions": [
+            "brown pelican",
+            "pelican",
+            "american white pelican"
+        ]
+    },
+    "Yellow_Bellied_Flycatcher_0063_42704": {
+        "groundtruth": "Yellow bellied Flycatcher",
+        "predictions": [
+            "tyrant flycatcher",
+            "species name: eastern phoebe",
+            "contopus sordidulus",
+            "eastern phoebe"
+        ]
+    },
+    "Orchard_Oriole_0051_91787": {
+        "groundtruth": "Orchard Oriole",
+        "predictions": [
+            "oriole",
+            "orchard oriole (icterus spurius)",
+            "orchard oriole"
+        ]
+    },
+    "Horned_Lark_0130_74001": {
+        "groundtruth": "Horned Lark",
+        "predictions": [
+            "mongolian sand lark",
+            "corn bunting (emberiza calandra)",
+            "horned lark"
+        ]
+    },
+    "Green_Kingfisher_0096_71080": {
+        "groundtruth": "Green Kingfisher",
+        "predictions": [
+            "kingfisher (possibly a kingfisher species)",
+            "kingfisher (alcedo atthis)",
+            "belted kingfisher",
+            "ringed kingfisher (megaceryle torquata)",
+            "green kingfisher"
+        ]
+    },
+    "Red_Winged_Blackbird_0105_4842": {
+        "groundtruth": "Red winged Blackbird",
+        "predictions": [
+            "red-winged blackbird"
+        ]
+    },
+    "Rusty_Blackbird_0009_6853": {
+        "groundtruth": "Rusty Blackbird",
+        "predictions": [
+            "suggests a common blackbird (euphagus cyanocephalus)",
+            "american robin",
+            "mangrove cuckoo",
+            "_species name: brown thrasher (dendrocincla turdina)_"
+        ]
+    },
+    "California_Gull_0012_41272": {
+        "groundtruth": "California Gull",
+        "predictions": [
+            "great black-backed gull",
+            "seagull",
+            "herring gull"
+        ]
+    },
+    "American_Goldfinch_0111_32022": {
+        "groundtruth": "American Goldfinch",
+        "predictions": [
+            "american goldfinch"
+        ]
+    },
+    "Spotted_Catbird_0042_19430": {
+        "groundtruth": "Spotted Catbird",
+        "predictions": [
+            "species identification: no definitive identification possible solely with this image",
+            "species name: crypturellus crassirostris (crypturellus)",
+            "banded thrush (turdus obscurus)",
+            "the given information does not provide sufficient detail for precise identification; however, considering the general appearance and the environment, the bird may resemble some species within the family tinamidae, such as a tinamou. for accurate identification, more specific features or behavioral traits would be needed.",
+            "magnificent umbrellabird (cephalopterum ornatum)"
+        ]
+    },
+    "Western_Gull_0062_53538": {
+        "groundtruth": "Western Gull",
+        "predictions": [
+            "glaucous-winged gull",
+            "herring gull"
+        ]
+    },
+    "Baltimore_Oriole_0104_86979": {
+        "groundtruth": "Baltimore Oriole",
+        "predictions": [
+            "baltimore oriole",
+            "american oriole (icterus galbula)"
+        ]
+    },
+    "Western_Grebe_0032_36439": {
+        "groundtruth": "Western Grebe",
+        "predictions": [
+            "western grebe"
+        ]
+    },
+    "Mockingbird_0086_81868": {
+        "groundtruth": "Mockingbird",
+        "predictions": [
+            "mockingbird",
+            "northern mockingbird (mimus polyglottos)",
+            "northern mockingbird"
+        ]
+    },
+    "Herring_Gull_0054_46164": {
+        "groundtruth": "Herring Gull",
+        "predictions": [
+            "herring gull (larus argentatus)",
+            "european herring gull (larus argentatus)",
+            "herring gull"
+        ]
+    },
+    "Pelagic_Cormorant_0017_23875": {
+        "groundtruth": "Pelagic Cormorant",
+        "predictions": [
+            "double-crested cormorant",
+            "cormorant"
+        ]
+    },
+    "Hooded_Oriole_0096_90311": {
+        "groundtruth": "Hooded Oriole",
+        "predictions": [
+            "hooded oriole",
+            "baltimore oriole",
+            "oriental oriole",
+            "golden oriole (oriolus auratus)"
+        ]
+    },
+    "Rhinoceros_Auklet_0038_797544": {
+        "groundtruth": "Rhinoceros Auklet",
+        "predictions": [
+            "aethia nova",
+            "horned puffin",
+            "auklet (specifically possibly aethia chionogastra)",
+            "tufted puffin",
+            "rhinoceros auklet"
+        ]
+    },
+    "Tropical_Kingbird_0064_69889": {
+        "groundtruth": "Tropical Kingbird",
+        "predictions": [
+            "tropical kingbird"
+        ]
+    },
+    "Black_Footed_Albatross_0079_796122": {
+        "groundtruth": "Black footed Albatross",
+        "predictions": [
+            "due to limitations in the image provided, i cannot accurately determine the exact species of the bird. further details would be needed for precise identification.",
+            "black-footed albatross",
+            "albatross",
+            "procellariiformes",
+            "the specific species cannot be determined without more information, but the bird resembles a petrel or shearwater."
+        ]
+    },
+    "Acadian_Flycatcher_0020_29069": {
+        "groundtruth": "Acadian Flycatcher",
+        "predictions": [
+            "pewee",
+            "ferruginous flycatcher (myiarchus tyrannulus)",
+            "acadian flycatcher",
+            "empidonax virescens (acadian flycatcher)",
+            "eastern wood-pewee"
+        ]
+    },
+    "Belted_Kingfisher_0054_70424": {
+        "groundtruth": "Belted Kingfisher",
+        "predictions": [
+            "belted kingfisher",
+            "kingfisher"
+        ]
+    },
+    "Pied_Kingfisher_0121_72378": {
+        "groundtruth": "Pied Kingfisher",
+        "predictions": [
+            "pied kingfisher (ceryle rudis)",
+            "pied kingfisher"
+        ]
+    },
+    "Glaucous_Winged_Gull_0078_44461": {
+        "groundtruth": "Glaucous winged Gull",
+        "predictions": [
+            "the species of the bird could be a herring gull (larus argentatus) juvenile, given its coloration and habitat appearance.",
+            "glaucous-winged gull",
+            "herring gull"
+        ]
+    },
+    "Pied_Billed_Grebe_0044_35425": {
+        "groundtruth": "Pied billed Grebe",
+        "predictions": [
+            "lewis's grebe",
+            "pied-billed grebe",
+            "black-necked grebe (podiceps nigricollis)",
+            "species name: black-necked grebe (podiceps nigricollis)",
+            "grebe"
+        ]
+    },
+    "Western_Meadowlark_0098_78382": {
+        "groundtruth": "Western Meadowlark",
+        "predictions": [
+            "western meadowlark",
+            "sturnella neglecta"
+        ]
+    },
+    "Red_Faced_Cormorant_0046_23446": {
+        "groundtruth": "Red faced Cormorant",
+        "predictions": [
+            "great cormorant",
+            "shag",
+            "cormorant",
+            "red-faced cormorant"
+        ]
+    },
+    "Black_Footed_Albatross_0032_796115": {
+        "groundtruth": "Black footed Albatross",
+        "predictions": [
+            "seabird genus (e.g., albatross or petrel)",
+            "laysan albatross",
+            "sooty albatross or a petrel-like seabird",
+            "albatross"
+        ]
+    },
+    "European_Goldfinch_0074_33348": {
+        "groundtruth": "European Goldfinch",
+        "predictions": [
+            "euroasian goldfinch or goldfinch",
+            "eurocean goldfinch",
+            "european goldfinch"
+        ]
+    },
+    "Mallard_0030_77143": {
+        "groundtruth": "Mallard",
+        "predictions": [
+            "mallard duck (anas platyrhynchos)",
+            "mallard",
+            "duck"
+        ]
+    },
+    "Fish_Crow_0007_26023": {
+        "groundtruth": "Fish Crow",
+        "predictions": [
+            "common raven (corvus corax)",
+            "crow (corvus corax)",
+            "carrion crow (corvus corone)",
+            "common raven",
+            "rook"
+        ]
+    },
+    "Slaty_Backed_Gull_0045_796025": {
+        "groundtruth": "Slaty backed Gull",
+        "predictions": [
+            "great black-backed gull",
+            "black-backed gull",
+            "larus marinus"
+        ]
+    },
+    "Western_Gull_0058_53882": {
+        "groundtruth": "Western Gull",
+        "predictions": [
+            "glaucous-winged gull",
+            "herring gull"
+        ]
+    },
+    "Cardinal_0029_17297": {
+        "groundtruth": "Cardinal",
+        "predictions": [
+            "northern cardinal",
+            "female northern cardinal or male northern cardinal (during non-breeding season)"
+        ]
+    },
+    "Blue_Grosbeak_0031_37173": {
+        "groundtruth": "Blue Grosbeak",
+        "predictions": [
+            "indigo bunting",
+            "lazuli bunting"
+        ]
+    },
+    "Red_Legged_Kittiwake_0027_795454": {
+        "groundtruth": "Red legged Kittiwake",
+        "predictions": [
+            "kittiwake",
+            "black-legged kittiwake"
+        ]
+    },
+    "Chuck_Will_Widow_0002_796959": {
+        "groundtruth": "Chuck will Widow",
+        "predictions": [
+            "nightjar",
+            "barn owl (tyto alba)",
+            "common poorwill",
+            "nocturnal owl",
+            "brown-eared nightjar"
+        ]
+    },
+    "Eared_Grebe_0034_34142": {
+        "groundtruth": "Eared Grebe",
+        "predictions": [
+            "eared grebe",
+            "black-necked grebe",
+            "clark's grebe",
+            "sooty grebe",
+            "schell (grebe)"
+        ]
+    },
+    "Green_Jay_0128_65629": {
+        "groundtruth": "Green Jay",
+        "predictions": [
+            "cyanocorax yncas",
+            "green jay (cyanocorax yncas)",
+            "green jay"
+        ]
+    },
+    "Pacific_Loon_0063_75865": {
+        "groundtruth": "Pacific Loon",
+        "predictions": [
+            "common loon (gavia immer)",
+            "the species of the bird in the image is likely a common loon (gavia immer).",
+            "loon",
+            "gavia genus (loon)"
+        ]
+    },
+    "Black_Billed_Cuckoo_0055_26223": {
+        "groundtruth": "Black billed Cuckoo",
+        "predictions": [
+            "cuckoo",
+            "common cuckoo (cuculus canorus)",
+            "black-billed cuckoo",
+            "coccyzus erythropthalmus"
+        ]
+    },
+    "Shiny_Cowbird_0055_24331": {
+        "groundtruth": "Shiny Cowbird",
+        "predictions": [
+            "it's not possible to definitively determine the species of this bird from the image provided.",
+            "red-winged blackbird",
+            "the bird could potentially be a common grackle (quiscalus quiscula), which is commonly found in north america and known for its iridescent black plumage and distinctive eye shape.",
+            "common grackle",
+            "common raven"
+        ]
+    },
+    "Horned_Grebe_0099_34989": {
+        "groundtruth": "Horned Grebe",
+        "predictions": [
+            "crested grebe",
+            "loon",
+            "horned grebe",
+            "slavonian grebe"
+        ]
+    },
+    "Red_Breasted_Merganser_0023_79477": {
+        "groundtruth": "Red breasted Merganser",
+        "predictions": [
+            "common merganser (mergus merganser)",
+            "common merganser",
+            "red-breasted merganser"
+        ]
+    },
+    "Laysan_Albatross_0094_1013": {
+        "groundtruth": "Laysan Albatross",
+        "predictions": [
+            "laysan albatross",
+            "laysan albatross (phoebastria immutabilis)"
+        ]
+    },
+    "Hooded_Merganser_0079_796768": {
+        "groundtruth": "Hooded Merganser",
+        "predictions": [
+            "hooded merganser"
+        ]
+    },
+    "Ruby_Throated_Hummingbird_0106_57976": {
+        "groundtruth": "Ruby throated Hummingbird",
+        "predictions": [
+            "species name: ruby-throated hummingbird (archilochus colubris)",
+            "hummingbird"
+        ]
+    },
+    "Dark_Eyed_Junco_0056_67498": {
+        "groundtruth": "Dark eyed Junco",
+        "predictions": [
+            "species name: dark-eyed junco (junco hyemalis)",
+            "dark-eyed junco"
+        ]
+    },
+    "Yellow_Headed_Blackbird_0072_8606": {
+        "groundtruth": "Yellow headed Blackbird",
+        "predictions": [
+            "yellow-headed blackbird (xanthopsar flavus)",
+            "black-headed grosbeak",
+            "yellow-headed blackbird"
+        ]
+    },
+    "American_Goldfinch_0121_32725": {
+        "groundtruth": "American Goldfinch",
+        "predictions": [
+            "american goldfinch"
+        ]
+    },
+    "Cardinal_0056_18352": {
+        "groundtruth": "Cardinal",
+        "predictions": [
+            "northern cardinal"
+        ]
+    },
+    "Green_Violetear_0077_795696": {
+        "groundtruth": "Green Violetear",
+        "predictions": [
+            "trochilidae",
+            "purple-throated woodstar",
+            "since the question asks for the identification but does not provide enough context (like location), i cannot accurately determine the exact species. therefore, no definitive answer can be given.",
+            "hummingbird"
+        ]
+    },
+    "Rhinoceros_Auklet_0016_2114": {
+        "groundtruth": "Rhinoceros Auklet",
+        "predictions": [
+            "tufted puffin",
+            "ruddy duck",
+            "common murre (uria aalge)",
+            "puffin"
+        ]
+    },
+    "Western_Grebe_0014_36185": {
+        "groundtruth": "Western Grebe",
+        "predictions": [
+            "clark's grebe",
+            "crested grebe",
+            "western grebe"
+        ]
+    },
+    "Scissor_Tailed_Flycatcher_0085_41830": {
+        "groundtruth": "Scissor tailed Flycatcher",
+        "predictions": [
+            "scissor-tailed flycatcher"
+        ]
+    },
+    "American_Crow_0003_25130": {
+        "groundtruth": "American Crow",
+        "predictions": [
+            "american crow",
+            "crow (cyanocorax) species",
+            "raven",
+            "species: american crow (corvus brachyrhynchos)",
+            "crow"
+        ]
+    },
+    "Blue_Jay_0022_63074": {
+        "groundtruth": "Blue Jay",
+        "predictions": [
+            "blue jay"
+        ]
+    },
+    "Yellow_Breasted_Chat_0106_22032": {
+        "groundtruth": "Yellow breasted Chat",
+        "predictions": [
+            "common yellowthroat",
+            "common yellowthroat (geothlypis trichas)",
+            "yellow-breasted chat"
+        ]
+    },
+    "Gray_Catbird_0001_20695": {
+        "groundtruth": "Gray Catbird",
+        "predictions": [
+            "gray catbird",
+            "catbird"
+        ]
+    },
+    "Spotted_Catbird_0039_796811": {
+        "groundtruth": "Spotted Catbird",
+        "predictions": [
+            "tanagers",
+            "new zealand parrot",
+            "tui (prosthemadera novaeseelandiae)",
+            "turdus olivaceus",
+            "purple-crested bowerbird"
+        ]
+    },
+    "Heermann_Gull_0020_45409": {
+        "groundtruth": "Heermann Gull",
+        "predictions": [
+            "larus heermanni",
+            "heermann's gull (larus heermanni)",
+            "heermann's gull"
+        ]
+    },
+    "Cardinal_0053_17541": {
+        "groundtruth": "Cardinal",
+        "predictions": [
+            "northern cardinal (cardinalis cardinalis)",
+            "species name: northern cardinal",
+            "northern cardinal"
+        ]
+    },
+    "Gadwall_0049_30936": {
+        "groundtruth": "Gadwall",
+        "predictions": [
+            "gadwall",
+            "gadwall (anas strepera)",
+            "dabbling duck"
+        ]
+    },
+    "Belted_Kingfisher_0011_70923": {
+        "groundtruth": "Belted Kingfisher",
+        "predictions": [
+            "belted kingfisher"
+        ]
+    },
+    "Black_Billed_Cuckoo_0081_26209": {
+        "groundtruth": "Black billed Cuckoo",
+        "predictions": [
+            "common cuckoo",
+            "cuckoo",
+            "common cuckoo (cuculus canorus)",
+            "yellow-billed cuckoo"
+        ]
+    },
+    "Green_Kingfisher_0066_71200": {
+        "groundtruth": "Green Kingfisher",
+        "predictions": [
+            "kingfisher",
+            "pied kingfisher",
+            "sooty kingfisher (halcyon cyanoventris)",
+            "green kingfisher",
+            "green kingfisher (chloroceryle americana)"
+        ]
+    },
+    "Fish_Crow_0010_25836": {
+        "groundtruth": "Fish Crow",
+        "predictions": [
+            "crow",
+            "raven",
+            "corvus corone"
+        ]
+    },
+    "Bronzed_Cowbird_0011_24138": {
+        "groundtruth": "Bronzed Cowbird",
+        "predictions": [
+            "bronzed cowbird",
+            "cattle egret",
+            "the bird in the image likely belongs to the blackbird family, possibly a common grackle (quiscalus quiscula). however, further details are needed for confirmation.",
+            "red-eyed cowbird",
+            "black phoebe"
+        ]
+    },
+    "Rusty_Blackbird_0016_6684": {
+        "groundtruth": "Rusty Blackbird",
+        "predictions": [
+            "rusty blackbird",
+            "grackle",
+            "common grackle",
+            "brown-headed crow",
+            "brown-headed cowbird"
+        ]
+    },
+    "Brewer_Blackbird_0026_2625": {
+        "groundtruth": "Brewer Blackbird",
+        "predictions": [
+            "grackle",
+            "common grackle"
+        ]
+    },
+    "Long_Tailed_Jaeger_0027_60950": {
+        "groundtruth": "Long tailed Jaeger",
+        "predictions": [
+            "arctic jaeger (stercorarius parasiticus)",
+            "parasitic jaeger",
+            "species name: parasitic jaeger"
+        ]
+    },
+    "Western_Meadowlark_0104_78105": {
+        "groundtruth": "Western Meadowlark",
+        "predictions": [
+            "southern cassin's finch",
+            "meadowlark (sturnella americana)",
+            "western meadowlark",
+            "sturnella magna",
+            "easter meadowlark"
+        ]
+    },
+    "Boat_Tailed_Grackle_0070_33612": {
+        "groundtruth": "Boat tailed Grackle",
+        "predictions": [
+            "the bird in the image is likely a common grackle (quiscalus quiscula).",
+            "crow (corvus brachyrhynchos)",
+            "red-winged blackbird",
+            "common grackle",
+            "western grackle"
+        ]
+    },
+    "Parakeet_Auklet_0062_795958": {
+        "groundtruth": "Parakeet Auklet",
+        "predictions": [
+            "atlantic puffin",
+            "crested auklet (aethia cristatella)",
+            "crested auklet",
+            "the species could possibly be a razorbill (alca torda), but without further context and clearer identification details, this remains speculative and may vary."
+        ]
+    },
+    "Green_Kingfisher_0018_71189": {
+        "groundtruth": "Green Kingfisher",
+        "predictions": [
+            "species: kingfisher",
+            "green kingfisher",
+            "kingfisher",
+            "the image shows a kingfisher, but the specific subspecies cannot be identified from this image alone."
+        ]
+    },
+    "Acadian_Flycatcher_0019_795592": {
+        "groundtruth": "Acadian Flycatcher",
+        "predictions": [
+            "american dipper",
+            "the bird in the image is likely a member of the flycatcher family, possibly a type of empidonax or contopus sp. more detailed examination of plumage and behavior would be required for a definitive identification.",
+            "acadian flycatcher",
+            "black-crested flycatcher",
+            "new world flycatcher"
+        ]
+    },
+    "Mallard_0022_77166": {
+        "groundtruth": "Mallard",
+        "predictions": [
+            "mallard duck"
+        ]
+    },
+    "Chuck_Will_Widow_0024_796993": {
+        "groundtruth": "Chuck will Widow",
+        "predictions": [
+            "nightjar",
+            "\u591c\u9e70\u5c5e\u9e1f\u7c7b\uff08nightjar\uff09",
+            "nightjar (caprimulgus europaeus)"
+        ]
+    },
+    "White_Breasted_Nuthatch_0039_86166": {
+        "groundtruth": "White breasted Nuthatch",
+        "predictions": [
+            "white-breasted nuthatch",
+            "white-breasted nut hach"
+        ]
+    },
+    "Orchard_Oriole_0035_92003": {
+        "groundtruth": "Orchard Oriole",
+        "predictions": [
+            "baltimore oriole",
+            "oriole",
+            "orchard oriole",
+            "oriental oriole (icterus spurius)"
+        ]
+    },
+    "Parakeet_Auklet_0047_795956": {
+        "groundtruth": "Parakeet Auklet",
+        "predictions": [
+            "common puffin (fratercula arctica)",
+            "little auklet",
+            "puffin",
+            "pigeon guillemot",
+            "auklets or similar seabirds"
+        ]
+    },
+    "Brandt_Cormorant_0070_23137": {
+        "groundtruth": "Brandt Cormorant",
+        "predictions": [
+            "brandt's cormorant",
+            "black-necked cormorant",
+            "cormorant"
+        ]
+    },
+    "Cardinal_0060_17139": {
+        "groundtruth": "Cardinal",
+        "predictions": [
+            "female cardinal",
+            "northern cardinal",
+            "female northern cardinal"
+        ]
+    },
+    "Boat_Tailed_Grackle_0068_33387": {
+        "groundtruth": "Boat tailed Grackle",
+        "predictions": [
+            "icteridae (new world blackbirds)",
+            "the bird could potentially be identified as a cowbird or a blackbird family member based on the general appearance and habitat, but a more precise identification would require additional characteristics visible in different angles or images showing specific plumage features such as wing pattern or tail shape.",
+            "rusty blackbird",
+            "the given information does not provide enough detail to determine the precise species of the bird. further observations such as coloration, size, behavior, or geographical location would be necessary for a more accurate identification.",
+            "brown-headed cowbird"
+        ]
+    },
+    "American_Crow_0136_25117": {
+        "groundtruth": "American Crow",
+        "predictions": [
+            "american crow",
+            "crow (likely a common raven)",
+            "crow or raven",
+            "common raven",
+            "crow"
+        ]
+    },
+    "Ovenbird_0059_92470": {
+        "groundtruth": "Ovenbird",
+        "predictions": [
+            "ovenbird",
+            "ovenbird (seiurus aurocapilla)"
+        ]
+    },
+    "Brown_Pelican_0111_93872": {
+        "groundtruth": "Brown Pelican",
+        "predictions": [
+            "brown pelican",
+            "pelican"
+        ]
+    },
+    "Slaty_Backed_Gull_0026_53245": {
+        "groundtruth": "Slaty backed Gull",
+        "predictions": [
+            "herring gull (larus argentatus)",
+            "seagull",
+            "european herring gull",
+            "great black-backed gull",
+            "lesser black-backed gull"
+        ]
+    },
+    "Anna_Hummingbird_0029_55823": {
+        "groundtruth": "Anna Hummingbird",
+        "predictions": [
+            "species name: anna's hummingbird (calypte anna)",
+            "anna's hummingbird",
+            "hummingbird"
+        ]
+    },
+    "Olive_Sided_Flycatcher_0034_30672": {
+        "groundtruth": "Olive sided Flycatcher",
+        "predictions": [
+            "olive-sided flycatcher or eastern kingbird",
+            "western wood-pewee",
+            "junco",
+            "western wood pewee",
+            "new world flycatcher"
+        ]
+    },
+    "Ringed_Kingfisher_0024_73178": {
+        "groundtruth": "Ringed Kingfisher",
+        "predictions": [
+            "ringed kingfisher",
+            "belted kingfisher",
+            "kingfisher"
+        ]
+    },
+    "White_Breasted_Nuthatch_0096_86140": {
+        "groundtruth": "White breasted Nuthatch",
+        "predictions": [
+            "white-breasted nuthatch"
+        ]
+    },
+    "Northern_Fulmar_0058_44114": {
+        "groundtruth": "Northern Fulmar",
+        "predictions": [
+            "northern fulmar",
+            "fulmar",
+            "fulmar petrel"
+        ]
+    },
+    "Parakeet_Auklet_0048_795980": {
+        "groundtruth": "Parakeet Auklet",
+        "predictions": [
+            "common murre (uria aalge)",
+            "auklet",
+            "common murre",
+            "atlantic puffin",
+            "br\u00fcnnich's guillemot"
+        ]
+    },
+    "Herring_Gull_0129_46708": {
+        "groundtruth": "Herring Gull",
+        "predictions": [
+            "herring gull (larus argentatus)",
+            "herring gull (juvenile)",
+            "great black-backed gull",
+            "gull",
+            "herring gull"
+        ]
+    },
+    "Rhinoceros_Auklet_0013_797537": {
+        "groundtruth": "Rhinoceros Auklet",
+        "predictions": [
+            "yellow-eyed penguin",
+            "eudyptes chrysocome (crested rockhopper penguin)",
+            "yellow-naped penguin",
+            "rockhopper penguin"
+        ]
+    },
+    "Tropical_Kingbird_0004_69659": {
+        "groundtruth": "Tropical Kingbird",
+        "predictions": [
+            "tyrannus verticalis",
+            "cassin's kingbird",
+            "western kingbird"
+        ]
+    },
+    "Gray_Crowned_Rosy_Finch_0026_27160": {
+        "groundtruth": "Gray crowned Rosy Finch",
+        "predictions": [
+            "brambling",
+            "brambling (fringilla montifringilla)"
+        ]
+    },
+    "Shiny_Cowbird_0040_24379": {
+        "groundtruth": "Shiny Cowbird",
+        "predictions": [
+            "the exact species cannot be determined from the provided image alone; however, possible candidates include common crow (corvus brachyrhynchos), american crow (corvus brachyrhynchos), or blackbird (turdidae family).",
+            "northern mockingbird",
+            "crow",
+            "cowbird"
+        ]
+    },
+    "Pine_Grosbeak_0033_38945": {
+        "groundtruth": "Pine Grosbeak",
+        "predictions": [
+            "crossbill",
+            "pine grosbeak",
+            "the bird in the image is likely a crossbill (loxia curvirostra). however, for accuracy, further details about its size, wing shape, and call would help confirm this identification."
+        ]
+    },
+    "Heermann_Gull_0032_45774": {
+        "groundtruth": "Heermann Gull",
+        "predictions": [
+            "murre (likely slaty-backed murre - stercorarius parasiticus)",
+            "fulmar",
+            "black-footed albatross",
+            "heermann's gull",
+            "fulmar (fulmarus glacialis)"
+        ]
+    },
+    "Indigo_Bunting_0085_11991": {
+        "groundtruth": "Indigo Bunting",
+        "predictions": [
+            "lazuli bunting",
+            "sparrow",
+            "mountain tanager",
+            "the bird appears to be a member of the bunting family, possibly a dark blue bunting, though definitive identification requires more context or closer observation of additional characteristics such as face patterns or song.",
+            "indigo bunting"
+        ]
+    },
+    "Scott_Oriole_0030_795830": {
+        "groundtruth": "Scott Oriole",
+        "predictions": [
+            "bullock's oriole",
+            "icterus spurius",
+            "black-naped oriole",
+            "black-headed oriole (icterus chrysater)",
+            "black hooded oriole (icterus cucullatus)"
+        ]
+    },
+    "Northern_Fulmar_0046_43760": {
+        "groundtruth": "Northern Fulmar",
+        "predictions": [
+            "fulmar",
+            "fulmar (fulmarus glacialis)"
+        ]
+    },
+    "Long_Tailed_Jaeger_0001_797061": {
+        "groundtruth": "Long tailed Jaeger",
+        "predictions": [
+            "black skimmer",
+            "frigatebird",
+            "sooty tern (sterna fuscata)",
+            "red-footed booby",
+            "sooty tern"
+        ]
+    },
+    "Shiny_Cowbird_0066_24358": {
+        "groundtruth": "Shiny Cowbird",
+        "predictions": [
+            "american crow",
+            "crow species (likely american crow)",
+            "based on the available information and common knowledge about corvids with similar characteristics (black plumage, slender beak), the most fitting conclusion would be:\n\nspecies name: jackdaw\n\nthis is a cautious identification due to limited visual data.",
+            "crow"
+        ]
+    },
+    "Horned_Grebe_0002_34577": {
+        "groundtruth": "Horned Grebe",
+        "predictions": [
+            "red-necked grebe",
+            "species name: slavonian grebe (podiceps auritus)",
+            "western grebe",
+            "slavonian grebe"
+        ]
+    },
+    "Yellow_Bellied_Flycatcher_0020_795482": {
+        "groundtruth": "Yellow bellied Flycatcher",
+        "predictions": [
+            "great crested flycatcher (myiarchus crinitus)",
+            "new world flycatcher",
+            "boreal flycatcher",
+            "olive-sided flycatcher"
+        ]
+    },
+    "Vermilion_Flycatcher_0042_42266": {
+        "groundtruth": "Vermilion Flycatcher",
+        "predictions": [
+            "vermilion flycatcher",
+            "splendid flycatcher (myiodynastes splendens)",
+            "red-rumped swallow (tachycineta rufiventris)"
+        ]
+    },
+    "Glaucous_Winged_Gull_0110_44377": {
+        "groundtruth": "Glaucous winged Gull",
+        "predictions": [
+            "herring gull"
+        ]
+    },
+    "Brandt_Cormorant_0025_22820": {
+        "groundtruth": "Brandt Cormorant",
+        "predictions": [
+            "brown pelican",
+            "common cormorant",
+            "cormorant"
+        ]
+    },
+    "Least_Flycatcher_0077_30296": {
+        "groundtruth": "Least Flycatcher",
+        "predictions": [
+            "willow flycatcher",
+            "easter phoebe (sayornis phoebe)",
+            "eastern phoebe",
+            "cryptopuffin or common yellowthroat (close to empidonax sp.)"
+        ]
+    },
+    "Gray_Catbird_0100_20674": {
+        "groundtruth": "Gray Catbird",
+        "predictions": [
+            "gray catbird",
+            "grey catbird",
+            "brewer's blackbird"
+        ]
+    },
+    "Mangrove_Cuckoo_0005_794599": {
+        "groundtruth": "Mangrove Cuckoo",
+        "predictions": [
+            "scissor-tailed flycatcher (pseudelaenialeucospodia)",
+            "cuckoo",
+            "cuckoo-like species",
+            "black-billed cuckoo (coccyzus erythropthalmus)"
+        ]
+    },
+    "White_Breasted_Kingfisher_0026_73201": {
+        "groundtruth": "White breasted Kingfisher",
+        "predictions": [
+            "white-throated kingfisher",
+            "white-throated kingfisher (halcyon smyrnensis)"
+        ]
+    },
+    "Lazuli_Bunting_0074_14854": {
+        "groundtruth": "Lazuli Bunting",
+        "predictions": [
+            "lazuli bunting",
+            "blue grosbeak (hesperiphona vespertina)",
+            "indigo bunting",
+            "mountain bluebird",
+            "blue grosbeak"
+        ]
+    },
+    "Nighthawk_0067_795335": {
+        "groundtruth": "Nighthawk",
+        "predictions": [
+            "knot (common or great)",
+            "nightjar/nighthawk",
+            "bustard",
+            "eurasian nightjar",
+            "burhinus oedicnemus (eurasian stone-curlew)"
+        ]
+    },
+    "Groove_Billed_Ani_0032_1776": {
+        "groundtruth": "Groove billed Ani",
+        "predictions": [
+            "american crow",
+            "cuculus or clamator genus (cuckoos)",
+            "splendid tyrannulet",
+            "ani (family creoptilidae)",
+            "cuckoo or ani family (cuculidae)"
+        ]
+    },
+    "Orchard_Oriole_0033_91532": {
+        "groundtruth": "Orchard Oriole",
+        "predictions": [
+            "yellow oriole (icterus chrysater)",
+            "oriole",
+            "black-headed oriole",
+            "based on these characteristics alone, potential candidates include species like black-and-gold oriole (icterus chrysater), which commonly inhabit central america and parts of south america but not typically within the u.s., though the image quality might mask some of the subtle details needed for accurate identification."
+        ]
+    },
+    "Yellow_Breasted_Chat_0065_22137": {
+        "groundtruth": "Yellow breasted Chat",
+        "predictions": [
+            "yellow-breasted chat (icteria virens)",
+            "western yellow wagtail (motacilla flava)",
+            "yellow-breasted chat",
+            "yellow-throated warbler"
+        ]
+    },
+    "Vermilion_Flycatcher_0002_42390": {
+        "groundtruth": "Vermilion Flycatcher",
+        "predictions": [
+            "vermilion flycatcher"
+        ]
+    },
+    "Brown_Creeper_0113_24560": {
+        "groundtruth": "Brown Creeper",
+        "predictions": [
+            "creeper",
+            "brown creeper (certhia americana)",
+            "cream-coloured honeyguide (glen\u8bdd)",
+            "certhia familiaris",
+            "brown creeper"
+        ]
+    },
+    "Yellow_Billed_Cuckoo_0038_26912": {
+        "groundtruth": "Yellow billed Cuckoo",
+        "predictions": [
+            "grey-bellied shrike",
+            "suspected species: northern mockingbird (inaccurate)",
+            "cuckoo",
+            "hooded warbler",
+            "black-billed cuckoo"
+        ]
+    },
+    "Purple_Finch_0004_27565": {
+        "groundtruth": "Purple Finch",
+        "predictions": [
+            "purple finch",
+            "purple finch (haemorhous purpureus)"
+        ]
+    },
+    "Eastern_Towhee_0068_22194": {
+        "groundtruth": "Eastern Towhee",
+        "predictions": [
+            "eastern towhee",
+            "towhee",
+            "pipilo erythrophthalmus",
+            "spotted towhee (pipilo maculatus)"
+        ]
+    },
+    "Least_Flycatcher_0021_30355": {
+        "groundtruth": "Least Flycatcher",
+        "predictions": [
+            "wood-warbler",
+            "eastern wood-pewee",
+            "eastern phoebe"
+        ]
+    },
+    "Scott_Oriole_0045_92237": {
+        "groundtruth": "Scott Oriole",
+        "predictions": [
+            "baltimore oriole",
+            "northern oriole"
+        ]
+    },
+    "White_Breasted_Nuthatch_0094_86156": {
+        "groundtruth": "White breasted Nuthatch",
+        "predictions": [
+            "white-breasted nuthatch",
+            "nuthatch"
+        ]
+    },
+    "Pomarine_Jaeger_0043_61384": {
+        "groundtruth": "Pomarine Jaeger",
+        "predictions": [
+            "northern wheatear",
+            "great northern petrel",
+            "common tern",
+            "skuas/jaegers",
+            "european storm petrel"
+        ]
+    },
+    "Mockingbird_0035_79635": {
+        "groundtruth": "Mockingbird",
+        "predictions": [
+            "northern mockingbird"
+        ]
+    },
+    "Ringed_Kingfisher_0011_72982": {
+        "groundtruth": "Ringed Kingfisher",
+        "predictions": [
+            "belted kingfisher",
+            "kingfisher"
+        ]
+    },
+    "Heermann_Gull_0112_45748": {
+        "groundtruth": "Heermann Gull",
+        "predictions": [
+            "larus heermanni",
+            "heermann's gull"
+        ]
+    },
+    "Great_Crested_Flycatcher_0040_29447": {
+        "groundtruth": "Great Crested Flycatcher",
+        "predictions": [
+            "western wood-pewee",
+            "western kingbird",
+            "great crested flycatcher (myiarchus crinitus)",
+            "empidonax traillii (olive-sided flycatcher)"
+        ]
+    },
+    "Crested_Auklet_0033_794964": {
+        "groundtruth": "Crested Auklet",
+        "predictions": [
+            "common murre",
+            "auklet (aethia petrelensis)",
+            "cassin's auklet",
+            "razorbill",
+            "auk"
+        ]
+    },
+    "Anna_Hummingbird_0098_56388": {
+        "groundtruth": "Anna Hummingbird",
+        "predictions": [
+            "anna's hummingbird (calypte anna)",
+            "anna's hummingbird"
+        ]
+    },
+    "Western_Meadowlark_0042_78180": {
+        "groundtruth": "Western Meadowlark",
+        "predictions": [
+            "sturnella neglecta",
+            "western meadowlark",
+            "western meadowlark (sturnella neglecta)",
+            "eastern meadowlark"
+        ]
+    },
+    "Nighthawk_0055_83352": {
+        "groundtruth": "Nighthawk",
+        "predictions": [
+            "northern nightjar",
+            "european nightjar",
+            "nightjar",
+            "common nighthawk"
+        ]
+    },
+    "Nighthawk_0068_82368": {
+        "groundtruth": "Nighthawk",
+        "predictions": [
+            "northern flicker (colaptes auratus)",
+            "black-bellied plover",
+            "nightjar",
+            "common nighthawk"
+        ]
+    },
+    "Glaucous_Winged_Gull_0057_44807": {
+        "groundtruth": "Glaucous winged Gull",
+        "predictions": [
+            "herring gull",
+            "herring gull (larus argentatus)"
+        ]
+    },
+    "Frigatebird_0070_43516": {
+        "groundtruth": "Frigatebird",
+        "predictions": [
+            "great frigatebird",
+            "frigatebird"
+        ]
+    },
+    "Pigeon_Guillemot_0053_39876": {
+        "groundtruth": "Pigeon Guillemot",
+        "predictions": [
+            "pigeon guillemot",
+            "guillemot",
+            "common murre"
+        ]
+    },
+    "Ovenbird_0050_92672": {
+        "groundtruth": "Ovenbird",
+        "predictions": [
+            "ovenbird",
+            "the species could possibly be an ovenbird (seiurus aurocapilla) but further verification is needed."
+        ]
+    },
+    "Great_Crested_Flycatcher_0066_29488": {
+        "groundtruth": "Great Crested Flycatcher",
+        "predictions": [
+            "tyrannus melancholicus (eastern phoebe)",
+            "new world flycatcher (likely tyrannus dominicensis)",
+            "great crested flycatcher",
+            "myiarchus sp.",
+            "eastern phoebe"
+        ]
+    },
+    "Laysan_Albatross_0083_756": {
+        "groundtruth": "Laysan Albatross",
+        "predictions": [
+            "laysan albatross",
+            "black-browed albatross (thalassarche melanophris)"
+        ]
+    },
+    "Slaty_Backed_Gull_0038_796044": {
+        "groundtruth": "Slaty backed Gull",
+        "predictions": [
+            "herring gull",
+            "based on the visible characteristics, this could be a herring gull (larus argentatus). for precise identification, additional information would be needed, including location, size, and any behavioral observations.",
+            "larus marinus",
+            "the given information does not specify enough to determine the exact species without additional context, but based on visible traits this appears to be a gull or seagull species."
+        ]
+    },
+    "Ivory_Gull_0117_49227": {
+        "groundtruth": "Ivory Gull",
+        "predictions": [
+            "ivory gull",
+            "the species of the bird cannot be definitively identified from this image alone due to the lack of detailed features necessary for accurate identification. however, given the context clues provided by the environment and behavior observed, it's possible the bird could be an ivory gull (pagophila eburnea). further visual confirmation would be required for absolute certainty."
+        ]
+    },
+    "Least_Flycatcher_0064_30328": {
+        "groundtruth": "Least Flycatcher",
+        "predictions": [
+            "ruby-crowned kinglet or similar species",
+            "golden-crowned kinglet (regulus satrapa)",
+            "kinglet",
+            "ruby-crowned kinglet"
+        ]
+    },
+    "Blue_Grosbeak_0092_36711": {
+        "groundtruth": "Blue Grosbeak",
+        "predictions": [
+            "blue grosbeak (passerina caerulea)",
+            "blue grosbeak",
+            "species cannot be definitively identified from this image alone due to the lack of detailed features that can specify a precise species.",
+            "lazuli bunting"
+        ]
+    },
+    "Parakeet_Auklet_0045_795953": {
+        "groundtruth": "Parakeet Auklet",
+        "predictions": [
+            "murrelet",
+            "atlantic puffin",
+            "auklet",
+            "crested auklet"
+        ]
+    },
+    "Clark_Nutcracker_0063_84869": {
+        "groundtruth": "Clark Nutcracker",
+        "predictions": [
+            "clark's nutcracker"
+        ]
+    },
+    "Red_Winged_Blackbird_0020_4050": {
+        "groundtruth": "Red winged Blackbird",
+        "predictions": [
+            "red-winged blackbird (agelaius phoeniceus)",
+            "red-winged blackbird"
+        ]
+    },
+    "Rufous_Hummingbird_0037_60415": {
+        "groundtruth": "Rufous Hummingbird",
+        "predictions": [
+            "anna's hummingbird",
+            "hummingbird",
+            "due to limitations, i can't provide a precise species identification without more context but the image clearly depicts a hummingbird.",
+            "ruby-throated hummingbird (archilochus colubris)"
+        ]
+    },
+    "Hooded_Merganser_0024_796779": {
+        "groundtruth": "Hooded Merganser",
+        "predictions": [
+            "ruddy duck",
+            "hooded merganser",
+            "bufflehead"
+        ]
+    },
+    "Least_Auklet_0024_795120": {
+        "groundtruth": "Least Auklet",
+        "predictions": [
+            "little auk",
+            "the bird is likely an auklet (a type of alcidae), but further identification would require more specific features or context.",
+            "little auk (alle alle)",
+            "br\u00fcnnich's guillemot",
+            "northern fulmar"
+        ]
+    },
+    "Black_Billed_Cuckoo_0019_795329": {
+        "groundtruth": "Black billed Cuckoo",
+        "predictions": [
+            "black-billed cuckoo",
+            "sylvia atricapilla",
+            "common cuckoo",
+            "cuckoo"
+        ]
+    },
+    "Tropical_Kingbird_0098_69642": {
+        "groundtruth": "Tropical Kingbird",
+        "predictions": [
+            "western kingbird",
+            "tropical kingbird",
+            "tyrannus melancholicus"
+        ]
+    },
+    "Western_Gull_0073_54118": {
+        "groundtruth": "Western Gull",
+        "predictions": [
+            "herring gull",
+            "herring gull (larus argentatus)",
+            "seagull"
+        ]
+    },
+    "Western_Grebe_0047_36203": {
+        "groundtruth": "Western Grebe",
+        "predictions": [
+            "western grebe"
+        ]
+    },
+    "Herring_Gull_0047_46218": {
+        "groundtruth": "Herring Gull",
+        "predictions": [
+            "larus ridibundus (black-headed gull)",
+            "gull",
+            "red-footed gull",
+            "black-headed gull",
+            "mediterranean gull (larus melanocephalus)"
+        ]
+    },
+    "Cardinal_0012_18638": {
+        "groundtruth": "Cardinal",
+        "predictions": [
+            "northern cardinal (cardinalis cardinalis)",
+            "northern cardinal"
+        ]
+    },
+    "Pied_Kingfisher_0022_72247": {
+        "groundtruth": "Pied Kingfisher",
+        "predictions": [
+            "pied kingfisher",
+            "kingfisher (or pied kingfisher)"
+        ]
+    },
+    "Dark_Eyed_Junco_0132_66476": {
+        "groundtruth": "Dark eyed Junco",
+        "predictions": [
+            "dark-eyed junco",
+            "junco hyemalis"
+        ]
+    },
+    "Blue_Grosbeak_0036_37048": {
+        "groundtruth": "Blue Grosbeak",
+        "predictions": [
+            "brown-headed cowbird",
+            "common waxbill",
+            "based on the description provided in the image, the species identification relies heavily on factors not presented here, therefore no accurate species can be identified solely from appearance. if more information were available (such as location, more specific physical features unique to certain species), then that might provide greater certainty.",
+            "sparrow"
+        ]
+    },
+    "Mockingbird_0010_79955": {
+        "groundtruth": "Mockingbird",
+        "predictions": [
+            "northern mockingbird",
+            "mockingbird"
+        ]
+    },
+    "Ivory_Gull_0098_49810": {
+        "groundtruth": "Ivory Gull",
+        "predictions": [
+            "ivory gull",
+            "snow petrel"
+        ]
+    },
+    "Northern_Fulmar_0066_43714": {
+        "groundtruth": "Northern Fulmar",
+        "predictions": [
+            "fulmar",
+            "common fulmar",
+            "northern fulmar"
+        ]
+    },
+    "Brown_Creeper_0023_24940": {
+        "groundtruth": "Brown Creeper",
+        "predictions": [
+            "treecreeper",
+            "brown creeper (certhia americana)",
+            "certhia familiaris",
+            "brown creeper"
+        ]
+    },
+    "Horned_Grebe_0090_34640": {
+        "groundtruth": "Horned Grebe",
+        "predictions": [
+            "western grebe",
+            "western grebe (aechmophorus occidentalis)",
+            "species name: great crested grebe (podiceps cristatus)",
+            "grebe",
+            "species name: horned grebe (podiceps auritus)"
+        ]
+    },
+    "Frigatebird_0049_43044": {
+        "groundtruth": "Frigatebird",
+        "predictions": [
+            "great frigatebird",
+            "frigatebird",
+            "frigatebird (fregata spp.)",
+            "species: fregatidae family member"
+        ]
+    },
+    "Least_Auklet_0011_795109": {
+        "groundtruth": "Least Auklet",
+        "predictions": [
+            "little auk",
+            "alcidae genus, possibly a little auklet",
+            "auklet",
+            "brunnich's guillemot"
+        ]
+    },
+    "Florida_Jay_0092_64924": {
+        "groundtruth": "Florida Jay",
+        "predictions": [
+            "western scrub-jay (aphelocoma californica)",
+            "steller's jay",
+            "western scrub-jay",
+            "western blue jay (cyanocitta stelleri)"
+        ]
+    },
+    "American_Goldfinch_0106_32182": {
+        "groundtruth": "American Goldfinch",
+        "predictions": [
+            "american goldfinch",
+            "north american golden finch"
+        ]
+    },
+    "Brewer_Blackbird_0064_2290": {
+        "groundtruth": "Brewer Blackbird",
+        "predictions": [
+            "new world blackbird",
+            "common grackle",
+            "grackle",
+            "western grackle (quiscalus mexicanus)"
+        ]
+    },
+    "Boat_Tailed_Grackle_0043_33595": {
+        "groundtruth": "Boat tailed Grackle",
+        "predictions": [
+            "carrion crow",
+            "brown-headed cowbird",
+            "common grackle",
+            "grackle",
+            "the bird is likely a common grackle (quiscalus quiscula)."
+        ]
+    },
+    "Vermilion_Flycatcher_0027_42388": {
+        "groundtruth": "Vermilion Flycatcher",
+        "predictions": [
+            "vermilion flycatcher"
+        ]
+    },
+    "Green_Kingfisher_0056_70972": {
+        "groundtruth": "Green Kingfisher",
+        "predictions": [
+            "gould kingfisher (chloroceryle americana)",
+            "green kingfisher",
+            "kingfisher"
+        ]
+    },
+    "Yellow_Bellied_Flycatcher_0031_42580": {
+        "groundtruth": "Yellow bellied Flycatcher",
+        "predictions": [
+            "empidonax affinis (least flycatcher)",
+            "empidonax flycatcher",
+            "great crested flycatcher",
+            "western flycatcher (empidonax difficilis)",
+            "eastern wood-pewee"
+        ]
+    },
+    "Bronzed_Cowbird_0009_24033": {
+        "groundtruth": "Bronzed Cowbird",
+        "predictions": [
+            "red-winged blackbird (agelaius phoeniceus)",
+            "red-winged blackbird",
+            "the species cannot be accurately identified from the image alone due to lack of specific details.",
+            "the given information does not provide enough detail for a definitive identification of the bird's species. it may resemble a starling or possibly other similar-looking birds found in different parts of the world depending on its geographic location. if you have additional images from various angles or more specific traits like bill shape, tail feathers, or vocalizations, those would help narrow down the identification further.",
+            "bronzed cowbird"
+        ]
+    },
+    "Baltimore_Oriole_0092_87435": {
+        "groundtruth": "Baltimore Oriole",
+        "predictions": [
+            "baltimore oriole"
+        ]
+    },
+    "Indigo_Bunting_0028_12335": {
+        "groundtruth": "Indigo Bunting",
+        "predictions": [
+            "indigo bunting (passerina cyanea)",
+            "indigo bunting"
+        ]
+    },
+    "Gray_Crowned_Rosy_Finch_0068_27196": {
+        "groundtruth": "Gray crowned Rosy Finch",
+        "predictions": [
+            "based solely on the provided image without additional details, i cannot definitively determine the species of the bird. further information would be needed for precise identification.",
+            "red-faced rosy finch",
+            "redpoll",
+            "brambling",
+            "common linnet"
+        ]
+    },
+    "Ovenbird_0118_93002": {
+        "groundtruth": "Ovenbird",
+        "predictions": [
+            "ovenbird"
+        ]
+    },
+    "Groove_Billed_Ani_0077_1724": {
+        "groundtruth": "Groove billed Ani",
+        "predictions": [
+            "greater ani",
+            "crotophaga sulcirostris (green-billed ani)",
+            "given the characteristics described, the most likely identification would lean towards a drongo family member, but for a precise answer:"
+        ]
+    },
+    "Shiny_Cowbird_0014_24214": {
+        "groundtruth": "Shiny Cowbird",
+        "predictions": [
+            "based on the visual cues provided, the bird may be a member of the cowbird family, possibly a red-winged blackbird (agelaius phoeniceus), but additional information would be needed for precise identification.",
+            "red-winged blackbird",
+            "rusty blackbird"
+        ]
+    },
+    "Hooded_Oriole_0115_90442": {
+        "groundtruth": "Hooded Oriole",
+        "predictions": [
+            "oriolus oriolus",
+            "orange oriole (icterus auratus)",
+            "oriolus chinensis",
+            "black-naped oriole (icterus niger)",
+            "indian golden oriole"
+        ]
+    },
+    "Western_Meadowlark_0081_77798": {
+        "groundtruth": "Western Meadowlark",
+        "predictions": [
+            "western meadowlark"
+        ]
+    },
+    "Dark_Eyed_Junco_0081_67223": {
+        "groundtruth": "Dark eyed Junco",
+        "predictions": [
+            "species name: dark-eyed junco",
+            "dark-eyed junco"
+        ]
+    },
+    "Yellow_Breasted_Chat_0105_21714": {
+        "groundtruth": "Yellow breasted Chat",
+        "predictions": [
+            "yellow-breasted chat",
+            "yellow-breasted chat (icteria virens)"
+        ]
+    },
+    "Heermann_Gull_0130_45700": {
+        "groundtruth": "Heermann Gull",
+        "predictions": [
+            "herring gull",
+            "heermann's gull",
+            "herring gull (larus argentatus)"
+        ]
+    },
+    "Lazuli_Bunting_0046_14787": {
+        "groundtruth": "Lazuli Bunting",
+        "predictions": [
+            "indigo bunting",
+            "bunting (likely indigo bunting)",
+            "lazuli bunting"
+        ]
+    },
+    "Boat_Tailed_Grackle_0113_33490": {
+        "groundtruth": "Boat tailed Grackle",
+        "predictions": [
+            "rusty blackbird",
+            "black-and-white warbler",
+            "marsh wren",
+            "new world warbler",
+            "waxwing"
+        ]
+    },
+    "Ruby_Throated_Hummingbird_0096_57505": {
+        "groundtruth": "Ruby throated Hummingbird",
+        "predictions": [
+            "hummingbird",
+            "ruby-throated hummingbird",
+            "the bird is likely a hummingbird, possibly from the genera anna's or calliope due to its size and coloration."
+        ]
+    },
+    "Least_Auklet_0027_795091": {
+        "groundtruth": "Least Auklet",
+        "predictions": [
+            "little auk",
+            "northern razorbill",
+            "eider (likely common eider or razorbill)",
+            "little auk (alle alle)",
+            "auklet"
+        ]
+    },
+    "Orchard_Oriole_0034_91825": {
+        "groundtruth": "Orchard Oriole",
+        "predictions": [
+            "bullock's oriole",
+            "bright yellow flycatcher",
+            "icterus chrysater",
+            "yellow-headed blackbird"
+        ]
+    },
+    "Gray_Crowned_Rosy_Finch_0025_797274": {
+        "groundtruth": "Gray crowned Rosy Finch",
+        "predictions": [
+            "gray-headed finch (pyrrhula pyrrhula)",
+            "gray-headed finch",
+            "song sparrow",
+            "field sparrow (spizella pusilla)",
+            "the bird could potentially be classified as a grey headed finch or similar, though more context would be needed for accurate identification."
+        ]
+    },
+    "Black_Footed_Albatross_0067_170": {
+        "groundtruth": "Black footed Albatross",
+        "predictions": [
+            "black-footed albatross"
+        ]
+    },
+    "Green_Kingfisher_0063_71345": {
+        "groundtruth": "Green Kingfisher",
+        "predictions": [
+            "green kingfisher",
+            "ringed kingfisher",
+            "ringed kingfisher (megaceryle torquata)",
+            "green kingfisher (alcedo atthis)"
+        ]
+    },
+    "Frigatebird_0116_43410": {
+        "groundtruth": "Frigatebird",
+        "predictions": [
+            "great frigatebird",
+            "frigate bird",
+            "frigatebird",
+            "the species of the bird in the image is likely a frigatebird."
+        ]
+    },
+    "Ring_Billed_Gull_0131_51370": {
+        "groundtruth": "Ring billed Gull",
+        "predictions": [
+            "gull (ring-billed gull)",
+            "ring-billed gull"
+        ]
+    },
+    "Pied_Billed_Grebe_0120_35764": {
+        "groundtruth": "Pied billed Grebe",
+        "predictions": [
+            "horned grebe",
+            "species name: pied-billed grebe (podilymbus podiceps)",
+            "pied-billed grebe",
+            "gavia pacifica",
+            "the bird in the image is likely a red-necked grebe or gavia stellata."
+        ]
+    },
+    "Baltimore_Oriole_0084_89684": {
+        "groundtruth": "Baltimore Oriole",
+        "predictions": [
+            "baltimore oriole",
+            "baltimore oriole (icterus galbula)"
+        ]
+    },
+    "American_Goldfinch_0001_32306": {
+        "groundtruth": "American Goldfinch",
+        "predictions": [
+            "american goldfinch",
+            "goldfinch (carduelis)",
+            "american goldfinch (carduelis tristis)"
+        ]
+    },
+    "Heermann_Gull_0086_45304": {
+        "groundtruth": "Heermann Gull",
+        "predictions": [
+            "sepia gull",
+            "seagull",
+            "heermann's gull",
+            "herring gull",
+            "mediterranean gull"
+        ]
+    },
+    "Spotted_Catbird_0006_796823": {
+        "groundtruth": "Spotted Catbird",
+        "predictions": [
+            "species name: tui (prosthemadera novaeseelandiae)",
+            "red-crowned tinkerbird (philemon corniculatus)",
+            "tui",
+            "new zealand tui"
+        ]
+    },
+    "Yellow_Billed_Cuckoo_0059_26828": {
+        "groundtruth": "Yellow billed Cuckoo",
+        "predictions": [
+            "cuculus canorus",
+            "common cuckoo",
+            "yellow-billed cuckoo",
+            "could be a yellow-billed cuckoo"
+        ]
+    },
+    "Painted_Bunting_0001_16585": {
+        "groundtruth": "Painted Bunting",
+        "predictions": [
+            "painted bunting",
+            "painted bunting (passerina ciris)"
+        ]
+    },
+    "Painted_Bunting_0096_15233": {
+        "groundtruth": "Painted Bunting",
+        "predictions": [
+            "painted bunting",
+            "painted bunting (passerina ciris)"
+        ]
+    },
+    "Lazuli_Bunting_0031_15018": {
+        "groundtruth": "Lazuli Bunting",
+        "predictions": [
+            "indigo bunting",
+            "brown-headed cowbird",
+            "blue-gray gnatcatcher",
+            "lazuli bunting"
+        ]
+    },
+    "Blue_Grosbeak_0010_37108": {
+        "groundtruth": "Blue Grosbeak",
+        "predictions": [
+            "baltimore oriole",
+            "indigo bunting",
+            "mountain bluebird",
+            "northern cardinal"
+        ]
+    },
+    "Gray_Catbird_0027_20968": {
+        "groundtruth": "Gray Catbird",
+        "predictions": [
+            "black-throated blue warbler",
+            "species name: american redstart (setophaga ruticilla)",
+            "dark-eyed junco",
+            "gray catbird"
+        ]
+    },
+    "Yellow_Bellied_Flycatcher_0048_795505": {
+        "groundtruth": "Yellow bellied Flycatcher",
+        "predictions": [
+            "yellow-bellied flycatcher"
+        ]
+    },
+    "Hooded_Oriole_0055_90850": {
+        "groundtruth": "Hooded Oriole",
+        "predictions": [
+            "gilera cucullata",
+            "baltimore oriole",
+            "oriole",
+            "baltimore oriole (icterus galbula)"
+        ]
+    },
+    "Green_Violetear_0084_795641": {
+        "groundtruth": "Green Violetear",
+        "predictions": [
+            "hummingbird",
+            "green violet-ear hummingbird",
+            "hummingbird (indeterminate species)",
+            "green-violet eared hummingbird (colibri thalassinus)"
+        ]
+    },
+    "Gadwall_0084_31135": {
+        "groundtruth": "Gadwall",
+        "predictions": [
+            "gadwall or bluewinged teal",
+            "gadwall (anas strepera)",
+            "common eider",
+            "gadwall (mareca strepera)",
+            "the bird in the image appears to be a type of duck, possibly a gadwall (anas strepera), but this identification cannot be confirmed solely based on the provided image details."
+        ]
+    },
+    "Bronzed_Cowbird_0032_796233": {
+        "groundtruth": "Bronzed Cowbird",
+        "predictions": [
+            "the bird is likely a starling (sturnus vulgaris).",
+            "black-billed cuckoo",
+            "crow species (likely) such as western crows or american crows",
+            "bronzed cowbird",
+            "turdus"
+        ]
+    },
+    "Long_Tailed_Jaeger_0056_797092": {
+        "groundtruth": "Long tailed Jaeger",
+        "predictions": [
+            "sooty jaeger",
+            "black tern",
+            "great skua",
+            "sooty jaeger (stercorarius antarcticus)"
+        ]
+    },
+    "Pelagic_Cormorant_0024_23712": {
+        "groundtruth": "Pelagic Cormorant",
+        "predictions": [
+            "from the image alone, the species of the bird cannot be definitively identified due to limited information.",
+            "brandt's cormorant",
+            "cormorant"
+        ]
+    },
+    "Pine_Grosbeak_0003_38437": {
+        "groundtruth": "Pine Grosbeak",
+        "predictions": [
+            "suggestion: this bird could be a red crossbill or a grosbeak, but exact species identification requires additional information.",
+            "siberian juncosparrow (zonotrichia sibirica)",
+            "pine grosbeak"
+        ]
+    },
+    "Rusty_Blackbird_0031_6699": {
+        "groundtruth": "Rusty Blackbird",
+        "predictions": [
+            "brown-headed cowbird",
+            "based on the description provided, one possible identification would be the brown-headed cowbird. this bird is known for its glossy black feathers and brown head, but as previously noted, the exact species can be difficult to determine from a single image alone.",
+            "carrion crow (corvus corone)",
+            "grackle",
+            "yellow-headed blackbird"
+        ]
+    },
+    "Parakeet_Auklet_0027_795925": {
+        "groundtruth": "Parakeet Auklet",
+        "predictions": [
+            "puffin (likely)",
+            "species name",
+            "atlantic puffin",
+            "razorbill",
+            "pacifica murrelet"
+        ]
+    },
+    "Ruby_Throated_Hummingbird_0098_57514": {
+        "groundtruth": "Ruby throated Hummingbird",
+        "predictions": [
+            "hummingbird",
+            "species name: ruby-throated hummingbird",
+            "ruby-throated hummingbird"
+        ]
+    },
+    "Least_Flycatcher_0060_30214": {
+        "groundtruth": "Least Flycatcher",
+        "predictions": [
+            "empidonax minimus (less common form)",
+            "acadian flycatcher",
+            "wood flycatcher (empidonax villosus) or alder flycatcher (empidonax alnorum)",
+            "western wood-pewee (contopus sordidulus)",
+            "eastern phoebe"
+        ]
+    },
+    "Evening_Grosbeak_0001_37437": {
+        "groundtruth": "Evening Grosbeak",
+        "predictions": [
+            "black-headed grosbeak",
+            "evening grosbeak"
+        ]
+    },
+    "Long_Tailed_Jaeger_0054_797088": {
+        "groundtruth": "Long tailed Jaeger",
+        "predictions": [
+            "long-tailed jaeger"
+        ]
+    },
+    "Hooded_Merganser_0014_796739": {
+        "groundtruth": "Hooded Merganser",
+        "predictions": [
+            "hooded merganser"
+        ]
+    },
+    "Ruby_Throated_Hummingbird_0001_58162": {
+        "groundtruth": "Ruby throated Hummingbird",
+        "predictions": [
+            "ruby-throated hummingbird"
+        ]
+    },
+    "Gray_Crowned_Rosy_Finch_0071_797285": {
+        "groundtruth": "Gray crowned Rosy Finch",
+        "predictions": [
+            "gray-crowned rosy-finch",
+            "gray-crowned rosy finch"
+        ]
+    },
+    "Brewer_Blackbird_0133_2324": {
+        "groundtruth": "Brewer Blackbird",
+        "predictions": [
+            "common grackle",
+            "black-headed grackle",
+            "brewer's blackbird",
+            "black-billed cuckoo",
+            "new world blackbird (e.g., common grackle)"
+        ]
+    },
+    "Nighthawk_0076_82686": {
+        "groundtruth": "Nighthawk",
+        "predictions": [
+            "the identification cannot be made with absolute certainty due to lack of specific locational context or additional characteristics. given visible features, it could potentially be a common swift (apus apus) but further information would be needed for a definitive identification.",
+            "nighthawk",
+            "nightjar",
+            "common nighthawk"
+        ]
+    },
+    "Yellow_Headed_Blackbird_0017_8511": {
+        "groundtruth": "Yellow headed Blackbird",
+        "predictions": [
+            "yellow-headed blackbird"
+        ]
+    },
+    "Scott_Oriole_0012_795837": {
+        "groundtruth": "Scott Oriole",
+        "predictions": [
+            "scott's oriole",
+            "scott's oriole (icterus parisorum)"
+        ]
+    },
+    "Slaty_Backed_Gull_0051_796031": {
+        "groundtruth": "Slaty backed Gull",
+        "predictions": [
+            "herring gull",
+            "western gull"
+        ]
+    },
+    "Purple_Finch_0050_27702": {
+        "groundtruth": "Purple Finch",
+        "predictions": [
+            "purple finch",
+            "hausrotschwanz (carpodacus mexicanus)",
+            "house finch",
+            "habitat: united states, mexico, central america, south america"
+        ]
+    },
+    "Pacific_Loon_0011_75726": {
+        "groundtruth": "Pacific Loon",
+        "predictions": [
+            "common loon",
+            "common loon (gavia immer)"
+        ]
+    },
+    "Chuck_Will_Widow_0057_796970": {
+        "groundtruth": "Chuck will Widow",
+        "predictions": [
+            "scops owl (otus scops)",
+            "the identification cannot be conclusively made due to the limited view; however, it may belong to a nocturnal species like a nightjar or poorwill. for precise identification, additional images or characteristics would be needed.",
+            "species name: ninox genus or related nightjar species",
+            "nightjar"
+        ]
+    },
+    "Northern_Flicker_0139_28419": {
+        "groundtruth": "Northern Flicker",
+        "predictions": [
+            "northern flicker"
+        ]
+    },
+    "Eared_Grebe_0029_34258": {
+        "groundtruth": "Eared Grebe",
+        "predictions": [
+            "eared grebe",
+            "black-necked grebe",
+            "black-necked grebe (podiceps nigricollis)",
+            "slavonian grebe"
+        ]
+    },
+    "Gray_Kingbird_0069_70082": {
+        "groundtruth": "Gray Kingbird",
+        "predictions": [
+            "eastern kingbird",
+            "grey kingbird (tyrannus dominicensis)",
+            "eastern kingbird (tyrannus tyrannus)"
+        ]
+    },
+    "Evening_Grosbeak_0100_37863": {
+        "groundtruth": "Evening Grosbeak",
+        "predictions": [
+            "hairy grosbeak",
+            "evening grosbeak",
+            "hesperorreocharis"
+        ]
+    },
+    "Brown_Creeper_0121_24574": {
+        "groundtruth": "Brown Creeper",
+        "predictions": [
+            "certhia familiaris",
+            "woodcreeper",
+            "treecreeper",
+            "brown creeper"
+        ]
+    },
+    "Horned_Grebe_0102_34448": {
+        "groundtruth": "Horned Grebe",
+        "predictions": [
+            "the bird in the image is likely a horned grebe (podiceps auritus).",
+            "horned grebe"
+        ]
+    },
+    "Brandt_Cormorant_0015_23198": {
+        "groundtruth": "Brandt Cormorant",
+        "predictions": [
+            "the bird in the image is likely a type of cormorant.",
+            "brown pelican",
+            "cormorant"
+        ]
+    },
+    "Sooty_Albatross_0040_796375": {
+        "groundtruth": "Sooty Albatross",
+        "predictions": [
+            "storm petrel",
+            "sooty shearwater",
+            "petrel",
+            "north atlantic sooty shearwater"
+        ]
+    },
+    "Herring_Gull_0026_48041": {
+        "groundtruth": "Herring Gull",
+        "predictions": [
+            "herring gull",
+            "herring gull (larus argentatus)"
+        ]
+    },
+    "Rusty_Blackbird_0074_6585": {
+        "groundtruth": "Rusty Blackbird",
+        "predictions": [
+            "rusty blackbird",
+            "northern cardinal",
+            "based on general appearance alone and considering the potential habitats and behaviors of birds that match the features seen here, it might be a member of the thrush or jay genera. to accurately determine the species, additional information would be needed like vocalization patterns or geographical context.",
+            "robin-like songbird"
+        ]
+    },
+    "California_Gull_0111_41033": {
+        "groundtruth": "California Gull",
+        "predictions": [
+            "herring gull",
+            "herring gull (larus argentatus)"
+        ]
+    },
+    "Yellow_Billed_Cuckoo_0081_26429": {
+        "groundtruth": "Yellow billed Cuckoo",
+        "predictions": [
+            "yellow-billed cuckoo (coccyzus americanus)",
+            "yellow-billed cuckoo",
+            "coccyzus americanus"
+        ]
+    },
+    "Black_Footed_Albatross_0010_796097": {
+        "groundtruth": "Black footed Albatross",
+        "predictions": [
+            "petrel",
+            "leach's storm-petrel (oceanodroma leucorhoa)",
+            "albatross"
+        ]
+    },
+    "Herring_Gull_0141_47184": {
+        "groundtruth": "Herring Gull",
+        "predictions": [
+            "gull (juvenile)",
+            "species name: gull (juvenile)",
+            "seagull",
+            "herring gull (likely) or another juvenile gull species",
+            "herring gull"
+        ]
+    },
+    "Western_Gull_0090_53603": {
+        "groundtruth": "Western Gull",
+        "predictions": [
+            "the species of the bird is likely a herring gull (larus argentatus).",
+            "species name: gull",
+            "seagull"
+        ]
+    },
+    "Blue_Jay_0038_62784": {
+        "groundtruth": "Blue Jay",
+        "predictions": [
+            "blue jay",
+            "blue jay (cyanocitta cristata)"
+        ]
+    },
+    "Red_Faced_Cormorant_0037_796305": {
+        "groundtruth": "Red faced Cormorant",
+        "predictions": [
+            "common shag (phalacrocorax aristotelis)",
+            "brandt's cormorant",
+            "cormorant"
+        ]
+    },
+    "Horned_Grebe_0019_34811": {
+        "groundtruth": "Horned Grebe",
+        "predictions": [
+            "red-necked grebe",
+            "horned grebe",
+            "black-necked grebe"
+        ]
+    },
+    "Gadwall_0017_30979": {
+        "groundtruth": "Gadwall",
+        "predictions": [
+            "red-crested pochard",
+            "gadwall",
+            "it looks like a mallard duck (anas platyrhynchos).",
+            "gadwall (anas strepera)",
+            "gadwall (mareca strepera)"
+        ]
+    },
+    "White_Breasted_Kingfisher_0088_73386": {
+        "groundtruth": "White breasted Kingfisher",
+        "predictions": [
+            "white-throated kingfisher",
+            "white-throated kingfisher (halcyon smyrnensis)"
+        ]
+    },
+    "Shiny_Cowbird_0044_24239": {
+        "groundtruth": "Shiny Cowbird",
+        "predictions": [
+            "brown-headed cowbird",
+            "common grackle",
+            "new world blackbird",
+            "cowbird",
+            "cowbird (molothrus) species (likely a common grackle)"
+        ]
+    },
+    "Scissor_Tailed_Flycatcher_0002_41762": {
+        "groundtruth": "Scissor tailed Flycatcher",
+        "predictions": [
+            "scissor-tailed flycatcher"
+        ]
+    },
+    "Blue_Jay_0015_62916": {
+        "groundtruth": "Blue Jay",
+        "predictions": [
+            "blue jay",
+            "blue jay (cyanocitta cristata)"
+        ]
+    },
+    "Eared_Grebe_0079_34342": {
+        "groundtruth": "Eared Grebe",
+        "predictions": [
+            "red-necked grebe",
+            "eared grebe",
+            "black-necked grebe",
+            "black-necked grebe (podiceps nigricollis)"
+        ]
+    },
+    "Vermilion_Flycatcher_0012_42253": {
+        "groundtruth": "Vermilion Flycatcher",
+        "predictions": [
+            "vermilion flycatcher"
+        ]
+    },
+    "Acadian_Flycatcher_0006_795595": {
+        "groundtruth": "Acadian Flycatcher",
+        "predictions": [
+            "yellow-billed flycatcher",
+            "warbling flycatcher",
+            "the bird could be a member of the genus pyrrholaemus, likely being either the great crested flycatcher or the red-eyed vireo. however, more precise identification would require additional details not present here.",
+            "certhia americana (american redstart)",
+            "vireo"
+        ]
+    },
+    "Red_Breasted_Merganser_0002_79447": {
+        "groundtruth": "Red breasted Merganser",
+        "predictions": [
+            "red-breasted merganser",
+            "goosander (mergus merganser)",
+            "mergus serrator",
+            "merganser (goosander)"
+        ]
+    },
+    "Pied_Billed_Grebe_0072_35939": {
+        "groundtruth": "Pied billed Grebe",
+        "predictions": [
+            "pied-billed grebe",
+            "pecies: pied-billed grebe"
+        ]
+    },
+    "Mangrove_Cuckoo_0050_794594": {
+        "groundtruth": "Mangrove Cuckoo",
+        "predictions": [
+            "polioptila caerulea (kinglet flycatcher)",
+            "baby cuckoo",
+            "the bird may belong to the cuckoo family (cuculidae), but identification would benefit from more detailed observation or knowledge about its habitat and other characteristics not visible in this photo.",
+            "gray kingbird",
+            "eurasian cuckoo"
+        ]
+    },
+    "Indigo_Bunting_0055_13473": {
+        "groundtruth": "Indigo Bunting",
+        "predictions": [
+            "indigo bunting"
+        ]
+    },
+    "Ruby_Throated_Hummingbird_0079_58075": {
+        "groundtruth": "Ruby throated Hummingbird",
+        "predictions": [
+            "hummingbird",
+            "species name: hummingbird",
+            "ruby-throated hummingbird"
+        ]
+    },
+    "Ovenbird_0112_93018": {
+        "groundtruth": "Ovenbird",
+        "predictions": [
+            "ovenbird"
+        ]
+    },
+    "Pomarine_Jaeger_0009_795740": {
+        "groundtruth": "Pomarine Jaeger",
+        "predictions": [
+            "sooty jaeger",
+            "great skua (stercorarius skua)",
+            "long-tailed jaeger",
+            "northern jaeger"
+        ]
+    },
+    "Gray_Catbird_0125_19833": {
+        "groundtruth": "Gray Catbird",
+        "predictions": [
+            "catbird (dumetella carolinensis)",
+            "catbird",
+            "grey catbird",
+            "gray catbird"
+        ]
+    },
+    "Scott_Oriole_0008_795814": {
+        "groundtruth": "Scott Oriole",
+        "predictions": [
+            "baltimore oriole"
+        ]
+    },
+    "Dark_Eyed_Junco_0109_66326": {
+        "groundtruth": "Dark eyed Junco",
+        "predictions": [
+            "dark-eyed junco (junco hyemalis)",
+            "dark-eyed junco"
+        ]
+    },
+    "Mockingbird_0106_81381": {
+        "groundtruth": "Mockingbird",
+        "predictions": [
+            "northern mockingbird"
+        ]
+    },
+    "Northern_Fulmar_0098_43578": {
+        "groundtruth": "Northern Fulmar",
+        "predictions": [
+            "fulmar (fulmarus glacialis)",
+            "fulmar petrel",
+            "fulmar"
+        ]
+    },
+    "Pine_Grosbeak_0068_38981": {
+        "groundtruth": "Pine Grosbeak",
+        "predictions": [
+            "pinicola enucleator (purple finch)",
+            "pine grosbeak"
+        ]
+    },
+    "Hooded_Merganser_0040_78984": {
+        "groundtruth": "Hooded Merganser",
+        "predictions": [
+            "merganser (male)",
+            "hooded merganser",
+            "hooded merganser (lophodytes cucullatus)"
+        ]
+    },
+    "Chuck_Will_Widow_0012_796956": {
+        "groundtruth": "Chuck will Widow",
+        "predictions": [
+            "common nighthawk",
+            "nightjar",
+            "black-chinned nightjar",
+            "common nightjar",
+            "cape nightjar (caprimulgus europaeus)"
+        ]
+    },
+    "Crested_Auklet_0052_794952": {
+        "groundtruth": "Crested Auklet",
+        "predictions": [
+            "crested auklet",
+            "tufted puffin"
+        ]
+    },
+    "Scissor_Tailed_Flycatcher_0119_41879": {
+        "groundtruth": "Scissor tailed Flycatcher",
+        "predictions": [
+            "the bird appears to be a scissor-tailed flycatcher (tyrannus forficatus).",
+            "scissor-tailed flycatcher"
+        ]
+    },
+    "Ivory_Gull_0109_49382": {
+        "groundtruth": "Ivory Gull",
+        "predictions": [
+            "ivory gull",
+            "icyland petrel (pagophila eburnea)"
+        ]
+    },
+    "Ring_Billed_Gull_0063_51256": {
+        "groundtruth": "Ring billed Gull",
+        "predictions": [
+            "seagull",
+            "herring gull (likely)",
+            "herring gull"
+        ]
+    },
+    "Bobolink_0119_10430": {
+        "groundtruth": "Bobolink",
+        "predictions": [
+            "bobolink (dolichonyx oryzivorus)",
+            "bobolink"
+        ]
+    },
+    "Bobolink_0133_9618": {
+        "groundtruth": "Bobolink",
+        "predictions": [
+            "brown headed cowbird (molothrus ater)",
+            "yellow-billed lark",
+            "bonellia capensis",
+            "red-winged blackbird",
+            "grackle"
+        ]
+    },
+    "Pine_Grosbeak_0102_38216": {
+        "groundtruth": "Pine Grosbeak",
+        "predictions": [
+            "pine grosbeak"
+        ]
+    },
+    "American_Crow_0047_25397": {
+        "groundtruth": "American Crow",
+        "predictions": [
+            "carrion crow",
+            "american crow",
+            "crow (likely american crow)",
+            "raven (corvus corax)",
+            "crow"
+        ]
+    },
+    "Green_Jay_0114_65841": {
+        "groundtruth": "Green Jay",
+        "predictions": [
+            "green jay",
+            "green jay (cyanocorax yncas)"
+        ]
+    },
+    "Pied_Kingfisher_0017_72316": {
+        "groundtruth": "Pied Kingfisher",
+        "predictions": [
+            "pied kingfisher",
+            "species: pied kingfisher (ceryle rudis)",
+            "pied kingfisher (ceryle rudis)"
+        ]
+    },
+    "Gray_Crowned_Rosy_Finch_0052_27032": {
+        "groundtruth": "Gray crowned Rosy Finch",
+        "predictions": [
+            "red crossbill",
+            "common redpoll (acanthis flammea)",
+            "purple finch",
+            "sparrow"
+        ]
+    },
+    "Lazuli_Bunting_0073_14594": {
+        "groundtruth": "Lazuli Bunting",
+        "predictions": [
+            "lazuli bunting",
+            "indigo bunting",
+            "bunting (possibly a species from the family fringillidae)",
+            "indigo bunting (passerina cyanea)",
+            "brambling"
+        ]
+    },
+    "Baltimore_Oriole_0021_87089": {
+        "groundtruth": "Baltimore Oriole",
+        "predictions": [
+            "baltimore oriole"
+        ]
+    },
+    "Northern_Flicker_0024_29041": {
+        "groundtruth": "Northern Flicker",
+        "predictions": [
+            "northern flicker woodpecker",
+            "northern flicker"
+        ]
+    },
+    "Sooty_Albatross_0031_1066": {
+        "groundtruth": "Sooty Albatross",
+        "predictions": [
+            "tern (likely)",
+            "petrel",
+            "sooty shearwater",
+            "shearwater or petrel",
+            "black-footed albatross (thalassarche melanophrys)"
+        ]
+    },
+    "Scott_Oriole_0023_795835": {
+        "groundtruth": "Scott Oriole",
+        "predictions": [
+            "scott's oriole",
+            "baltimore oriole",
+            "western oriole",
+            "golden oriole"
+        ]
+    },
+    "Rose_Breasted_Grosbeak_0001_39801": {
+        "groundtruth": "Rose breasted Grosbeak",
+        "predictions": [
+            "rosy-faced grosbeak",
+            "rose-breasted grosbeak"
+        ]
+    },
+    "Brandt_Cormorant_0006_22925": {
+        "groundtruth": "Brandt Cormorant",
+        "predictions": [
+            "neotropic cormorant",
+            "double-crested cormorant",
+            "cormorant"
+        ]
+    },
+    "Blue_Jay_0017_62854": {
+        "groundtruth": "Blue Jay",
+        "predictions": [
+            "bird species: blue jay (cyanocitta cristata)",
+            "blue jay"
+        ]
+    },
+    "Crested_Auklet_0061_794904": {
+        "groundtruth": "Crested Auklet",
+        "predictions": [
+            "crested auklet",
+            "aethia cristatella",
+            "brandt's cormorant"
+        ]
+    },
+    "Pelagic_Cormorant_0029_23545": {
+        "groundtruth": "Pelagic Cormorant",
+        "predictions": [
+            "sooty shag or similar cormorant species",
+            "cormorant"
+        ]
+    },
+    "Brown_Pelican_0129_94074": {
+        "groundtruth": "Brown Pelican",
+        "predictions": [
+            "brown pelican"
+        ]
+    },
+    "Crested_Auklet_0072_785260": {
+        "groundtruth": "Crested Auklet",
+        "predictions": [
+            "pigeon guillemot",
+            "tufted puffin",
+            "northern puffin",
+            "puffin"
+        ]
+    },
+    "Vermilion_Flycatcher_0067_42185": {
+        "groundtruth": "Vermilion Flycatcher",
+        "predictions": [
+            "vermilion flycatcher"
+        ]
+    },
+    "Red_Legged_Kittiwake_0063_795453": {
+        "groundtruth": "Red legged Kittiwake",
+        "predictions": [
+            "great black-backed gull",
+            "gull",
+            "herring gull",
+            "seagull"
+        ]
+    },
+    "Anna_Hummingbird_0021_55763": {
+        "groundtruth": "Anna Hummingbird",
+        "predictions": [
+            "costa's hummingbird",
+            "anna's hummingbird"
+        ]
+    },
+    "Red_Legged_Kittiwake_0065_795456": {
+        "groundtruth": "Red legged Kittiwake",
+        "predictions": [
+            "red-legged kittiwake"
+        ]
+    },
+    "Rufous_Hummingbird_0118_59393": {
+        "groundtruth": "Rufous Hummingbird",
+        "predictions": [
+            "rufous hummingbird",
+            "hummingbird",
+            "the given image suggests the bird could be either an anna's hummingbird (selasphorus calliope) or a rufous hummingbird (selasphorus rufus), but a definitive identification requires more specific visual cues not fully observed here.",
+            "ruby-throated hummingbird"
+        ]
+    },
+    "Great_Crested_Flycatcher_0019_29801": {
+        "groundtruth": "Great Crested Flycatcher",
+        "predictions": [
+            "swainson's flycatcher",
+            "olive-sided flycatcher",
+            "the image shows a bird that resembles a great crested flycatcher; however, a definite species identification cannot be made conclusively without more specific visual data.",
+            "the species cannot be definitively identified from the given image.",
+            "eastern phoebe"
+        ]
+    },
+    "Least_Auklet_0043_795067": {
+        "groundtruth": "Least Auklet",
+        "predictions": [
+            "little auk",
+            "little auk (alle alle)",
+            "little auklet (alle alle)",
+            "arcitc skua"
+        ]
+    },
+    "European_Goldfinch_0100_794685": {
+        "groundtruth": "European Goldfinch",
+        "predictions": [
+            "european goldfinch (carduelis carduelis)",
+            "euroean goldfinch (carduelis carduelis)"
+        ]
+    },
+    "Red_Legged_Kittiwake_0016_795460": {
+        "groundtruth": "Red legged Kittiwake",
+        "predictions": [
+            "common gull",
+            "snowy owl",
+            "white-throated gull",
+            "red-billed tern",
+            "arcctic tern"
+        ]
+    },
+    "Nighthawk_0027_84697": {
+        "groundtruth": "Nighthawk",
+        "predictions": [
+            "nightjar",
+            "northern chuck-will's-widow (caprimulgus carolinensis)",
+            "common nighthawk"
+        ]
+    },
+    "Green_Jay_0102_65813": {
+        "groundtruth": "Green Jay",
+        "predictions": [
+            "green jay"
+        ]
+    },
+    "Green_Kingfisher_0097_71102": {
+        "groundtruth": "Green Kingfisher",
+        "predictions": [
+            "belted kingfisher",
+            "green kingfisher (chloroceryle americana)",
+            "kingfisher"
+        ]
+    },
+    "Chuck_Will_Widow_0007_796958": {
+        "groundtruth": "Chuck will Widow",
+        "predictions": [
+            "chuck-will's-widow",
+            "caprimulgus carolinensis",
+            "chuck-will's-widow, caprimulgus carolinensis"
+        ]
+    },
+    "Rose_Breasted_Grosbeak_0092_39367": {
+        "groundtruth": "Rose breasted Grosbeak",
+        "predictions": [
+            "rose-breasted grosbeak"
+        ]
+    },
+    "Yellow_Billed_Cuckoo_0042_26479": {
+        "groundtruth": "Yellow billed Cuckoo",
+        "predictions": [
+            "cuckoo",
+            "yellow-billed cuckoo",
+            "yellow-billed cuckoo (coccyzus americanus)"
+        ]
+    },
+    "Frigatebird_0008_43058": {
+        "groundtruth": "Frigatebird",
+        "predictions": [
+            "frigatebird",
+            "alexandrian frigatebird (fregata magnificens)",
+            "magnificent frigatebird"
+        ]
+    },
+    "Mallard_0098_77490": {
+        "groundtruth": "Mallard",
+        "predictions": [
+            "mallard duck",
+            "mallard"
+        ]
+    },
+    "Fish_Crow_0060_26016": {
+        "groundtruth": "Fish Crow",
+        "predictions": [
+            "american crow",
+            "crow (possibly a great-tailed grackle)",
+            "crow (american crow)",
+            "crow (corvus brachyrhynchos)"
+        ]
+    },
+    "Orchard_Oriole_0023_91705": {
+        "groundtruth": "Orchard Oriole",
+        "predictions": [
+            "baltimore oriole",
+            "oriole"
+        ]
+    },
+    "Laysan_Albatross_0051_1020": {
+        "groundtruth": "Laysan Albatross",
+        "predictions": [
+            "laysan albatross",
+            "the bird could possibly be a laysan albatross (phoebastria immutabilis), given its appearance and habitat setting.",
+            "leucophaeus lanius (laysan albatross)"
+        ]
+    },
+    "Horned_Grebe_0076_34841": {
+        "groundtruth": "Horned Grebe",
+        "predictions": [
+            "black-necked grebe",
+            "slavonian grebe",
+            "red-necked grebe (podiceps grisegena)",
+            "horned grebe"
+        ]
+    },
+    "Scott_Oriole_0001_795826": {
+        "groundtruth": "Scott Oriole",
+        "predictions": [
+            "baltimore oriole"
+        ]
+    },
+    "White_Breasted_Kingfisher_0117_73283": {
+        "groundtruth": "White breasted Kingfisher",
+        "predictions": [
+            "white-throated kingfisher (halcyon smyrnensis)"
+        ]
+    },
+    "Indigo_Bunting_0059_11596": {
+        "groundtruth": "Indigo Bunting",
+        "predictions": [
+            "brown-headed cowbird",
+            "indigo bunting"
+        ]
+    },
+    "Belted_Kingfisher_0085_70503": {
+        "groundtruth": "Belted Kingfisher",
+        "predictions": [
+            "belted kingfisher",
+            "ringed kingfisher",
+            "ring-billed kingfisher"
+        ]
+    },
+    "Purple_Finch_0006_27950": {
+        "groundtruth": "Purple Finch",
+        "predictions": [
+            "house finch (haemorhous mexicanus)",
+            "house finch",
+            "species name: purple finch (carpodacus purpureus)"
+        ]
+    },
+    "Eastern_Towhee_0090_22273": {
+        "groundtruth": "Eastern Towhee",
+        "predictions": [
+            "easter towhee",
+            "eastern towhee",
+            "townsend's towhee"
+        ]
+    },
+    "Brown_Pelican_0080_93439": {
+        "groundtruth": "Brown Pelican",
+        "predictions": [
+            "brown pelican",
+            "american white pelican"
+        ]
+    },
+    "Hooded_Oriole_0106_90899": {
+        "groundtruth": "Hooded Oriole",
+        "predictions": [
+            "oriole (likely an bullock's oriole or an icterus bullockii)",
+            "baltimore oriole"
+        ]
+    },
+    "Tropical_Kingbird_0074_69949": {
+        "groundtruth": "Tropical Kingbird",
+        "predictions": [
+            "western kingbird",
+            "cassin's kingbird",
+            "western kingbird (tyrannus verticalis)"
+        ]
+    },
+    "Northern_Fulmar_0048_43672": {
+        "groundtruth": "Northern Fulmar",
+        "predictions": [
+            "northern fulmar",
+            "fulmar"
+        ]
+    },
+    "Pigeon_Guillemot_0083_39980": {
+        "groundtruth": "Pigeon Guillemot",
+        "predictions": [
+            "common murre",
+            "guillemot/murre",
+            "common murre (uria aalge)"
+        ]
+    },
+    "Groove_Billed_Ani_0033_1494": {
+        "groundtruth": "Groove billed Ani",
+        "predictions": [
+            "cuckoo (cuculus) species",
+            "species not determinable from this image alone",
+            "species name: black barbet (capitonis)",
+            "cuckoo (cuculus genus)",
+            "without further information, the most accurate guess based on visible features would be a cuckoo, but the specific species cannot be determined from this image alone. further observations or clearer distinguishing factors might help confirm the identity."
+        ]
+    },
+    "Nighthawk_0050_84094": {
+        "groundtruth": "Nighthawk",
+        "predictions": [
+            "nightjar",
+            "common poorwill"
+        ]
+    },
+    "Brown_Creeper_0007_24902": {
+        "groundtruth": "Brown Creeper",
+        "predictions": [
+            "brown creeper",
+            "crooked-bill woodcreeper (lepidocolaptes souleyetii)"
+        ]
+    },
+    "Ring_Billed_Gull_0098_51410": {
+        "groundtruth": "Ring billed Gull",
+        "predictions": [
+            "species name: ring-billed gull (larus delawarensis)",
+            "herring gull",
+            "ring-billed gull"
+        ]
+    },
+    "Florida_Jay_0066_65018": {
+        "groundtruth": "Florida Jay",
+        "predictions": [
+            "western scrub-jay",
+            "blue jay",
+            "screech jay",
+            "southern scrub-jay (aphelocoma coerulescens)"
+        ]
+    },
+    "Fish_Crow_0076_25971": {
+        "groundtruth": "Fish Crow",
+        "predictions": [
+            "common raven",
+            "crow (corvus corax)",
+            "carrion crow (corvus corone)",
+            "crow"
+        ]
+    },
+    "Yellow_Headed_Blackbird_0020_8549": {
+        "groundtruth": "Yellow headed Blackbird",
+        "predictions": [
+            "yellow-headed blackbird (xanthocephalus xanthocephalus)",
+            "yellow-headed blackbird",
+            "species name: yellow-headed blackbird"
+        ]
+    },
+    "American_Crow_0109_25123": {
+        "groundtruth": "American Crow",
+        "predictions": [
+            "raven",
+            "common raven",
+            "based on the provided image and common observations:",
+            "crow"
+        ]
+    },
+    "Spotted_Catbird_0037_796810": {
+        "groundtruth": "Spotted Catbird",
+        "predictions": [
+            "thick-billed ostrichbird (ptilonorhynchus violaceus)",
+            "barramundi-finch",
+            "spectacled bowerbird (psophodes speculifer)",
+            "speckled pigeon (geopelia humeralis)",
+            "broad-tailed bowerbird (amblyornis amabilis)"
+        ]
+    },
+    "Vermilion_Flycatcher_0005_42478": {
+        "groundtruth": "Vermilion Flycatcher",
+        "predictions": [
+            "vermilion flycatcher"
+        ]
+    },
+    "Western_Grebe_0088_36428": {
+        "groundtruth": "Western Grebe",
+        "predictions": [
+            "long-necked grebe",
+            "western grebe"
+        ]
+    },
+    "Glaucous_Winged_Gull_0014_44832": {
+        "groundtruth": "Glaucous winged Gull",
+        "predictions": [
+            "seagull",
+            "herring gull (larus argentatus)",
+            "glaucous gull",
+            "glaucous-winged gull (larus glaucescens)"
+        ]
+    },
+    "Rose_Breasted_Grosbeak_0067_39592": {
+        "groundtruth": "Rose breasted Grosbeak",
+        "predictions": [
+            "rose-breasted grosbeak"
+        ]
+    },
+    "Glaucous_Winged_Gull_0093_44724": {
+        "groundtruth": "Glaucous winged Gull",
+        "predictions": [
+            "seagull",
+            "glaucous-winged gull",
+            "herring gull",
+            "species name: gull"
+        ]
+    },
+    "Fish_Crow_0043_25847": {
+        "groundtruth": "Fish Crow",
+        "predictions": [
+            "raven",
+            "common raven",
+            "crow"
+        ]
+    },
+    "Black_Billed_Cuckoo_0088_26217": {
+        "groundtruth": "Black billed Cuckoo",
+        "predictions": [
+            "black-billed cuckoo",
+            "black-billed cuckoo (coccyzus erythropthalmus)"
+        ]
+    },
+    "Yellow_Breasted_Chat_0033_21873": {
+        "groundtruth": "Yellow breasted Chat",
+        "predictions": [
+            "yellow-breasted chat (icteria virens)",
+            "icteria virens",
+            "species name: yellow-breasted chat",
+            "yellow-breasted chat"
+        ]
+    },
+    "Evening_Grosbeak_0133_37976": {
+        "groundtruth": "Evening Grosbeak",
+        "predictions": [
+            "evening grosbeak",
+            "crossbill (loxia curvirostra)",
+            "evening grosbeaks",
+            "hesperiphona vespertina (evening grosbeak)"
+        ]
+    },
+    "Great_Crested_Flycatcher_0067_29384": {
+        "groundtruth": "Great Crested Flycatcher",
+        "predictions": [
+            "\u725b\u9738\u9e5f(oriole)",
+            "phainopepla nevadensis",
+            "yellow-bellied flycatcher",
+            "eastern wood pewee (contopus virens)",
+            "tropical tyrannulet"
+        ]
+    },
+    "Yellow_Headed_Blackbird_0056_8455": {
+        "groundtruth": "Yellow headed Blackbird",
+        "predictions": [
+            "yellow-headed blackbird",
+            "species name: yellow-headed blackbird (xanthocephalus xanthocephalus)",
+            "brown-headed cowbird (molothrus ater)"
+        ]
+    },
+    "Red_Legged_Kittiwake_0004_73811": {
+        "groundtruth": "Red legged Kittiwake",
+        "predictions": [
+            "larus (seagull/gull)",
+            "the species cannot be conclusively identified from the given image alone without more details about the geographical location or additional features like wingspan or behavior. it could potentially be one of several seabirds that share these traits, such as a slaty-backed gull (larus schistisagus) or a snowy egret, but neither fits all aspects of what's shown perfectly.",
+            "mew gull",
+            "northern fulmar (fulmarus glacialis)",
+            "lesser black-backed gull"
+        ]
+    },
+    "Black_Footed_Albatross_0077_796114": {
+        "groundtruth": "Black footed Albatross",
+        "predictions": [
+            "northern petrel (pterodroma mollis)",
+            "northern giant petrel",
+            "northern fulmar",
+            "northern storm petrel (sterna paradisaea)",
+            "peregrine petrel"
+        ]
+    },
+    "Horned_Lark_0013_74374": {
+        "groundtruth": "Horned Lark",
+        "predictions": [
+            "horned lark",
+            "horned lark (eremophila alpestris)"
+        ]
+    },
+    "Brown_Creeper_0118_24500": {
+        "groundtruth": "Brown Creeper",
+        "predictions": [
+            "chestnut-sided creeper",
+            "brown creeper",
+            "european treecreeper"
+        ]
+    },
+    "Painted_Bunting_0093_15212": {
+        "groundtruth": "Painted Bunting",
+        "predictions": [
+            "painted bunting"
+        ]
+    },
+    "Crested_Auklet_0069_785258": {
+        "groundtruth": "Crested Auklet",
+        "predictions": [
+            "species: sooty shearwater",
+            "black oystercatcher (haematopus bachmani)",
+            "murre",
+            "black guillemot",
+            "black-vented shearwater"
+        ]
+    },
+    "Gadwall_0064_31504": {
+        "groundtruth": "Gadwall",
+        "predictions": [
+            "it is difficult to accurately identify the bird species solely based on the provided image without additional information about the bird's features. more detail would be needed for precise identification.",
+            "gadwall duck",
+            "gadwall"
+        ]
+    },
+    "Red_Breasted_Merganser_0021_79168": {
+        "groundtruth": "Red breasted Merganser",
+        "predictions": [
+            "red-breasted merganser",
+            "american merganser (mergus merganser)",
+            "american merganser"
+        ]
+    },
+    "White_Breasted_Nuthatch_0054_86551": {
+        "groundtruth": "White breasted Nuthatch",
+        "predictions": [
+            "sitta carolinensis",
+            "white-breasted nuthatch"
+        ]
+    },
+    "Evening_Grosbeak_0016_37613": {
+        "groundtruth": "Evening Grosbeak",
+        "predictions": [
+            "evening grosbeak"
+        ]
+    },
+    "Western_Gull_0025_55421": {
+        "groundtruth": "Western Gull",
+        "predictions": [
+            "seagull",
+            "herring gull"
+        ]
+    },
+    "Pacific_Loon_0066_75547": {
+        "groundtruth": "Pacific Loon",
+        "predictions": [
+            "pacific loon",
+            "loon",
+            "common loon",
+            "common loon (gavia immer)"
+        ]
+    },
+    "Gray_Kingbird_0042_70083": {
+        "groundtruth": "Gray Kingbird",
+        "predictions": [
+            "kingbird (tyrannus melancholicus)",
+            "saysornis nigricans (eastern kingbird)",
+            "eastern kingbird"
+        ]
+    },
+    "Ivory_Gull_0015_49199": {
+        "groundtruth": "Ivory Gull",
+        "predictions": [
+            "ivory gull",
+            "sabine's gull",
+            "glaucous gull (larus hyperboreus)"
+        ]
+    },
+    "Eared_Grebe_0020_34131": {
+        "groundtruth": "Eared Grebe",
+        "predictions": [
+            "black-necked grebe",
+            "horned grebe (podiceps auritus)",
+            "eared grebe"
+        ]
+    },
+    "Green_Violetear_0060_795657": {
+        "groundtruth": "Green Violetear",
+        "predictions": [
+            "sapphire hummingbird",
+            "campylopterus phoeniceus",
+            "colibri coruscans (also known as the white-necked jacobin)",
+            "hummingbird",
+            "green hummingbird (eriocnemis luciani)"
+        ]
+    },
+    "Pelagic_Cormorant_0093_23722": {
+        "groundtruth": "Pelagic Cormorant",
+        "predictions": [
+            "cormorant"
+        ]
+    },
+    "California_Gull_0021_41471": {
+        "groundtruth": "California Gull",
+        "predictions": [
+            "california gull"
+        ]
+    },
+    "Purple_Finch_0049_27507": {
+        "groundtruth": "Purple Finch",
+        "predictions": [
+            "species name: house finch (carpodacus mexicanus)",
+            "hooded warbler",
+            "houses finch",
+            "horse finch (carpodacus mexicanus)",
+            "habitat: breeds across canada and usa (south to mexico), winters in the southern us and central america.\ndiet: insects during breeding season; seeds and fruit throughout year.\nnests: open cup nests constructed by female from twigs lined with fine plant materials and hair or fur; usually placed high up in a tree or shrub."
+        ]
+    },
+    "Anna_Hummingbird_0113_56296": {
+        "groundtruth": "Anna Hummingbird",
+        "predictions": [
+            "hummingbird",
+            "anna's hummingbird (calypte anna)",
+            "anna's hummingbird"
+        ]
+    },
+    "Ringed_Kingfisher_0042_72913": {
+        "groundtruth": "Ringed Kingfisher",
+        "predictions": [
+            "kingfisher",
+            "ringed kingfisher",
+            "kinkfisher (unknown species)",
+            "rock kingfisher"
+        ]
+    },
+    "Eastern_Towhee_0117_22741": {
+        "groundtruth": "Eastern Towhee",
+        "predictions": [
+            "eastern towhee",
+            "spruced spotted towhee"
+        ]
+    },
+    "Bobolink_0102_10807": {
+        "groundtruth": "Bobolink",
+        "predictions": [
+            "euplectes franciscanus",
+            "southern masked weaver",
+            "yellow-billed oxpecker",
+            "black-naped oriole (oriolus xanthornus)",
+            "black-billed finch"
+        ]
+    },
+    "Northern_Flicker_0016_28603": {
+        "groundtruth": "Northern Flicker",
+        "predictions": [
+            "northern flicker"
+        ]
+    },
+    "Gray_Crowned_Rosy_Finch_0010_27039": {
+        "groundtruth": "Gray crowned Rosy Finch",
+        "predictions": [
+            "rose-breasted grosbeak (uncertain due to limited visible traits)",
+            "brown-headed cowbird (molothrus ater)",
+            "alpine accentor (prunella collaris)",
+            "common redpoll (carduelis flammea)",
+            "common crossbill"
+        ]
+    },
+    "Bobolink_0094_9823": {
+        "groundtruth": "Bobolink",
+        "predictions": [
+            "wagtail",
+            "white-crowned starling",
+            "the given information points towards possibilities like the western jackdaw or potentially the ring-necked pheasant during its moult period. however, due to lack of complete visual clarity and specific details, a definitive identification cannot be confirmed solely from this image alone.",
+            "white-tailed bobolink",
+            "white-crowned blackbird"
+        ]
+    },
+    "Scissor_Tailed_Flycatcher_0106_41684": {
+        "groundtruth": "Scissor tailed Flycatcher",
+        "predictions": [
+            "scissor-tailed flycatcher (tyrannus forficatus)",
+            "scissor-tailed flycatcher"
+        ]
+    },
+    "Pied_Kingfisher_0075_72581": {
+        "groundtruth": "Pied Kingfisher",
+        "predictions": [
+            "pied kingfisher"
+        ]
+    },
+    "Parakeet_Auklet_0032_795986": {
+        "groundtruth": "Parakeet Auklet",
+        "predictions": [
+            "aethia cristatella",
+            "rhinoceros auklet",
+            "falkland petrel",
+            "puffin"
+        ]
+    },
+    "Mangrove_Cuckoo_0012_26382": {
+        "groundtruth": "Mangrove Cuckoo",
+        "predictions": [
+            "common cuckoo (cuculus canorus)",
+            "cuckoo",
+            "yellow-billed cuckoo",
+            "coccyzus minor"
+        ]
+    },
+    "Bronzed_Cowbird_0023_24058": {
+        "groundtruth": "Bronzed Cowbird",
+        "predictions": [
+            "glossy black crow",
+            "corvus species",
+            "moluccan starling",
+            "blue-winged blackbird",
+            "species name is not definitively identifiable from this image alone; further information would be needed for accurate identification"
+        ]
+    },
+    "White_Breasted_Kingfisher_0122_73199": {
+        "groundtruth": "White breasted Kingfisher",
+        "predictions": [
+            "white-throated kingfisher (halcyon smyrnensis)",
+            "kingfisher",
+            "white-throated kingfisher",
+            "halcyon smyrnensis"
+        ]
+    },
+    "Rufous_Hummingbird_0127_59587": {
+        "groundtruth": "Rufous Hummingbird",
+        "predictions": [
+            "rufous hummingbird",
+            "hummingbird"
+        ]
+    },
+    "California_Gull_0105_41116": {
+        "groundtruth": "California Gull",
+        "predictions": [
+            "seagull",
+            "glaucous-winged gull",
+            "herring gull"
+        ]
+    },
+    "Brown_Creeper_0110_24866": {
+        "groundtruth": "Brown Creeper",
+        "predictions": [
+            "brown creeper",
+            "northern treecreeper",
+            "european treecreeper"
+        ]
+    },
+    "Gray_Kingbird_0071_70100": {
+        "groundtruth": "Gray Kingbird",
+        "predictions": [
+            "loggerhead shrike",
+            "grey kingbird",
+            "eastern kingbird",
+            "elderly eastern kingbird (tyrannus tyrannus)"
+        ]
+    },
+    "Groove_Billed_Ani_0019_1585": {
+        "groundtruth": "Groove billed Ani",
+        "predictions": [
+            "cuculus clamosus (gray-headed cuckoo)",
+            "cuckoo",
+            "cuckoo (cuculus sp.)",
+            "cuculus or guira cuckoo",
+            "black-billed cuckoo"
+        ]
+    },
+    "Chuck_Will_Widow_0055_796973": {
+        "groundtruth": "Chuck will Widow",
+        "predictions": [
+            "nightjar",
+            "it is not possible to accurately identify the species based solely on this image due to the lack of distinct features that would allow for precise identification.",
+            "the bird appears to be a ninox owlet, commonly known as the australian boobook owl.",
+            "common poorwill"
+        ]
+    },
+    "Painted_Bunting_0079_15197": {
+        "groundtruth": "Painted Bunting",
+        "predictions": [
+            "painted bunting"
+        ]
+    },
+    "Shiny_Cowbird_0006_796864": {
+        "groundtruth": "Shiny Cowbird",
+        "predictions": [
+            "cotinga",
+            "common grackle",
+            "sparrow (passerina)",
+            "raven",
+            "cowbird (possibly icterus sp.)"
+        ]
+    },
+    "Groove_Billed_Ani_0047_1706": {
+        "groundtruth": "Groove billed Ani",
+        "predictions": [
+            "groove-billed ani",
+            "ant shrike (cacicussolitarius)",
+            "crotophagidae",
+            "anumbius annumbi",
+            "guira cuckoo"
+        ]
+    },
+    "Ivory_Gull_0027_48974": {
+        "groundtruth": "Ivory Gull",
+        "predictions": [
+            "snow goose",
+            "ivory gull",
+            "snow petrel"
+        ]
+    },
+    "Yellow_Breasted_Chat_0012_21961": {
+        "groundtruth": "Yellow breasted Chat",
+        "predictions": [
+            "yellow-breasted chat",
+            "yellow-throated warbler"
+        ]
+    },
+    "Horned_Lark_0049_74574": {
+        "groundtruth": "Horned Lark",
+        "predictions": [
+            "horned lark"
+        ]
+    },
+    "Clark_Nutcracker_0071_85125": {
+        "groundtruth": "Clark Nutcracker",
+        "predictions": [
+            "nucifraga columbiana",
+            "clark's nutcracker"
+        ]
+    },
+    "Rose_Breasted_Grosbeak_0077_39613": {
+        "groundtruth": "Rose breasted Grosbeak",
+        "predictions": [
+            "rose-breasted grosbeak"
+        ]
+    },
+    "Least_Auklet_0020_795080": {
+        "groundtruth": "Least Auklet",
+        "predictions": [
+            "an alaska murrelet (uria lomvia) or a similar alcidae species. however, without further information, it's difficult to provide a definitive answer to species classification.",
+            "leach's auklet",
+            "little auklet",
+            "auklet",
+            "eider duck"
+        ]
+    },
+    "Dark_Eyed_Junco_0072_67810": {
+        "groundtruth": "Dark eyed Junco",
+        "predictions": [
+            "dark-eyed junco (junco hyemalis)",
+            "dark-eyed junco",
+            "darwin's junco"
+        ]
+    },
+    "Green_Violetear_0062_60797": {
+        "groundtruth": "Green Violetear",
+        "predictions": [
+            "green crowned brilliant",
+            "hummingbird",
+            "emerald hummingbird (chlorostilbon lucidus)",
+            "ruby-throated hummingbird"
+        ]
+    },
+    "Green_Jay_0043_65805": {
+        "groundtruth": "Green Jay",
+        "predictions": [
+            "green jay"
+        ]
+    },
+    "Rhinoceros_Auklet_0024_797529": {
+        "groundtruth": "Rhinoceros Auklet",
+        "predictions": [
+            "razorbill (alca torda)",
+            "auk",
+            "horned puffin",
+            "crested auklet",
+            "species: horned puffin (fratercula corniculata)"
+        ]
+    },
+    "Olive_Sided_Flycatcher_0005_30734": {
+        "groundtruth": "Olive sided Flycatcher",
+        "predictions": [
+            "empidonax difficilis",
+            "empidonax minimus",
+            "eastern wood pewee",
+            "eastern wood-pewee"
+        ]
+    },
+    "Olive_Sided_Flycatcher_0086_30553": {
+        "groundtruth": "Olive sided Flycatcher",
+        "predictions": [
+            "eastern wood-pewee",
+            "eastern phoebe",
+            "the bird appears to resemble a species within the flycatcher family (muscicapidae). for a definitive identification, additional features or geographic location would help narrow it down.",
+            "eastern kingbird"
+        ]
+    },
+    "Pelagic_Cormorant_0026_23792": {
+        "groundtruth": "Pelagic Cormorant",
+        "predictions": [
+            "cormorant",
+            "common shag",
+            "double-crested cormorant"
+        ]
+    },
+    "Yellow_Headed_Blackbird_0025_8262": {
+        "groundtruth": "Yellow headed Blackbird",
+        "predictions": [
+            "yellow-headed blackbird"
+        ]
+    },
+    "Florida_Jay_0021_64698": {
+        "groundtruth": "Florida Jay",
+        "predictions": [
+            "florida scrub-jay",
+            "american redstart",
+            "southern scrub-jay (aphelocoma coerulescens)",
+            "species name: florida scrub-jay (aphelocoma coerulescens)"
+        ]
+    },
+    "Ring_Billed_Gull_0127_51485": {
+        "groundtruth": "Ring billed Gull",
+        "predictions": [
+            "seagull",
+            "herring gull"
+        ]
+    },
+    "Sooty_Albatross_0038_1065": {
+        "groundtruth": "Sooty Albatross",
+        "predictions": [
+            "northern petrel (pterodroma mollis)",
+            "northern gannet",
+            "northern fulmar",
+            "the image description suggests the bird might be an albatross, but a definitive identification requires closer inspection and additional characteristics.",
+            "sooty shearwater (puffinus griseus)"
+        ]
+    },
+    "Black_Footed_Albatross_0068_796135": {
+        "groundtruth": "Black footed Albatross",
+        "predictions": [
+            "doubtful answers: albatross (diomedea)",
+            "albatross",
+            "black-footed albatross",
+            "wandering albatross"
+        ]
+    },
+    "Scissor_Tailed_Flycatcher_0114_41704": {
+        "groundtruth": "Scissor tailed Flycatcher",
+        "predictions": [
+            "scissor-tailed flycatcher (tyrannus forficatus)",
+            "scissor-tailed flycatcher"
+        ]
+    },
+    "Mockingbird_0096_79878": {
+        "groundtruth": "Mockingbird",
+        "predictions": [
+            "mockingbird",
+            "mockingbird (possibly) but needs more specific details for confirmation.",
+            "northern mockingbird"
+        ]
+    },
+    "Mallard_0061_76378": {
+        "groundtruth": "Mallard",
+        "predictions": [
+            "mallard duck",
+            "mallard duck (anas platyrhynchos)"
+        ]
+    },
+    "Mangrove_Cuckoo_0031_26401": {
+        "groundtruth": "Mangrove Cuckoo",
+        "predictions": [
+            "yellow-billed cuckoo",
+            "cuculus species (cuckoo)",
+            "species name: black-billed cuckoo (coccyzus melacoryphus)",
+            "black-billed cuckoo (coccyzus melacoryphus)",
+            "coccyzus minor (black-billed cuckoo)"
+        ]
+    },
+    "Western_Meadowlark_0038_77785": {
+        "groundtruth": "Western Meadowlark",
+        "predictions": [
+            "western meadowlark",
+            "eastern meadowlark",
+            "squaw's meadowlark (sturnella neglecta)",
+            "sturnella neglecta"
+        ]
+    },
+    "Ringed_Kingfisher_0041_72853": {
+        "groundtruth": "Ringed Kingfisher",
+        "predictions": [
+            "red-bellied kingfisher (halcyon coromanda)",
+            "american dipper (cinclus mexicanus)",
+            "belted kingfisher (alcedo semitorquata)",
+            "kingfisher"
+        ]
+    },
+    "Acadian_Flycatcher_0007_795600": {
+        "groundtruth": "Acadian Flycatcher",
+        "predictions": [
+            "acadian flycatcher",
+            "pacific flycatcher (empidonax pacificus)",
+            "willow flycatcher",
+            "based on common identification features, the bird might belong to one of several species within the genus empidonax (such as yellow-bellied flycatcher), but without more details or a broader view, the exact species cannot be confirmed.",
+            "swinson's flycatcher"
+        ]
+    },
+    "Ringed_Kingfisher_0016_73029": {
+        "groundtruth": "Ringed Kingfisher",
+        "predictions": [
+            "kingfisher",
+            "the bird is likely a red-banded kingfisher (megaceryle torquata). however, without more specific details or a closer view, the exact species cannot be confirmed solely from the image. if you're looking for confirmation about the species, it might be best to consult with a local ornithologist or use a birding app for precise identification.",
+            "belted kingfisher",
+            "belt-billed kingfisher (ceryle alcyon)",
+            "megaceryle alcyon"
+        ]
+    },
+    "Boat_Tailed_Grackle_0027_33743": {
+        "groundtruth": "Boat tailed Grackle",
+        "predictions": [
+            "grackle",
+            "brown-headed cowbird",
+            "common grackle",
+            "western grackle"
+        ]
+    },
+    "Brown_Pelican_0043_94506": {
+        "groundtruth": "Brown Pelican",
+        "predictions": [
+            "brown pelican",
+            "pelican"
+        ]
+    },
+    "Pomarine_Jaeger_0075_61349": {
+        "groundtruth": "Pomarine Jaeger",
+        "predictions": [
+            "stercorarius longicaudus (long-tailed jaeger)",
+            "great skua",
+            "the species cannot be determined confidently from this image alone due to lack of detail.",
+            "northern skua (stercorarius parasiticus)",
+            "skuas (likely)"
+        ]
+    },
+    "American_Crow_0062_25587": {
+        "groundtruth": "American Crow",
+        "predictions": [
+            "american crow",
+            "carrion crow (corvus corone)",
+            "common raven",
+            "crow"
+        ]
+    }
+}

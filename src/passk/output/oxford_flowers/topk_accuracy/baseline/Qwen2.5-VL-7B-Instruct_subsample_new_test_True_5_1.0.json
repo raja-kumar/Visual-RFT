@@ -1,0 +1,15 @@
+{
+    "image_04525": {
+        "groundtruth": "gazania",
+        "predictions": [
+            "gazania rigens",
+            "gazania"
+        ]
+    },
+    "image_01638": {
+        "groundtruth": "clematis",
+        "predictions": [
+            "clematis"
+        ]
+    }
+}

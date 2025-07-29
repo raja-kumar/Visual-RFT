@@ -1,0 +1,5658 @@
+{
+    "image_06953": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos bipinnatus (garden cosmos)",
+            "cosmos",
+            "cosmos bipinnatus",
+            "cultivar of cosmos bipinnatus"
+        ]
+    },
+    "image_02269": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera",
+            "gerbera daisy",
+            "gerbera jamesonii"
+        ]
+    },
+    "image_05600": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox paniculata",
+            "species name",
+            "species name: phlox",
+            "phlox"
+        ]
+    },
+    "image_05180": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis",
+            "marigold",
+            "species name: calendula officinalis",
+            "dahlia pinnata subsp. coccinea 'king george'"
+        ]
+    },
+    "image_06804": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "glory lily (gloriosa superba)",
+            "glory lily (gloriosa)",
+            "glory lily",
+            "flame lily (gloriosa superba)"
+        ]
+    },
+    "image_01518": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "euphorbia pulcherrima",
+            "poinsettia (albino variant)",
+            "poinsettia (euphorbia pulcherrima)",
+            "euphorbia pulcherrima 'white glorious'"
+        ]
+    },
+    "image_07202": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "phalaenopsis",
+            "orchid"
+        ]
+    },
+    "image_03396": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria meleagris"
+        ]
+    },
+    "image_06501": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "red poppy (papaver rhoeas)",
+            "papaver rhoeas",
+            "papaveraceae (poppies)"
+        ]
+    },
+    "image_06183": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_02261": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera",
+            "gerbera daisy",
+            "gerbera daisies"
+        ]
+    },
+    "image_03537": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "sweet william (dianthus barbatus)",
+            "sweet williams (dianthus)",
+            "sweet william",
+            "dianthus",
+            "dianthus barbatus"
+        ]
+    },
+    "image_01001": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum 'autumn glow'",
+            "wallflower",
+            "erysimum 'beehive'",
+            "erysimum (wallflower)",
+            "matthiola incana"
+        ]
+    },
+    "image_03138": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "antirrhinum hybrid",
+            "antirrhinum",
+            "species name: antirrhinum majus",
+            "antirrhinum majus",
+            "snapdragon (antirrhinum)"
+        ]
+    },
+    "image_05357": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa atropurpurea",
+            "scabiosa",
+            "scabiosa caucasica"
+        ]
+    },
+    "image_06776": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "gloriosa lily",
+            "gloriosa superba"
+        ]
+    },
+    "image_05110": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "cypripedium",
+            "paphiopedilum",
+            "species name: cypripedium"
+        ]
+    },
+    "image_04108": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cardoon",
+            "cynara scolymus",
+            "globe artichoke (cynara scolymus)",
+            "cynara cardunculus (artichoke)",
+            "globe artichoke"
+        ]
+    },
+    "image_03828": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea purpurea",
+            "echinacea",
+            "echinacea pallida var. purpurea"
+        ]
+    },
+    "image_05243": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana clusii",
+            "gentiana ornata",
+            "gentiana sp.",
+            "gentiana algida",
+            "gentiana aspera"
+        ]
+    },
+    "image_05104": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "paphiopedilum",
+            "ghost orchid"
+        ]
+    },
+    "image_02196": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy (gerbera jamesonii)",
+            "gerbera daisy",
+            "the image does not provide sufficient information to definitively identify the species of the plant depicted.",
+            "daisy (chrysanthemum spp.)"
+        ]
+    },
+    "image_04305": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "species name: alstroemeria",
+            "alstroemeria"
+        ]
+    },
+    "image_06888": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "celosia argentea 'ritter' or similar cultivar",
+            "celosia cristata",
+            "celosia",
+            "celosia argentea"
+        ]
+    },
+    "image_01365": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_06357": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus"
+        ]
+    },
+    "image_03957": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "species name: petunia",
+            "petunia"
+        ]
+    },
+    "image_01533": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "euphorbia pulcherrima",
+            "poinsettia (euphorbia pulcherrima)",
+            "poinsettia"
+        ]
+    },
+    "image_01535": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "euphorbia pulcherrima",
+            "euphorbia pulcherrima 'snowcap'",
+            "poinsettia (euphorbia pulcherrima)"
+        ]
+    },
+    "image_01021": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower (erysimum)",
+            "erysimum",
+            "erysimum 'sweetheart'"
+        ]
+    },
+    "image_06431": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum",
+            "aconitum napellus"
+        ]
+    },
+    "image_06185": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_03753": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine species",
+            "nerine sarniensis",
+            "nerine bowdenii",
+            "nerine spp.",
+            "lycoris pallida"
+        ]
+    },
+    "image_03935": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_05178": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis",
+            "calendula officinalis (marigold)"
+        ]
+    },
+    "image_04905": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "arum plant or calla lily",
+            "calla lily (zantedeschia aethiopica)",
+            "calla lily",
+            "species: zantedeschia (calla lily)",
+            "calla lily (zantedeschia)"
+        ]
+    },
+    "image_02231": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "sunflower",
+            "calendula officinalis",
+            "sunflower (helianthus annuus)",
+            "gerbera daisy",
+            "gerbera jamesonii"
+        ]
+    },
+    "image_03821": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "lycoris species (hippeastrum)",
+            "hessea speciosa",
+            "lycoris squamigera",
+            "red spider lily (lycoris radiata)",
+            "dierama (dierama)"
+        ]
+    },
+    "image_05690": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "narcissus spp.",
+            "daffodil",
+            "narcissus pseudonarcissus (commonly called trumpet daffodil)"
+        ]
+    },
+    "image_04078": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "tussilago farfara",
+            "coltsfoot (tussilago farfara)"
+        ]
+    },
+    "image_02404": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_07027": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "hidden ginger 'pink supreme'",
+            "the plant is identified as hidden ginger 'pink supreme' by the text accompanying the image.",
+            "hedychium pink supreme",
+            "ginger (specific variety \"pink supreme\")",
+            "hidden ginger"
+        ]
+    },
+    "image_03102": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon",
+            "snapdragon (antirrhinum majus)",
+            "species name: antirrhinum majus 'yellow lady'",
+            "antirrhinum majus",
+            "species: antirrhinum majus var. 'yellow lady'"
+        ]
+    },
+    "image_03132": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon",
+            "antirrhinum majus (snapdragon)",
+            "snapdragon (antirrhinum majus)"
+        ]
+    },
+    "image_06900": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation",
+            "dianthus species (carnation)"
+        ]
+    },
+    "image_06640": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "campanula rapunculus",
+            "campanula rotundifolia",
+            "campanula sp."
+        ]
+    },
+    "image_01515": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "euphorbia pulcherrima",
+            "euphorbia pulcherrima 'pink variegated'"
+        ]
+    },
+    "image_01343": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_01557": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "euphorbia pulcherrima",
+            "euphorbia pulcherrima (poinsettia)",
+            "poinsettia"
+        ]
+    },
+    "image_05242": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana",
+            "gentiana sp.",
+            "gentiana acaulis"
+        ]
+    },
+    "image_05191": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis",
+            "common marigold (calendula officinalis)"
+        ]
+    },
+    "image_06227": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "daisy (likely bellis perennis)",
+            "daisy (leucanthemum) species",
+            "oxeye daisy (leucanthemum vulgare)",
+            "daisy (bellis perennis)",
+            "oxeye daisy"
+        ]
+    },
+    "image_05806": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major",
+            "astrantia major (masterwort)"
+        ]
+    },
+    "image_06762": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "oenothera speciosa (showy evening primrose)",
+            "oenothera biennis",
+            "evening primrose",
+            "oenothera speciosa"
+        ]
+    },
+    "image_05683": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "sweet peas (lathyrus odoratus)",
+            "sweet pea",
+            "species name: lathyrus odoratus",
+            "sweet pea (lathyrus odoratus)"
+        ]
+    },
+    "image_05109": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "cypripedium",
+            "paphiopedilum",
+            "paphiopedilum sp.",
+            "paphiopedilum species"
+        ]
+    },
+    "image_08109": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "lilium lancifolium var. chrysantherum 'cherry glow'",
+            "lilium lancifolium",
+            "tiger lily (lilium lancifolium)"
+        ]
+    },
+    "image_03967": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_04916": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "calla lily (zantedeschia)",
+            "zantedeschia sp.",
+            "zantedeschia"
+        ]
+    },
+    "image_01348": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia hybrida",
+            "petunia"
+        ]
+    },
+    "image_05785": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea (protea cynaroides)",
+            "king protea"
+        ]
+    },
+    "image_04958": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "marigold",
+            "tagetes erecta '",
+            "tagetes",
+            "tagetes erecta (aztec marigold)"
+        ]
+    },
+    "image_08085": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "sea holly (eryngium)",
+            "eryngium planum 'silver queen'",
+            "eryngium",
+            "eryngium planum"
+        ]
+    },
+    "image_04674": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus species",
+            "ranunculus",
+            "caltha palustris",
+            "buttercup"
+        ]
+    },
+    "image_05757": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea (protea cynaroides)",
+            "protea",
+            "protea cynaroides",
+            "king protea"
+        ]
+    },
+    "image_03797": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "lycoris radiata (red spider lily)",
+            "lycoris genus",
+            "nerine bowdenii",
+            "lycoris radiata (spider lily)",
+            "the image does not provide sufficient information to definitively identify the species of the plant."
+        ]
+    },
+    "image_03344": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "strelitzia reginae",
+            "strelitzia reginae (bird of paradise)",
+            "bird of paradise"
+        ]
+    },
+    "image_03356": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "species name: strelitzia reginae",
+            "strelitzia reginae"
+        ]
+    },
+    "image_02268": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera",
+            "gerbera daisy (gerbera jamesonii)",
+            "gerbera daisy",
+            "gerbera jamesonii"
+        ]
+    },
+    "image_06055": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "cirsium vulgare (common thistle)",
+            "the plant appears to be a thistle (carduus), possibly cirsium vulgare, given the spiky bracts surrounding the pink flower, though further observation would be required for confirmation.",
+            "cirsium",
+            "carduus or cirsium species",
+            "cirsium vulgare"
+        ]
+    },
+    "image_07165": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "lilium tigrinum",
+            "lilium lancifolium",
+            "lilium pardalinum",
+            "turk's cap lily"
+        ]
+    },
+    "image_03915": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_03938": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_08096": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "echinops",
+            "echinops ritro"
+        ]
+    },
+    "image_02189": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy",
+            "gerbera daisies"
+        ]
+    },
+    "image_06349": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus (yellow flag iris)",
+            "iris pseudacorus"
+        ]
+    },
+    "image_05798": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "anemone x hybrida 'borismeinchen'",
+            "astilbe 'stainless'",
+            "anemone 'red velvet'",
+            "astrantia 'never again'",
+            "astrantia major 'ruby frost'"
+        ]
+    },
+    "image_01394": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "species name: petunia",
+            "species name: petunia x hybrida 'white'",
+            "petunia"
+        ]
+    },
+    "image_05348": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa",
+            "field scabious (scabiosa atropurpurea)",
+            "scabiosa (pincushion flower)"
+        ]
+    },
+    "image_01047": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower (erysimum)",
+            "wallflower (cheiranthus)",
+            "wallflower"
+        ]
+    },
+    "image_06168": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "balloon flower",
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_06933": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos bipinnatus",
+            "cosmos bipinnatus 'purity'"
+        ]
+    },
+    "image_06982": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "eryngium ryanii",
+            "eryngium alpinum",
+            "eryngium 'alpinum' blue spire",
+            "eryngium"
+        ]
+    },
+    "image_07189": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "tiger lily (lilium michiganense)",
+            "lilium superbum",
+            "lilium lancifolium (spotted lily)",
+            "lilium lancifolium",
+            "tiger lily (lilium lancifolium)"
+        ]
+    },
+    "image_04372": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya species",
+            "cattleya"
+        ]
+    },
+    "image_06937": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos bipinnatus"
+        ]
+    },
+    "image_03767": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine",
+            "nerine bowdenii",
+            "clintonia",
+            "nerine sarniensis"
+        ]
+    },
+    "image_03496": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus species",
+            "dianthus",
+            "sweet william",
+            "species name: dianthus"
+        ]
+    },
+    "image_07134": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "nigella damascena",
+            "linum pratense 'blue' (common flax)",
+            "oenothera speciosa or a related species within the evening primrose family",
+            "anemone coronaria var. blanda",
+            "stigmaphyllon ciliolatum"
+        ]
+    },
+    "image_01378": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_01459": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia hybrid cultivar",
+            "petunia"
+        ]
+    },
+    "image_00989": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "erysimum capitatum (wallflower)",
+            "erysimum 'cheerful orange'"
+        ]
+    },
+    "image_02437": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "species name: hybrid gladiolus"
+        ]
+    },
+    "image_06537": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_01120": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower (erysimum)",
+            "wallflower",
+            "wallflower (matthiola incana)"
+        ]
+    },
+    "image_01479": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia hybrida",
+            "petunia"
+        ]
+    },
+    "image_06210": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "shasta daisy",
+            "daisy-like plant (daisy family)",
+            "daisy",
+            "daisy (bellis perennis)",
+            "shasta daisy (chrysanthemum maximum)"
+        ]
+    },
+    "image_07098": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "echinops bannaticus 'veitch's blue'",
+            "echinops ritro",
+            "echinops sp.",
+            "echinops",
+            "echinops giganteus"
+        ]
+    },
+    "image_07201": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "phalaenopsis",
+            "phalaenopsis species (likely a 'white snow queen' variety)"
+        ]
+    },
+    "image_06188": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "balloon flower (platycodon grandiflorus)",
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_03936": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia x hybrida",
+            "petunia"
+        ]
+    },
+    "image_06595": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscari",
+            "muscari armeniacum (grape hyacinth)",
+            "muscari armeniacum"
+        ]
+    },
+    "image_06648": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "species not conclusively identifiable from the image alone due to potential similarity with other plants in the campanula genus or hydrangea species.",
+            "campanula",
+            "campanula persicifolia",
+            "campanula carpatica"
+        ]
+    },
+    "image_03148": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon",
+            "antirrhinum",
+            "snapdragon (antirrhinum majus)"
+        ]
+    },
+    "image_04044": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot",
+            "tussilago farfara",
+            "coltsfoot (tussilago farfara)"
+        ]
+    },
+    "image_04688": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus ficaria (common buttercup)",
+            "oxalis pes-caprae",
+            "ranunculus repens",
+            "buttercup (ranunculus)"
+        ]
+    },
+    "image_04098": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "asteroideae (aster family)",
+            "artichoke",
+            "cynara scolymus",
+            "cardoon"
+        ]
+    },
+    "image_07038": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "siam tulip (curcuma alismatifolia)",
+            "spathodea campanulata",
+            "siam tulip (spathodea campanulata)",
+            "siam tulip",
+            "curcuma sp."
+        ]
+    },
+    "image_01133": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum 'cheerfuls'",
+            "erysimum",
+            "erysimum speciosum",
+            "hesperis matronalis"
+        ]
+    },
+    "image_04144": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "artichoke (cynara cardunculus)",
+            "cynara scolymus",
+            "cardoon (cynara cardunculus)",
+            "artichoke (cynara scolymus)",
+            "globe artichoke"
+        ]
+    },
+    "image_05157": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis"
+        ]
+    },
+    "image_01018": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "wallflower (erysimum)",
+            "sweet william",
+            "wanda flower",
+            "matthiola incana"
+        ]
+    },
+    "image_07158": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "lisianthus ('eustoma grandiflorum')",
+            "lisianthus 'white star'",
+            "lisianthus (eustoma)",
+            "lisianthus"
+        ]
+    },
+    "image_06841": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "zingiberaceae family (possibly ginger)",
+            "zingiberaceae family (e.g., alpinia purpurata)",
+            "the plant appears to be from the zingiberaceae family but the exact species cannot be determined from this image alone.",
+            "the plant species in the image is likely a red ginger (alpinia purpurata) or a similar variety within the zingiberaceae family.",
+            "ginger (zingiberaceae)"
+        ]
+    },
+    "image_04565": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "hellebore",
+            "helleborus",
+            "helleborus orientalis",
+            "hellebore (helleborus orientalis)"
+        ]
+    },
+    "image_06340": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion (taraxacum officinale)",
+            "dandelion"
+        ]
+    },
+    "image_06741": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "oenothera speciosa (evening primrose)",
+            "night-blooming cereal (oenothera lindheimeri)",
+            "oenothera speciosa"
+        ]
+    },
+    "image_08065": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation (dianthus caryophyllus)",
+            "carnation",
+            "carnation (double decker)",
+            "dianthus spp., specifically a carnation variety",
+            "carnation (variegated type)"
+        ]
+    },
+    "image_06232": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "common daisy (bellis perennis)",
+            "leucanthemum vulgare",
+            "oxeye daisy (leucanthemum vulgare)",
+            "daisy (bellis perennis)",
+            "chrysanthemum leucanthemum (commonly known as common daisy)"
+        ]
+    },
+    "image_03822": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "nerine sp. (likely)",
+            "crinum asiaticum",
+            "nerina speciosa (nerine)"
+        ]
+    },
+    "image_02276": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera",
+            "gerbera daisy (gerbera jamesonii)",
+            "gerbera daisy"
+        ]
+    },
+    "image_06327": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_05130": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "cypripedium calceolus",
+            "paphiopedilum",
+            "cypripedium"
+        ]
+    },
+    "image_05173": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis (pot marigold)",
+            "calendula officinalis",
+            "species name: calendula officinalis"
+        ]
+    },
+    "image_01530": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "euphorbia pulcherrima",
+            "poinsettia (euphorbia pulcherrima)",
+            "poinsettia"
+        ]
+    },
+    "image_04390": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya labiata"
+        ]
+    },
+    "image_05723": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil (narcissus)",
+            "narcissus",
+            "daffodil"
+        ]
+    },
+    "image_02193": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera",
+            "gerbera daisy (gerbera jamesonii)",
+            "gerbera daisy",
+            "species name: gerbera daisy (gerbera jamesonii)"
+        ]
+    },
+    "image_04141": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cynara species",
+            "artichoke (cynara cardunculus var. scolymus)",
+            "cynara cardunculus",
+            "cynara cardunculus 'purpurea'"
+        ]
+    },
+    "image_03318": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird-of-paradise (strelitzia)",
+            "strelitzia reginae (bird-of-paradise)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_03439": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria meleagris"
+        ]
+    },
+    "image_05763": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea (protea cynaroides)",
+            "protea cynaroides",
+            "king protea"
+        ]
+    },
+    "image_06206": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "daisy (leucanthemum species)",
+            "daisy",
+            "the image shows a common type of daisy, but further details are needed for a precise species identification. possible identifications include oxeye daisy (leucanthemum vulgare) or various species within the leucanthemum genus. without more context or different angles of the flower, we cannot determine the exact species.",
+            "ox-eye daisy (leucanthemum vulgare)",
+            "oxeye daisy"
+        ]
+    },
+    "image_06751": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "evening primrose (oenothera sp.)",
+            "evening primrose (oenothera lindheimeri)",
+            "evening primrose (oenothera)",
+            "evening primrose (oenothera biennis)"
+        ]
+    },
+    "image_04911": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "calla lily (zantedeschia)",
+            "calla lily",
+            "calla lily (species may vary)"
+        ]
+    },
+    "image_01345": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_04398": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya species",
+            "cattleya"
+        ]
+    },
+    "image_02406": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus sp. (likely gladiolus \"orange emperor\")",
+            "gladiolus"
+        ]
+    },
+    "image_06897": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation"
+        ]
+    },
+    "image_03387": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria",
+            "snake's head fritillary",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_04595": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus",
+            "helleborus orientalis"
+        ]
+    },
+    "image_03314": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird-of-paradise",
+            "bird-of-paradise (strelitzia reginae)",
+            "strelitzia reginae (bird of paradise)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_04308": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "*iris*",
+            "alstroemeria"
+        ]
+    },
+    "image_04114": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "artichoke (cynara cardunculus)",
+            "artichoke",
+            "cynara scolymus",
+            "globe artichoke"
+        ]
+    },
+    "image_00980": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "species name: wallflower (erysimum spp.)",
+            "erysimum 'cheerful'",
+            "wallflower (erysimum)",
+            "wallflower",
+            "wallflower (erysimum) 'wesley woods'"
+        ]
+    },
+    "image_04112": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "chlorogonus variabilis",
+            "artichoke (cynara scolymus)",
+            "cynara scolymus",
+            "cynara"
+        ]
+    },
+    "image_04607": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "hellebore",
+            "helleborus",
+            "helleborus niger (winter hellebore)"
+        ]
+    },
+    "image_03407": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "snake's head fritillary (fritillaria meleagris)",
+            "fritillaria meleagris",
+            "snake's head fritillary",
+            "snake's head orchid"
+        ]
+    },
+    "image_06793": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "gloriosa sp.",
+            "gloriosa daffodil",
+            "gloriosa lily family",
+            "glory lily (gloriosa superba)",
+            "gloriosa superba"
+        ]
+    },
+    "image_05340": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa caucasica",
+            "pincushion flower (scabiosa atropurpurea)",
+            "species name: scabiosa or pincushion flower (scabiosa)",
+            "scabiosa sp."
+        ]
+    },
+    "image_04030": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot",
+            "tussilago farfara (coltsfoot)",
+            "tussilago farfara"
+        ]
+    },
+    "image_06852": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "celosia cristata",
+            "celosia argentea",
+            "celosia",
+            "celosia species (specifically celosia plumosa)",
+            "celosia argentea var. cristata or celosia plumosa"
+        ]
+    },
+    "image_06328": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_06192": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "platycodon grandiflorus",
+            "species name: platycodon grandiflorus"
+        ]
+    },
+    "image_07152": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "cape primrose",
+            "viola",
+            "gentiana scabra",
+            "sisyrinchium",
+            "viola spp. or linaria spp."
+        ]
+    },
+    "image_03519": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus (dianthus chinensis or sweet william)",
+            "dianthus",
+            "sweet william",
+            "species name: dianthus"
+        ]
+    },
+    "image_05717": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil (narcissus)",
+            "narcissus",
+            "daffodil"
+        ]
+    },
+    "image_05606": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox species",
+            "phlox paniculata (garden phlox)",
+            "phlox paniculata"
+        ]
+    },
+    "image_02426": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_03742": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "nerine bowdenii",
+            "nerine bowdenii or nerine bowdenii 'purple rain'"
+        ]
+    },
+    "image_03875": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea purpurea",
+            "echinacea"
+        ]
+    },
+    "image_03518": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "sweet william (dianthus caryophyllus)",
+            "species name: dianthus barbatus",
+            "dianthus"
+        ]
+    },
+    "image_03973": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_02376": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladiolus hybrid"
+        ]
+    },
+    "image_04902": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "zantedeschia",
+            "calla lily (zantedeschia)",
+            "zantedeschia aethiopica",
+            "zantedeschia (arum italicum)"
+        ]
+    },
+    "image_01422": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia \u00d7 atkinsiana 'surfinia'",
+            "petunia \u00d7 hybrida",
+            "petunia"
+        ]
+    },
+    "image_06974": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "echinops ritro",
+            "eryngium alpinum 'chocolate chip'",
+            "eryngium planum 'alpinum'",
+            "eryngium planum 'glauca plenum'",
+            "eryngium alpinum subsp. glaucophyllum ('blue bedder')"
+        ]
+    },
+    "image_06321": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion"
+        ]
+    },
+    "image_04019": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "tussilago farfara"
+        ]
+    },
+    "image_06311": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_04345": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya"
+        ]
+    },
+    "image_02275": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy",
+            "gerbera daisy (gerbera spp.)",
+            "gerbera daisy (likely g. jamesonii 'orange tango')"
+        ]
+    },
+    "image_01466": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia (petunia x hybrida)",
+            "petunia 'f1 hybrid'",
+            "petunia"
+        ]
+    },
+    "image_01401": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia 'superbells white green vein'",
+            "petunia"
+        ]
+    },
+    "image_06520": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "papaver rhoeas (corn poppy)",
+            "red poppy (papaver rhoeas)",
+            "papaver rhoeas",
+            "common corn poppy (papaver rhoeas)",
+            "papaver"
+        ]
+    },
+    "image_05751": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "protea species",
+            "king protea",
+            "king protea (protea cynaroides)"
+        ]
+    },
+    "image_04691": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "caltha palustris",
+            "buttercup (ranunculus spp.)",
+            "taraxacum officinale",
+            "ranunculus",
+            "buck's horn buttercup (ranunculus acris)"
+        ]
+    },
+    "image_05662": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "sweet pea (lathyrus odoratus)",
+            "sweet pea",
+            "sweet peas"
+        ]
+    },
+    "image_08105": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "lilium lancifolium",
+            "lilium lancifolium (japanese tiger lily)",
+            "tiger lily (lilium lancifolium)"
+        ]
+    },
+    "image_06573": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscari",
+            "grape hyacinth (muscari neglectum)",
+            "muscari neglectum (grape hyacinth)",
+            "muscaris",
+            "muscari armeniacum"
+        ]
+    },
+    "image_04036": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "tussilago farfara",
+            "colt's-foot (tussilago farfara)",
+            "coltsfoot"
+        ]
+    },
+    "image_01051": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum 'zazanana'",
+            "erysimum cheiranthoides",
+            "erysimum cheiri",
+            "erysimum",
+            "wallflower (erysimum)"
+        ]
+    },
+    "image_06488": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "poppy",
+            "papaver sp.",
+            "papaver rhoeas"
+        ]
+    },
+    "image_06755": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "evening primrose (oenothera biennis)",
+            "oenothera speciosa",
+            "oenothera lindheimeri",
+            "oenothera"
+        ]
+    },
+    "image_05770": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea",
+            "king protea (protea cynaroides)",
+            "protea cynaroides"
+        ]
+    },
+    "image_04073": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_03511": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus",
+            "dianthus 'frolic'",
+            "dianthus 'pink lemonade'",
+            "dianthus 'kittiwake'"
+        ]
+    },
+    "image_08049": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "vriesea splendens",
+            "alpinia purpurata",
+            "ginger plant (zingiberaceae)",
+            "alpinia",
+            "hedychium coronarium (ginger lily)"
+        ]
+    },
+    "image_01519": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_06757": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "oenothera speciosa (common evening primrose)",
+            "oenothera species",
+            "oenothera lindheimeri",
+            "evening primrose (oenothera speciosa)"
+        ]
+    },
+    "image_07099": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "echinops ritro",
+            "echinops ritro subsp. tenellus",
+            "echinops"
+        ]
+    },
+    "image_06932": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos bipinnatus"
+        ]
+    },
+    "image_01517": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia (euphorbia pulcherrima)",
+            "poinsettia",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_06397": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum napellus",
+            "aconitum"
+        ]
+    },
+    "image_06465": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena"
+        ]
+    },
+    "image_04652": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "buttercup",
+            "ranunculus aquatilis subsp. aquatilis",
+            "buttercup (ranunculus)"
+        ]
+    },
+    "image_06453": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena"
+        ]
+    },
+    "image_06425": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum napellus",
+            "aconitum",
+            "aconitum napellus (common monkshood)",
+            "delphinium",
+            "aconitum napellus complex"
+        ]
+    },
+    "image_06333": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion",
+            "dandelion (taraxacum officinale)"
+        ]
+    },
+    "image_05781": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea",
+            "protea cynaroides"
+        ]
+    },
+    "image_06091": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "onopordon or cirsium spp. (common thistles)",
+            "cirsium vulgare (common thistle)",
+            "cirsium species",
+            "thistle",
+            "cirsium vulgare"
+        ]
+    },
+    "image_05741": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil (narcissus)",
+            "daffodil",
+            "narcissus"
+        ]
+    },
+    "image_05232": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana sp.",
+            "gentiana scabra",
+            "gentiana sp. (possibly gentiana scabra)",
+            "due to limitations in the provided image's detail and context, we cannot accurately determine the exact species from visual alone. however, based on the visible characteristics, this plant may belong to the gentian family (gentianaceae). further details or expert confirmation might be needed for a precise identification."
+        ]
+    },
+    "image_06681": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "trollius europaeus",
+            "ranunculus acris",
+            "trollius"
+        ]
+    },
+    "image_07035": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "curcuma speciosa",
+            "cannas glauca",
+            "tuberous sickle iris (spathanthera spathacea)",
+            "tiger root (curcuma alismatifolia)",
+            "siam tulip (curcuma sessilis)"
+        ]
+    },
+    "image_05715": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil (narcissus)",
+            "daffodil",
+            "narcissus pseudonarcissus (common daffodil)"
+        ]
+    },
+    "image_02264": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "species name: daisy (asteraceae)",
+            "gerbera daisy",
+            "daisy fleabane (erigeron)",
+            "daisy or gerbera"
+        ]
+    },
+    "image_05744": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea",
+            "king protea (protea cynaroides)",
+            "protea cynaroides"
+        ]
+    },
+    "image_04262": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_06675": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "species name: trollius europaeus",
+            "ranunculus sp.",
+            "tulip",
+            "gagea sp."
+        ]
+    },
+    "image_01512": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia (variegated variety)",
+            "poinsettia (euphorbia pulcherrima)",
+            "euphorbia pulcherrima 'peach bells'",
+            "poinsettia",
+            "euphorbia pulcherrima (poinsettia)"
+        ]
+    },
+    "image_06081": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "cirsium horridulum",
+            "cirsium vulgare (common thistle)",
+            "milk thistle (carduus)",
+            "cirsium vulgare",
+            "cirsium"
+        ]
+    },
+    "image_01004": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "matthiola x media 'sweet william'",
+            "wallflower",
+            "matthiola incana (l) herren 'red velvet'",
+            "matthiola incana",
+            "wallflower (erysimum)"
+        ]
+    },
+    "image_01481": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_04604": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus",
+            "hellebore (helleborus orientalis)"
+        ]
+    },
+    "image_06837": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "alpinia purpurata",
+            "torch ginger",
+            "costus speciosus",
+            "red ginger"
+        ]
+    },
+    "image_05597": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox paniculata",
+            "phlox"
+        ]
+    },
+    "image_06659": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "buttercup",
+            "buttercup (genus ranunculus)",
+            "buttercup (ranunculus)",
+            "genus ranunculus"
+        ]
+    },
+    "image_02356": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladioli"
+        ]
+    },
+    "image_03906": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea"
+        ]
+    },
+    "image_04302": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_05341": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa canescens",
+            "scabiosa atropurpurea",
+            "scabiosa spp.",
+            "scabiosa caucasica"
+        ]
+    },
+    "image_06371": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "yellow iris (iris pseudacorus)",
+            "iris pseudacorus",
+            "iris pseudacorus (yellow flag iris)"
+        ]
+    },
+    "image_01471": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_01370": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_03402": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria imperialis",
+            "fritillaria imperialis (imperial checker-lily)",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_03982": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_05345": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa columbaria",
+            "scabiosa",
+            "scabiosa caucasica"
+        ]
+    },
+    "image_01523": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_05012": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "african marigold",
+            "marigold",
+            "tagetes"
+        ]
+    },
+    "image_03343": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "strelitzia reginae",
+            "strelitzia reginae (bird of paradise)"
+        ]
+    },
+    "image_01411": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia 'supercascade'",
+            "prostrate petunia",
+            "petunia",
+            "petunia hybrid",
+            "species name: not identifiable without more context"
+        ]
+    },
+    "image_03101": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum)",
+            "species name: antirrhinum majus",
+            "antirrhinum majus 'orange'",
+            "snapdragon",
+            "antirrhinum majus"
+        ]
+    },
+    "image_04254": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_01540": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "species name: euphorbia pulcherrima 'variegata'",
+            "euphorbia pulcherrima",
+            "poinsettia",
+            "poinsettia (euphorbia pulcherrima)"
+        ]
+    },
+    "image_01442": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia",
+            "petunia \u00d7 hybrida"
+        ]
+    },
+    "image_02336": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_01506": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_01315": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "species of the plant: petunia \u00d7 atkinsiana",
+            "petunia",
+            "nicotiana alata"
+        ]
+    },
+    "image_01107": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower",
+            "erysimum 'lemon gem'",
+            "wallflower ('jubilee')",
+            "wallflower (erysimum)"
+        ]
+    },
+    "image_00963": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower",
+            "erysimum",
+            "winter alyssum (erysimum cheiri)",
+            "wallflower (erysimum)"
+        ]
+    },
+    "image_04648": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "buttercup (ranunculus sp.)",
+            "ranunculus repens",
+            "oxalis pes-caprae",
+            "ranunculus species",
+            "himalayan buttercup"
+        ]
+    },
+    "image_06827": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "zingiber zerumbet",
+            "species name: alpinia purpurata",
+            "alpinia purpurata",
+            "species name: zingiberaceae",
+            "species name"
+        ]
+    },
+    "image_05198": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis"
+        ]
+    },
+    "image_06986": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "echinops ritro",
+            "eryngium planum (blue star thistle)",
+            "eryngium species (cow parsley)",
+            "sea holly (eryngium)",
+            "eryngium alpinum"
+        ]
+    },
+    "image_06515": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "species name: papaver rhoeas",
+            "papaver somniferum (common poppy)",
+            "poppies",
+            "papaver rhoeas",
+            "papaver"
+        ]
+    },
+    "image_06617": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "campanula garganica",
+            "campanula medium",
+            "campanula pallida subsp. austriaca",
+            "campanula lasiocarpa (rock bellflower)",
+            "campanula pulla"
+        ]
+    },
+    "image_05220": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana acaulis",
+            "gentiana sino-ornata"
+        ]
+    },
+    "image_05709": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil (narcissus)",
+            "daffodil",
+            "narcissus"
+        ]
+    },
+    "image_04081": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cynara cardunculus",
+            "cynara cardunculus (italian artichoke)",
+            "cynara scolymus",
+            "cardoon (cynara cardunculus)"
+        ]
+    },
+    "image_04045": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "compositae (asteraceae)",
+            "dandelion (taraxacum officinale)",
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_00990": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower",
+            "erysimum 'pussycat orange'",
+            "wallflower (erysimum)"
+        ]
+    },
+    "image_07045": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "spathodea campanulata",
+            "siamese tiger lily",
+            "curcuma alismatifolia"
+        ]
+    },
+    "image_06915": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation",
+            "carnation (dianthus)",
+            "carnation (dianthus caryophyllus)",
+            "dianthus caryophyllus"
+        ]
+    },
+    "image_01555": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia (euphorbia pulcherrima)",
+            "euphorbia pulcherrima (poinsettia)",
+            "poinsettia",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_08077": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "dianthus 'double' ('bicolor')",
+            "dianthus caryophyllus (carnation)",
+            "carnation",
+            "dianthus caryophyllus"
+        ]
+    },
+    "image_04303": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_06855": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "celosia argentea 'flore plume'",
+            "celosia argentea 'lemon spray'",
+            "celosia",
+            "celosia plumosa"
+        ]
+    },
+    "image_07116": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "echinops ritro",
+            "echinops ritro (blue devil)",
+            "echinops"
+        ]
+    },
+    "image_05378": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "field scabious (scabiosa caucasica)",
+            "scabiosa species",
+            "knautia arvensis",
+            "scabiosa"
+        ]
+    },
+    "image_06096": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "species not determinable from this image alone",
+            "carduus acanthoides",
+            "burdock",
+            "bull thistle (cirsium vulgare)",
+            "cirsium vulgare"
+        ]
+    },
+    "image_02381": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_02337": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladioli",
+            "gloriosa lily (gladiolus)"
+        ]
+    },
+    "image_03359": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird of paradise (strelitzia reginae)",
+            "bird of paradise (strelitzia)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_03853": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea",
+            "echinacea (coneflower)",
+            "echinacea purpurea"
+        ]
+    },
+    "image_02333": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladioli"
+        ]
+    },
+    "image_04616": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus",
+            "helleborus orientalis",
+            "hellebore",
+            "hellebores (helleborus)"
+        ]
+    },
+    "image_03133": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum majus)",
+            "antirrhinum majus",
+            "species name: antirrhinum majus"
+        ]
+    },
+    "image_05217": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana brachyphylla",
+            "gentiana scabra (harsh gentian)",
+            "gentiana scabra",
+            "gentiana asclepiadea"
+        ]
+    },
+    "image_05365": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa 'blue angel'",
+            "scabiosa",
+            "scabiosa caucasica"
+        ]
+    },
+    "image_05653": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "sweet pea",
+            "sweet peas"
+        ]
+    },
+    "image_06496": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "red poppy",
+            "poppy",
+            "papaver rhoeas"
+        ]
+    },
+    "image_05764": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "protanthus cynaroides",
+            "king protea",
+            "king protea (protea cynaroides)",
+            "protea cynaroides"
+        ]
+    },
+    "image_01349": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_04054": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "colt's foot",
+            "tussilago farfara",
+            "coltsfoot (tussilago farfara)"
+        ]
+    },
+    "image_05000": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "tagetes erecta (aztec marigold)",
+            "marigold",
+            "tagetes",
+            "african marigold (tagetes erecta)"
+        ]
+    },
+    "image_04606": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus",
+            "helleborus orientalis",
+            "hellebore"
+        ]
+    },
+    "image_05625": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox paniculata",
+            "phlox"
+        ]
+    },
+    "image_04967": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "tagetes erecta (aztec marigold)",
+            "marigold",
+            "african marigold",
+            "tagetes spp."
+        ]
+    },
+    "image_06886": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "celosia argentea",
+            "cockscomb",
+            "celosia argentea 'superba'",
+            "cockscomb (celosia)",
+            "celosia argentea or celosia plumosa"
+        ]
+    },
+    "image_08050": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "alpinia purpurata",
+            "red ginger (alpinia purpurata)",
+            "species name: zingiberaceae",
+            "alpinia speciosa"
+        ]
+    },
+    "image_07187": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "lilium (tiger lily)",
+            "lilium columbianum",
+            "columbia lily (lilium columbianum)",
+            "lilium pardalinum",
+            "lilium superbum"
+        ]
+    },
+    "image_06401": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum spp.",
+            "aconitum napellus (monkshood)",
+            "aconitum napellus"
+        ]
+    },
+    "image_03385": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria species",
+            "fritillaria affinis",
+            "fritillaria imperialis 'album'",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_06967": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos flower",
+            "cosmos bipinnatus (garden cosmos)",
+            "cosmos bipinnatus"
+        ]
+    },
+    "image_04391": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya sp.",
+            "cattleya",
+            "due to limited visual detail, it's challenging to precisely determine the species without additional context. however, given the overall appearance, it could belong to a genus within the orchid family."
+        ]
+    },
+    "image_05005": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "tagetes erecta (african marigold)",
+            "tagetes erecta (aztec marigold) or tagetes patula (french marigold)",
+            "tagetes",
+            "marigold",
+            "african marigold (tagetes erecta)"
+        ]
+    },
+    "image_06302": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion",
+            "dandelion (taraxacum officinale)"
+        ]
+    },
+    "image_04027": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "tussilago farfara"
+        ]
+    },
+    "image_04683": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "buttercup",
+            "ranunculus",
+            "buttercup (ranunculus sp.)"
+        ]
+    },
+    "image_01358": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia",
+            "petunia sp.",
+            "species of petunia",
+            "petunia x hybrida (various cultivars)"
+        ]
+    },
+    "image_05384": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "dipsacus sylvestris",
+            "scabious",
+            "scabiosa atropurpurea",
+            "wild bergamot (monarda fistulosa)",
+            "giant button snakeroot (scabiosa capitata)"
+        ]
+    },
+    "image_06578": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscari neglectum",
+            "muscari",
+            "muscary (genus: muscari)",
+            "muscari armeniacum"
+        ]
+    },
+    "image_01071": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower",
+            "snapdragon (antirrhinum majus)",
+            "erysimum",
+            "wallflower (erysimum)"
+        ]
+    },
+    "image_03341": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "species name: strelitzia reginae",
+            "bird of paradise",
+            "strelitzia reginae",
+            "strelitzia reginae (bird of paradise)"
+        ]
+    },
+    "image_03773": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "nerine bowdenii",
+            "nerine bowdenii 'mars bar'",
+            "n. bowdenii"
+        ]
+    },
+    "image_05672": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "sweet pea",
+            "lathyrus odoratus"
+        ]
+    },
+    "image_05712": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "narcissus spp.",
+            "daffodil",
+            "narcissus"
+        ]
+    },
+    "image_03923": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_01371": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia",
+            "species name: petunia"
+        ]
+    },
+    "image_04066": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_04944": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "calla lily (zantedeschia)",
+            "zantedeschia",
+            "calla lily"
+        ]
+    },
+    "image_04362": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya",
+            "the exact species cannot be determined from this image alone without more specific details or a larger context. however, it appears to be an orchid (orchidaceae). further observation would require comparing this flower's features with those of known orchid species.",
+            "epidendrum genus (epidendrums)"
+        ]
+    },
+    "image_06618": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "campanula trachelium",
+            "mountain bellflower (campanula medium)",
+            "the provided image does not allow for definitive species identification; therefore, no specific species can be determined from this image alone.",
+            "campanula sp."
+        ]
+    },
+    "image_03462": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus barbatus",
+            "dianthus hybrid",
+            "dianthus caryophyllus (carnation)",
+            "dianthus 'dianthi'",
+            "species name: dianthus barbatus (sweet william)"
+        ]
+    },
+    "image_06480": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena",
+            "nigella damascena (love-in-a-mist)"
+        ]
+    },
+    "image_07018": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "spathodea campanulata",
+            "species name: curcuma longa",
+            "curcuma xanthorrhiza",
+            "siam tulip (curcuma alismatifolia)",
+            "curcuma alismatifolia"
+        ]
+    },
+    "image_06610": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscari neglectum",
+            "muscari",
+            "muscari 'gracilis'",
+            "muscari armeniacum"
+        ]
+    },
+    "image_03850": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea",
+            "echinacea species",
+            "echinacea purpurea",
+            "echinacea purpurea (purple coneflower)"
+        ]
+    },
+    "image_06424": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum spp.",
+            "aconitum napellus",
+            "aconitum napellus (common monkshood)",
+            "species name: aconitum napellus (monkshood)",
+            "aconitum napellus (monkshood)"
+        ]
+    },
+    "image_01105": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "cheiranthus cheiri",
+            "hesperis matronalis",
+            "species name: erysimum cheiranthoides",
+            "erysimum",
+            "wallflower (erysimum cheiri)"
+        ]
+    },
+    "image_06200": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "oxeye daisy",
+            "oxeye daisy (leucanthemum vulgare)",
+            "common daisy (bellis perennis)",
+            "daisy",
+            "common daisy (leucanthemum vulgare)"
+        ]
+    },
+    "image_03304": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird of paradise (strelitzia reginae)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_00973": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "cheiranthus cheiri",
+            "iberis sempervirens",
+            "winter alyssum (cheiranthus cheiri)",
+            "wallflower (erysimum)",
+            "erysimum 'falling star'"
+        ]
+    },
+    "image_05113": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "paphiopedilum"
+        ]
+    },
+    "image_04601": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus argutifolius",
+            "helleborus",
+            "helleborus orientalis"
+        ]
+    },
+    "image_07040": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "lotus",
+            "curcuma sp.",
+            "alpinia sp.",
+            "nymphaea sp.",
+            "sabatia officinalis (rose campion)"
+        ]
+    },
+    "image_02391": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "species name: gladiolus"
+        ]
+    },
+    "image_03371": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria meleagris"
+        ]
+    },
+    "image_05794": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia",
+            "astrantia major"
+        ]
+    },
+    "image_02386": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_05664": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "lathyrus speciosus",
+            "snapdragon (antirrhinum species)",
+            "lathyrus latifolius",
+            "pink rocket",
+            "lathyrus sp."
+        ]
+    },
+    "image_03803": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "nerine bowdenii",
+            "agapanthus"
+        ]
+    },
+    "image_03472": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus",
+            "sweet william",
+            "dianthus 'frisia pink'",
+            "dianthus species (likely sweet william)",
+            "sweet william (dianthus barbatus)"
+        ]
+    },
+    "image_05649": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "sweet pea"
+        ]
+    },
+    "image_03824": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "nerine bowdenii",
+            "lycoris radiata"
+        ]
+    },
+    "image_03435": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "snake's head fritillary (fritillaria meleagris)",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_01398": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_03333": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird-of-paradise (strelitzia)",
+            "strelitzia reginae",
+            "strelitzia reginae (bird of paradise)"
+        ]
+    },
+    "image_06389": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "yellow flag iris",
+            "iris pseudacorus"
+        ]
+    },
+    "image_04286": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_02298": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera jamesonii",
+            "gerbera",
+            "gerbera daisy"
+        ]
+    },
+    "image_01494": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_03863": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea spp.",
+            "echinacea purpurea 'ruby giant'",
+            "echinacea purpurea",
+            "echinacea purpurea (purple coneflower)"
+        ]
+    },
+    "image_01346": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_02209": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "species name: gerbera daisy",
+            "gerbera",
+            "gerbera daisy"
+        ]
+    },
+    "image_06386": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus",
+            "iris",
+            "iris pseudacorus (yellow flag iris)"
+        ]
+    },
+    "image_07015": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "curcuma zedoaria",
+            "siam tulip",
+            "calea species",
+            "spathiphyllum",
+            "siam tulip (curcuma alismatifolia)"
+        ]
+    },
+    "image_06678": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "ranunculus* (*ranunculus*)",
+            "bladderwort (utricularia)",
+            "bladderworts (utricularia)",
+            "based on the visual characteristics observed, a likely identification would be a buttercup from the genus ranunculus; however, this remains speculative due to limitations in detail.",
+            "species cannot be definitively identified due to lack of full floral and leaf details"
+        ]
+    },
+    "image_01350": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_02310": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "glebionis coronaria var. aurata",
+            "susy\u00ae sunray yellow",
+            "gerbera daisy",
+            "chrysanthemum"
+        ]
+    },
+    "image_06555": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion",
+            "taraxacum officinale (common dandelion)"
+        ]
+    },
+    "image_04149": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cardoon (cynara cardunculus)",
+            "artichoke",
+            "artichoke (cynara cardunculus)",
+            "cynara officinalis",
+            "globe artichoke (cynara scolymus)"
+        ]
+    },
+    "image_04389": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya orchid",
+            "cattleya"
+        ]
+    },
+    "image_05635": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "vicia gigantea",
+            "sweet peas",
+            "species: sweet pea (lathyrus odoratus)",
+            "lathyrus odoratus",
+            "sweet peas (lathyrus odoratus)"
+        ]
+    },
+    "image_03135": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum majus)",
+            "antirrhinum majus",
+            "species name: antirrhinum majus",
+            "species: antirrhinum majus 'orange flame'"
+        ]
+    },
+    "image_06772": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "oenothera lindheimeri",
+            "oenothera speciosa",
+            "oenothera biennis",
+            "evening primrose (oenothera speciosa)",
+            "oenothera sp."
+        ]
+    },
+    "image_07224": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "phalaenopsis amabilis (moth orchid)",
+            "phalaenopsis orchid",
+            "phalaenopsis"
+        ]
+    },
+    "image_03933": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "species name: petunia",
+            "petunia"
+        ]
+    },
+    "image_08099": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "the species cannot be definitively identified due to lack of specific distinguishing features. it could be any variety of hybrid orchid such as a brassavola, laelia, or other closely related hybrid orchids.",
+            "orchidaceae genus (species not identifiable from this description)",
+            "species: moth orchid (phalaenopsis)",
+            "vanda orchid",
+            "orchid"
+        ]
+    },
+    "image_03764": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "nerine bowdenii"
+        ]
+    },
+    "image_03288": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "species name: bird of paradise (strelitzia)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_05832": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major"
+        ]
+    },
+    "image_06455": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena"
+        ]
+    },
+    "image_03855": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea",
+            "echinacea purpurea (eastern purple coneflower)",
+            "echinacea purpurea"
+        ]
+    },
+    "image_01324": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_06949": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos flower",
+            "cosmos bipinnatus",
+            "cosmos"
+        ]
+    },
+    "image_04016": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_01484": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia x hybrida",
+            "petunia \u00d7 hybrida",
+            "petunia"
+        ]
+    },
+    "image_01336": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_03369": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria imperialis",
+            "fritillaria meleagris",
+            "fritillaria"
+        ]
+    },
+    "image_02368": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_05642": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "sweet pea (lathyrus)",
+            "sweet pea",
+            "sweet pea (lathyrus odoratus)"
+        ]
+    },
+    "image_05837": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major"
+        ]
+    },
+    "image_01440": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "species name: petunia",
+            "petunia"
+        ]
+    },
+    "image_07174": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "lilium lancifolium",
+            "tiger lily (lilium pardalinum)",
+            "lilium sp.",
+            "lilium lancifolium 'kiyomoto'",
+            "tiger lily"
+        ]
+    },
+    "image_05820": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major 'snow queen'",
+            "astrantia maxima",
+            "astrantia major"
+        ]
+    },
+    "image_03892": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea species (coneflower)",
+            "echinacea (coneflower)",
+            "echinacea purpurea"
+        ]
+    },
+    "image_03382": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria meleagris",
+            "fritillaria"
+        ]
+    },
+    "image_04246": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_02432": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_05196": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis (commonly known as pot marigold)",
+            "calendula officinalis",
+            "calendula officinalis (pot marigold)",
+            "calendula"
+        ]
+    },
+    "image_06354": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus"
+        ]
+    },
+    "image_03776": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "lycoris radiata",
+            "crinum asiaticum",
+            "crinum lily (crinum asiaticum)",
+            "spider lily (lycoris radiata)",
+            "nerine bowdenii"
+        ]
+    },
+    "image_05840": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia maxima",
+            "thalictrum species",
+            "due to limited visible features alone, the identification cannot be certain without additional context or expert confirmation. however, a general family like asteraceae (daisy) or a specific type like thistle could apply based on common appearances seen here. without further clarification, any exact species identification remains speculative beyond these broad categories:",
+            "astrantia major"
+        ]
+    },
+    "image_02265": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "zinnia",
+            "suspected species: marguerite daisy (glebionis speciosa)",
+            "gazania or helianthus",
+            "gerbera",
+            "gerbera daisy"
+        ]
+    },
+    "image_06927": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation (dianthus)",
+            "carnation",
+            "dianthus (carnation)"
+        ]
+    },
+    "image_04656": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus lappaceus",
+            "buttercup (ranunculus sp.)",
+            "ranunculus acris (common buttercup)",
+            "buttercup"
+        ]
+    },
+    "image_04272": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_08094": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "echinops sphaerocephalus",
+            "echinops",
+            "echinops ritro"
+        ]
+    },
+    "image_04612": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus orientalis (christmas rose)",
+            "helleborus orientalis (common hellebore)",
+            "helleborus niger",
+            "helleborus viridis",
+            "helleborus"
+        ]
+    },
+    "image_04306": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_06879": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "celosia argentea 'ruby giant'",
+            "celosia 'fireworks'",
+            "celosia argentea",
+            "celosia cristata",
+            "celosia"
+        ]
+    },
+    "image_05388": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa columbaria",
+            "knautia arvensis",
+            "scabiosa speciosa",
+            "scabiosa"
+        ]
+    },
+    "image_03800": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "lycoris radiata",
+            "hesperantha coccinea (cape star lily)",
+            "crinum lily"
+        ]
+    },
+    "image_02249": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy"
+        ]
+    },
+    "image_06999": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "eryngium alpinum (alpine sea holly)",
+            "eryngium",
+            "eryngium campestre",
+            "eryngium species",
+            "cardsuus acanthoides or smooth plumeless thistle (provisional identification)"
+        ]
+    },
+    "image_04943": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "calla lily (zantedeschia aethiopica)",
+            "species name: zantedeschia albomaculata",
+            "calla lily"
+        ]
+    },
+    "image_03352": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "strelitzia reginae"
+        ]
+    },
+    "image_06644": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "campanula",
+            "campanula medium",
+            "campanula species",
+            "acanthus montanus",
+            "cuphea"
+        ]
+    },
+    "image_01490": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia",
+            "based solely on the given information, it's difficult to provide a precise species name. however, if we consider common garden plants often mistaken for petunias due to their similar appearance, potential candidates could include calibrachoa 'miniflora', petunia hybrida, or some varieties within these genera. without further context or additional characteristics visible in the image, this remains an educated guess."
+        ]
+    },
+    "image_07297": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "crinum asiaticum",
+            "nerine bowdenii",
+            "crinum species (possibly crinum moorei)"
+        ]
+    },
+    "image_01085": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum \u00d7 cheiranthifolium",
+            "erysimum",
+            "wallflower (erysimum)",
+            "wallflower",
+            "erysimum 'samba'"
+        ]
+    },
+    "image_07127": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "eustoma",
+            "gentiana saponaria (gentian) 'purple flare'",
+            "the image depicts a glandularia bipinnatifida, commonly known as burgundy sage.",
+            "gentiana lutea",
+            "blue lily (eustoma grandiflorum)"
+        ]
+    },
+    "image_04579": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus",
+            "helleborus niger (christmas rose)"
+        ]
+    },
+    "image_04386": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya",
+            "cattleya sp."
+        ]
+    },
+    "image_02257": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "african daisy (gerbera daisy)",
+            "gerbera daisy (gerbera jamesonii)",
+            "african daisy (gerbera jamesonii)",
+            "gerbera"
+        ]
+    },
+    "image_03757": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "lily-of-the-valley (convallaria majalis)",
+            "crinum asiaticum",
+            "nerine sarniensis",
+            "nerine bowdenii",
+            "lycoris radiata (spider lily)"
+        ]
+    },
+    "image_06683": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "trollius europaeus",
+            "species name: trollius",
+            "trollius",
+            "ranunculus repens subsp. acris",
+            "trollius x cultorum"
+        ]
+    },
+    "image_03457": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria imperialis",
+            "fritillaria species",
+            "fritillaria meleagris",
+            "species name: fritillaria imperialis"
+        ]
+    },
+    "image_03386": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria meleagris (snake's head fritillary)",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_06548": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion"
+        ]
+    },
+    "image_03799": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "crinum asiaticum",
+            "hippeastrum",
+            "nerine bowdenii"
+        ]
+    },
+    "image_03493": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "sweet william (dianthus barbatus)",
+            "dianthus caryophyllus",
+            "sweet william",
+            "dianthus"
+        ]
+    },
+    "image_04897": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "calla lilly (zantedeschia aethiopica)",
+            "calla lilly",
+            "calla lily"
+        ]
+    },
+    "image_03388": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "snake's head fritillary (fritillaria meleagris)",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_04155": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cynara scolymus",
+            "artichoke (cynara scolymus)",
+            "artichoke",
+            "species name: cynara cardunculus",
+            "cynara scolymus (common artichoke)"
+        ]
+    },
+    "image_04915": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "zantedeschia aethiopica",
+            "zantedeschia",
+            "calla lily",
+            "calla lily (zantedeschia)"
+        ]
+    },
+    "image_06304": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion",
+            "dandelion (taraxacum officinale)",
+            "taraxacum officinale"
+        ]
+    },
+    "image_02197": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy",
+            "gerbera daisy (gerbera jamesonii)",
+            "gerbera daisy (gerbera spp.)"
+        ]
+    },
+    "image_05800": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major or astrantia minor",
+            "astrantia major"
+        ]
+    },
+    "image_03479": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus barbatus (sweet william)",
+            "dianthus barbatus",
+            "dianthus species",
+            "dianthus",
+            "dianthus sp."
+        ]
+    },
+    "image_04586": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus orientalis",
+            "helleborus"
+        ]
+    },
+    "image_07182": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "lily (lilium)",
+            "lilium lancifolium",
+            "tiger lily",
+            "lilium speciosum var. striatum"
+        ]
+    },
+    "image_00997": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower (erysimum)",
+            "wallflower",
+            "erysimum (wallflower)",
+            "hesperis matronalis"
+        ]
+    },
+    "image_06780": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "gloriosa superba",
+            "gloriosa asiatica (flame lily)",
+            "gloriosa lily",
+            "gloriosa superba (glorious lily)",
+            "gloriosa rothschildiana"
+        ]
+    },
+    "image_01094": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "begonia semperflorens-cultorum",
+            "wallflower (erysimum)",
+            "wallflower",
+            "crossandra speciosa",
+            "hesperis matronalis"
+        ]
+    },
+    "image_06908": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "species name: dianthus caryophyllus",
+            "dianthus caryophyllus",
+            "dianthus caryophyllus (carnation)",
+            "dianthus"
+        ]
+    },
+    "image_05819": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major"
+        ]
+    },
+    "image_03895": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea",
+            "echinacea purpurea (eastern purple coneflower)",
+            "echinacea purpurea"
+        ]
+    },
+    "image_05729": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "narcissus",
+            "narcissus pseudonarcissus",
+            "daffodil"
+        ]
+    },
+    "image_07186": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "tiger lily (lilium lancifolium)",
+            "tiger lily (lilium tigrinum)",
+            "tiger lily"
+        ]
+    },
+    "image_03497": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "sweet william (dianthus barbatus)",
+            "dianthus caryophyllus",
+            "dianthus"
+        ]
+    },
+    "image_04932": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "arum palaestinum",
+            "zantedeschia spp.",
+            "species name: zantedeschia",
+            "calla lily",
+            "zantedeschia aethiopica"
+        ]
+    },
+    "image_04396": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya",
+            "cattleya species (hybrid)",
+            "miltoniopsis"
+        ]
+    },
+    "image_04676": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus",
+            "ranunculus acris",
+            "ranunculus repens",
+            "common buttercup (ranunculus acris)",
+            "species name: greater spearwort (ranunculus lingua)"
+        ]
+    },
+    "image_06392": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus",
+            "iris pseudacorus (yellow flag iris)",
+            "iris"
+        ]
+    },
+    "image_04388": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "braassavola subgenus or similar genera",
+            "cattleya",
+            "cattleya or laelia genus",
+            "cattleya/laelia",
+            "cattleya or laelia hybrid"
+        ]
+    },
+    "image_06633": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "campanula persicifolia",
+            "campanula medium",
+            "campanula"
+        ]
+    },
+    "image_03484": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus caryophyllus",
+            "china pink (dianthus caryophyllus)",
+            "dianthus barbatus",
+            "dianthus caryophyllus (sweet william)",
+            "species name: dianthus barbatus"
+        ]
+    },
+    "image_05137": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "cypripedium",
+            "cypripedium spp.",
+            "paphiopedilum"
+        ]
+    },
+    "image_05273": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana sino-ornata",
+            "gentiana scabra",
+            "gentiana acaulis",
+            "gentiana asclepiadea"
+        ]
+    },
+    "image_06688": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "ranunculus",
+            "ranunculus x aconitifolius",
+            "trollius europaeus",
+            "ranunculus species (commonly referred to as buttercups)"
+        ]
+    },
+    "image_04392": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya",
+            "cattleya hybrid"
+        ]
+    },
+    "image_06660": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "trollius 'gold queen'",
+            "papaveraceae (potentilla or other members within)",
+            "ranunculus bulbosus",
+            "ranunculus x hybridus 'glory'",
+            "buttercup (ranunculus sp.)"
+        ]
+    },
+    "image_06445": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena"
+        ]
+    },
+    "image_06984": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "eryngium glomeratum",
+            "eryngium planum",
+            "eryngium alpinum",
+            "eryngium alpinum (sea holly)"
+        ]
+    },
+    "image_01335": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia hybrid (petunia \u00d7 hybrida)",
+            "petunia",
+            "petunia hybrida"
+        ]
+    },
+    "image_03516": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus (pinks)",
+            "dianthus 'fruit cocktail'",
+            "dianthus"
+        ]
+    },
+    "image_07097": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "globe thistle (echinops ritro)",
+            "echinops (globe thistle)",
+            "echinops ritro"
+        ]
+    },
+    "image_06865": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "cockscomb (celosia)",
+            "celosia argentea"
+        ]
+    },
+    "image_01142": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower (erysimum)",
+            "wallflower",
+            "diascia",
+            "matthiola incana 'alba'"
+        ]
+    },
+    "image_03363": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "strelitzia reginae",
+            "strelitzia reginae (bird of paradise)",
+            "species name: strelitzia reginae"
+        ]
+    },
+    "image_06246": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "leucanthemum species (white daisy)",
+            "shasta daisy",
+            "chrysanthemum maximum",
+            "common daisy (bellis perennis)",
+            "chamomile (matricaria)"
+        ]
+    },
+    "image_06643": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "campanula medium",
+            "campanula",
+            "bellflower (campanula)"
+        ]
+    },
+    "image_06574": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscari armeniacum",
+            "muscari neglectum",
+            "species name: muscari neglectum or a similar species from the muscari genus",
+            "muscari species",
+            "muscari botryoides"
+        ]
+    },
+    "image_06402": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum napellus (monkshood)",
+            "aconitum napellus",
+            "aconitum",
+            "aconitum species (monkshood)"
+        ]
+    },
+    "image_06054": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "cirsium vulgare (common thistle)",
+            "bull thistle (cirsium vulgare)",
+            "cirsium or carduus species",
+            "scotch thistle",
+            "burdock"
+        ]
+    },
+    "image_06561": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion",
+            "dandelion (taraxacum officinale)",
+            "taraxacum officinale"
+        ]
+    },
+    "image_04129": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cynara scolymus",
+            "cynara cardunculus",
+            "cardoon (cynara cardunculus)",
+            "artichoke"
+        ]
+    },
+    "image_05138": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "paphiopedilum micranthum album"
+        ]
+    },
+    "image_04034": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_04400": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya hybrid",
+            "cattleya orchid",
+            "cattleya",
+            "laelia speciosa",
+            "cattleya sp."
+        ]
+    },
+    "image_04689": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus acris (meadow buttercup)",
+            "buttercup",
+            "ranunculus auricomus",
+            "ranunculus acris",
+            "ranunculus repens"
+        ]
+    },
+    "image_06831": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "alpinia purpurata"
+        ]
+    },
+    "image_05754": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea",
+            "king protea (protea cynaroides)"
+        ]
+    },
+    "image_06964": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos bipinnatus",
+            "cosmos"
+        ]
+    },
+    "image_03150": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "antirrhinum majus",
+            "snapdragon (antirrhinum)",
+            "snapdragon",
+            "snapdragon (antirrhinum majus)"
+        ]
+    },
+    "image_05018": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "tagetes erecta",
+            "marigold",
+            "tagetes"
+        ]
+    },
+    "image_04311": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria",
+            "*alstroemeria*"
+        ]
+    },
+    "image_03911": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea purpurea (purple coneflower)",
+            "echinacea purpurea"
+        ]
+    },
+    "image_01115": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum species (wallflower)",
+            "wallflower",
+            "erysimum hybridum or wallflower",
+            "hesperis matronalis",
+            "erysimum 'frensham gold'"
+        ]
+    },
+    "image_04261": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria",
+            "alstroemeria aurea"
+        ]
+    },
+    "image_04046": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_06458": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena"
+        ]
+    },
+    "image_04086": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cirsium",
+            "milk thistle",
+            "species name: silybum marianum",
+            "*silybum marianum*",
+            "cyanthillium cinereum"
+        ]
+    },
+    "image_07294": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "crinum asiaticum",
+            "nerine sarniensis",
+            "crimson star lily (crinum asiaticum)",
+            "nerine bowdenii",
+            "crinum latifolium"
+        ]
+    },
+    "image_06854": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "celosia argentea",
+            "celosia cristata",
+            "celosia argentea variegata",
+            "celosia"
+        ]
+    },
+    "image_05224": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana scabra",
+            "gentiana scabra (alpine gentian)",
+            "gentiana acaulis"
+        ]
+    },
+    "image_03854": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea purpurea (purple coneflower)",
+            "echinacea purpurea"
+        ]
+    },
+    "image_05234": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana clusii",
+            "gentiana scabra",
+            "gentiana acaulis",
+            "gentiana",
+            "gentiana acaulis or similar alpine gentian"
+        ]
+    },
+    "image_02318": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gloriosa lily"
+        ]
+    },
+    "image_05708": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil (narcissus)",
+            "daffodil"
+        ]
+    },
+    "image_05008": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "african marigold (tagetes erecta)",
+            "tagetes",
+            "marigolds (tagetes)",
+            "marigold",
+            "tagetes spp."
+        ]
+    },
+    "image_07022": {
+        "groundtruth": "siam tulip",
+        "predictions": [
+            "the species cannot be definitively identified from this image alone.",
+            "curcuma longa",
+            "siam tulip (spathodea campanulata)",
+            "curcuma caesia",
+            "*curcuma caesia*"
+        ]
+    },
+    "image_01344": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_03409": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "species: snakes head fritillary (fritillaria meleagris)",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_06957": {
+        "groundtruth": "mexican aster",
+        "predictions": [
+            "cosmos bipinnatus"
+        ]
+    },
+    "image_01054": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "wallflower (cheerfulness)",
+            "erysimum species",
+            "wallflower (erysimum) species",
+            "wallflower (cheerios mix)"
+        ]
+    },
+    "image_06189": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "species name: platycodon grandiflorus",
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_02363": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladioli",
+            "gladiolus"
+        ]
+    },
+    "image_06179": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_06798": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "glory lily (gloriosa superba)",
+            "species name: gloriosa superba",
+            "gloriosa rothschildiana",
+            "gloriosa lily"
+        ]
+    },
+    "image_06336": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion"
+        ]
+    },
+    "image_02287": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera jamesonii",
+            "gerbera daisy",
+            "gerbera",
+            "gerbera daisy (gerbera)"
+        ]
+    },
+    "image_04914": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "zantedeschia (arum lilies)",
+            "calla lily (zantedeschia sp.)",
+            "calla lily (zantedeschia)",
+            "calla lily",
+            "zantedeschia aethiopica"
+        ]
+    },
+    "image_05602": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox",
+            "species name: phlox",
+            "phlox subulata"
+        ]
+    },
+    "image_01449": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "catnap catawba",
+            "petunia x hybrida 'surfinia'",
+            "petunia",
+            "petunia 'white icicle'"
+        ]
+    },
+    "image_04148": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cynara scolymus",
+            "artichoke",
+            "globe artichoke (cynara cardunculus)",
+            "species name: cynara scolymus"
+        ]
+    },
+    "image_06385": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus"
+        ]
+    },
+    "image_03429": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "snake's head fritillary (fritillaria meleagris)",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_01135": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower (erysimum)",
+            "erysimum 'rumbolds orange'",
+            "erysimum",
+            "erysimum 'cheerful charlie'"
+        ]
+    },
+    "image_05610": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox",
+            "phlox subulata 'vivid pink'",
+            "phlox 'foxy'",
+            "phlox drummondii var. rosea 'pink ice'"
+        ]
+    },
+    "image_07136": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "hesperis matronalis (matronal wallflower)",
+            "campanula latifolia",
+            "eustoma grandiflorum",
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_03418": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "fritillaria imperialis",
+            "fritillaria species (likely)",
+            "snake's head flower (fritillaria)",
+            "fritillaria",
+            "fritillaria imperialis (crown imperial)"
+        ]
+    },
+    "image_01014": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "firecracker flower (crossandra infundibuliformis)",
+            "antirrhinum majus",
+            "erysimum 'orange prince'",
+            "snapdragon (example: 'antirrhinum majus')",
+            "wallflower (double wallflower)"
+        ]
+    },
+    "image_05767": {
+        "groundtruth": "king protea",
+        "predictions": [
+            "king protea",
+            "king protea (protea cynaroides)",
+            "protea"
+        ]
+    },
+    "image_05199": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis"
+        ]
+    },
+    "image_01044": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum 'bowles mauve'",
+            "wallflower",
+            "erysimum"
+        ]
+    },
+    "image_05169": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis"
+        ]
+    },
+    "image_06202": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "daisy"
+        ]
+    },
+    "image_07132": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "genus eustoma or gentiana",
+            "linum perenne",
+            "eustoma grandiflorum",
+            "gentiana campestris"
+        ]
+    },
+    "image_06462": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "love-in-a-mist (nigella damascena)",
+            "nigella damascena",
+            "nigella damascena (love-in-a-mist)"
+        ]
+    },
+    "image_07112": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "globe thistle (globularia alypum)",
+            "allium species, likely allium caeruleum",
+            "echinops ritro",
+            "allium christophii (fern leaf onion)",
+            "globe thistle (scabiosa atropurpurea)"
+        ]
+    },
+    "image_04295": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_07122": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "echinops",
+            "echinops ritro"
+        ]
+    },
+    "image_05134": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "paphiopedilum"
+        ]
+    },
+    "image_04032": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_04963": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "tagetes erecta (aztec marigold)",
+            "marigold",
+            "tagetes",
+            "tagetes 'illumination gold'"
+        ]
+    },
+    "image_04899": {
+        "groundtruth": "giant white arum lily",
+        "predictions": [
+            "calla lily (zantedeschia spp.)",
+            "calla lily"
+        ]
+    },
+    "image_01549": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "species name: euphorbia pulcherrima (poinsettia)",
+            "poinsettia",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_05123": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "cypripedium",
+            "paphiopedilum papilio",
+            "paphiopedilum",
+            "paphiopedilum (lady's slipper orchid)"
+        ]
+    },
+    "image_03321": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird of paradise (strelitzia reginae)",
+            "strelitzia reginae",
+            "sterlitzia reginae"
+        ]
+    },
+    "image_06786": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "glory lily",
+            "gloriosa superba",
+            "gloriosa lily (gloriosa superba)"
+        ]
+    },
+    "image_03139": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "antirrhinum majus",
+            "linaria vulgaris",
+            "snapdragon",
+            "snapdragon (antirrhinum majus)"
+        ]
+    },
+    "image_03473": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus hybrid cultivar",
+            "dianthus barbatus",
+            "dianthus species (possibly dianthus barbatus)",
+            "sweet william (dianthus)"
+        ]
+    },
+    "image_06167": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "campanula persicifolia",
+            "platycodon grandiflorus"
+        ]
+    },
+    "image_05150": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis"
+        ]
+    },
+    "image_04326": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya",
+            "cattleya species",
+            "orchid"
+        ]
+    },
+    "image_04315": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_02205": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy",
+            "*gerbera* or hybrid variant thereof",
+            "daisy or gerbera",
+            "gerbera daisy (gerbera jamesonii)",
+            "species name: gerbera daisy (gerbera jamesonii)"
+        ]
+    },
+    "image_07233": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "phalaenopsis",
+            "phalaenopsis sp.",
+            "phalaenopsis orchid"
+        ]
+    },
+    "image_02191": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera jasmonii",
+            "gerbera daisy",
+            "gerbera"
+        ]
+    },
+    "image_03990": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_02395": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladioli"
+        ]
+    },
+    "image_05696": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil",
+            "narcissus pseudonarcissus",
+            "daffodil (narcissus)",
+            "narcissus"
+        ]
+    },
+    "image_01033": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "matthiola incana",
+            "matthiola",
+            "viola 'monsieur poirier'",
+            "wallflower",
+            "erysimum"
+        ]
+    },
+    "image_08101": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "phalaenopsis",
+            "phalaenopsis amabilis"
+        ]
+    },
+    "image_01509": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia",
+            "euphorbia pulcherrima",
+            "schlumbergera (christmas cactus)"
+        ]
+    },
+    "image_05182": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis (pot marigold)",
+            "calendula officinalis"
+        ]
+    },
+    "image_01513": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia",
+            "euphorbia pulcherrima",
+            "poinsettia (euphorbia pulcherrima)"
+        ]
+    },
+    "image_02388": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladilus"
+        ]
+    },
+    "image_02326": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_02416": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladioli (gladiolus)"
+        ]
+    },
+    "image_05274": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana clusii",
+            "gentiana",
+            "gentiana austriaca",
+            "gentiana sp."
+        ]
+    },
+    "image_03864": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea spp.",
+            "echinacea purpurea",
+            "echinacea"
+        ]
+    },
+    "image_05344": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "knautia macedonica",
+            "scabiosa",
+            "scabiosa atropurpurea"
+        ]
+    },
+    "image_03839": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea species",
+            "echinacea purpurea",
+            "echinacea"
+        ]
+    },
+    "image_04561": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus orientalis",
+            "helleborus"
+        ]
+    },
+    "image_04070": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "tussilago farfara"
+        ]
+    },
+    "image_01128": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "wallflower",
+            "wallflower (erysimum hybrid)",
+            "erysimum 'tetra orange'"
+        ]
+    },
+    "image_02303": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy"
+        ]
+    },
+    "image_05143": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "paphiopedilum spp.",
+            "paphiopedilum"
+        ]
+    },
+    "image_01008": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum hybridum 'cheerful cheer' (wallflower)",
+            "erysimum",
+            "erysimum aurora",
+            "wallflower"
+        ]
+    },
+    "image_06417": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum",
+            "aconitum carmichaelii"
+        ]
+    },
+    "image_04065": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "coltsfoot"
+        ]
+    },
+    "image_06470": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena"
+        ]
+    },
+    "image_04313": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_06057": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "cirsium vulgare",
+            "carduus nutans",
+            "burdock (arctium minus)"
+        ]
+    },
+    "image_06851": {
+        "groundtruth": "plumed celosia",
+        "predictions": [
+            "celosia cristata",
+            "celosia argentea",
+            "celosia"
+        ]
+    },
+    "image_05618": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox",
+            "phlox paniculata"
+        ]
+    },
+    "image_07105": {
+        "groundtruth": "globe thistle",
+        "predictions": [
+            "echinops ritro"
+        ]
+    },
+    "image_02362": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_04962": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "marigold",
+            "tagetes",
+            "tagetes erecta or tagetes patula"
+        ]
+    },
+    "image_03461": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus plumarius 'kittiwake'",
+            "dianthus barbatus",
+            "dianthus species (sweet william)",
+            "dianthus",
+            "dianthus (dianthus caryophyllus)"
+        ]
+    },
+    "image_01050": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "species name: crocosmia",
+            "wallflower (matthiola)",
+            "wallflower (erysimum)",
+            "wallflower",
+            "nasturtium"
+        ]
+    },
+    "image_06482": {
+        "groundtruth": "love in the mist",
+        "predictions": [
+            "nigella damascena"
+        ]
+    },
+    "image_06353": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus"
+        ]
+    },
+    "image_02335": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladioli (gladiolus)",
+            "gladiolus"
+        ]
+    },
+    "image_03866": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea",
+            "echinacea purpurea",
+            "echinacea purpurea (possibly a cultivar)"
+        ]
+    },
+    "image_01446": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia 'supertunia'",
+            "petunia"
+        ]
+    },
+    "image_07222": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "phalaenopsis species",
+            "phalaenopsis orchid",
+            "phalaenopsis sp.",
+            "phalaenopsis",
+            "phalaenopsis amabilis"
+        ]
+    },
+    "image_06976": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "eryngium planum (blue globe thistle)",
+            "eryngium planum (sea holly)",
+            "eryngium",
+            "eryngium planum",
+            "eryngium alpinum"
+        ]
+    },
+    "image_06902": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation (dianthus caryophyllus)",
+            "carnation",
+            "dianthus caryophyllus"
+        ]
+    },
+    "image_04658": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus acris",
+            "species: buttercup (likely ranunculus sp.)",
+            "buttercup"
+        ]
+    },
+    "image_06819": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "ginger (zingiberaceae)",
+            "zingiberaceae genus",
+            "hedychium",
+            "vriesea splendens (flamingo tongue plant)",
+            "alpinia purpurata"
+        ]
+    },
+    "image_05153": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis"
+        ]
+    },
+    "image_06808": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "gloriosa sp.",
+            "gloriosa lily (gloriosa speciosa)",
+            "gloriosa lily",
+            "gloriosa rothschildiana",
+            "gloriosa lilies"
+        ]
+    },
+    "image_03897": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea purpurea (purple coneflower)",
+            "echinacea purpurea 'hansa'",
+            "echinacea purpurea",
+            "echinacea"
+        ]
+    },
+    "image_05379": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa columbaria 'boule de neige'",
+            "field scabious",
+            "scabiosa (possibly scabiosa caucasica)",
+            "scabiosa 'butterfly blue'",
+            "scabiosa columbaria"
+        ]
+    },
+    "image_01045": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "matthiola incana",
+            "wallflower (erysimum)",
+            "erysimum sp."
+        ]
+    },
+    "image_04089": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cynara cardunculus",
+            "cynara cardunculus 'globe' variety",
+            "artichoke (cynara cardunculus)",
+            "cynara scolymus",
+            "artichoke (cynara scolymus)"
+        ]
+    },
+    "image_03901": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea purpurea (eastern purple coneflower)",
+            "echinacea purpurea",
+            "echinacea"
+        ]
+    },
+    "image_03939": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_04111": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "cynara cardunculus",
+            "species name: cynara cardunculus (artichoke)",
+            "cynara scolymus",
+            "cardoon"
+        ]
+    },
+    "image_01319": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "species name: petunia x hybrida",
+            "petunia x hybrida 'cherry vixen'",
+            "petunia",
+            "petunia (petunia \u00d7 hybrida)"
+        ]
+    },
+    "image_06058": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "cardoon",
+            "musk thistle (carduus nutans)",
+            "cirsium lanosum (musk thistle)",
+            "cirsium vulgare",
+            "carduus nutans"
+        ]
+    },
+    "image_05249": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentiana clusii",
+            "gentiana",
+            "gentiana saxatilis",
+            "gentiana septemfida (alpine gentian)",
+            "gentiana crinita"
+        ]
+    },
+    "image_05647": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "species name: lathyrus odoratus 'owl's acre'",
+            "sweet peas",
+            "sweet pea (lathyrus odoratus)",
+            "sweet pea"
+        ]
+    },
+    "image_07137": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "gentiana scabra",
+            "gentiana"
+        ]
+    },
+    "image_06571": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscari armeniacum",
+            "muscari",
+            "muscaris (grape hyacinths)",
+            "muscaris communis"
+        ]
+    },
+    "image_03100": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "antirrhinum majus",
+            "snapdragon"
+        ]
+    },
+    "image_06738": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "oenothera lindheimeri",
+            "oenothera speciosa",
+            "oenothera",
+            "species name: oenothera",
+            "oenothera suffulta 'pink crystal'"
+        ]
+    },
+    "image_03898": {
+        "groundtruth": "purple coneflower",
+        "predictions": [
+            "echinacea purpurea 'magnus'",
+            "echinacea purpurea"
+        ]
+    },
+    "image_05096": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "phragmipedium",
+            "based solely on the provided image description and without access to additional information or comparison with a database, identifying the precise species of the orchid remains uncertain. therefore, i cannot provide a definitive answer for the specific species of the orchid shown.",
+            "cypripedium",
+            "paphiopedilum"
+        ]
+    },
+    "image_06339": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "dandelion",
+            "dandelion (taraxacum officinale)"
+        ]
+    },
+    "image_06180": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "platycodon grandiflorus",
+            "platycodon grandiflorus (balloon flower)"
+        ]
+    },
+    "image_06807": {
+        "groundtruth": "fire lily",
+        "predictions": [
+            "gloriosa lily (gloriosa superba)",
+            "gloriosa superba",
+            "gloriosa lily"
+        ]
+    },
+    "image_07188": {
+        "groundtruth": "tiger lily",
+        "predictions": [
+            "lilium pardalinum",
+            "lilium lancifolium or lilium superbum",
+            "lilium lancifolium",
+            "tiger lily"
+        ]
+    },
+    "image_03123": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum)",
+            "antirrhinum majus",
+            "snapdragon",
+            "species name: antirrhinum majus 'white knight'"
+        ]
+    },
+    "image_07141": {
+        "groundtruth": "bolero deep blue",
+        "predictions": [
+            "aconitum (monkshood)",
+            "gentian",
+            "the provided image does not clearly depict enough detail to make an accurate identification using common guidelines without more specifics like leaves, stems, or a wider view; therefore, a precise scientific classification is not feasible.",
+            "gloxinia",
+            "gentiana species"
+        ]
+    },
+    "image_07290": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine sarniensis",
+            "nerine bowdenii",
+            "crinum asiaticum"
+        ]
+    },
+    "image_06342": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_01024": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum cheiri ('wallflower')",
+            "erysimum 'vulpina'",
+            "wallflower (erysimum)",
+            "wallflower",
+            "erysimum"
+        ]
+    },
+    "image_03128": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum majus)",
+            "snapdragon"
+        ]
+    },
+    "image_04988": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "tagetes erecta (aztec marigold)",
+            "tagetes erecta (african marigold)",
+            "tagetes erecta or tagetes erecta 'aztec gold'",
+            "tagetes"
+        ]
+    },
+    "image_05627": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox",
+            "phlox paniculata",
+            "phlox 'candy floss'",
+            "phlox subulata"
+        ]
+    },
+    "image_03347": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird of paradise (strelitzia reginae)",
+            "species name: strelitzia reginae",
+            "bird of paradise (strelitzia)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_03984": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_03134": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum majus)",
+            "linaria vulgaris subsp. (yellow toadflax)",
+            "snapdragon"
+        ]
+    },
+    "image_01548": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "poinsettia",
+            "euphorbia pulcherrima variegata",
+            "euphorbia pulcherrima 'pink passion'",
+            "euphorbia pulcherrima"
+        ]
+    },
+    "image_03809": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "nerine species (likely nerine bowdenii)",
+            "nerine sarniensis",
+            "lilium speciosum",
+            "lycoris sp.",
+            "nerine bowdenii"
+        ]
+    },
+    "image_04323": {
+        "groundtruth": "peruvian lily",
+        "predictions": [
+            "alstroemeria"
+        ]
+    },
+    "image_04660": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "buttercup (ranunculus spp.)",
+            "ranunculus polyanthemos",
+            "ranunculus bulbosus",
+            "buttercup"
+        ]
+    },
+    "image_04581": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus orientalis",
+            "hellebore"
+        ]
+    },
+    "image_04677": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus xermophyllum",
+            "*ranunculus species*",
+            "buttercup",
+            "buttercup (ranunculus sp.)",
+            "ranunculus acris (meadow buttercup)"
+        ]
+    },
+    "image_03115": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum majus)",
+            "snapdragon (antirrhinum)",
+            "antirrhinum majus",
+            "snapdragon"
+        ]
+    },
+    "image_03335": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "strelitzia spp.",
+            "species: strelitzia reginae",
+            "bird of paradise (strelitzia)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_02313": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy",
+            "gerbera"
+        ]
+    },
+    "image_06504": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "papaver rhoeas",
+            "papaver species (poppies)",
+            "papaver rhoeas (corn poppy)"
+        ]
+    },
+    "image_04350": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya",
+            "epidendrum"
+        ]
+    },
+    "image_06630": {
+        "groundtruth": "canterbury bells",
+        "predictions": [
+            "campanula sp.",
+            "campanula trachelium",
+            "campanula aparinoides",
+            "campanula persicifolia (wild bellflower)"
+        ]
+    },
+    "image_03540": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "sweet william",
+            "dianthus",
+            "dianthus barbatus",
+            "sweet william (dianthus barbatus)"
+        ]
+    },
+    "image_06531": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_06830": {
+        "groundtruth": "red ginger",
+        "predictions": [
+            "hanging lobster claw",
+            "alpinia",
+            "red ginger (alpinia purpurata)",
+            "alpinia purpurata",
+            "zingiberaceae or alpinia species"
+        ]
+    },
+    "image_06508": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "papaver rhoeas (common poppy)",
+            "papaver rhoeas",
+            "papaver rhoeas (field poppy)",
+            "poppy"
+        ]
+    },
+    "image_01326": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_06193": {
+        "groundtruth": "balloon flower",
+        "predictions": [
+            "balloon flower (platycodon grandiflorus)",
+            "platycodon grandiflorus",
+            "platycodon grandiflorum"
+        ]
+    },
+    "image_01039": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "wallflower (erysimum) or snapdragon (antirrhinum)",
+            "erysimum 'red wings'",
+            "wallflower (erysimum)",
+            "wallflower"
+        ]
+    },
+    "image_06237": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "leucanthemum sp.",
+            "leucanthemum vulgare (oxeye daisy)",
+            "oxeye daisy",
+            "oxeye daisy (leucanthemum vulgare)",
+            "xeranthemum annuum (corn marigold)"
+        ]
+    },
+    "image_03116": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum)",
+            "antirrhinum majus var. dalmatianum",
+            "snapdragon"
+        ]
+    },
+    "image_01539": {
+        "groundtruth": "poinsettia",
+        "predictions": [
+            "euphorbia pulcherrima (poinsettia)",
+            "euphorbia pulcherrima 'white snow'",
+            "poinsettia (euphorbia pulcherrima)",
+            "white poinsettia (euphorbia pulcherrima)",
+            "euphorbia pulcherrima 'alba'"
+        ]
+    },
+    "image_01079": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum \u00d7 cheiri 'ducklington orange'",
+            "wallflower (erysimum)",
+            "wallflower",
+            "erysimum",
+            "erysimum 'cheerful orange'"
+        ]
+    },
+    "image_04058": {
+        "groundtruth": "colt's foot",
+        "predictions": [
+            "coltsfoot (tussilago farfara)",
+            "tussilago farfara",
+            "coltsfoot"
+        ]
+    },
+    "image_06926": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation",
+            "dianthus caryophyllus (carnation)"
+        ]
+    },
+    "image_08084": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "eryngium alpinum (sea holly)",
+            "*eryngium bourgatii*",
+            "eryngium glomeratum",
+            "eryngium",
+            "eryngium planum"
+        ]
+    },
+    "image_04347": {
+        "groundtruth": "ruby-lipped cattleya",
+        "predictions": [
+            "cattleya",
+            "cattleya (cattleya labiata)",
+            "species cannot be determined from this image alone"
+        ]
+    },
+    "image_05145": {
+        "groundtruth": "hard-leaved pocket orchid",
+        "predictions": [
+            "slimpse orchid",
+            "paphiopedilum"
+        ]
+    },
+    "image_06238": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "daisy-like flowering plant",
+            "daisy",
+            "oxeye daisy",
+            "daisy or ox-eye daisy",
+            "anthemis cymbalaria"
+        ]
+    },
+    "image_05737": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "daffodil",
+            "daffodil (narcissus)"
+        ]
+    },
+    "image_05016": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "marigold",
+            "tagetes erecta",
+            "tagetes erecta or french marigold"
+        ]
+    },
+    "image_04130": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "artichoke (cynara)",
+            "cynara cardunculus",
+            "cynara scolymus"
+        ]
+    },
+    "image_05225": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentian",
+            "gentiana scabra (alpine gentian)",
+            "gentiana sp.",
+            "gentiana scabra",
+            "gentiana acaulis (alpine gentian)"
+        ]
+    },
+    "image_06439": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum napellus (monkshood)",
+            "aconitum",
+            "aconitum napellus"
+        ]
+    },
+    "image_02332": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus"
+        ]
+    },
+    "image_04668": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus acris",
+            "*ranunculus sp.*",
+            "buttercup"
+        ]
+    },
+    "image_03391": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "snake's head fritillary (fritillaria meleagris)",
+            "fritillaria meleagris"
+        ]
+    },
+    "image_05188": {
+        "groundtruth": "english marigold",
+        "predictions": [
+            "calendula officinalis"
+        ]
+    },
+    "image_06581": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscaria",
+            "muscari neglectum",
+            "muscari",
+            "muscari armeniacum"
+        ]
+    },
+    "image_06089": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "cirsium vulgare",
+            "cirsium vulgare (common thistle)",
+            "cirsium laniflorum",
+            "carduus nutans"
+        ]
+    },
+    "image_06591": {
+        "groundtruth": "grape hyacinth",
+        "predictions": [
+            "muscari armeniacum (grape hyacinth)",
+            "muscari (grape hyacinth)",
+            "species name: muscari",
+            "muscari neglectum",
+            "muscaris"
+        ]
+    },
+    "image_02216": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "geraea cowania",
+            "gerbera daisy",
+            "gerbera"
+        ]
+    },
+    "image_01451": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia (likely supertunia variety)",
+            "petunia"
+        ]
+    },
+    "image_06687": {
+        "groundtruth": "globe-flower",
+        "predictions": [
+            "trollius x cultorum 'album'",
+            "trollius europaeus",
+            "buttercup (ranunculus)"
+        ]
+    },
+    "image_03517": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "sweet william (dianthus caryophyllus)",
+            "dianthus",
+            "sweet william (dianthus barbatus)"
+        ]
+    },
+    "image_03372": {
+        "groundtruth": "fritillary",
+        "predictions": [
+            "snake's head fritillary (fritillaria meleagris)",
+            "fritillaria meleagris",
+            "fritillaria imperialis",
+            "from the description provided, the identification leans towards fritillaria species, particularly fritillaria imperialis due to its white flowers with green stripes and drooping appearance. however, precise species determination would require closer examination or expert consultation.",
+            "snake's head (fritillaria)"
+        ]
+    },
+    "image_03952": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_03752": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "lycoris radiata",
+            "nerine sarniensis",
+            "nerine bowdenii"
+        ]
+    },
+    "image_05813": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major variegata 'hollywood'",
+            "astrantia major"
+        ]
+    },
+    "image_00968": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "wallflower (erysimum)",
+            "cheiranthus cheiri (wallflower)"
+        ]
+    },
+    "image_03340": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "bird of paradise (strelitzia)",
+            "strelitzia reginae"
+        ]
+    },
+    "image_02366": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "gladiolus spp.",
+            "gladiolus 'hortensia'"
+        ]
+    },
+    "image_06068": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "carduus acanthoides (fleabane thistle)",
+            "carduus acanthoides (bristly thistle)",
+            "cirsium vulgare (common thistle)",
+            "musk thistle (carduus acanthoides)",
+            "cirsium palustre"
+        ]
+    },
+    "image_05212": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentian",
+            "gentiana angustifolia",
+            "gentiana asclepiadea",
+            "gentiana ssp.",
+            "gentiana acaulis"
+        ]
+    },
+    "image_04682": {
+        "groundtruth": "buttercup",
+        "predictions": [
+            "ranunculus acris"
+        ]
+    },
+    "image_06519": {
+        "groundtruth": "corn poppy",
+        "predictions": [
+            "gentiana scabra",
+            "blue-eyed grass (sisyrinchium spp.)",
+            "gentianidae",
+            "gaura lindheimeri"
+        ]
+    },
+    "image_03126": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon",
+            "snapdragon (antirrhinum majus)",
+            "antirrhinum majus",
+            "snapdragon (antirrhinum)"
+        ]
+    },
+    "image_05698": {
+        "groundtruth": "daffodil",
+        "predictions": [
+            "species name: narcissus",
+            "daffodil"
+        ]
+    },
+    "image_00978": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "dianthus species",
+            "dianthus caryophyllus",
+            "species name: vinca",
+            "impatiens balsamina",
+            "sweet william"
+        ]
+    },
+    "image_02279": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy",
+            "daisy",
+            "gerbera"
+        ]
+    },
+    "image_01397": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia \u00d7 hybrida (hybrid petunia)",
+            "petunia",
+            "calotropis procera"
+        ]
+    },
+    "image_02431": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus 'flamingo'",
+            "gladioli (gladiolus)",
+            "gladiolus"
+        ]
+    },
+    "image_00959": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum \u00d7 cheiri",
+            "wallflower (erysimum)",
+            "wallflower"
+        ]
+    },
+    "image_04985": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "tagetes",
+            "tagetes erecta (african marigold)",
+            "tagetes sp.",
+            "tagetes erecta",
+            "marigold"
+        ]
+    },
+    "image_02297": {
+        "groundtruth": "barbeton daisy",
+        "predictions": [
+            "gerbera daisy (gerbera jamesonii)",
+            "gerbera daisy",
+            "african daisy (gerbera jamesonii)"
+        ]
+    },
+    "image_06229": {
+        "groundtruth": "oxeye daisy",
+        "predictions": [
+            "bellis perennis",
+            "daisy (bellis perennis)",
+            "daisy",
+            "oxeye daisy (leucanthemum vulgare)"
+        ]
+    },
+    "image_06426": {
+        "groundtruth": "monkshood",
+        "predictions": [
+            "aconitum",
+            "species name: aconitum napellus",
+            "aconitum napellus"
+        ]
+    },
+    "image_04583": {
+        "groundtruth": "lenten rose",
+        "predictions": [
+            "helleborus orientalis",
+            "hellebore (helleborus orientalis)",
+            "helleborus",
+            "helleborus sp."
+        ]
+    },
+    "image_00961": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "wallflower (erysimum)",
+            "erysimum 'sweet sensation'"
+        ]
+    },
+    "image_05671": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "species name: lathyrus speciosus",
+            "sweet pea (lathyrus odoratus)",
+            "due to its characteristics, this flower is likely from the genus lathyrus, but further botanical examination would be needed for precise species determination.",
+            "sweet pea"
+        ]
+    },
+    "image_06910": {
+        "groundtruth": "carnation",
+        "predictions": [
+            "carnation"
+        ]
+    },
+    "image_05275": {
+        "groundtruth": "stemless gentian",
+        "predictions": [
+            "gentianella campestris",
+            "gentiana",
+            "gentian",
+            "gentian scabious (gentiana scabra)",
+            "gentiana alpina"
+        ]
+    },
+    "image_05670": {
+        "groundtruth": "sweet pea",
+        "predictions": [
+            "lathyrus odoratus 'owl's acre'",
+            "sweet peas (lathyrus odoratus)",
+            "sweet peas",
+            "sweet pea"
+        ]
+    },
+    "image_01472": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia",
+            "species name: petunia"
+        ]
+    },
+    "image_03808": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "lycoris radiata",
+            "helleborus orientalis",
+            "crinum asiaticum",
+            "nerine bowdenii",
+            "clinonia 'pink spirit'"
+        ]
+    },
+    "image_03747": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "hippeastrum",
+            "nerine sarniensis",
+            "nerine bowdenii"
+        ]
+    },
+    "image_02438": {
+        "groundtruth": "sword lily",
+        "predictions": [
+            "gladiolus",
+            "species name: gladiolus"
+        ]
+    },
+    "image_01458": {
+        "groundtruth": "petunia",
+        "predictions": [
+            "petunia"
+        ]
+    },
+    "image_05598": {
+        "groundtruth": "garden phlox",
+        "predictions": [
+            "phlox",
+            "phlox paniculata 'foster's pink'",
+            "phlox paniculata",
+            "phlox paniculata 'bright eyes'",
+            "*phlox paniculata*"
+        ]
+    },
+    "image_06744": {
+        "groundtruth": "pink primrose",
+        "predictions": [
+            "oenothera speciosa",
+            "species name: oenothera suffrutescens",
+            "species name: oenothera biennis",
+            "oenothera"
+        ]
+    },
+    "image_04953": {
+        "groundtruth": "marigold",
+        "predictions": [
+            "marigold",
+            "tagetes spp. (marigold)"
+        ]
+    },
+    "image_01012": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "wallflower (erysimum)",
+            "wallflower",
+            "species name: diascia"
+        ]
+    },
+    "image_01063": {
+        "groundtruth": "wallflower",
+        "predictions": [
+            "erysimum",
+            "erysimum 'cheerfulness'",
+            "wallflower (erysimum)",
+            "erysimum cheiranthoides"
+        ]
+    },
+    "image_03756": {
+        "groundtruth": "guernsey lily",
+        "predictions": [
+            "lycoris radiata",
+            "nerine sarniensis",
+            "nerine spp.",
+            "lilium speciosum (korean lily)"
+        ]
+    },
+    "image_06384": {
+        "groundtruth": "yellow iris",
+        "predictions": [
+            "iris pseudacorus",
+            "iris",
+            "iris pseudacorus (yellow flag)"
+        ]
+    },
+    "image_06530": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_03303": {
+        "groundtruth": "bird of paradise",
+        "predictions": [
+            "strelitzia reginae (bird of paradise)",
+            "species name: strelitzia reginae",
+            "species: strelitzia reginae",
+            "strelitzia reginae"
+        ]
+    },
+    "image_06534": {
+        "groundtruth": "common dandelion",
+        "predictions": [
+            "taraxacum officinale",
+            "dandelion"
+        ]
+    },
+    "image_05795": {
+        "groundtruth": "great masterwort",
+        "predictions": [
+            "astrantia major 'buckland'",
+            "astrantia major"
+        ]
+    },
+    "image_03505": {
+        "groundtruth": "sweet william",
+        "predictions": [
+            "dianthus barbatus",
+            "sweet william (dianthus barbatus)",
+            "dianthus (sweet william)",
+            "dianthus",
+            "sweet william"
+        ]
+    },
+    "image_06080": {
+        "groundtruth": "spear thistle",
+        "predictions": [
+            "carduus genus (general thistle family)",
+            "milk thistle",
+            "carduus nutans (nodding thistle)",
+            "cirsium vulgare",
+            "spear thistle (carduus acanthoides)"
+        ]
+    },
+    "image_04153": {
+        "groundtruth": "artichoke",
+        "predictions": [
+            "artichoke",
+            "cynara cardunculus",
+            "cynara scolymus"
+        ]
+    },
+    "image_06995": {
+        "groundtruth": "alpine sea holly",
+        "predictions": [
+            "eryngium",
+            "eryngium alpinum"
+        ]
+    },
+    "image_07210": {
+        "groundtruth": "moon orchid",
+        "predictions": [
+            "phalaenopsis",
+            "phalaenopsis orchid",
+            "the plant in the image is likely to be a white phalaenopsis orchid."
+        ]
+    },
+    "image_05386": {
+        "groundtruth": "pincushion flower",
+        "predictions": [
+            "scabiosa 'butterfly blue'",
+            "scabiosa atropurpurea",
+            "scabious",
+            "scabiosa"
+        ]
+    },
+    "image_03157": {
+        "groundtruth": "snapdragon",
+        "predictions": [
+            "snapdragon (antirrhinum)",
+            "antirrhinum",
+            "species name: antirrhinum majus",
+            "snapdragon"
+        ]
+    }
+}

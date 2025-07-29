@@ -1,0 +1,30 @@
+{
+  "top1_accuracy": 1.0,
+  "top5_accuracy": 1.0,
+  "total_samples": 2,
+  "correct_top1": 2,
+  "correct_top5": 2,
+  "detailed_results": {
+    "image_04525": {
+      "groundtruth": "gazania",
+      "predictions": [
+        "gazania",
+        "gaillardia sp."
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "explanation": "The groundtruth category is \"gazania\". The predicted categories are ['gazania', 'gaillardia sp.']. The top-1 prediction is \"gazania\", which matches the groundtruth. Therefore, top-1 correctness is True. Since the groundtruth matches one of the predictions (the first one), top-k correctness is also True."
+    },
+    "image_01638": {
+      "groundtruth": "clematis",
+      "predictions": [
+        "clematis montana var. rubens",
+        "clematis",
+        "clematis virginiana"
+      ],
+      "top1_correct": true,
+      "top5_correct": true,
+      "explanation": "The groundtruth category is \"clematis\". The predicted categories are ['clematis montana var. rubens', 'clematis', 'clematis virginiana']. The first prediction, 'clematis montana var. rubens', is a specific type of clematis, and thus refers to the same specific category as \"clematis\". Therefore, top-1 correctness is True. Since the groundtruth \"clematis\" is present in the predicted categories (as the second prediction), top-k correctness is also True."
+    }
+  }
+}

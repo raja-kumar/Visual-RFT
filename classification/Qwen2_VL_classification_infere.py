@@ -37,6 +37,8 @@ import multiprocessing as mp
 from argparse import ArgumentParser
 from multiprocessing import Pool
 
+import random
+random.seed(21)
 # from utils import get_cat_name_from_json
 
 def plot_images(image_paths):
@@ -58,29 +60,72 @@ def plot_images(image_paths):
     plt.show()
 
 
+# ===== model path and model base =====
+
+MODEL_ROOT = "/app/saved_models/vrft/CUB_200_2011/"  # root path for saved models
+BASE_MODEL = "Qwen/Qwen2.5-VL-7B-Instruct"
+EXP_NAME = "Qwen2_5-VL-7B-Instruct_GRPO_cub_base_1_shot_mcq"  # experiment name for saving models
+CHECKPOINT = "checkpoint-400"  # checkpoint name for saved models
 
 
-# model path and model base
-# model_path = "/app/saves/flowers_4_shot/qwen2_vl-2b/full/sft/checkpoint-306/"  # after RL
-model_path = "/app/saved_models/vrft/ckpts/Qwen2-VL-2B-Instruct_GRPO_flowers_base/checkpoint-1308/"
-# model_path = "Qwen/Qwen2-VL-2B-Instruct"
-# model_path = "/app/saves/flowers_base/qwen2_vl-2b/full/sft/checkpoint-1308/"  # after SFT
-model_base = "Qwen/Qwen2-VL-2B-Instruct"  # original Qwen2-VL
+model_path = os.path.join(MODEL_ROOT, f"{EXP_NAME}", CHECKPOINT)  # full path to the model"
+model_base = BASE_MODEL  # base model name
 
-## Qwen2.5
+# ==== configurations ====
 
-# model_path = "Qwen/Qwen2.5-VL-3B-Instruct"  
-# model_path = "/app/saves/flowers_4_shot/qwen2_5_vl_3b/full/sft/checkpoint-306/"  # after SFT
-# model_base = "Qwen/Qwen2.5-VL-3B-Instruct"  
-
-## config
-use_cat_list = False
 zero_shot = True
-eval_type = "rft"  # "sft" or "baseline" or rft
-zero_shot_json_path = "/data2/raja/oxford_flowers/zero_shot/subsample_base_val.json"
-# categories_json = "../data/oxford_flowers/idx_2_class.json"  # categories json file
+eval_type = "rft"  # "sft" or everything else
+predict_top_5 = False  # top k for evaluation, default is 5
+use_cat_list = False
+
+if eval_type == "baseline":
+    model_path = BASE_MODEL
+
+# ==== dataset and output paths ====
+DATA_ROOT = "/app/shared_data/raja/"
+dataset = "CUB_200_2011"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
+split = "base_val"  # split name, can be "base_train", "base_val", "new_test", "new_val" etc.
+
+zero_shot_json_path = f"{DATA_ROOT}/{dataset}/zero_shot/subsample_{split}.json"
+
+output_path = f"./output/{dataset}/{eval_type}/"
+
+if "checkpoint" in model_path:
+    model_name = model_path.split("/")[-2] + "_" + model_path.split("/")[-1] # use checkpoint name
+else:
+    model_name = model_path.split("/")[-1]  # model name
+
+data_name = zero_shot_json_path.split("/")[-1].split(".")[0]  # data name
+output_file = f"{model_name}_{data_name}_{use_cat_list}.json"  # output file name
+
+if not os.path.exists(output_path):
+    os.makedirs(output_path)
+
+output_file_path = os.path.join(output_path, output_file)
+
+print(GREEN + "output path" + output_file_path + RESET)
+output_data = {}
+
+### this is a temporary fix, will be removed later
+one_shot_train_file = f"{DATA_ROOT}/{dataset}/fewshot/1_shots_base_train_mcq.json"
+with open(one_shot_train_file, 'r') as f:
+    one_shot_data = json.load(f)
+
+def check_impath_in_training_data(image_path):
+    """
+    Check if the image path is in the one-shot training data.
+    """
+    image_id = image_path.split("/")[-1].split(".")[0]
+    for item in one_shot_data:
+        if item['image_path'].split("/")[-1].split(".")[0] == image_id:
+            return True
+    return False
+
+### end of temporary fix
 
 def run(rank, world_size):
+
+    local_output_data = {}
 
     if "Qwen2.5" in model_base:
 
@@ -104,87 +149,71 @@ def run(rank, world_size):
     model = model.to(torch.device(rank))
     model = model.eval()
 
-    ### get categories name
-    with open('./val_data/oxford_flowers.txt', 'r') as file:
-        lines = file.readlines()
-    categories = []
-    for line in lines:
-        categories.append(line.strip())
-    # print(len(categories))
-    # print(categories)   ### 对应 0-101
-
-    val_set = []
-
-    if zero_shot:
-        with open(zero_shot_json_path, 'r') as f:
-            predictions = json.load(f)
-        
-        for item in predictions:
-            image_path = item['image_path']
-            image_label = item['solution']
-            image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
-            image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/oxford_flowers/jpg/", 
-                            "/data2/raja/oxford_flowers/jpg/")
-            val_set.append({image_path: image_label})
-    else:
-        ### get validation data
-        pth_file_path = './val_data/oxford_flowers.pth'
-        predictions = torch.load(pth_file_path)
-
-        for item in predictions:
-            for k,v in item.items():
-                k = k.replace("/mnt/petrelfs/liuziyu/LLM_Memory/SimplyRetrieve/CLIP-Cls/data/oxford_flowers/jpg/", 
-                                "/data2/raja/oxford_flowers/jpg/")
-                val_set.append({k:int(v['label'])})
+    with open(zero_shot_json_path, 'r') as f:
+        infer_data = json.load(f)
     
-    print(len(val_set))
-    # print(val_set[0])
+    random.seed(21)
+    random.shuffle(infer_data)
 
-    # val_set = val_set[:5]  # for test
+    # infer_data = infer_data[:10]
+
+    print(GREEN + "Number of images in infer data: " + str(len(infer_data)) + RESET)
+    
 
     rank = rank
     world_size = world_size
     import math
-    split_length = math.ceil(len(val_set)/world_size)
+    split_length = math.ceil(len(infer_data)/world_size)
     logger.info("Split Chunk Length:" + str(split_length))
-    split_images = val_set[int(rank*split_length) : int((rank+1)*split_length)]
+    split_images = infer_data[int(rank*split_length) : int((rank+1)*split_length)]
     logger.info(len(split_images))
 
-    ### 遍历 val 中的所有图片
+    '''
+    To do:
+        - Load the categories correctly. Add categories list to the question if use_cat_list is True. 
+    '''
+
+    categories = []
+    
+
     error_count = 0
     right_count = 0
-    for image in tqdm(split_images): 
-        ### 获取图片信息
-        for k,v in image.items():
-            image_path = k
-            image_cate = v
-        
-        if (not zero_shot):
-            image_cate = categories[image_cate]   
-        # plot_images([image_path])
+    for item in tqdm(split_images, total=len(split_images), desc=f"Rank {rank} Processing"):
+        image_path = item['image_path']
+        image_label = item['solution']
+
+        ### temporary fix for one-shot training data
+        if check_impath_in_training_data(image_path):
+            logger.info(f"Skipping image {image_path} as it is in the one-shot training data.")
+            continue
+
+        ### end of temporary fix
+        prompt = item['problem']
+        image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
+        image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", 
+                        DATA_ROOT)
+
+
+        if predict_top_5:
+            temp = "output the top five most likely species names in the image. Even if you are sure about the answer, output top 5 categories."
+            answer_format = "[category 1, category 2, catefory 3, category 4, category 5]"
+        else:
+            temp = "output the most likely species name in the image."
+            answer_format = "species name"
 
         if use_cat_list:
             question = (
-            "This is an image containing a plant. Please identify the species of the plant based on the image.\n"
-            f"the species of the plant belongs to below category list {categories}.\n"
-            "answer strictly from the category list.\n"
+            f"This is an image containing a flower. {temp}\n"
+            f"the species of the plant strictly belongs to below category list {categories}.\n"
             "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
             "The output answer format should be as follows:\n"
-            "<think> ... </think> <answer>species name</answer>\n"
+            f"<think> ... </think> <answer>{answer_format}</answer>\n"
             "Please strictly follow the format."
             )
         else:
-            question = (
-            "This is an image containing a plant. Please identify the species of the plant based on the image.\n"
-            "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
-            "The output answer format should be as follows:\n"
-            "<think> ... </think> <answer>species name</answer>\n"
-            "Please strictly follow the format."
-            )
-
+            question = prompt
         # print(RED + question + RESET)
     
-        image_path = image_path
         query = "<image>\n"+question
         # print(RED+query+RESET)
         
@@ -213,7 +242,11 @@ def run(rank, world_size):
         inputs = inputs.to(model.device)
         
         # Inference: Generation of the output
-        generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True)
+        if predict_top_5:
+            generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True, temperature=1.1, do_sample=True)
+        else:
+            generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True)
+        
         generated_ids_trimmed = [
             out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
@@ -226,50 +259,67 @@ def run(rank, world_size):
         try:
             if eval_type == "sft":
                 # For SFT, search in complete response without parsing
-                image_cate = image_cate.replace(' ','').replace('_','').lower()
+
+                image_id = image_path.split("/")[-1].split(".")[0]
+
+                local_output_data[image_id] = {
+                    "groundtruth": image_label,
+                    "reasoning": "", # No reasoning for SFT
+                    "answer": response
+                }
+
+                image_label = image_label.replace(' ','').replace('_','').lower()
                 response_lower = response.replace(' ','').replace('_','').lower()
-                # judgement
-                # print("response_lower: ", response_lower)
-                # print("image_cate: ", image_cate)
-                if image_cate in response_lower:
+
+                if image_label in response_lower:
                     right_count += 1
                 else:
                     error_count += 1
             else:
                 # For other cases, keep the original parsing logic
-                match = re.search(r"<answer>(.*?)</answer>", response)
+                reasoning = re.search(r"<think>(.*?)</think>", response, re.DOTALL)
+                reasoning_content = reasoning.group(1).strip() if reasoning else ""
+                match = re.search(r"<answer>(.*?)</answer>", response, re.DOTALL)
+                if not match:
+                    match = re.search(r"<answer>\n(.*?)</answer>", response, re.DOTALL)
+                if not match:
+                    match = re.search(r"<answer>\n(.*?)\n</answer>", response, re.DOTALL)
+                
                 answer_content = match.group(1)
-                image_cate = image_cate.replace(' ','').replace('_','').lower()
-                answer_content = answer_content.replace(' ','').replace('_','').lower()
-                # judgement
-                if image_cate in answer_content or answer_content in image_cate:
-                    right_count += 1
-                else:
-                    error_count += 1
+
+                image_id = image_path.split("/")[-1].split(".")[0]
+
+                local_output_data[image_id] = {
+                    "groundtruth": image_label,
+                    "reasoning": reasoning_content,
+                    "answer": answer_content
+                }
+
+                # print(local_output_data[image_id])
+                if ("describe" in model_path):
+                    # For describe task, we use the image_id as the key
+                    describe_match = re.search(r'<describe>(.*?)</describe>', response, re.DOTALL)
+                    if describe_match:
+                        describe_content = describe_match.group(1).strip()
+                    else:
+                        describe_content = ""
+                    
+                    rethink_match = re.search(r'<rethink>(.*?)</rethink>', response, re.DOTALL)
+                    if rethink_match:
+                        rethink_content = rethink_match.group(1).strip()
+                    else:
+                        rethink_content = ""
+                    
+                    local_output_data[image_id]["describe"] = describe_content
+                    local_output_data[image_id]["rethink"] = rethink_content
         except Exception as e:
+            print(RED + "Error in processing response: " + response + RESET)
             error_count += 1
         
-        # try:
-        #     match = re.search(r"<answer>(.*?)</answer>", response)
-        #     answer_content = match.group(1)
-        #     # print(image_cate, answer_content)
-        #     image_cate = image_cate.replace(' ','').replace('_','').lower()
-        #     answer_content = answer_content.replace(' ','').replace('_','').lower()
-        #     # judgement
-        #     if image_cate in answer_content or answer_content in image_cate or image_cate in response:
-        #         # print('yes')
-        #         right_count += 1
-        #         # logger.info('Local Right Number: ' + str(right_count))
-        #     else:
-        #         # print('no')
-        #         error_count+=1
-        # except Exception as e:
-        #     error_count+=1
-            
-    return [error_count, right_count]
+    return [error_count, right_count, local_output_data]
 
 def main():
-    multiprocess = torch.cuda.device_count() >= 2
+    multiprocess = torch.cuda.device_count() >= 1
     mp.set_start_method('spawn')
     if multiprocess:
         logger.info('started generation')
@@ -287,11 +337,18 @@ def main():
                         ' Right Number: ' + str(result_lists[i][1]))
             global_count_error += int(result_lists[i][0])
             global_count_right = global_count_right + result_lists[i][1]
+
+            output_data.update(result_lists[i][2])  # merge local output data
             
         logger.info('Error number: ' + str(global_count_error))  
         logger.info('Total Right Number: ' + str(global_count_right))
+        logger.info("above count holds meaning only for sft eval. IGNORE for other evals.")
     else:
         logger.info("Not enough GPUs")
 
 if __name__ == "__main__":
     main()
+
+    with open(output_file_path, 'w') as f:
+        json.dump(output_data, f, indent=4)
+    logger.info(f"Output saved to {output_file_path}")
