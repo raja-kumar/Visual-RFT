@@ -108,7 +108,7 @@ class AccuracyEvaluator:
                 return False, top5_match, ""
             
             except IndexError:
-                print("Error parsing response:", result)
+                print("Error parsing response:")
                 return False, False, "Error parsing response"
 
     def evaluate_predictions(self, data: Dict) -> Dict:
@@ -141,7 +141,7 @@ class AccuracyEvaluator:
                 correct_top1 += 1
             if top5_match:
                 correct_top5 += 1
-                         
+
         return {
             "top1_accuracy": correct_top1 / total,
             "top5_accuracy": correct_top5 / total,
