@@ -92,9 +92,9 @@ def extract_choice(text):
 
 # ===== model path and model base =====
 
-MODEL_ROOT = "/app/saved_models/vrft/CUB_200_2011/"  # root path for saved models
+MODEL_ROOT = "/app/saved_models/vrft/ckpts/"  # root path for saved models
 BASE_MODEL = "Qwen/Qwen2.5-VL-7B-Instruct"
-EXP_NAME = "Qwen2_5-VL-7B-Instruct_GRPO_cub_base_1_shot_mcq"  # experiment name for saving models
+EXP_NAME = "Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_and_hard_mcq"  # experiment name for saving models
 CHECKPOINT = "checkpoint-400"  # checkpoint name for saved models
 
 
@@ -104,18 +104,19 @@ model_base = BASE_MODEL  # base model name
 # ==== configurations ====
 
 zero_shot = True
-eval_type = "rft_mcq"  # "sft" or everything else
+eval_type = "qwen_mcq"  # "sft" or everything else
 predict_top_5 = False  # top k for evaluation, default is 5
 
 if eval_type == "baseline":
     model_path = BASE_MODEL
 
 # ==== dataset and output paths ====
-DATA_ROOT = "/app/shared_data/raja/"
-dataset = "CUB_200_2011"  # folder name for dataset
+DATA_ROOT = "/data2/raja/datasets/"
+dataset = "oxford_flowers"  # folder name for dataset
 split = "base_val"  # split name, can be "base_train", "base_val", "new_test", "new_val" etc.
 
-zero_shot_json_path = f"{DATA_ROOT}/{dataset}/zero_shot/subsample_{split}_mcq.json"
+#zero_shot_json_path = f"{DATA_ROOT}/{dataset}/zero_shot/subsample_{split}_mcq.json"
+zero_shot_json_path = "/data2/raja/datasets/oxford_flowers/qwen_mcq/subsample_base_val_pass_5_mcq.json"
 
 output_path = f"./output/{dataset}/{eval_type}/"
 
@@ -141,23 +142,6 @@ output_file_path = os.path.join(output_path, output_file)
 print(YELLOW + "inference data path " + zero_shot_json_path + RESET)
 print(GREEN + "output path " + output_file_path + RESET)
 output_data = {}
-
-### this is a temporary fix, will be removed later
-one_shot_train_file = f"{DATA_ROOT}/{dataset}/fewshot/1_shots_base_train_mcq.json"
-with open(one_shot_train_file, 'r') as f:
-    one_shot_data = json.load(f)
-
-def check_impath_in_training_data(image_path):
-    """
-    Check if the image path is in the one-shot training data.
-    """
-    image_id = image_path.split("/")[-1].split(".")[0]
-    for item in one_shot_data:
-        if item['image_path'].split("/")[-1].split(".")[0] == image_id:
-            return True
-    return False
-
-### end of temporary fix
 
 def run(rank, world_size):
     local_output_data = {}
@@ -219,13 +203,6 @@ def run(rank, world_size):
 
     for item in tqdm(split_images):
         image_path = item['image_path']
-
-        ### temporary fix for one-shot training data
-        if check_impath_in_training_data(image_path):
-            logger.info(f"Skipping image {image_path} as it is in the one-shot training data.")
-            continue
-
-        ### end of temporary fix
 
         if (not os.path.exists(image_path)):
             image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", DATA_ROOT)
