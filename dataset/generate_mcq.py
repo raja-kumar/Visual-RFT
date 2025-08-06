@@ -122,7 +122,7 @@ def generate_mcq_qwen(top5_pred_file, json_data_path, data_name, cat_2_idx_path)
         except Exception as e:
             # print(f"Error processing image_id {image_id}: {e}")
             continue
-        gpt_preds = curr_data["predictions"]
+        gpt_preds = curr_data["predictions"].keys()
         gpt_preds = clean_topk(gpt_preds, class_to_idx)
 
         gt_cat_name = curr_data["groundtruth"]
@@ -137,7 +137,7 @@ def generate_mcq_qwen(top5_pred_file, json_data_path, data_name, cat_2_idx_path)
 
         if gt_label == -1 or (not gt_label in gpt_labels) or (len(gpt_labels) == 0):
             top5_count += 1
-            if (len(gpt_preds) == 0):
+            if (len(gpt_preds) < 5):
                 gpt_preds.append(gt_cat_name)  # if no predictions, add the ground truth category name
             else:
                 gpt_preds[-1] = gt_cat_name # replace the last option with the ground truth category name if it is not present in the predictions
@@ -186,11 +186,11 @@ Please strictly follow the format. """
 
 if __name__ == "__main__":
 
-    data_root = "/data2/raja/datasets/"
+    data_root = "/data2/raja/"
     data= "oxford_flowers"
     data_folder = "oxford_flowers"
     split = "base"
-    phase = "val"  # "train" or "val" or "test"
+    phase = "train"  # "train" or "val" or "test"
     data_name = "flower"
     qwen_output = True  # Set to True if using Qwen output, otherwise False
 
@@ -202,9 +202,10 @@ if __name__ == "__main__":
     # print("json data path:", json_data_path)
     if (qwen_output):
         print("Using Qwen output format")
-        top5_pred_file = "/app/Visual-RFT/src/passk/output/oxford_flowers/topk_accuracy/baseline/Qwen2.5-VL-7B-Instruct_subsample_base_val_True_5_1.0.json"
+        # top5_pred_file = "/app/Visual-RFT/src/passk/output/oxford_flowers/topk_accuracy/baseline/Qwen2.5-VL-7B-Instruct_subsample_base_val_True_5_1.0.json"
+        top5_pred_file = "/app/Visual-RFT/src/passk/output/oxford_flowers/topk_accuracy/baseline/Qwen2.5-VL-7B-Instruct_subsample_base_train_True_20_1.0.json"
         dataset = generate_mcq_qwen(top5_pred_file, json_data_path, data_name, class_to_idx_path)
-        output_path = f"{data_root}/{data_folder}/qwen_mcq/subsample_{split}_{phase}_pass_5_hard_mcq.json"
+        output_path = f"{data_root}/{data_folder}/qwen_mcq/subsample_{split}_{phase}_pass_20_mcq.json"
     else:
         top5_pred_file = f"/home/raja/OVOD/git_files/VLM-COT/outputs/{data}/{data}_step1_baseline_{split}_{phase}_gemini-2.5-flash-lite-preview-06-17_cat_True.json"
         dataset = generate_mcq_data(top5_pred_file, json_data_path, data_name)
