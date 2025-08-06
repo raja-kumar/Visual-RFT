@@ -149,12 +149,6 @@ def run(rank, world_size):
     split_images = infer_data[int(rank*split_length) : int((rank+1)*split_length)]
     logger.info(len(split_images))
 
-    '''
-    To do:
-        - Load the categories correctly. Add categories list to the question if use_cat_list is True. 
-    '''
-
-    # categories = ["king protea", "great masterwort", "ruby-lipped cattleya", "lenten rose", "fritillary", "mexican aster", "peruvian lily", "poinsettia", "siam tulip", "yellow iris", "spear thistle", "bolero deep blue", "buttercup", "pincushion flower", "garden phlox", "colt's foot", "corn poppy", "pink primrose", "alpine sea holly", "wallflower", "globe-flower", "carnation", "oxeye daisy", "common dandelion", "sword lily", "moon orchid", "sweet william", "hard-leaved pocket orchid", "sweet pea", "bird of paradise", "giant white arum lily", "petunia", "stemless gentian", "tiger lily", "grape hyacinth", "daffodil", "red ginger", "marigold", "fire lily", "barbeton daisy", "english marigold", "purple coneflower", "globe thistle", "guernsey lily", "monkshood", "love in the mist", "artichoke", "snapdragon", "plumed celosia", "balloon flower", "canterbury bells"]
     
     if (temperature == 0.0):
         generation_args = {
@@ -190,14 +184,15 @@ def run(rank, world_size):
 
         temp = "output the most likely species name in the image."
         answer_format = "species name"
+        data_name = "flower"
 
         if use_cat_list:
             question = (
-            f"This is an image containing a flower. {temp}\n"
-            f"the species of the plant strictly belongs to below category list {categories}.\n"
+            f"This is an image containing a {data_name}. {temp}\n"
+            f"the species of the {data_name} strictly belongs to below category list {categories}.\n"
             "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
             "The output answer format should be as follows:\n"
-            f"<think> ... </think> <answer>{answer_format}</answer>\n"
+            f"<think> ... </think> <answer> {answer_format} </answer>\n"
             +
             "Please strictly follow the format."
             )
@@ -240,7 +235,8 @@ def run(rank, world_size):
 
         image_id = image_path.split("/")[-1].split(".")[0]
 
-        curr_pred = set()  # Use a set to avoid duplicates
+        # curr_pred = set()  # Use a set to avoid duplicates
+        curr_pred = {}
 
         for i in range(num_sequences):
             # Extract each generated sequence
@@ -271,14 +267,19 @@ def run(rank, world_size):
                 if not match:
                     match = re.search(r"<answer>\n(.*?)\n</answer>", response, re.DOTALL)
                 
-                answer_content = match.group(1)
+                answer_content = match.group(1).strip().lower().replace("species name: ", "")
 
                 # local_output_data[image_id].append({
                 #     "groundtruth": image_label,
                 #     "reasoning": reasoning_content,
                 #     "answer": answer_content
                 # })
-                curr_pred.add(answer_content.strip().lower())
+                # curr_pred.add(answer_content.strip().lower())
+                if answer_content not in curr_pred:
+                    curr_pred[answer_content] = 1
+                else:
+                    curr_pred[answer_content] += 1
+
             except Exception as e:
                 print(RED + "Error in processing response: " + RESET)
                 print(RED + "Response: " + response + RESET)
@@ -286,7 +287,7 @@ def run(rank, world_size):
         ## add the groundtruth to the output data
         local_output_data[image_id] = {
             "groundtruth": image_label,
-            "predictions": list(curr_pred),  # Store predictions as a set to avoid duplicates
+            "predictions": curr_pred,  # Store predictions as a set to avoid duplicates
         }
 
         
