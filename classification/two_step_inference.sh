@@ -2,7 +2,7 @@
 
 MODEL_ROOT="/app/saved_models/vrft/ckpts/"  # root path for saved models
 BASE_MODEL="Qwen/Qwen2.5-VL-7B-Instruct"
-CHECKPOINT="checkpoint-291"  # checkpoint name for saved models
+CHECKPOINT="checkpoint-400"  # checkpoint name for saved models
 
 
 # ==== configurations ====
@@ -11,7 +11,7 @@ eval_type="two_steps"  # "sft" or everything else
 use_cat_list="True"
 
 # ==== dataset and output paths ====
-DATA_ROOT="/data2/raja/datasets/"
+DATA_ROOT="/data2/raja/"
 dataset="oxford_flowers"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
 
 ## === generation settings ===
@@ -19,8 +19,8 @@ temperature=1.0
 max_new_tokens=1024
 
 splits=("base_val")  # splits to evaluate on
-num_return_sequences=(5)  # number of sequences to return
-EXP_NAMES=("baseline")
+num_return_sequences=(20)  # number of sequences to return
+EXP_NAMES=("baseline" "Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_qwen_mcq")
 
 for EXP_NAME in "${EXP_NAMES[@]}"; do
     for split in "${splits[@]}"; do

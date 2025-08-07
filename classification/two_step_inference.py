@@ -96,7 +96,7 @@ class TwoStepInference:
                 
                 if (len(answer_content) >= 100):
                     # Skip answers that are too long
-                    print(answer_content + " is too long, skipping...")
+                    # print(answer_content + " is too long, skipping...")
                     continue
 
                 if answer_content not in curr_pred:
@@ -232,7 +232,7 @@ def run(rank, world_size, args):
     random.seed(21)
     random.shuffle(infer_data)
 
-    infer_data = infer_data[-10:]
+    # infer_data = infer_data[-10:]
 
     print(GREEN + "Number of images in infer data: " + str(len(infer_data)) + RESET)
     
@@ -359,7 +359,6 @@ Please strictly follow the format. """
             "prediction": predicted_category,
             "step2_reasoning": mcq_reasoning,
         }
-
         
     return [local_output_data]
 

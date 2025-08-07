@@ -184,7 +184,7 @@ def run(rank, world_size):
 
         temp = "output the most likely species name in the image."
         answer_format = "species name"
-        data_name = "flower"
+        data_name = "bird"
 
         if use_cat_list:
             question = (

@@ -37,7 +37,7 @@ class AccuracyEvaluator:
                 model=self.model,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0,
-                max_tokens=500
+                max_tokens=1000
             )
             
             # result = response.choices[0].message.content.split("\n")
@@ -121,7 +121,7 @@ class AccuracyEvaluator:
         for image_id, item in tqdm(data.items()):
             groundtruth = item["groundtruth"]
             # predictions = item["answer"]
-            predictions = item["predictions"]
+            predictions = item["prediction"]
 
             if self.one_answer:
                 top1_match, explanation = self._check_match(groundtruth, predictions)

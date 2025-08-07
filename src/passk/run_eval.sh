@@ -13,15 +13,15 @@ use_cat_list="True"
 
 # ==== dataset and output paths ====
 DATA_ROOT="/data2/raja/"
-dataset="oxford_flowers"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
+dataset="CUB_200_2011"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
 
 ## === generation settings ===
 temperature=1.0
-max_new_tokens=1024
+max_new_tokens=2048
 
-splits=("base_val")  # splits to evaluate on
+splits=("base_train")  # splits to evaluate on
 num_return_sequences=(20)  # number of sequences to return
-EXP_NAMES=("Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_updated_reward")
+EXP_NAMES=("baseline")
 
 for EXP_NAME in "${EXP_NAMES[@]}"; do
     for split in "${splits[@]}"; do

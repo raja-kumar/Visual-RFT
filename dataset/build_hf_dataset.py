@@ -46,9 +46,10 @@ if __name__ == "__main__":
 
     # json_file_path = "/data2/raja/fgvc_aircraft/zero_shot/subsample_base_train.json"
     # json_file_path = "/data/raja/fgvc_aircraft/fgvc_aircraft/zero_shot/subsample_base_train_mcq.json"
-    json_file_path = "/data2/raja/stanford_cars/zero_shot/subsample_base_train.json"
+    # json_file_path = "/data2/raja/stanford_cars/zero_shot/subsample_base_train.json"
     # json_file_path = "/data2/raja/CUB_200_2011/zero_shot/subsample_base_train.json"
     # json_file_path = "/data2/raja/fgvc_aircraft/zero_shot/subsample_base_train_hard_mcq.json"
+    json_file_path = "/data2/raja//oxford_flowers/qwen_mcq/subsample_base_train_pass_20_mcq.json"
 
     output_path = json_file_path.replace('.json', '_dataset')
     print("output_path:", output_path)
