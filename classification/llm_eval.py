@@ -37,7 +37,7 @@ class AccuracyEvaluator:
                 model=self.model,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0,
-                max_tokens=500
+                max_tokens=1000
             )
             
             # result = response.choices[0].message.content.split("\n")
@@ -116,15 +116,19 @@ class AccuracyEvaluator:
         total = len(data)
         correct_top1 = 0
         correct_top5 = 0
+        correct_consistency = 0
         results = {}
 
         for image_id, item in tqdm(data.items()):
             groundtruth = item["groundtruth"]
             # predictions = item["answer"]
-            predictions = item["predictions"]
+            predictions = item["prediction"]
+            step1_output = item["step1_output"]
+            top_prediction = sorted(step1_output.items(), key=lambda x: x[1], reverse=True)[0][0] if step1_output else None
 
             if self.one_answer:
-                top1_match, explanation = self._check_match(groundtruth, predictions)
+                top1_match, top1_explanation = self._check_match(groundtruth, predictions)
+                consistency_match, consistency_explanation = self._check_match(groundtruth, top_prediction)
                 top5_match = top1_match
             else:
                 top1_match, top5_match, explanation = self._check_match(groundtruth, predictions)
@@ -132,22 +136,29 @@ class AccuracyEvaluator:
             results[image_id] = {
                 "groundtruth": groundtruth,
                 "predictions": predictions,
+                "consistency_prediction": top_prediction,
                 "top1_correct": top1_match,
                 "top5_correct": top5_match,
-                "explanation": explanation
+                "consistency_correct": consistency_match,
+                "top1_explanation": top1_explanation,
+                "consistency_explanation": consistency_explanation,
             }
             
             if top1_match:
                 correct_top1 += 1
             if top5_match:
                 correct_top5 += 1
-
+            if consistency_match:
+                correct_consistency += 1
+            
         return {
             "top1_accuracy": correct_top1 / total,
             "top5_accuracy": correct_top5 / total,
+            "consistency_accuracy": correct_consistency / total,
             "total_samples": total,
             "correct_top1": correct_top1,
             "correct_top5": correct_top5,
+            "correct_consistency": correct_consistency,
             "detailed_results": results
         }
 
@@ -170,8 +181,10 @@ def main(output_file: str = "predictions.json", one_answer: bool = True):
     # Print results
     print(f"\nTop-1 Accuracy: {results['top1_accuracy']:.2%}")
     print(f"Top-5 Accuracy: {results['top5_accuracy']:.2%}")
+    print(f"Consistency Accuracy: {results['consistency_accuracy']:.2%}")
     print(f"Correct predictions (Top-1): {results['correct_top1']}/{results['total_samples']}")
     print(f"Correct predictions (Top-5): {results['correct_top5']}/{results['total_samples']}")
+    print(f"Correct predictions (Consistency): {results['correct_consistency']}/{results['total_samples']}")
     
     # Save detailed results
     file_name = output_file.replace(".json", "_evaluation.json")
