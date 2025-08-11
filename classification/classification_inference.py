@@ -18,6 +18,7 @@ torch.manual_seed(1234)
 
 from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor, Qwen2_5_VLForConditionalGeneration
 from qwen_vl_utils import process_vision_info
+from prompts import PROMPTS
 
 # 定义颜色的ANSI代码
 RED = '\033[91m'
@@ -36,6 +37,7 @@ import itertools
 import multiprocessing as mp
 from argparse import ArgumentParser
 from multiprocessing import Pool
+import argparse
 
 import random
 random.seed(21)
@@ -60,31 +62,41 @@ def plot_images(image_paths):
     plt.show()
 
 
-# ===== model path and model base =====
+def parse_args():
+    parser = argparse.ArgumentParser(description="Top-K Accuracy Evaluation")
+    parser.add_argument("--model_root", type=str, default="/app/saved_models/vrft/CUB_200_2011/")
+    parser.add_argument("--base_model", type=str, default="Qwen/Qwen2.5-VL-7B-Instruct")
+    parser.add_argument("--exp_name", type=str, default="Qwen2_5-VL-7B-Instruct_GRPO_cub_base_and_hard_mcq")
+    parser.add_argument("--checkpoint", type=str, default="checkpoint-400")
+    parser.add_argument("--zero_shot", type=str, default=True)
+    parser.add_argument("--eval_type", type=str, default="baseline")
+    parser.add_argument("--data_root", type=str, default="/data2/raja/")
+    parser.add_argument("--dataset", type=str, default="CUB_200_2011")
+    parser.add_argument("--split", type=str, default="new_val")
+    parser.add_argument("--max_new_tokens", type=int, default=512)
+    parser.add_argument("--use_cat_list", type=str, default="True", help="Whether to use category list in the prompt")
+    return parser.parse_args()
 
-MODEL_ROOT = "/app/saved_models/vrft/CUB_200_2011/"  # root path for saved models
-BASE_MODEL = "Qwen/Qwen2.5-VL-7B-Instruct"
-EXP_NAME = "Qwen2_5-VL-7B-Instruct_GRPO_cub_base_1_shot_mcq"  # experiment name for saving models
-CHECKPOINT = "checkpoint-400"  # checkpoint name for saved models
+args = parse_args()
+
+MODEL_ROOT = args.model_root
+BASE_MODEL = args.base_model
+EXP_NAME = args.exp_name
+CHECKPOINT = args.checkpoint
+zero_shot = args.zero_shot.lower() == "true"
+eval_type = args.eval_type
+DATA_ROOT = args.data_root
+dataset = args.dataset
+split = args.split
+max_new_tokens = args.max_new_tokens
+use_cat_list = args.use_cat_list.lower() == "true"
 
 
 model_path = os.path.join(MODEL_ROOT, f"{EXP_NAME}", CHECKPOINT)  # full path to the model"
 model_base = BASE_MODEL  # base model name
 
-# ==== configurations ====
-
-zero_shot = True
-eval_type = "rft"  # "sft" or everything else
-predict_top_5 = False  # top k for evaluation, default is 5
-use_cat_list = False
-
-if eval_type == "baseline":
+if EXP_NAME == "baseline":
     model_path = BASE_MODEL
-
-# ==== dataset and output paths ====
-DATA_ROOT = "/app/shared_data/raja/"
-dataset = "CUB_200_2011"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
-split = "base_val"  # split name, can be "base_train", "base_val", "new_test", "new_val" etc.
 
 zero_shot_json_path = f"{DATA_ROOT}/{dataset}/zero_shot/subsample_{split}.json"
 
@@ -106,22 +118,11 @@ output_file_path = os.path.join(output_path, output_file)
 print(GREEN + "output path" + output_file_path + RESET)
 output_data = {}
 
-### this is a temporary fix, will be removed later
-one_shot_train_file = f"{DATA_ROOT}/{dataset}/fewshot/1_shots_base_train_mcq.json"
-with open(one_shot_train_file, 'r') as f:
-    one_shot_data = json.load(f)
+split_name = split.split("_")[0] 
+category_file = f"{DATA_ROOT}/{dataset}/zero_shot/{split_name}_categories.txt"
 
-def check_impath_in_training_data(image_path):
-    """
-    Check if the image path is in the one-shot training data.
-    """
-    image_id = image_path.split("/")[-1].split(".")[0]
-    for item in one_shot_data:
-        if item['image_path'].split("/")[-1].split(".")[0] == image_id:
-            return True
-    return False
-
-### end of temporary fix
+with open(category_file, 'r') as f:
+    categories = f.read().splitlines()
 
 def run(rank, world_size):
 
@@ -155,7 +156,7 @@ def run(rank, world_size):
     random.seed(21)
     random.shuffle(infer_data)
 
-    # infer_data = infer_data[:10]
+    # infer_data = infer_data[:2]
 
     print(GREEN + "Number of images in infer data: " + str(len(infer_data)) + RESET)
     
@@ -167,13 +168,6 @@ def run(rank, world_size):
     logger.info("Split Chunk Length:" + str(split_length))
     split_images = infer_data[int(rank*split_length) : int((rank+1)*split_length)]
     logger.info(len(split_images))
-
-    '''
-    To do:
-        - Load the categories correctly. Add categories list to the question if use_cat_list is True. 
-    '''
-
-    categories = []
     
 
     error_count = 0
@@ -182,29 +176,17 @@ def run(rank, world_size):
         image_path = item['image_path']
         image_label = item['solution']
 
-        ### temporary fix for one-shot training data
-        if check_impath_in_training_data(image_path):
-            logger.info(f"Skipping image {image_path} as it is in the one-shot training data.")
-            continue
-
-        ### end of temporary fix
         prompt = item['problem']
         image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
         image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", 
                         DATA_ROOT)
 
-
-        if predict_top_5:
-            temp = "output the top five most likely species names in the image. Even if you are sure about the answer, output top 5 categories."
-            answer_format = "[category 1, category 2, catefory 3, category 4, category 5]"
-        else:
-            temp = "output the most likely species name in the image."
-            answer_format = "species name"
+        temp, answer_format, data_type = PROMPTS[dataset]["instruction"], PROMPTS[dataset]["answer_format"], PROMPTS[dataset]["data_name"]
 
         if use_cat_list:
             question = (
-            f"This is an image containing a flower. {temp}\n"
-            f"the species of the plant strictly belongs to below category list {categories}.\n"
+            f"This is an image containing a {data_type}. {temp}\n"
+            f"the {answer_format} of the {data_type} strictly belongs to below category list {categories}.\n"
             "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
             "The output answer format should be as follows:\n"
             f"<think> ... </think> <answer>{answer_format}</answer>\n"
@@ -242,10 +224,8 @@ def run(rank, world_size):
         inputs = inputs.to(model.device)
         
         # Inference: Generation of the output
-        if predict_top_5:
-            generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True, temperature=1.1, do_sample=True)
-        else:
-            generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True)
+
+        generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True)
         
         generated_ids_trimmed = [
             out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
