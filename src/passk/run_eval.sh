@@ -13,33 +13,35 @@ use_cat_list="True"
 
 # ==== dataset and output paths ====
 DATA_ROOT="/data2/raja/"
-dataset="CUB_200_2011"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
 
 ## === generation settings ===
 temperature=1.0
 max_new_tokens=2048
 
+datasets=("stanford_cars")  # datasets to evaluate on
 splits=("base_train")  # splits to evaluate on
-num_return_sequences=(20)  # number of sequences to return
+num_return_sequences=(12)  # number of sequences to return
 EXP_NAMES=("baseline")
 
-for EXP_NAME in "${EXP_NAMES[@]}"; do
-    for split in "${splits[@]}"; do
-        for NSEQ in "${num_return_sequences[@]}"; do
-            python topk_accuracy.py \
-                --model_root "$MODEL_ROOT" \
-                --base_model "$BASE_MODEL" \
-                --exp_name "$EXP_NAME" \
-                --checkpoint "$CHECKPOINT" \
-                --zero_shot "$zero_shot" \
-                --eval_type "$eval_type" \
-                --use_cat_list "$use_cat_list" \
-                --data_root "$DATA_ROOT" \
-                --dataset "$dataset" \
-                --split "$split" \
-                --num_return_sequences "$NSEQ" \
-                --temperature "$temperature" \
-                --max_new_tokens "$max_new_tokens" 
+for dataset in "${datasets[@]}"; do
+    for EXP_NAME in "${EXP_NAMES[@]}"; do
+        for split in "${splits[@]}"; do
+            for NSEQ in "${num_return_sequences[@]}"; do
+                python topk_accuracy.py \
+                    --model_root "$MODEL_ROOT" \
+                    --base_model "$BASE_MODEL" \
+                    --exp_name "$EXP_NAME" \
+                    --checkpoint "$CHECKPOINT" \
+                    --zero_shot "$zero_shot" \
+                    --eval_type "$eval_type" \
+                    --use_cat_list "$use_cat_list" \
+                    --data_root "$DATA_ROOT" \
+                    --dataset "$dataset" \
+                    --split "$split" \
+                    --num_return_sequences "$NSEQ" \
+                    --temperature "$temperature" \
+                    --max_new_tokens "$max_new_tokens" 
+            done
         done
     done
 done

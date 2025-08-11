@@ -13,9 +13,9 @@ def calculate_accuracies(json_path):
         # skip non-image keys
         if not isinstance(v, dict):
             continue
-        gt = v.get('groundtruth')
+        gt = v.get('groundtruth').lower().replace("-", " ").replace("'s", "").strip()
         step1_output = v.get('step1_output', {})
-        prediction = v.get('prediction')
+        prediction = v.get('prediction').lower().replace("-", " ").replace("'s", "").strip()
 
         if gt is None or not step1_output:
             continue
@@ -47,5 +47,5 @@ def calculate_accuracies(json_path):
 
 if __name__ == "__main__":
     calculate_accuracies(
-        "/app/Visual-RFT/classification/output/oxford_flowers/two_steps/Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_qwen_mcq_checkpoint-400_base_val.json"
+        "/app/Visual-RFT/classification/output/CUB_200_2011/two_steps/Qwen2_5-VL-7B-Instruct_GRPO_cub_base_qwen_mcq_checkpoint-400_base_val.json"
     )

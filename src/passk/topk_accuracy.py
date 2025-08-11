@@ -26,6 +26,7 @@ import multiprocessing as mp
 from argparse import ArgumentParser
 from multiprocessing import Pool
 import argparse
+from prompts import PROMPTS
 
 import random
 random.seed(21)
@@ -55,6 +56,16 @@ def parse_args():
     parser.add_argument("--max_new_tokens", type=int, default=512)
     return parser.parse_args()
 
+def clean_string(text):
+    """
+    Cleans the input text by removing unwanted characters and formatting.
+    """
+    text = text.replace("'s", "")
+    text = re.sub(r'[^a-zA-Z0-9-]', ' ', text)
+    text = text.strip().lower()
+    
+    return text
+
 args = parse_args()
 
 MODEL_ROOT = args.model_root
@@ -76,7 +87,7 @@ model_path = os.path.join(MODEL_ROOT, f"{EXP_NAME}", CHECKPOINT)  # full path to
 model_base = BASE_MODEL  # base model name
 
 
-if eval_type == "baseline":
+if EXP_NAME == "baseline":
     model_path = BASE_MODEL
 
 zero_shot_json_path = f"{DATA_ROOT}/{dataset}/zero_shot/subsample_{split}.json"
@@ -98,11 +109,12 @@ output_file_path = os.path.join(output_path, output_file)
 print(GREEN + "output path" + output_file_path + RESET)
 output_data = {}
 
-split_name = split.split("_")[0] 
-category_file = f"{DATA_ROOT}/{dataset}/zero_shot/{split_name}_categories.txt"
+if use_cat_list:
+    split_name = split.split("_")[0] 
+    category_file = f"{DATA_ROOT}/{dataset}/zero_shot/{split_name}_categories.txt"
 
-with open(category_file, 'r') as f:
-    categories = f.read().splitlines()
+    with open(category_file, 'r') as f:
+        categories = f.read().splitlines()
 
 def run(rank, world_size):
 
@@ -136,7 +148,7 @@ def run(rank, world_size):
     random.seed(21)
     random.shuffle(infer_data)
 
-    # infer_data = infer_data[-2:]
+    # infer_data = infer_data[:100]
 
     print(GREEN + "Number of images in infer data: " + str(len(infer_data)) + RESET)
     
@@ -177,19 +189,20 @@ def run(rank, world_size):
 
         prompt = item['problem']
         image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
-        image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", 
+        image_label = clean_string(image_label)
+        
+        if (dataset == "fgvc_aircraft"):
+            image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/fgvc_aircraft/", 
                         DATA_ROOT)
-
-
-
-        temp = "output the most likely species name in the image."
-        answer_format = "species name"
-        data_name = "bird"
-
+        else:
+            image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", 
+                        DATA_ROOT)
+        
+        temp, answer_format, data_name = PROMPTS[dataset]["instruction"], PROMPTS[dataset]["answer_format"], PROMPTS[dataset]["data_name"]
         if use_cat_list:
             question = (
             f"This is an image containing a {data_name}. {temp}\n"
-            f"the species of the {data_name} strictly belongs to below category list {categories}.\n"
+            f"the {answer_format} of the {data_name} strictly belongs to below category list {categories}.\n"
             "Output the thinking process in <think> </think> and final answer in <answer> </answer> tags."
             "The output answer format should be as follows:\n"
             f"<think> ... </think> <answer> {answer_format} </answer>\n"
@@ -228,7 +241,12 @@ def run(rank, world_size):
         inputs = inputs.to(model.device)
 
         # Inference: Generation of the output
-        generated_ids = model.generate(**inputs, **generation_args)
+        try:
+            generated_ids = model.generate(**inputs, **generation_args)
+        except Exception as e:
+            print(RED + "Error during model generation: " + str(e) + RESET)
+            print(RED + "Skipping image: " + image_path + RESET)
+            continue
         
         input_id_length = inputs.input_ids.shape[1] # Length of the single input sequence
         num_sequences = generation_args["num_return_sequences"]
@@ -267,7 +285,8 @@ def run(rank, world_size):
                 if not match:
                     match = re.search(r"<answer>\n(.*?)\n</answer>", response, re.DOTALL)
                 
-                answer_content = match.group(1).strip().lower().replace("species name: ", "")
+                answer_content = match.group(1).strip().lower().replace(f"{answer_format}: ", "")
+                answer_content = clean_string(answer_content)
 
                 # local_output_data[image_id].append({
                 #     "groundtruth": image_label,
@@ -281,7 +300,7 @@ def run(rank, world_size):
                     curr_pred[answer_content] += 1
 
             except Exception as e:
-                print(RED + "Error in processing response: " + RESET)
+                print(RED + f"Error in processing response: {e}" + RESET)
                 print(RED + "Response: " + response + RESET)
         
         ## add the groundtruth to the output data

@@ -24,6 +24,11 @@ PROMPTS = {
         "answer_format": "species name",
         "data_name": "bird",
     },
+    'gqa': {
+        "instruction": "output the most likely answer to the question based on the image.",
+        "answer_format": "final answer",
+        "data_name": "gqa",
+    }
 }
 
 prompts = {

@@ -52,7 +52,13 @@ class TwoStepInference:
 
     def get_pass_at_20(self, inputs, generation_args):
         # Inference: Generation of the output
-        generated_ids = self.model.generate(**inputs, **generation_args)
+
+        try:
+            generated_ids = self.model.generate(**inputs, **generation_args)
+        except Exception as e:
+            print(RED + "Error in generating output: " + RESET)
+            print(RED + str(e) + RESET)
+            return {}
         
         input_id_length = inputs.input_ids.shape[1] # Length of the single input sequence
         num_sequences = generation_args["num_return_sequences"]
@@ -232,7 +238,7 @@ def run(rank, world_size, args):
     random.seed(21)
     random.shuffle(infer_data)
 
-    # infer_data = infer_data[-10:]
+    # infer_data = infer_data[-2:]
 
     print(GREEN + "Number of images in infer data: " + str(len(infer_data)) + RESET)
     
@@ -251,6 +257,7 @@ def run(rank, world_size, args):
 
         prompt = item['problem']
         image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
+        image_label = clean_string(image_label)  # Clean the image label
         image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", 
                         DATA_ROOT)
 
@@ -303,6 +310,9 @@ def run(rank, world_size, args):
         top5_keys = list(top5.keys())
         random.shuffle(top5_keys)  # Shuffle the options to avoid bias
 
+        if len(top5_keys) == 0:
+            print("step1 failed, skipping image: " + image_path)
+            continue
         # MCQ inference now
 
         letters = ['A', 'B', 'C', 'D', 'E']
@@ -346,7 +356,11 @@ Please strictly follow the format. """
 
         mcq_output, mcq_reasoning = two_step_inference.get_mcq_output(mcq_inputs, mcq_generation_args)
 
-        predicted_category = top5_keys[letters.index(mcq_output)] if mcq_output in letters else None
+        try:
+            predicted_category = top5_keys[letters.index(mcq_output)] if mcq_output in letters else None
+        except Exception as e:
+            print(RED + f"Error: mcq_output: {mcq_output} \n mcq_input: {options}" + RESET)
+            predicted_category = None
 
         image_id = image_path.split("/")[-1].split(".")[0]  # Extract image ID from the path
 
