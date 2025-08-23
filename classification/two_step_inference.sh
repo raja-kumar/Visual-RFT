@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MODEL_ROOT="/app/saved_models/vrft/ckpts/"  # root path for saved models
+MODEL_ROOT="/app/saved_models/vrft/combined"  # root path for saved models
 BASE_MODEL="Qwen/Qwen2.5-VL-7B-Instruct"
 CHECKPOINT="checkpoint-400"  # checkpoint name for saved models
 
@@ -12,7 +12,7 @@ use_cat_list="True"
 
 # ==== dataset and output paths ====
 DATA_ROOT="/data2/raja/"
-dataset="oxford_flowers"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
+# dataset="oxford_flowers"  # oxford_flowers, oxford-iiit-pet, CUB_200_2011
 
 ## === generation settings ===
 temperature=1.0
@@ -20,25 +20,28 @@ max_new_tokens=1024
 
 splits=("base_val")  # splits to evaluate on
 num_return_sequences=(20)  # number of sequences to return
-EXP_NAMES=("baseline" "Qwen2_5-VL-7B-Instruct_GRPO_flowers_base_qwen_mcq")
+EXP_NAMES=("Qwen2_5-VL-7B-Instruct_GRPO_combined_base_virft_updated_reward")
+datasets=("fgvc_aircraft")  # datasets to evaluate on
 
-for EXP_NAME in "${EXP_NAMES[@]}"; do
-    for split in "${splits[@]}"; do
-        for NSEQ in "${num_return_sequences[@]}"; do
-            python two_step_inference.py \
-                --model_root "$MODEL_ROOT" \
-                --base_model "$BASE_MODEL" \
-                --exp_name "$EXP_NAME" \
-                --checkpoint "$CHECKPOINT" \
-                --zero_shot "$zero_shot" \
-                --eval_type "$eval_type" \
-                --use_cat_list "$use_cat_list" \
-                --data_root "$DATA_ROOT" \
-                --dataset "$dataset" \
-                --split "$split" \
-                --num_return_sequences "$NSEQ" \
-                --temperature "$temperature" \
-                --max_new_tokens "$max_new_tokens" 
+for dataset in "${datasets[@]}"; do
+    for EXP_NAME in "${EXP_NAMES[@]}"; do
+        for split in "${splits[@]}"; do
+            for NSEQ in "${num_return_sequences[@]}"; do
+                python two_step_inference.py \
+                    --model_root "$MODEL_ROOT" \
+                    --base_model "$BASE_MODEL" \
+                    --exp_name "$EXP_NAME" \
+                    --checkpoint "$CHECKPOINT" \
+                    --zero_shot "$zero_shot" \
+                    --eval_type "$eval_type" \
+                    --use_cat_list "$use_cat_list" \
+                    --data_root "$DATA_ROOT" \
+                    --dataset "$dataset" \
+                    --split "$split" \
+                    --num_return_sequences "$NSEQ" \
+                    --temperature "$temperature" \
+                    --max_new_tokens "$max_new_tokens" 
+            done
         done
     done
 done

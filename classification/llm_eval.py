@@ -40,15 +40,12 @@ class AccuracyEvaluator:
                 max_tokens=1000
             )
             
-            # result = response.choices[0].message.content.split("\n")
-            # result = [item for item in result if item] 
-            # top1_match = "true" in result[0].lower() and "false" not in result[0].lower()
-            result = response.choices[0].message.content
-            # print("----------")
-            # print("response:", result)
-            # print(re.findall(r'<answer>(.*?)</answer>', result, re.DOTALL))
-            # print("----------")
-            top1_match = re.findall(r'<answer>(.*?)</answer>', result, re.DOTALL)[0].strip()
+            try:
+                result = response.choices[0].message.content
+                top1_match = re.findall(r'<answer>(.*?)</answer>', result, re.DOTALL)[0].strip()
+            except Exception as e:
+                print(f"Error in response: {e}")
+                return False, "Error in response"
             if (top1_match.lower() == "true"):
                 top1_match = True
             else:

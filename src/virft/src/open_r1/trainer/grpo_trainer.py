@@ -37,6 +37,8 @@ from transformers import (
     Trainer,
     TrainerCallback,
     is_wandb_available,
+    AutoModel,
+    LlavaForConditionalGeneration
 )
 from transformers.integrations.deepspeed import is_deepspeed_zero3_enabled
 from transformers.utils import is_peft_available
@@ -159,6 +161,8 @@ class Qwen2VLGRPOTrainer(Trainer):
         max_pixels: Optional[int] = 12845056,
         min_pixels: Optional[int] = 3136,
         attn_implementation: str = "flash_attention_2",
+        freeze_vision_tower: bool = False,
+        freeze_text: bool = False,
     ):
         # Args
         if args is None:
@@ -194,6 +198,12 @@ class Qwen2VLGRPOTrainer(Trainer):
             elif "Aria" in model_id:
                 model_init_kwargs.pop("use_cache")
                 model = AriaForConditionalGeneration.from_pretrained(model, **model_init_kwargs)
+            elif "InternVL" in model_id:
+                model_init_kwargs.pop("use_cache")
+                model = AutoModel.from_pretrained(model, **model_init_kwargs, trust_remote_code=True)
+            elif "llava" in model_id:
+                model_init_kwargs.pop("use_cache")
+                model = LlavaForConditionalGeneration.from_pretrained(model, **model_init_kwargs)
             else:
                 model = AutoModelForCausalLM.from_pretrained(model, **model_init_kwargs)
         else:
@@ -206,6 +216,27 @@ class Qwen2VLGRPOTrainer(Trainer):
 
         if peft_config is not None:
             model = get_peft_model(model, peft_config)
+        
+        # freeze part of the model
+        if freeze_vision_tower:
+            if hasattr(model, "visual"):
+                model.visual.requires_grad_(False)
+                print("--- Freezing the vision tower. ----")
+                # for name, param in model.visual.named_parameters():
+                #     print(f"{name}: requires_grad={param.requires_grad}")
+            else:
+                print("--- The model does not have a vision tower to freeze. ----")
+        
+        if freeze_text:
+            model.requires_grad_(False)
+            if hasattr(model, "visual"):
+                model.visual.requires_grad_(True)
+                print("--- Freezing the text tower. ----")
+            else:
+                ValueError(
+                    "--- The model does not have a vision tower so nothing left to train if text is frozen. ----"
+                )
+
 
         # Reference model
         if is_deepspeed_zero3_enabled():

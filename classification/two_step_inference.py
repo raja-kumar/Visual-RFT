@@ -18,9 +18,10 @@ from transformers import AutoModel, AutoTokenizer
 from transformers import (AutoModelForCausalLM, AutoTokenizer,
                           StoppingCriteria, StoppingCriteriaList)
 from transformers.generation import GenerationConfig
+from peft import PeftModel
 torch.manual_seed(1234)
 
-from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor, Qwen2_5_VLForConditionalGeneration
+from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
 from qwen_vl_utils import process_vision_info
 
 import logging
@@ -202,6 +203,24 @@ def run(rank, world_size, args):
         device_map="cpu",
     )
 
+    if "lora" in eval_type:
+
+        base_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+            model_base,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map="cpu",
+        )
+
+        processor = AutoProcessor.from_pretrained(model_path)
+        model = PeftModel.from_pretrained(
+            base_model,
+            model_path,
+            torch_dtype=torch.bfloat16,
+        )
+
+        print("---------- Loading LoRA model from: ------------")
+
     processor = AutoProcessor.from_pretrained(model_base) 
 
     model = model.to(torch.device(rank))
@@ -258,6 +277,8 @@ def run(rank, world_size, args):
         prompt = item['problem']
         image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
         image_label = clean_string(image_label)  # Clean the image label
+        image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/fgvc_aircraft/",
+                        DATA_ROOT)
         image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", 
                         DATA_ROOT)
 

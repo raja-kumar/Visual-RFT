@@ -65,6 +65,14 @@ class GRPOScriptArguments(ScriptArguments):
         default=2,
         metadata={"help": "The ratio of normal to hard examples in the combined dataset."},
     )
+    freeze_vision_tower: bool = field(
+        default=False,
+        metadata={"help": "Whether to freeze the vision tower during training."},
+    )
+    freeze_text: bool = field(
+        default=False,
+        metadata={"help": "Whether to freeze the text tower during training."},
+    )
 
 reward_funcs_registry = {
     "accuracy": accuracy_reward,
@@ -110,6 +118,8 @@ def main(script_args, training_args, model_args):
         attn_implementation=model_args.attn_implementation,
         max_pixels=script_args.max_pixels,
         min_pixels=script_args.min_pixels,
+        freeze_vision_tower=script_args.freeze_vision_tower,
+        freeze_text=script_args.freeze_text,
     )
 
     # Train and push the model to the Hub
