@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image
 from tqdm import tqdm
 import matplotlib.pyplot as plt
-from transformers import AutoModel, AutoTokenizer
+from transformers import AutoModel, AutoTokenizer, LlavaForConditionalGeneration, LlavaNextProcessor
 from transformers import (AutoModelForCausalLM, AutoTokenizer,
                           StoppingCriteria, StoppingCriteriaList)
 from transformers.generation import GenerationConfig
@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 torch.manual_seed(1234)
 
-from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor, Qwen2_5_VLForConditionalGeneration
+from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor, Qwen2_5_VLForConditionalGeneration, Gemma3ForConditionalGeneration
 from qwen_vl_utils import process_vision_info
 from prompts import PROMPTS
 
@@ -129,14 +129,42 @@ def run(rank, world_size):
     local_output_data = {}
 
     if "Qwen2.5" in model_base:
-
         model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
             model_path,
             torch_dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
             device_map="cpu",
         )
-    
+        processor = AutoProcessor.from_pretrained(model_base) 
+    elif "llava" in model_base:
+        model = LlavaForConditionalGeneration.from_pretrained(
+            model_path,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map="cpu",
+        )
+        processor = LlavaNextProcessor.from_pretrained(model_base)
+    elif "Phi-3.5" in model_base:
+        model = AutoModelForCausalLM.from_pretrained(
+            model_path, 
+            trust_remote_code=True, 
+            torch_dtype="auto", 
+            _attn_implementation='flash_attention_2'    
+        )
+        processor = AutoProcessor.from_pretrained(model_base, 
+            trust_remote_code=True, 
+            num_crops=16
+        )
+
+        print(GREEN + "Using Phi-3.5 model" + RESET)
+    elif "gemma-3" in model_base:
+        model = Gemma3ForConditionalGeneration.from_pretrained(
+            model_path,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map="cpu",
+        )
+        processor = AutoProcessor.from_pretrained(model_base)
     else:
         model = Qwen2VLForConditionalGeneration.from_pretrained(
             model_path,
@@ -144,8 +172,7 @@ def run(rank, world_size):
             attn_implementation="flash_attention_2",
             device_map="cpu",
         )
-
-    processor = AutoProcessor.from_pretrained(model_base) 
+        
 
     model = model.to(torch.device(rank))
     model = model.eval()
@@ -178,6 +205,8 @@ def run(rank, world_size):
 
         prompt = item['problem']
         image_label = re.search(r"<answer>(.*?)</answer>", image_label).group(1)
+        image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/fgvc_aircraft/", 
+                        DATA_ROOT)
         image_path = image_path.replace("/home/raja/OVOD/git_files/VLM-COT/data/", 
                         DATA_ROOT)
 
@@ -198,34 +227,104 @@ def run(rank, world_size):
     
         query = "<image>\n"+question
         # print(RED+query+RESET)
-        
-        messages = [
-            {
-                "role": "user",
-                "content": [
-                    {"type": "image", "image": image_path}
-                ] + [{"type": "text", "text": query}],
-            }
-        ]
-        
-        # Preparation for inference
-        text = processor.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
-        )
-        image_inputs, video_inputs = process_vision_info(messages)
 
-        inputs = processor(
-            text=[text],
-            images=image_inputs,
-            videos=video_inputs,
-            padding=True,
-            return_tensors="pt",
-        )
+        if "llava" in model_base:
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image"},
+                        {"type": "text", "text": question}
+                    ]
+                }
+            ]
+
+            # Preparation for inference
+            text = processor.apply_chat_template(
+                messages, add_generation_prompt=True
+            )
+
+            raw_image = Image.open(image_path).convert("RGB")
+            inputs = processor(
+                text=text,
+                images=raw_image,
+                return_tensors="pt",
+                image_sizes=raw_image.size,
+            )
+        elif "Phi-3.5" in model_base:
+            images = [Image.open(image_path)]
+            query = "<|image_1|>\n" + question
+
+            messages = [
+                {"role": "user", "content": query},
+            ]
+
+            prompt = processor.tokenizer.apply_chat_template(
+                messages, 
+                tokenize=False, 
+                add_generation_prompt=True
+            )
+
+            inputs = processor(prompt, images, return_tensors="pt")
+        elif "gemma-3" in model_base:
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "image": image_path},
+                        {"type": "text", "text": question}
+                    ]
+                }
+            ]
+
+            inputs = processor.apply_chat_template(
+                    messages, add_generation_prompt=True, tokenize=True,
+                    return_dict=True, return_tensors="pt"
+            )
+        else:
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "image": image_path},
+                        {"type": "text", "text": query}
+                    ]
+                }
+            ]
+
+            # Preparation for inference
+            text = processor.apply_chat_template(
+                messages, tokenize=False, add_generation_prompt=True, 
+            )
+
+            image_inputs, video_inputs = process_vision_info(messages)
+
+            inputs = processor(
+                text=[text],
+                images=image_inputs,
+                videos=video_inputs,
+                padding=True,
+                return_tensors="pt",
+            )
+        
         inputs = inputs.to(model.device)
         
         # Inference: Generation of the output
 
+        # print(GREEN + "before generate" + RESET)
+        # generation_args = { 
+        #     "max_new_tokens": 1000, 
+        #     "temperature": 0.0, 
+        #     "do_sample": False, 
+        # } 
+
+        # generated_ids = model.generate(**inputs, 
+        # eos_token_id=processor.tokenizer.eos_token_id, 
+        # **generation_args
+        # )
         generated_ids = model.generate(**inputs, max_new_tokens=1024, use_cache=True)
+
+        # print(GREEN + "Generated IDs: " + str(generated_ids) + RESET)
         
         generated_ids_trimmed = [
             out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
@@ -235,12 +334,11 @@ def run(rank, world_size):
         )
         response = response[0]
         # print("\033[92m" + response + "\033[0m")
+        image_id = image_path.split("/")[-1].split(".")[0]
 
         try:
             if eval_type == "sft":
                 # For SFT, search in complete response without parsing
-
-                image_id = image_path.split("/")[-1].split(".")[0]
 
                 local_output_data[image_id] = {
                     "groundtruth": image_label,
@@ -267,8 +365,6 @@ def run(rank, world_size):
                 
                 answer_content = match.group(1)
 
-                image_id = image_path.split("/")[-1].split(".")[0]
-
                 local_output_data[image_id] = {
                     "groundtruth": image_label,
                     "reasoning": reasoning_content,
@@ -294,6 +390,11 @@ def run(rank, world_size):
                     local_output_data[image_id]["rethink"] = rethink_content
         except Exception as e:
             print(RED + "Error in processing response: " + response + RESET)
+            local_output_data[image_id] = {
+                    "groundtruth": image_label,
+                    "reasoning": "",
+                    "answer": ""
+                }
             error_count += 1
         
     return [error_count, right_count, local_output_data]

@@ -12,7 +12,8 @@ from transformers import (AutoModelForCausalLM, AutoTokenizer,
 from transformers.generation import GenerationConfig
 torch.manual_seed(1234)
 
-from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor, Qwen2_5_VLForConditionalGeneration
+from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor, Qwen2_5_VLForConditionalGeneration, Gemma3ForConditionalGeneration
+# from transformers import AutoProcessor, AutoProcessor
 from qwen_vl_utils import process_vision_info
 
 import logging
@@ -128,7 +129,29 @@ def run(rank, world_size):
             attn_implementation="flash_attention_2",
             device_map="cpu",
         )
-    
+        processor = AutoProcessor.from_pretrained(model_base) 
+
+    elif "Phi-3.5" in model_base:
+        model = AutoModelForCausalLM.from_pretrained(
+            model_path, 
+            trust_remote_code=True, 
+            torch_dtype=torch.float16, 
+            _attn_implementation='flash_attention_2'    
+        )
+        processor = AutoProcessor.from_pretrained(model_base, 
+            trust_remote_code=True, 
+            num_crops=16,  # Adjust based on your needs
+        )
+
+        print(GREEN + "Using Phi-3.5 model" + RESET)
+    elif "gemma-3" in model_base:
+        model = Gemma3ForConditionalGeneration.from_pretrained(
+            model_path,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map="cpu",
+        )
+        processor = AutoProcessor.from_pretrained(model_base)
     else:
         model = Qwen2VLForConditionalGeneration.from_pretrained(
             model_path,
@@ -137,7 +160,6 @@ def run(rank, world_size):
             device_map="cpu",
         )
 
-    processor = AutoProcessor.from_pretrained(model_base) 
 
     model = model.to(torch.device(rank))
     model = model.eval()
@@ -148,10 +170,9 @@ def run(rank, world_size):
     random.seed(21)
     random.shuffle(infer_data)
 
-    # infer_data = infer_data[:100]
+    # infer_data = infer_data[:2]
 
     print(GREEN + "Number of images in infer data: " + str(len(infer_data)) + RESET)
-    
 
     rank = rank
     world_size = world_size
@@ -216,28 +237,63 @@ def run(rank, world_size):
         query = "<image>\n"+question
         # print(RED+query+RESET)
         
-        messages = [
-            {
-                "role": "user",
-                "content": [
-                    {"type": "image", "image": image_path}
-                ] + [{"type": "text", "text": query}],
-            }
-        ]
-        
-        # Preparation for inference
-        text = processor.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
-        )
-        image_inputs, video_inputs = process_vision_info(messages)
+        if "Phi-3.5" in model_base:
+            images = [Image.open(image_path)]
+            query = "<|image_1|>\n" + question
 
-        inputs = processor(
-            text=[text],
-            images=image_inputs,
-            videos=video_inputs,
-            padding=True,
-            return_tensors="pt",
-        )
+            messages = [
+                {"role": "user", "content": query},
+            ]
+
+            prompt = processor.tokenizer.apply_chat_template(
+                messages, 
+                tokenize=False, 
+                add_generation_prompt=True
+            )
+
+            inputs = processor(prompt, images, return_tensors="pt")
+        
+        elif "gemma-3" in model_base:
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "image": image_path},
+                        {"type": "text", "text": question}
+                    ]
+                }
+            ]
+
+            inputs = processor.apply_chat_template(
+                    messages, add_generation_prompt=True, tokenize=True,
+                    return_dict=True, return_tensors="pt", do_pan_and_scan=True
+            )
+        else:
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "image": image_path},
+                        {"type": "text", "text": query}
+                    ]
+                }
+            ]
+
+            # Preparation for inference
+            text = processor.apply_chat_template(
+                messages, tokenize=False, add_generation_prompt=True, 
+            )
+
+            image_inputs, video_inputs = process_vision_info(messages)
+
+            inputs = processor(
+                text=[text],
+                images=image_inputs,
+                videos=video_inputs,
+                padding=True,
+                return_tensors="pt",
+            )
+
         inputs = inputs.to(model.device)
 
         # Inference: Generation of the output
